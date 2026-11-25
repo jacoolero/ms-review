@@ -30,8 +30,9 @@
     s = s.normalize("NFD").replace(/[̀-ͯ]/g, "");
     s = s.replace(/≥/g, " >= ").replace(/≤/g, " <= ").replace(/[–—−]/g, "-").replace(/[‘’“”"']/g, "");
     s = s.replace(/(\d)[-\s](\d+[a-z])/g, "$1$2");     // "1-3s" / "1 3s" -> "13s" (Westgard rules)
-    s = s.replace(/×/g, "x").replace(/→/g, " ").replace(/[()\[\]{},;:!?/\\|*+=<>~^%]/g, " ");
-    s = s.replace(/-(?=\D)|(?<=\D)-/g, " ");            // hyphens inside words become spaces
+    s = s.replace(/%/g, " percent ").replace(/×/g, "x").replace(/→/g, " ");
+    s = s.replace(/[()\[\]{},;:!?/\\|*+=<>~^]/g, " ");
+    s = s.replace(/-/g, " ");                            // hyphens and ranges become spaces
     s = s.replace(/\.(?!\d)/g, " ");                     // drop full stops that are not decimal points
     return s.replace(/\s+/g, " ").trim();
   }

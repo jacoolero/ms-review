@@ -4,22 +4,27 @@ A static study website for a Master's (MSMT) written comprehensive exam, coverin
 
 | Subject | Essay Q&As | Flashcards |
 |---|---|---|
-| Advanced Medical Microbiology | 92 | 93 |
-| Advanced Clinical Chemistry | 60 | 148 |
-| Advanced Immunohematology | 60 | 139 |
-| Advanced Parasitology | 63 | 145 |
-| **Total** | **275** | **525** |
+| Advanced Medical Microbiology | 111 | 173 |
+| Advanced Clinical Chemistry | 96 | 268 |
+| Advanced Immunohematology | 72 | 188 |
+| Advanced Parasitology | 72 | 188 |
+| **Total** | **351** | **817** |
+
+Every topic has at least 12 essay questions.
 
 Every essay answer and flashcard cites its source (textbooks, guidelines, Philippine laws and DOH orders). Open **References** in the sidebar to see the full list for each subject.
 
 ## Features
 
 - **Subject tabs**, with topic filters for each subject.
+- **Answer first**: type your own answer, press **Submit & compare**, and the site checks it against the key points of the model answer — a coverage score, green chips for the points you covered, red for the ones you missed, your answer side by side with the model answer (missed points highlighted), a self-grade, and a history of your attempts. Toggle it off with **Answer first: On/Off** to simply read the answers; it is always on in Practice sets.
 - **Essays**: model answers in different formats (comparison tables, worked calculations, case interpretations, algorithms, short notes), an exam tip, and sources for each.
 - **Practice**: a random set of 10 essay questions from the current subject, with answers hidden.
 - **Flashcards**: flip a card, then rate it Again / Good / Easy. Cards come back after 1 → 3 → 7 → 14 → 30 → 60 days. Use *Due cards* or *Study all*.
 - Search (`/`), dark mode, print/PDF, "reviewed" ticks, and a phone-friendly layout.
 - Progress is saved **in your browser** (localStorage), so each device keeps its own progress.
+
+Note on the coverage score: it compares key *terms*, not meaning, so it cannot judge your reasoning or structure — that is what the self-grade is for.
 
 Keyboard: `/` search · `r` open the first essay · flashcards: `Space` flip, `1` Again, `2` Good, `3` Easy.
 
@@ -34,6 +39,10 @@ cd "C:\Users\Hakdog\Documents\Project\MS-REVIEW"
 python -m http.server 8017
 # open http://localhost:8017
 ```
+
+## The site
+
+Live at **https://msreview.nyorkie.org** (also reachable at https://jacoolero.github.io/ms-review/, which redirects). The DNS record lives in Cloudflare: a CNAME `msreview` → `jacoolero.github.io`, set to **DNS only** (grey cloud) so GitHub can issue the certificate. The `CNAME` file in this repo must keep the domain name, or Pages will drop the custom domain on the next deploy.
 
 ## Update the online site (GitHub Pages)
 
@@ -58,9 +67,12 @@ GitHub Pages republishes in about a minute.
   tags: ["tag1", "tag2"],
   answer: `<h4>Heading</h4><p>…</p>`,   // HTML; .table-wrap, .calc and .case boxes available
   tip: "One-line exam strategy.",
+  keypoints: ["term", "another term"],  // optional; used by the answer comparison
   sources: ["C1", "C7"]       // ids from data-core.js / sources-extra.js
 }
 ```
+
+If `keypoints` is omitted, the site extracts the key terms automatically from the bold text, table headings and tags of the answer. Add an explicit `keypoints` array when an answer has few bold terms.
 
 **Flashcard** — add a `["front", "back"]` pair to the right group in `assets/cards-*.js`. Append new pairs at the **end** of a group so existing card ids (and your saved progress) stay the same.
 

@@ -61,7 +61,7 @@ window.SOURCES = {
   S17: { text: "World Health Organization. Guidelines for the prevention, care and treatment of persons with chronic hepatitis B/C.", url: "https://www.who.int/publications" },
   S18: { text: "World Health Organization. WHO Fungal Priority Pathogens List, 2022.", url: "https://www.who.int/publications/i/item/9789240060241" },
   S19: { text: "World Health Organization. Neglected tropical diseases: fact sheets and elimination roadmaps.", url: "https://www.who.int/health-topics/neglected-tropical-diseases" },
-  S20: { text: "Evans L, et al. Surviving Sepsis Campaign: International Guidelines 2021. Crit Care Med. 2021;49(11):e1063â€“e1143.", url: "https://doi.org/10.1097/CCM.0000000000005337" },
+  S20: { text: "Evans L, et al. Surviving Sepsis Campaign: International Guidelines 2021. Crit Care Med. 2021;49(11):e1063–e1143.", url: "https://doi.org/10.1097/CCM.0000000000005337" },
   S21: { text: "World Health Organization. Guidelines on core components of infection prevention and control programmes.", url: "https://www.who.int/publications/i/item/9789241549929" },
   S22: { text: "CDC/HICPAC. Guidelines for the prevention of healthcare-associated infections (isolation precautions, CLABSI, CAUTI, VAP).", url: "https://www.cdc.gov/infection-control/hcp/index.html" },
   S23: { text: "World Health Organization. Global action plan on antimicrobial resistance; and One Health joint plan of action.", url: "https://www.who.int/publications/i/item/9789241509763" },

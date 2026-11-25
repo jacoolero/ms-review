@@ -543,6 +543,7 @@ CCI at 1 h &lt; 5,000–7,500 on two occasions = refractoriness</div>
 },
 {
   id: "ih60", domain: "ih-clinical",
+  keypoints: ["positive DAT","without haemolysis","hypergammaglobulinaemia","IVIG","complement","drugs","passive antibody","recent transfusion","EDTA","monospecific","haemolysis markers","elution","not routine pretransfusion"],
   q: "Discuss the investigation of a positive DAT in a patient without haemolysis, and the clinical significance of the DAT.",
   tags: ["DAT", "interpretation", "positive DAT without haemolysis"],
   answer: `

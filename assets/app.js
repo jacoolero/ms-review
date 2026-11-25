@@ -7,6 +7,9 @@
   const THEME_KEY = "amm-theme";
   const CARDS_KEY = "ms-cards-v1";
   const SUBJECT_KEY = "ms-subject";
+  const ANSWER_KEY = "ms-answer-mode";
+  const ATT_KEY = "ms-attempts-v1";
+  const SELF_GRADES = ["Weak", "Fair", "Good", "Excellent"];
 
   const store = {
     get(key, fallback) {
@@ -25,7 +28,16 @@
     domain: "all",
     query: "",
     session: null,
-    progress: new Set(store.get(PROGRESS_KEY, []))
+    progress: new Set(store.get(PROGRESS_KEY, [])),
+    answerMode: store.get(ANSWER_KEY, true) !== false,
+    printing: false
+  };
+  const attempts = store.get(ATT_KEY, {});   // { qid: { draft, attempts: [{ text, date, percent, covered, total, self }] } }
+  const saveAttempts = () => store.set(ATT_KEY, attempts);
+  const attOf = (id) => (attempts[id] = attempts[id] || { draft: "", attempts: [] });
+  const bestOf = (id) => {
+    const a = attempts[id];
+    return a && a.attempts.length ? Math.max(...a.attempts.map(x => x.percent)) : null;
   };
 
   const allQuestions = window.QBANK;
@@ -139,9 +151,124 @@
     }).join("")}</ul></div>`;
   }
 
+  /* ---------- answer-first mode ---------- */
+  const attemptActive = (q) => !state.printing && (state.answerMode || !!state.session) && !q._revealed;
+  const wordCount = (t) => (String(t).trim().match(/\S+/g) || []).length;
+  const pctClass = (p) => (p >= 70 ? "good" : p >= 40 ? "fair" : "low");
+
+  function modelHTML(q) {
+    return `${q.answer}
+      ${q.tip ? `<div class="exam-tip"><strong>Exam tip.</strong> ${esc(q.tip)}</div>` : ""}
+      ${sourcesHTML(q.sources)}`;
+  }
+
+  function historyHTML(q) {
+    const list = (attempts[q.id] || { attempts: [] }).attempts;
+    if (!list.length) return "";
+    return `<details class="att-history"><summary>Previous attempts (${list.length})</summary><ol>${list.slice().reverse().map(a =>
+      `<li><span class="pct ${pctClass(a.percent)}">${a.percent}%</span> ${new Date(a.date).toLocaleDateString()} · ${a.covered}/${a.total} key points${a.self != null ? ` · self-grade: ${SELF_GRADES[a.self]}` : ""}
+        <details><summary>Show answer text</summary><p class="att-old">${esc(a.text)}</p></details></li>`).join("")}</ol></details>`;
+  }
+
+  function editorHTML(q) {
+    const draft = attOf(q.id).draft || "";
+    return `<div class="attempt">
+      <p class="att-label">Write your answer first. When you submit, it is checked against the key points of the model answer.</p>
+      <textarea class="att-text" rows="10" placeholder="Outline or write your essay answer here…">${esc(draft)}</textarea>
+      <div class="att-bar">
+        <span class="att-words">${wordCount(draft)} words</span><span class="att-saved"></span>
+        <span class="att-buttons">
+          <button class="btn btn-small btn-ghost att-skip">Skip & show answer</button>
+          <button class="btn btn-small btn-accent att-submit">Submit & compare</button>
+        </span>
+      </div>
+      ${historyHTML(q)}
+    </div>`;
+  }
+
+  function highlightUser(text, coveredTerms) {
+    const stems = new Set(coveredTerms.flatMap(t => window.Grader.stemsOf(t)));
+    return String(text).split(/(\s+)/).map(tok => {
+      if (/^\s+$/.test(tok)) return tok.replace(/\n/g, "<br>");
+      const s = window.Grader.stemOfWord(tok);
+      return s && stems.has(s) ? `<mark class="kp-hit">${esc(tok)}</mark>` : esc(tok);
+    }).join("");
+  }
+
+  function resultHTML(q) {
+    const a = attempts[q.id].attempts[attempts[q.id].attempts.length - 1];
+    const r = q._result;
+    return `<div class="att-result">
+      <div class="att-score ${pctClass(r.percent)}">
+        <div class="att-pct">${r.percent}%</div>
+        <div class="att-score-text"><b>Key-point coverage</b> · ${r.covered.length} of ${r.total} key points · ${r.words} words
+          <div class="att-track"><div style="width:${r.percent}%"></div></div></div>
+      </div>
+      <div class="kp-chips">
+        ${r.covered.map(t => `<span class="chip ok" title="Covered">✓ ${t}</span>`).join("")}
+        ${r.missed.map(t => `<span class="chip miss" title="Missed">✗ ${t}</span>`).join("")}
+      </div>
+      <div class="self-grade"><span>Coverage checks key terms only, not your reasoning. Rate your answer yourself:</span>
+        ${SELF_GRADES.map((g, i) => `<button class="btn btn-small self-btn ${a.self === i ? "active" : ""}" data-self="${i}">${g}</button>`).join("")}
+      </div>
+      <div class="compare">
+        <section><h5>Your answer</h5><div class="your-answer">${highlightUser(a.text, r.covered)}</div></section>
+        <section><h5>Model answer <small>missed points highlighted</small></h5><div class="model-answer">${modelHTML(q)}</div></section>
+      </div>
+      <div class="att-actions"><button class="btn btn-small att-retry">Try again</button></div>
+      ${historyHTML(q)}
+    </div>`;
+  }
+
+  function answerBodyHTML(q) {
+    if (!attemptActive(q)) return modelHTML(q);
+    return q._result ? resultHTML(q) : editorHTML(q);
+  }
+
+  // mark covered/missed key terms inside the model answer
+  function decorate(card) {
+    const q = byId.get(card.dataset.id);
+    if (!q || !q._result) return;
+    const norm = (h) => window.Grader.normalise(window.Grader.stripHtml(h));
+    const missed = new Set(q._result.missed.map(norm)), hit = new Set(q._result.covered.map(norm));
+    $$(".model-answer strong, .model-answer b, .model-answer td:first-child, .model-answer th", card).forEach(el => {
+      const n = norm(el.innerHTML);
+      if (missed.has(n)) el.classList.add("kp-miss");
+      else if (hit.has(n)) el.classList.add("kp-hit");
+    });
+  }
+
+  function rerenderCard(card) {
+    const q = byId.get(card.dataset.id);
+    const num = $(".q-num", card).textContent;
+    card.outerHTML = cardHTML(q, num);
+    const fresh = $(`#cards .card[data-id="${q.id}"]`);
+    decorate(fresh);
+    return fresh;
+  }
+
+  function submitAttempt(card) {
+    const q = byId.get(card.dataset.id);
+    const text = $(".att-text", card).value;
+    if (!wordCount(text)) { $(".att-saved", card).textContent = "Write something first."; return; }
+    const r = window.Grader.scoreAnswer(q, text);
+    const rec = attOf(q.id);
+    rec.attempts.push({ text, date: Date.now(), percent: r.percent, covered: r.covered.length, total: r.total, self: null });
+    rec.attempts = rec.attempts.slice(-10);
+    rec.draft = "";
+    saveAttempts();
+    q._result = r;
+    state.progress.add(q.id);
+    store.set(PROGRESS_KEY, [...state.progress]);
+    updateProgressUI();
+    const fresh = rerenderCard(card);
+    $(".att-result", fresh).scrollIntoView && $(".att-result", fresh).scrollIntoView({ block: "nearest" });
+  }
+
   function cardHTML(q, displayIndex) {
     const d = domainMap.get(q.domain);
     const reviewed = state.progress.has(q.id);
+    const best = bestOf(q.id);
     return `<article class="card ${q._open ? "open" : ""}" data-id="${q.id}" style="--domain-color:${d.color}">
       <div class="card-head" role="button" tabindex="0" aria-expanded="${!!q._open}">
         <div class="q-num">${displayIndex}</div>
@@ -153,6 +280,7 @@
           </div>
         </div>
         <div class="q-tools">
+          ${best != null ? `<span class="best-badge ${pctClass(best)}" title="Best key-point coverage">Best ${best}%</span>` : ""}
           <label class="reviewed-label" title="Mark as reviewed">
             <input type="checkbox" class="review-box" ${reviewed ? "checked" : ""}>
             <span>Reviewed</span>
@@ -160,11 +288,7 @@
           <span class="chev" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></span>
         </div>
       </div>
-      <div class="answer">
-        ${q.answer}
-        ${q.tip ? `<div class="exam-tip"><strong>Exam tip.</strong> ${esc(q.tip)}</div>` : ""}
-        ${sourcesHTML(q.sources)}
-      </div>
+      <div class="answer">${answerBodyHTML(q)}</div>
     </article>`;
   }
 
@@ -183,14 +307,66 @@
     $("#meta").textContent = `${list.length} question${list.length === 1 ? "" : "s"}${list.length ? ` · ${reviewedInList} reviewed in this view` : ""}`;
 
     $("#cards").innerHTML = list.map((q, i) => cardHTML(q, state.session ? i + 1 : q.index)).join("");
+    $$("#cards .card").forEach(decorate);
     $("#empty").hidden = list.length > 0;
+    const btn = $("#answerModeBtn");
+    btn.textContent = `Answer first: ${state.answerMode || state.session ? "On" : "Off"}`;
+    btn.classList.toggle("active", state.answerMode || !!state.session);
+    btn.disabled = !!state.session;
     updateProgressUI();
   }
 
   $("#cards").addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (!card) return;
+    const q = byId.get(card.dataset.id);
+    if (e.target.closest(".att-submit")) return submitAttempt(card);
+    if (e.target.closest(".att-skip")) { q._revealed = true; rerenderCard(card); return; }
+    if (e.target.closest(".att-retry")) {
+      q._result = null;
+      const fresh = rerenderCard(card);
+      $(".att-text", fresh).focus();
+      return;
+    }
+    const sb = e.target.closest(".self-btn");
+    if (sb) {
+      const list = attOf(q.id).attempts;
+      list[list.length - 1].self = Number(sb.dataset.self);
+      saveAttempts();
+      $$(".self-btn", card).forEach(b => b.classList.toggle("active", b === sb));
+      return;
+    }
     const head = e.target.closest(".card-head");
     if (!head || e.target.closest(".reviewed-label")) return;
-    toggleCard(head.closest(".card"));
+    toggleCard(card);
+  });
+
+  const draftTimers = new Map();
+  $("#cards").addEventListener("input", (e) => {
+    if (!e.target.classList.contains("att-text")) return;
+    const card = e.target.closest(".card"), id = card.dataset.id, value = e.target.value;
+    $(".att-words", card).textContent = `${wordCount(value)} words`;
+    clearTimeout(draftTimers.get(id));
+    draftTimers.set(id, setTimeout(() => {
+      attOf(id).draft = value;
+      saveAttempts();
+      const s = $(".att-saved", card);
+      if (s) s.textContent = "Draft saved";
+    }, 500));
+  });
+
+  $("#answerModeBtn").addEventListener("click", () => {
+    state.answerMode = !state.answerMode;
+    store.set(ANSWER_KEY, state.answerMode);
+    allQuestions.forEach(q => { q._revealed = false; });
+    renderEssays();
+  });
+
+  $("#resetAnswersBtn").addEventListener("click", () => {
+    if (!confirm("Delete your saved answers and scores for this subject?")) return;
+    subjectQuestions(state.subject).forEach(q => { delete attempts[q.id]; q._result = null; });
+    saveAttempts();
+    renderEssays();
   });
   $("#cards").addEventListener("keydown", (e) => {
     const head = e.target.closest(".card-head");
@@ -248,8 +424,9 @@
     state.view = "essays";
     route();
     visibleQuestions().forEach(q => { q._open = true; });
+    state.printing = true;           // print model answers, not the answer boxes
     renderEssays();
-    setTimeout(() => window.print(), 150);
+    setTimeout(() => { window.print(); state.printing = false; renderEssays(); }, 150);
   });
 
   $("#practiceBtn").addEventListener("click", () => {
@@ -260,12 +437,12 @@
     state.session = source.slice(0, 10).map(q => q.id);
     state.query = "";
     $("#search").value = "";
-    allQuestions.forEach(q => { q._open = false; });
+    allQuestions.forEach(q => { q._open = false; q._revealed = false; q._result = null; });
     route();
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  $("#revealSession").addEventListener("click", () => { visibleQuestions().forEach(q => { q._open = true; }); renderEssays(); });
+  $("#revealSession").addEventListener("click", () => { visibleQuestions().forEach(q => { q._open = true; q._revealed = true; }); renderEssays(); });
   $("#endSession").addEventListener("click", () => { state.session = null; route(); });
 
   function shuffle(a) {

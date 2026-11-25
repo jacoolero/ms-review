@@ -51,6 +51,7 @@ window.QBANK.push(
 },
 {
   id: "cc3", domain: "chem-qc",
+  keypoints: ["Sigma = (TEa − bias) / CV","4.25","good","multirule","1<sub>3s</sub>/2<sub>2s</sub>/R<sub>4s</sub>/4<sub>1s</sub>","two control levels","error detection","reduce imprecision","world class ≥ 6"],
   q: "Calculate and interpret the Sigma metric for a serum glucose method with CV 2.0%, bias 1.5% and TEa 10%. What QC strategy follows?",
   tags: ["Six Sigma", "calculation", "QC planning"],
   answer: `
@@ -72,6 +73,7 @@ window.QBANK.push(
 },
 {
   id: "cc4", domain: "chem-qc",
+  keypoints: ["pre-analytical","patient preparation","fasting","posture","biotin","mislabelling","tourniquet","order of draw","EDTA contamination","haemolysis","delayed separation","glycolysis","serum indices","rejection criteria","quality indicators"],
   q: "Discuss the sources of pre-analytical error in clinical chemistry and the measures that reduce them.",
   tags: ["pre-analytical", "haemolysis", "order of draw"],
   answer: `
@@ -116,6 +118,7 @@ window.QBANK.push(
 },
 {
   id: "cc6", domain: "chem-qc",
+  keypoints: ["internal quality control","external quality assessment","precision","bias","accuracy","control material","peer group","z-score","Westgard rules","retrospective","corrective action","licensing"],
   q: "Compare internal quality control and external quality assessment (proficiency testing). Why does a laboratory need both?",
   tags: ["EQA", "PT", "IQC"],
   answer: `
@@ -135,6 +138,7 @@ window.QBANK.push(
 },
 {
   id: "cc7", domain: "chem-qc",
+  keypoints: ["point-of-care testing","turnaround time","haematocrit interference","maltose","operator training","POCT committee","connectivity","verification","correlation with main laboratory","IQC and EQA","ISO 22870"],
   q: "Discuss the advantages, risks and quality management of point-of-care testing (POCT) in a hospital.",
   tags: ["POCT", "glucometer", "governance"],
   answer: `
@@ -163,6 +167,7 @@ window.QBANK.push(
 },
 {
   id: "cc8", domain: "chem-qc",
+  keypoints: ["measurement uncertainty","top-down","within-lab CV","bias","combined in quadrature","expanded uncertainty","k = 2","total error","reference change value","ISO 15189"],
   q: "What is measurement uncertainty? How is it estimated in a routine clinical chemistry laboratory and how is it different from total error?",
   tags: ["measurement uncertainty", "ISO 15189"],
   answer: `
@@ -234,6 +239,7 @@ Expanded U = k × uc,  with k = 2 (≈95% coverage)</div>
 },
 {
   id: "cc11", domain: "chem-carb",
+  keypoints: ["diabetic ketoacidosis","anion gap","28","corrected sodium","Winter's formula","insulin deficiency","glucagon","lipolysis","CPT-1","β-hydroxybutyrate","acetoacetate","nitroprusside","osmotic diuresis","total body potassium depleted"],
   q: "Case: a 19-year-old with type 1 diabetes has glucose 28 mmol/L, Na 128, K 5.6, Cl 92, HCO₃⁻ 8 mmol/L, pH 7.08 and positive serum ketones. Interpret the results and explain the biochemical basis.",
   tags: ["DKA", "case", "anion gap"],
   answer: `
@@ -389,6 +395,7 @@ Expected pCO₂ (Winter) = 1.5 × 8 + 8 ± 2 = 18–22 mmHg</div>
 },
 {
   id: "cc18", domain: "chem-lipid",
+  keypoints: ["familial hypercholesterolaemia","autosomal dominant","LDLR","APOB","PCSK9","LDL-C > 4.9 mmol/L","tendon xanthoma","Dutch Lipid Clinic Network","secondary causes","genetic testing","cascade screening","first-degree relatives","statin"],
   q: "Discuss familial hypercholesterolaemia: genetics, laboratory diagnosis and the role of cascade screening.",
   tags: ["FH", "LDL receptor", "PCSK9"],
   answer: `

@@ -45,6 +45,7 @@ window.QBANK.push(
 },
 {
   id: "ih3", domain: "ih-groups",
+  keypoints: ["A₁","A₂","antigen sites","transferase","H antigen","Dolichos biflorus","anti-A₁","A₂B","cold IgM","37 °C","weak subgroups","Ax","mixed field","adsorption–elution","saliva","anti-A,B"],
   q: "Compare the A₁ and A₂ subgroups and explain the significance of weak A subgroups.",
   tags: ["A subgroups", "A1", "A2", "anti-A1"],
   answer: `
@@ -399,6 +400,7 @@ window.QBANK.push(
 },
 {
   id: "ih18", domain: "ih-testing",
+  keypoints: ["red cells","plasma","recipient antibodies","group O","group AB plasma","platelets","high-titre anti-A","emergency release","D-negative","females of childbearing potential","massive transfusion","1:1:1","tranexamic acid","hypocalcaemia"],
   q: "Discuss the selection of red cells, plasma and platelets for ABO-incompatible situations and emergency transfusion.",
   tags: ["ABO compatibility", "emergency release", "massive transfusion"],
   answer: `
@@ -455,6 +457,7 @@ window.QBANK.push(
 },
 {
   id: "ih20", domain: "ih-testing",
+  keypoints: ["adsorption","elution","neutralisation","titration","autoantibody","acid glycine","heat elution","last wash","Lewis","P1","Chido/Rodgers","critical titre","fourfold","parallel testing"],
   q: "Short notes on special techniques: adsorption, elution, neutralisation and titration.",
   tags: ["adsorption", "elution", "neutralisation", "titration"],
   answer: `

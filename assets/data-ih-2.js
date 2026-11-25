@@ -162,6 +162,7 @@ Vials (300 µg covers 30 mL whole blood) = 75 / 30 = 2.5
 },
 {
   id: "ih27", domain: "ih-hdfn",
+  keypoints: ["positive DAT","newborn","HDFN","elution","passive anti-D","RhIG","ABO","haemolysis markers","immune anti-D","titre","monospecific","history"],
   q: "Discuss the interpretation of a positive DAT in a newborn and in a pregnant woman.",
   tags: ["DAT", "neonate", "pregnancy", "interpretation"],
   answer: `
@@ -187,6 +188,7 @@ Vials (300 µg covers 30 mL whole blood) = 75 / 30 = 2.5
 },
 {
   id: "ih28", domain: "ih-hdfn",
+  keypoints: ["cell-free fetal DNA","maternal plasma","RHD","real-time PCR","11 weeks","targeted antenatal RhIG","alloimmunised","KEL","false negative","fetal fraction","false positive","RHD variants","DEL","cost-effectiveness"],
   q: "Discuss the use of cell-free fetal DNA testing for fetal blood group determination and its impact on RhIG programmes.",
   tags: ["cffDNA", "RHD", "non-invasive"],
   answer: `

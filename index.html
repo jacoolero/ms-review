@@ -49,11 +49,12 @@
       </div>
       <div class="progress-track"><div id="progressBar" class="progress-fill"></div></div>
       <button id="resetBtn" class="link-btn">Reset this subject</button>
+      <button id="resetAnswersBtn" class="link-btn">Reset my answers</button>
     </div>
     <nav id="nav" aria-label="Topics"></nav>
     <div class="sidebar-foot">
       <p><strong>How to use</strong></p>
-      <p><b>Essays:</b> read the question, write a 5-minute outline, then reveal the model answer. <b>Flashcards:</b> rate each card Again / Good / Easy and it comes back when it is due.</p>
+      <p><b>Essays:</b> type your answer, press <i>Submit &amp; compare</i>, and see which key points you covered or missed. <b>Flashcards:</b> rate each card Again / Good / Easy and it comes back when it is due.</p>
       <button class="link-btn open-sources" style="margin-top:6px">Browse references →</button>
     </div>
   </aside>
@@ -81,7 +82,10 @@
           <button id="collapseAll" class="btn btn-small btn-ghost">Collapse all</button>
         </div>
       </div>
-      <div id="meta" class="result-meta"></div>
+      <div class="meta-row">
+        <div id="meta" class="result-meta"></div>
+        <button id="answerModeBtn" class="btn btn-small answer-toggle" title="Type your answer before seeing the model answer">Answer first: On</button>
+      </div>
       <div id="cards" class="cards"></div>
       <div id="empty" class="empty" hidden>
         <p>No questions match that search.</p>
@@ -161,6 +165,7 @@
 <script src="assets/cards-chem.js"></script>
 <script src="assets/cards-ih.js"></script>
 <script src="assets/cards-para.js"></script>
+<script src="assets/grader.js"></script>
 <script src="assets/app.js"></script>
 </body>
 </html>

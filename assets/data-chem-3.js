@@ -84,6 +84,7 @@ R &lt; 2  → cholestatic
 },
 {
   id: "cc43", domain: "chem-liver",
+  keypoints: ["lipase","amylase","3 × upper limit","revised Atlanta","imaging","macroamylasaemia","CRP > 150","gallstones","triglyceride","faecal elastase","faecal fat","secretin","sweat chloride"],
   q: "Describe the laboratory diagnosis of acute pancreatitis and the assessment of exocrine pancreatic insufficiency.",
   tags: ["pancreatitis", "lipase", "faecal elastase"],
   answer: `
@@ -109,6 +110,7 @@ R &lt; 2  → cholestatic
 },
 {
   id: "cc44", domain: "chem-liver",
+  keypoints: ["urea cycle","glutamine","hepatic encephalopathy","OTC deficiency","orotic acid","valproate","on ice","EDTA or heparin","separate within 15–30 min","haemolysis","smoking","glutamate dehydrogenase"],
   q: "Discuss ammonia metabolism and the pre-analytical requirements for plasma ammonia measurement.",
   tags: ["ammonia", "urea cycle", "hepatic encephalopathy"],
   answer: `
@@ -177,6 +179,7 @@ R &lt; 2  → cholestatic
 },
 {
   id: "cc47", domain: "chem-endo", star: true,
+  keypoints: ["TSH","FT4","FT3","log-linear","primary hypothyroidism","anti-TPO","Graves","TRAb","subclinical","central hypothyroidism","biotin","heterophile","non-thyroidal illness","pregnancy","hCG"],
   q: "Explain the hypothalamic–pituitary–thyroid axis and interpret thyroid function test patterns, including the pitfalls.",
   tags: ["thyroid", "TSH", "FT4", "case"],
   answer: `
@@ -328,6 +331,7 @@ R &lt; 2  → cholestatic
 },
 {
   id: "cc53", domain: "chem-endo",
+  keypoints: ["immunoassay","LC-MS/MS","cross-reactivity","specificity","sensitivity","testosterone in women","throughput","matrix effects","internal standard","standardisation","vitamin D","tacrolimus","newborn screening"],
   q: "Compare immunoassay and LC-MS/MS for steroid hormone and drug measurement.",
   tags: ["LC-MS/MS", "mass spectrometry", "immunoassay"],
   answer: `
@@ -397,6 +401,7 @@ R &lt; 2  → cholestatic
 },
 {
   id: "cc56", domain: "chem-tox",
+  keypoints: ["paracetamol","salicylate","anion gap","osmolal gap","cholinesterase","organophosphate","immunoassay screening","cut-off","false positive","cross-reactivity","false negative","fentanyl","confirmation","GC-MS","chain of custody","RA 9165"],
   q: "Discuss the laboratory approach to the poisoned patient, including urine drug screening and its limitations.",
   tags: ["toxicology", "drug screen", "organophosphate"],
   answer: `

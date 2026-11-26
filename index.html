@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0e6f66">
 <title>MS Review — Essay Q&amp;A &amp; Flashcards</title>
 <meta name="description" content="Master's-level essay questions with model answers, cited sources and spaced-repetition flashcards: medical microbiology, clinical chemistry, immunohematology and parasitology.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +25,12 @@
   <div class="topbar-actions">
     <div class="search-wrap">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
-      <input id="search" type="search" placeholder="Search this subject…  (press /)" autocomplete="off">
+      <input id="search" type="search" placeholder="Search this subject…" title="Search (press / on a keyboard)" autocomplete="off">
     </div>
     <button id="practiceBtn" class="btn btn-accent" title="Random 10-question essay set">Practice</button>
     <button id="themeBtn" class="btn btn-icon" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
     <button id="printBtn" class="btn btn-icon" title="Print / save as PDF" aria-label="Print">⎙</button>
+    <button id="accountBtn" class="btn btn-icon account-btn" title="Sign in to save your progress" aria-label="Account" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg></button>
   </div>
 </header>
 
@@ -114,7 +116,7 @@
           <button class="btn rate-easy" data-grade="easy">Easy <kbd>3</kbd></button>
         </div>
       </div>
-      <p class="fc-help">Again = see it again this round · Good = next review in 1 → 3 → 7 → 14 → 30 days · Easy = skip ahead. Progress is saved in this browser. <button id="fcResetBtn" class="link-btn">Reset flashcards for this subject</button></p>
+      <p class="fc-help">Again = see it again this round · Good = next review in 1 → 3 → 7 → 14 → 30 days · Easy = skip ahead. <span id="saveNote">Progress is saved in this browser.</span> <button id="fcResetBtn" class="link-btn">Reset flashcards for this subject</button></p>
     </section>
 
     <footer class="foot">
@@ -131,6 +133,39 @@
       <button id="closeDrawer" class="btn btn-icon" aria-label="Close">✕</button>
     </div>
     <div id="sourceList" class="source-list"></div>
+  </div>
+</div>
+
+<div id="accountDialog" class="drawer" hidden>
+  <div class="drawer-panel account-panel" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+    <div class="drawer-head">
+      <h3 id="accountTitle">Your account</h3>
+      <button id="closeAccount" class="btn btn-icon" aria-label="Close">✕</button>
+    </div>
+    <div id="authOut">
+      <p class="account-lead">Sign in to save your essays, scores and flashcard schedule to your account and use them on any phone or computer. Anything you've already done in this browser is kept.</p>
+      <button id="googleBtn" class="btn google-btn" type="button">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.2C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.6c0-1.6-.1-3.1-.4-4.6H24v9h12.4c-.5 2.9-2.2 5.3-4.6 6.9l7.4 5.7c4.3-4 6.9-9.9 6.9-17z"/><path fill="#FBBC05" d="M10.6 28.5c-.5-1.4-.8-2.9-.8-4.5s.3-3.1.8-4.5l-7.9-6.2C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.2z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.5 2.3-6.2 0-11.5-4.1-13.4-9.8l-7.9 6.2C6.6 42.6 14.6 48 24 48z"/></svg>
+        Continue with Google
+      </button>
+      <div class="auth-or"><span>or use email</span></div>
+      <form id="authForm" class="auth-form" novalidate>
+        <label>Email<input id="authEmail" type="email" autocomplete="email" inputmode="email" required></label>
+        <label>Password<input id="authPassword" type="password" autocomplete="current-password" minlength="6" required></label>
+        <div class="auth-buttons">
+          <button id="signinBtn" class="btn btn-accent" type="submit">Sign in</button>
+          <button id="signupBtn" class="btn" type="submit">Create account</button>
+        </div>
+        <button id="resetPwBtn" class="link-btn" type="button">Forgot password?</button>
+      </form>
+    </div>
+    <div id="authIn" hidden>
+      <p class="account-who"><strong id="accountName"></strong><span id="accountEmail"></span></p>
+      <p id="syncStatus" class="sync-status"></p>
+      <p class="account-lead">Your essays, scores, reviewed marks and flashcard schedule sync to this account. Sign in with the same account on another device to continue there.</p>
+      <button id="signOutBtn" class="btn" type="button">Sign out</button>
+    </div>
+    <p id="authMessage" class="auth-message" hidden></p>
   </div>
 </div>
 
@@ -174,69 +209,128 @@
 <script src="assets/data-para-4.js"></script>
 <!-- flashcards -->
 <script src="assets/data-amr-b.js"></script>
+<script src="assets/data-amr-c.js"></script>
 <script src="assets/data-chem-endo-b.js"></script>
+<script src="assets/data-chem-endo-c.js"></script>
 <script src="assets/data-chem-lipid-b.js"></script>
+<script src="assets/data-chem-lipid-c.js"></script>
 <script src="assets/data-chem-protein-b.js"></script>
+<script src="assets/data-chem-protein-c.js"></script>
 <script src="assets/data-chem-qc-extra.js"></script>
+<script src="assets/data-chem-qc-c.js"></script>
 <script src="assets/data-diagnostics-b.js"></script>
+<script src="assets/data-diagnostics-c.js"></script>
 <script src="assets/data-foundations-extra.js"></script>
+<script src="assets/data-foundations-c.js"></script>
 <script src="assets/data-gneg-b.js"></script>
+<script src="assets/data-gneg-c.js"></script>
 <script src="assets/data-gpos-b.js"></script>
+<script src="assets/data-gpos-c.js"></script>
 <script src="assets/data-immunology-b.js"></script>
+<script src="assets/data-immunology-c.js"></script>
 <script src="assets/data-mycobacteria-b.js"></script>
+<script src="assets/data-mycobacteria-c.js"></script>
 <script src="assets/data-mycology-b.js"></script>
+<script src="assets/data-mycology-c.js"></script>
 <script src="assets/data-virology-b.js"></script>
+<script src="assets/data-virology-c.js"></script>
 <script src="assets/data-chem-carb-b.js"></script>
+<script src="assets/data-chem-carb-c.js"></script>
 <script src="assets/data-chem-liver-b.js"></script>
+<script src="assets/data-chem-liver-c.js"></script>
 <script src="assets/data-chem-renal-b.js"></script>
+<script src="assets/data-chem-renal-c.js"></script>
 <script src="assets/data-chem-tox-b.js"></script>
+<script src="assets/data-chem-tox-c.js"></script>
 <script src="assets/data-ih-clinical-b.js"></script>
+<script src="assets/data-ih-clinical-c.js"></script>
 <script src="assets/data-ih-donor-b.js"></script>
 <script src="assets/data-ih-groups-b.js"></script>
+<script src="assets/data-ih-groups-c.js"></script>
 <script src="assets/data-ih-hdfn-b.js"></script>
+<script src="assets/data-ih-hdfn-c.js"></script>
 <script src="assets/data-ih-reactions-b.js"></script>
+<script src="assets/data-ih-reactions-c.js"></script>
 <script src="assets/data-ih-testing-b.js"></script>
+<script src="assets/data-ih-testing-c.js"></script>
 <script src="assets/data-para-blood-b.js"></script>
+<script src="assets/data-para-blood-c.js"></script>
 <script src="assets/data-para-cestodes-b.js"></script>
+<script src="assets/data-para-cestodes-c.js"></script>
 <script src="assets/data-para-intestinal-b.js"></script>
+<script src="assets/data-para-intestinal-c.js"></script>
 <script src="assets/data-para-lab-b.js"></script>
+<script src="assets/data-para-lab-c.js"></script>
 <script src="assets/data-para-nematodes-b.js"></script>
+<script src="assets/data-para-nematodes-c.js"></script>
 <script src="assets/data-para-trematodes-b.js"></script>
+<script src="assets/data-para-trematodes-c.js"></script>
+<script src="assets/data-ih-donor-c.js"></script>
 <script src="assets/cards-micro.js"></script>
 <script src="assets/cards-chem.js"></script>
 <script src="assets/cards-ih.js"></script>
 <script src="assets/cards-para.js"></script>
 <script src="assets/cards-extra.js"></script>
+<script src="assets/cards-ih-donor-c.js"></script>
 <script src="assets/cards-amr-b.js"></script>
+<script src="assets/cards-amr-c.js"></script>
 <script src="assets/cards-chem-carb-b.js"></script>
+<script src="assets/cards-chem-carb-c.js"></script>
 <script src="assets/cards-chem-lipid-b.js"></script>
+<script src="assets/cards-chem-lipid-c.js"></script>
 <script src="assets/cards-chem-liver-b.js"></script>
+<script src="assets/cards-chem-liver-c.js"></script>
 <script src="assets/cards-chem-protein-b.js"></script>
+<script src="assets/cards-chem-protein-c.js"></script>
 <script src="assets/cards-chem-renal-b.js"></script>
+<script src="assets/cards-chem-renal-c.js"></script>
 <script src="assets/cards-chem-tox-b.js"></script>
+<script src="assets/cards-chem-tox-c.js"></script>
 <script src="assets/cards-ih-clinical-b.js"></script>
+<script src="assets/cards-ih-clinical-c.js"></script>
 <script src="assets/cards-ih-donor-b.js"></script>
 <script src="assets/cards-ih-groups-b.js"></script>
+<script src="assets/cards-ih-groups-c.js"></script>
 <script src="assets/cards-ih-hdfn-b.js"></script>
+<script src="assets/cards-ih-hdfn-c.js"></script>
 <script src="assets/cards-ih-reactions-b.js"></script>
+<script src="assets/cards-ih-reactions-c.js"></script>
 <script src="assets/cards-ih-testing-b.js"></script>
+<script src="assets/cards-ih-testing-c.js"></script>
 <script src="assets/cards-para-blood-b.js"></script>
+<script src="assets/cards-para-blood-c.js"></script>
 <script src="assets/cards-para-cestodes-b.js"></script>
+<script src="assets/cards-para-cestodes-c.js"></script>
 <script src="assets/cards-para-intestinal-b.js"></script>
+<script src="assets/cards-para-intestinal-c.js"></script>
 <script src="assets/cards-para-lab-b.js"></script>
+<script src="assets/cards-para-lab-c.js"></script>
 <script src="assets/cards-para-nematodes-b.js"></script>
+<script src="assets/cards-para-nematodes-c.js"></script>
 <script src="assets/cards-para-trematodes-b.js"></script>
+<script src="assets/cards-para-trematodes-c.js"></script>
 <script src="assets/cards-chem-endo-b.js"></script>
+<script src="assets/cards-chem-endo-c.js"></script>
 <script src="assets/cards-chem-qc-extra.js"></script>
+<script src="assets/cards-chem-qc-c.js"></script>
 <script src="assets/cards-diagnostics-b.js"></script>
+<script src="assets/cards-diagnostics-c.js"></script>
 <script src="assets/cards-foundations-extra.js"></script>
+<script src="assets/cards-foundations-c.js"></script>
 <script src="assets/cards-gneg-b.js"></script>
+<script src="assets/cards-gneg-c.js"></script>
 <script src="assets/cards-gpos-b.js"></script>
+<script src="assets/cards-gpos-c.js"></script>
 <script src="assets/cards-immunology-b.js"></script>
+<script src="assets/cards-immunology-c.js"></script>
 <script src="assets/cards-mycobacteria-b.js"></script>
+<script src="assets/cards-mycobacteria-c.js"></script>
 <script src="assets/cards-mycology-b.js"></script>
+<script src="assets/cards-mycology-c.js"></script>
 <script src="assets/cards-virology-b.js"></script>
+<script src="assets/cards-virology-c.js"></script>
 <script src="assets/grader.js"></script>
 <script src="assets/app.js"></script>
+<script type="module" src="assets/sync.js"></script>
 </body>
 </html>

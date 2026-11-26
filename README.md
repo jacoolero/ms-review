@@ -4,13 +4,13 @@ A static study website for a Master's (MSMT) written comprehensive exam, coverin
 
 | Subject | Essay Q&As | Flashcards |
 |---|---|---|
-| Advanced Medical Microbiology | 270 | 332 |
-| Advanced Clinical Chemistry | 240 | 412 |
-| Advanced Immunohematology | 180 | 296 |
-| Advanced Parasitology | 180 | 296 |
-| **Total** | **870** | **1,336** |
+| Advanced Medical Microbiology | 360 | 422 |
+| Advanced Clinical Chemistry | 320 | 492 |
+| Advanced Immunohematology | 240 | 356 |
+| Advanced Parasitology | 240 | 356 |
+| **Total** | **1,160** | **1,626** |
 
-Every topic has **30 essay questions** and a matching flashcard deck (28–58 cards per topic).
+Every topic has **40 essay questions** and a matching flashcard deck (38–68 cards per topic).
 
 Every essay answer and flashcard cites its source (textbooks, guidelines, Philippine laws and DOH orders). Open **References** in the sidebar to see the full list for each subject.
 
@@ -78,6 +78,27 @@ If `keypoints` is omitted, the site extracts the key terms automatically from th
 
 Source id prefixes: `S` microbiology, `C` clinical chemistry, `B` immunohematology (blood bank), `P` parasitology.
 
+## Philippine master's-level sources
+
+The Philippine-context questions cite the references commonly used in MS Medical Technology/Medical Laboratory Science graduate programs and local practice:
+
+- **Microbiology and infectious diseases:** PSMID clinical practice guidelines (adult TB, CAP, acute diarrhoea, sepsis, UTI, HIV opportunistic infections); DOH National TB Control Program Manual of Procedures, 6th ed.; RITM reference-laboratory guidance; DOH AMR surveillance/GLASS.
+- **Professional and regulatory:** RA 5527 (Philippine Medical Technology Act of 1969) as amended by PD 498 and PD 1534; RA 7719 (National Blood Services Act); RA 9288 (Newborn Screening); RA 11166 (HIV/AIDS Policy); RA 11332 (Notifiable Diseases); RA 10767 (TB Elimination); RA 4688 (Clinical Laboratory Act); DOH AO 2021-0037 (laboratory licensing); DOH AO 2005-0002 and AO 2010-0002 (blood services); CHED CMO 13 s.2017 and CMO 15 s.2019.
+- **Professional bodies:** PAMET, PASMETH, Philippine Blood Coordinating Council (PBCC), PRC Board of Medical Technology.
+- **Clinical chemistry:** PCEDM type 2 diabetes CPG (2025–2026), Philippine Lipid and Atherosclerosis Society dyslipidaemia CPG (2020), PSEM/PCEDM endocrine guidance, PhilHealth laboratory benefits.
+- **Parasitology:** Belizario & de Leon, *Philippine Textbook of Medical Parasitology*; DOH Malaria, Schistosomiasis, Filariasis and Integrated Helminth Control programmes; WHO Western Pacific NTD reports.
+
+Program structures reviewed include the MS Medical Technology/MS Medical Laboratory Science curricula of Centro Escolar University, University of Santo Tomas, University of the Immaculate Conception, Philippine Women's University, and Our Lady of Fatima University (advanced microbiology, advanced clinical chemistry, applied immunohematology, medical parasitology in public health, research/biostatistics, and total quality laboratory management).
+
 ## Note on sources
 
-Actual Philippine masteral exam papers are not published, so these questions were written at Master's essay level. They are based on standard references (Tietz, Bishop, Henry, AABB Technical Manual, Harmening, Markell & Voge, Garcia, CDC DPDx, the Philippine Textbook of Medical Parasitology), current guidelines (ADA, KDIGO 2024, AABB 2023, WHO), and Philippine laws and DOH orders (RA 7719, AO 2008-0008, RA 9288, RA 11166). This is a revision aid, not a clinical protocol: check cut-offs, doses and Philippine regulations against the current editions.
+Actual Philippine masteral exam papers are not published, so these questions were written at Master's essay level. They are based on standard references (Tietz, Bishop, Henry, AABB Technical Manual, Harmening, Markell & Voge, Garcia, CDC DPDx, the Philippine Textbook of Medical Parasitology), current guidelines (ADA, KDIGO 2024, AABB 2023, WHO, PSMID), and Philippine laws and DOH orders (RA 5527, RA 7719, RA 9288, RA 11166, RA 11332, AO 2008-0008, AO 2021-0037). This is a revision aid, not a clinical protocol: check cut-offs, doses and Philippine regulations against the current editions.
+
+## Accounts and sync
+
+Signing in (Google or email/password) saves essay attempts, scores, reviewed marks, flashcard schedules and the answer-first setting to the person's account through Firebase. Without signing in, everything stays in the browser as before.
+
+- `assets/firebase-config.js` holds the Firebase web config (public by design). Set it to `null` to turn accounts off.
+- `assets/sync.js` merges browser data into the account on first sign-in, uploads later changes (queued offline), and clears the device on sign-out.
+- `firestore.rules` restricts each user to `users/{uid}`; paste it into Firebase console → Firestore → Rules after any change.
+- New domains must be added under Firebase → Authentication → Settings → Authorized domains.

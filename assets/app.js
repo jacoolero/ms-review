@@ -15,8 +15,13 @@
     get(key, fallback) {
       try { const v = localStorage.getItem(key); return v == null ? fallback : JSON.parse(v); } catch { return fallback; }
     },
-    set(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode */ } }
+    set(key, value) {
+      try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* private mode */ }
+      if (window.MSSync && SYNC_KEYS.includes(key)) window.MSSync.changed();
+    }
   };
+  // keys that follow the signed-in account (theme and last subject stay per device)
+  const SYNC_KEYS = [PROGRESS_KEY, ATT_KEY, CARDS_KEY, ANSWER_KEY];
 
   const subjects = window.SUBJECTS;
   const subjectMap = new Map(subjects.map(s => [s.id, s]));
@@ -619,6 +624,37 @@
       if (first) toggleCard(first);
     }
   });
+
+  /* ---------- account sync hooks (used by sync.js) ---------- */
+  const replaceObject = (target, source) => {
+    Object.keys(target).forEach(k => delete target[k]);
+    Object.assign(target, source || {});
+  };
+  window.MSApp = {
+    keys: { progress: PROGRESS_KEY, attempts: ATT_KEY, srs: CARDS_KEY, answerMode: ANSWER_KEY },
+    snapshot() {
+      return { progress: [...state.progress], attempts, srs, answerMode: state.answerMode };
+    },
+    // replace this browser's study data (after sign-in, or with an empty set after sign-out)
+    replace(data) {
+      const before = JSON.stringify(this.snapshot());
+      state.progress = new Set(data.progress || []);
+      replaceObject(attempts, data.attempts);
+      replaceObject(srs, data.srs);
+      state.answerMode = data.answerMode !== false;
+      try {
+        localStorage.setItem(PROGRESS_KEY, JSON.stringify([...state.progress]));
+        localStorage.setItem(ATT_KEY, JSON.stringify(attempts));
+        localStorage.setItem(CARDS_KEY, JSON.stringify(srs));
+        localStorage.setItem(ANSWER_KEY, JSON.stringify(state.answerMode));
+      } catch { /* private mode */ }
+      if (JSON.stringify(this.snapshot()) === before) return;
+      allQuestions.forEach(q => { q._result = null; });
+      // do not wipe an answer that is being typed right now
+      if (document.activeElement && document.activeElement.classList.contains("att-text")) { updateProgressUI(); return; }
+      route();
+    }
+  };
 
   /* ---------- boot ---------- */
   readHash();

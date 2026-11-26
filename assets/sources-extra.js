@@ -51,3 +51,28 @@ Object.assign(window.SOURCES, {
   P11: { text: "Clinical and Laboratory Standards Institute. M15 (blood-borne parasites) and M28 (recovery and identification of intestinal parasites)." },
   P12: { text: "Abeleda et al. Addressing schistosomiasis in the Philippines (2024 commentary).", url: "https://researchonline.lshtm.ac.uk/id/eprint/4675915/" }
 });
+
+/* ---- Philippine master's-level and local-practice sources ---- */
+Object.assign(window.SOURCES, {
+  S26: { text: "Philippine Society for Microbiology and Infectious Diseases (PSMID). Clinical practice guidelines: adult tuberculosis, community-acquired pneumonia, acute infectious diarrhea, sepsis, UTI, and HIV opportunistic infections.", url: "https://www.psmid.org/guidelines" },
+  S27: { text: "Department of Health (Philippines). National Tuberculosis Control Program Manual of Procedures, 6th ed. Manila: DOH; 2020.", url: "https://doh.gov.ph/wp-content/uploads/2023/08/National-Tuberculosis-Control-Program-MOP_6thEdition.pdf" },
+  S28: { text: "Republic Act No. 5527 (Philippine Medical Technology Act of 1969), as amended by Presidential Decree No. 498 (1974) and PD No. 1534 (1978).", url: "https://www.prc.gov.ph/sites/default/files/RA_05527%20PHIL%20MED%20TECH%20ACT%20OF%201969.PDF" },
+  S29: { text: "Commission on Higher Education. CMO No. 13, s. 2017 (BS Medical Technology/Medical Laboratory Science) and CMO No. 15, s. 2019 (Graduate Programs).", url: "https://legacy.ched.gov.ph/wp-content/uploads/2017/10/CMO-13-s-2017.pdf" },
+  S30: { text: "PAMET, Inc. and the Philippine Association of Schools of Medical Technology and Public Health (PASMETH). Professional standards, CPD and educational resources.", url: "https://pametinc.ph/" },
+  S31: { text: "Research Institute for Tropical Medicine (RITM), Department of Health. National reference laboratory guidelines and training materials.", url: "https://ritm.gov.ph/" },
+  S32: { text: "Philippine Journal of Pathology; PAMET Research Journal; Philippine Journal of Medical Technology (local peer-reviewed literature).", url: "https://philippinejournalofpathology.org/" },
+  S33: { text: "Philippine public-health statutes: RA 11332 (Notifiable Diseases), RA 10767 (TB Elimination), RA 11166 (HIV/AIDS Policy), RA 9288 (Newborn Screening), RA 4688 (Clinical Laboratory Act), RA 9165 (Dangerous Drugs Act).", url: "https://www.officialgazette.gov.ph/" },
+
+  C16: { text: "Philippine College of Endocrinology, Diabetes and Metabolism (PCEDM). Clinical practice guidelines for type 2 diabetes mellitus among Filipino adults (2025-2026); Philippine Lipid and Atherosclerosis Society dyslipidemia CPG (2020).", url: "https://doh.gov.ph/dpcb/doh-approved-cpg/" },
+  C17: { text: "Philippine Society of Endocrinology and Metabolism (PSEM) / PCEDM guidelines on thyroid, adrenal, pituitary and calcium disorders; Philippine Heart Association cardiovascular risk guidance.", url: "https://www.endo-society.org.ph/" },
+  C18: { text: "Philippine Health Insurance Corporation (PhilHealth) laboratory benefit schedules; DOH National Practice Guidelines Program (GABAY).", url: "https://www.philhealth.gov.ph/" },
+  C19: { text: "Republic Act No. 9288 (Newborn Screening Act of 2004) and DOH Newborn Screening Program implementing guidelines.", url: "https://doh.gov.ph/" },
+
+  B14: { text: "Philippine Blood Coordinating Council (PBCC). Standards, training and quality guidance for blood service facilities.", url: "https://pbcc.ph/" },
+  B15: { text: "DOH Administrative Order No. 2005-0002 (Philippine National Blood Services) and AO No. 2010-0002 (Local Blood Councils).", url: "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/10/50961" },
+  B16: { text: "Professional Regulation Commission (PRC) Board of Medical Technology; PAMET Code of Ethics and CPD guidelines.", url: "https://www.prc.gov.ph/" },
+  B17: { text: "Philippine statutes governing transfusion and perinatal testing: RA 7719 (National Blood Services Act), RA 9288 (Newborn Screening), RA 11166 (HIV/AIDS Policy Act).", url: "https://www.officialgazette.gov.ph/" },
+
+  P13: { text: "DOH Philippines national programmes: Malaria Control and Elimination, Schistosomiasis Control and Elimination, Filariasis Elimination, Soil-Transmitted Helminthiasis, and Integrated Helminth Control.", url: "https://doh.gov.ph/" },
+  P14: { text: "WHO Western Pacific Region and DOH Philippines neglected tropical disease reports, elimination verification and surveillance updates.", url: "https://www.who.int/westernpacific" }
+});

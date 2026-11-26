@@ -4,13 +4,13 @@ A static study website for a Master's (MSMT) written comprehensive exam, coverin
 
 | Subject | Essay Q&As | Flashcards |
 |---|---|---|
-| Advanced Medical Microbiology | 360 | 422 |
-| Advanced Clinical Chemistry | 320 | 492 |
-| Advanced Immunohematology | 240 | 356 |
-| Advanced Parasitology | 240 | 356 |
-| **Total** | **1,160** | **1,626** |
+| Advanced Medical Microbiology | 390 | 452 |
+| Advanced Clinical Chemistry | 341 | 513 |
+| Advanced Immunohematology | 200 | 299 |
+| Advanced Parasitology | 130 | 134 |
+| **Total** | **1,061** | **1,398** |
 
-Every topic has **40 essay questions** and a matching flashcard deck (38–68 cards per topic).
+The bank now follows the **2026 Comprehensive Examination pointers** for all four subjects. Topic counts vary because content was re-mapped to the pointers and off-list material was removed from the site.
 
 Every essay answer and flashcard cites its source (textbooks, guidelines, Philippine laws and DOH orders). Open **References** in the sidebar to see the full list for each subject.
 
@@ -28,14 +28,25 @@ Note on the coverage score: it compares key *terms*, not meaning, so it cannot j
 
 Keyboard: `/` search · `r` open the first essay · flashcards: `Space` flip, `1` Again, `2` Good, `3` Easy.
 
-Links: `#chem`, `#ih/ih-hdfn`, `#cards/para`, `#cards/chem/chem-renal`.
+Links: `#chem`, `#ih/b1`, `#cards/para`, `#cards/chem/c6`.
+
+## 2026 Comprehensive Exam Pointer Alignment
+
+The site is now organised by the official 2026 comprehensive-exam pointer lists:
+
+- **Microbiology (15):** host–microbe interaction/transmission; bacterial biology and pathogenesis; sterilisation/disinfection/vaccines; AMS and the medical technologist; genetic engineering and industrial microbiology; microbiology automation (BactAlert, Vitek, MALDI-TOF, BioFire); Gram-positive/Gram-negative cocci and bacilli; anaerobes, actinomyces, mycobacteria, atypicals and spirochetes; viral classification/replication/pathogenesis; DNA and RNA viruses; coronaviruses; HIV; prions; superficial/cutaneous/subcutaneous mycoses; systemic/opportunistic mycoses.
+- **Clinical Chemistry (14):** safety/specimen management/QA-QC; instrumentation/automation; emerging biomarkers; carbohydrates/diabetes; proteins/amino acids/NPN; lipids/CVD risk; clinical enzymology; electrolytes/acid–base; renal/kidney biomarkers; hepatic function; endocrinology; TDM; toxicology; molecular diagnostics/genomics.
+- **Immunohematology (6):** blood groups; antibody screening/identification; pre-transfusion/compatibility; donor screening/deferrals/adverse effects; components/indications/increments; TTD/transfusion reactions/resolutions.
+- **Parasitology (10):** *Schistosoma japonicum*, *Echinococcus*, *Echinostoma*, *Sarcocystis*, *Toxocara*, *Strongyloides*, *Taenia*, *Blastocystis*, *Scabies*, and history of parasitology/advances in diagnosis.
+
+`assets/pointer-topics.js` performs the mapping at load time and excludes material not covered by the pointers. Off-list content (for example, HDFN and non-pointer parasitic diseases such as malaria and amoebiasis) is no longer shown, but the original data files are retained so the mapping can be changed without losing content.
 
 ## Run locally
 
 Double-click `start.cmd`, or:
 
 ```powershell
-cd "C:\Users\Hakdog\Documents\Project\MS-REVIEW"
+cd path\to\MS-REVIEW
 python -m http.server 8017
 # open http://localhost:8017
 ```
@@ -61,7 +72,7 @@ GitHub Pages republishes in about a minute.
 ```js
 {
   id: "cc61",                 // unique
-  domain: "chem-renal",       // a domain id from assets/data-core.js
+  domain: "c9",               // a pointer topic id from assets/pointer-topics.js
   star: true,                 // optional "High yield" tag
   q: "Essay question?",
   tags: ["tag1", "tag2"],

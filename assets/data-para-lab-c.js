@@ -1,4 +1,4 @@
-﻿/* Parasitology â€” part 6: Philippine laboratory network, quality and applied diagnostics */
+﻿/* Parasitology — part 6: Philippine laboratory network, quality and applied diagnostics */
 window.QBANK.push(
 {
   id: "pa222", domain: "para-lab", star: true,
@@ -35,8 +35,8 @@ window.QBANK.push(
     <ul>
       <li>Use the correct container: clean, wide-mouthed and leakproof for stool; EDTA tube for blood; sterile container for urine or aspirate.</li>
       <li>Collect an adequate amount, avoid contamination with urine or water, and label with <strong>two patient identifiers</strong> at the bedside.</li>
-      <li>Record the time, the test requested and the exposure history â€” travel, freshwater contact, raw fish or pork, night-time exposure.</li>
-      <li>If transport will exceed 30 minutes for a liquid stool, place a portion in <strong>10% formalin</strong> or <strong>SAF</strong>, or refrigerate at 2â€“8 Â°C; make blood films before storage.</li>
+      <li>Record the time, the test requested and the exposure history — travel, freshwater contact, raw fish or pork, night-time exposure.</li>
+      <li>If transport will exceed 30 minutes for a liquid stool, place a portion in <strong>10% formalin</strong> or <strong>SAF</strong>, or refrigerate at 2–8 °C; make blood films before storage.</li>
     </ul>
     <h4>Transport and documentation</h4>
     <p>Use triple packaging, UN3373 Category B marking, absorbent material and a sealed request form. Maintain the <strong>cold chain</strong> with a validated cooler and temperature indicator, and log every handover. A <strong>referral directory</strong> with contact numbers, schedules and test menus prevents specimens from arriving after the laboratory has closed.</p>
@@ -55,9 +55,9 @@ window.QBANK.push(
     <h4>Malaria</h4>
     <p>The Malaria Control and Elimination Program relies on <strong>microscopy</strong> of thick and thin films as the gold standard and on <strong>HRP2/pLDH rapid tests</strong> at barangay and rural health unit level where microscopy is unavailable. Every positive is treated promptly, and parasite density guides severity assessment. PCR is reserved for low-density infection, species confirmation, mixed infections and foci investigation, and becomes central near elimination when microscopy loses sensitivity.</p>
     <h4>Schistosomiasis</h4>
-    <p>The National Schistosomiasis Control and Elimination Program uses <strong>Kato-Katz</strong> stool examination in sentinel sites to measure prevalence and <strong>eggs per gram</strong>, because intensity â€” not just positivity â€” determines morbidity and the need for mass drug administration. Urine <strong>circulating cathodic antigen</strong> is validated mainly for <em>S. mansoni</em> and is not used for <em>S. japonicum</em> in the national programme. Antibody tests cannot distinguish past from current infection, and PCR is useful where intensity is low.</p>
+    <p>The National Schistosomiasis Control and Elimination Program uses <strong>Kato-Katz</strong> stool examination in sentinel sites to measure prevalence and <strong>eggs per gram</strong>, because intensity — not just positivity — determines morbidity and the need for mass drug administration. Urine <strong>circulating cathodic antigen</strong> is validated mainly for <em>S. mansoni</em> and is not used for <em>S. japonicum</em> in the national programme. Antibody tests cannot distinguish past from current infection, and PCR is useful where intensity is low.</p>
     <h4>Filariasis</h4>
-    <p>The National Filariasis Elimination Program screens with <strong>nocturnal blood films</strong> collected between 22:00 and 02:00, or with <strong>filarial antigen card tests</strong> for <em>Wuchereria bancrofti</em>, which are not dependent on periodicity. <strong>Transmission Assessment Surveys</strong> in children aged 6â€“7 years decide whether mass drug administration can stop.</p>
+    <p>The National Filariasis Elimination Program screens with <strong>nocturnal blood films</strong> collected between 22:00 and 02:00, or with <strong>filarial antigen card tests</strong> for <em>Wuchereria bancrofti</em>, which are not dependent on periodicity. <strong>Transmission Assessment Surveys</strong> in children aged 6–7 years decide whether mass drug administration can stop.</p>
     <h4>How the tests fit monitoring</h4>
     <div class="table-wrap"><table>
       <tr><th>Programme</th><th>Test</th><th>Indicator</th></tr>
@@ -67,7 +67,7 @@ window.QBANK.push(
     </table></div>
     <p>All three depend on the same BHS-to-RHU collection chain and on RITM-linked quality assurance. The main weaknesses are single-stool examinations, loss of nocturnal periodicity during transport, RDT stock-outs and unverified microscopy. Programme decisions are only as good as the specimen and the test behind them.</p>
   `,
-  tip: "Give one test and one indicator per programme â€” that table is the core of the answer.",
+  tip: "Give one test and one indicator per programme — that table is the core of the answer.",
   sources: ["P13", "P9", "P14", "P7"]
 },
 {
@@ -80,7 +80,7 @@ window.QBANK.push(
     <p>Philippine clinical laboratories operate under <strong>RA 4688</strong> and <strong>DOH Administrative Order 2021-0037</strong>, which set licensing, staffing, equipment and quality requirements. A licensed medical technologist performs the testing under a pathologist, and <strong>ISO 15189</strong> accreditation is increasingly used by larger laboratories and is preferred for international contracts. Parasitology is not separately licensed, so it is covered by the general laboratory quality system.</p>
     <h4>Internal quality control</h4>
     <ul>
-      <li>Daily microscope check, clean optics and KÃ¶hler illumination; log lamp hours.</li>
+      <li>Daily microscope check, clean optics and Köhler illumination; log lamp hours.</li>
       <li>Stain control: filter Giemsa, check <strong>pH 7.2</strong> buffer, and run a known positive slide with each new trichrome or iron haematoxylin batch.</li>
       <li>Reagent control: record lot, expiry and <strong>specific gravity</strong> of flotation solutions; check formalin concentration.</li>
       <li>Equipment: <strong>centrifuge verification</strong> of speed and timer, refrigerator and incubator temperatures, thermometer calibration.</li>
@@ -91,7 +91,7 @@ window.QBANK.push(
     <h4>Persistent gaps</h4>
     <p>Many peripheral laboratories have no parasitology EQA scheme, few reference slides and high staff turnover. The realistic response is a tiered network: RITM and regional laboratories provide panels, training and confirmatory testing, while peripheral laboratories maintain daily QC, document competence and refer uncertain slides rather than guess. Quality is judged by corrected errors and patient outcomes, not by the thickness of the manual.</p>
   `,
-  tip: "Separate licensing (DOH), accreditation (ISO 15189), internal QC and external EQA â€” four different mechanisms.",
+  tip: "Separate licensing (DOH), accreditation (ISO 15189), internal QC and external EQA — four different mechanisms.",
   sources: ["P13", "P2", "C11", "S33"]
 },
 {
@@ -105,8 +105,8 @@ window.QBANK.push(
     <h4>Laboratory strategy</h4>
     <div class="table-wrap"><table>
       <tr><th>Test</th><th>Dengue</th><th>Malaria</th></tr>
-      <tr><td>First-line</td><td><strong>NS1 antigen</strong> (days 1â€“5)</td><td><strong>Thick and thin film</strong>; HRP2/pLDH RDT</td></tr>
-      <tr><td>Later</td><td>IgM/IgG after day 5; PCR</td><td>Repeat films 12â€“24 h apart; PCR</td></tr>
+      <tr><td>First-line</td><td><strong>NS1 antigen</strong> (days 1–5)</td><td><strong>Thick and thin film</strong>; HRP2/pLDH RDT</td></tr>
+      <tr><td>Later</td><td>IgM/IgG after day 5; PCR</td><td>Repeat films 12–24 h apart; PCR</td></tr>
       <tr><td>Supporting</td><td>CBC, haematocrit, platelets</td><td>Parasite density, platelets</td></tr>
     </table></div>
     <h4>Pitfalls and co-infection</h4>
@@ -127,14 +127,14 @@ window.QBANK.push(
   id: "pa227", domain: "para-lab", star: true,
   q: "Describe how a malaria blood film is made, stained, examined and quantified, and explain the errors that cause a false species identification or parasite count.",
   tags: ["malaria microscopy", "thick film", "thin film", "parasite density"],
-  keypoints: ["thick film", "thin film", "methanol fixation", "pH 7.2", "100â€“200 fields", "SchÃ¼ffner's dots", "banana-shaped gametocytes", "200 white cells", "8,000 WBC", "percentage parasitaemia", "EDTA", "stain precipitate", "mixed infection", "two-reader verification"],
+  keypoints: ["thick film", "thin film", "methanol fixation", "pH 7.2", "100–200 fields", "Schüffner's dots", "banana-shaped gametocytes", "200 white cells", "8,000 WBC", "percentage parasitaemia", "EDTA", "stain precipitate", "mixed infection", "two-reader verification"],
   answer: `
     <h4>Making the film</h4>
-    <p>Use fresh capillary blood or EDTA blood within one hour. Place two or three small drops on one slide: one for a <strong>thick film</strong> spread over about 1 cm, and one for a <strong>thin film</strong> drawn with a spreader at 30â€“45 degrees to form a feathered edge. Dry the thick film thoroughly, do not fix it, and fix only the thin film in <strong>methanol fixation</strong>. Stain with <strong>Giemsa at pH 7.2</strong> for 30â€“45 minutes, or use Field stain for speed.</p>
+    <p>Use fresh capillary blood or EDTA blood within one hour. Place two or three small drops on one slide: one for a <strong>thick film</strong> spread over about 1 cm, and one for a <strong>thin film</strong> drawn with a spreader at 30–45 degrees to form a feathered edge. Dry the thick film thoroughly, do not fix it, and fix only the thin film in <strong>methanol fixation</strong>. Stain with <strong>Giemsa at pH 7.2</strong> for 30–45 minutes, or use Field stain for speed.</p>
     <h4>Examination</h4>
-    <p>Scan the thick film at Ã—100 for parasites, then confirm and speciate on the thin film at Ã—1000. Examine at least <strong>100â€“200 fields</strong> under oil immersion before reporting negative, and repeat films every 12â€“24 hours for three sets when suspicion is high. Species identification rests on ring form, trophozoite, schizont and gametocyte morphology, red-cell size, stippling such as <strong>SchÃ¼ffner's dots</strong>, and the presence of <strong>banana-shaped gametocytes</strong>.</p>
+    <p>Scan the thick film at Ã—100 for parasites, then confirm and speciate on the thin film at Ã—1000. Examine at least <strong>100–200 fields</strong> under oil immersion before reporting negative, and repeat films every 12–24 hours for three sets when suspicion is high. Species identification rests on ring form, trophozoite, schizont and gametocyte morphology, red-cell size, stippling such as <strong>Schüffner's dots</strong>, and the presence of <strong>banana-shaped gametocytes</strong>.</p>
     <h4>Quantification</h4>
-    <p>Count parasites against <strong>200 white cells</strong> on the thick film and multiply by the white-cell count, or use the standard assumption of <strong>8,000 WBC</strong> per ÂµL. Report <strong>percentage parasitaemia</strong> from the thin film where the count is high. A consistent method matters more than the exact multiplier; state the method on the report.</p>
+    <p>Count parasites against <strong>200 white cells</strong> on the thick film and multiply by the white-cell count, or use the standard assumption of <strong>8,000 WBC</strong> per µL. Report <strong>percentage parasitaemia</strong> from the thin film where the count is high. A consistent method matters more than the exact multiplier; state the method on the report.</p>
     <h4>Errors and control</h4>
     <ul>
       <li>Delayed staining, <strong>EDTA</strong> storage and a thick film that is too thick distort morphology.</li>
@@ -158,7 +158,7 @@ window.QBANK.push(
     <h4>Iron haematoxylin</h4>
     <p><strong>Iron haematoxylin</strong> gives the sharpest nuclear detail: chromatin, <strong>karyosome</strong> and peripheral chromatin are dark blue-black. It is slower and technically demanding, requires careful differentiation, and is reserved for difficult amoebae and for teaching or reference slides. It is not a routine screening stain.</p>
     <h4>Modified acid-fast</h4>
-    <p><strong>Modified acid-fast</strong> staining (<strong>Kinyoun</strong> with a weaker decolouriser) is used for coccidian oocysts. <em>Cryptosporidium</em>, <em>Cyclospora</em> and <em>Cystoisospora</em> appear red to pink against a blue or green background; <em>Cyclospora</em> is variably acid-fast and shows blue <strong>autofluorescence</strong> under UV. <em>Cryptosporidium</em> is small (4â€“6 Âµm) and must be distinguished from yeast.</p>
+    <p><strong>Modified acid-fast</strong> staining (<strong>Kinyoun</strong> with a weaker decolouriser) is used for coccidian oocysts. <em>Cryptosporidium</em>, <em>Cyclospora</em> and <em>Cystoisospora</em> appear red to pink against a blue or green background; <em>Cyclospora</em> is variably acid-fast and shows blue <strong>autofluorescence</strong> under UV. <em>Cryptosporidium</em> is small (4–6 µm) and must be distinguished from yeast.</p>
     <h4>Practical points</h4>
     <ul>
       <li>Fix thin smears immediately; thick smears stain poorly and trap debris.</li>
@@ -179,7 +179,7 @@ window.QBANK.push(
   keypoints: ["41.7 mg", "template", "nylon mesh", "cellophane", "glycerol-malachite green", "eggs per gram", "egg count by 24", "duplicate slides", "three stool specimens", "hookworm eggs clear", "intensity category", "Mini-FLOTAC", "sentinel sites", "mass drug administration"],
   answer: `
     <h4>Principle and procedure</h4>
-    <p><strong>Kato-Katz</strong> is a quantitative thick-smear technique. A <strong>nylon mesh</strong> passes about <strong>41.7 mg</strong> of stool into a <strong>template</strong> on a glass slide; the template is removed and a <strong>cellophane</strong> strip soaked in <strong>glycerol-malachite green</strong> is pressed over the sample. The glycerol clears faecal debris while malachite green reduces glare, and eggs remain visible. After 30â€“60 minutes the slide is examined at Ã—100 and eggs are counted.</p>
+    <p><strong>Kato-Katz</strong> is a quantitative thick-smear technique. A <strong>nylon mesh</strong> passes about <strong>41.7 mg</strong> of stool into a <strong>template</strong> on a glass slide; the template is removed and a <strong>cellophane</strong> strip soaked in <strong>glycerol-malachite green</strong> is pressed over the sample. The glycerol clears faecal debris while malachite green reduces glare, and eggs remain visible. After 30–60 minutes the slide is examined at Ã—100 and eggs are counted.</p>
     <h4>Calculation</h4>
     <p>Because the template holds 41.7 mg, multiplying the egg count by <strong>24</strong> gives <strong>eggs per gram</strong>. Prepare <strong>duplicate slides</strong> from one stool and, ideally, examine <strong>three stool specimens</strong> from different days, because helminth egg output varies. Report the egg count and the intensity category, not merely "positive".</p>
     <h4>Strengths</h4>
@@ -189,21 +189,21 @@ window.QBANK.push(
       <li>Allows comparison across surveys and monitoring of programme impact.</li>
     </ul>
     <h4>Limitations</h4>
-    <p>Sensitivity falls sharply at low intensity, and a single smear can miss infections. <strong>Hookworm eggs clear</strong> within about 30â€“60 minutes and must be read promptly. The method is poor for protozoa, requires a trained microscopist, and gives variable counts when stool is not mixed well. <strong>Mini-FLOTAC</strong>, FLOTAC and PCR offer alternatives, but they cost more and are less established in field programmes.</p>
+    <p>Sensitivity falls sharply at low intensity, and a single smear can miss infections. <strong>Hookworm eggs clear</strong> within about 30–60 minutes and must be read promptly. The method is poor for protozoa, requires a trained microscopist, and gives variable counts when stool is not mixed well. <strong>Mini-FLOTAC</strong>, FLOTAC and PCR offer alternatives, but they cost more and are less established in field programmes.</p>
     <h4>Philippine use</h4>
     <p>Kato-Katz is used in <strong>sentinel sites</strong> for schistosomiasis and in school surveys for soil-transmitted helminths. Its value depends on training, duplicate slides and prompt reading, and on linking the egg count to deworming or praziquantel decisions.</p>
   `,
-  tip: "Learn the 41.7 mg template and the Ã—24 multiplier â€” then explain why one smear is not enough.",
+  tip: "Learn the 41.7 mg template and the Ã—24 multiplier — then explain why one smear is not enough.",
   sources: ["P2", "P6", "P9", "P11"]
 },
 {
   id: "pa230", domain: "para-lab",
   q: "Explain loop-mediated isothermal amplification, its advantages and limitations for field diagnosis of parasitic disease, and the controls needed before it is adopted in a Philippine setting.",
   tags: ["LAMP", "isothermal amplification", "field diagnostics", "molecular"],
-  keypoints: ["loop-mediated isothermal amplification", "four to six primers", "Bst polymerase", "60â€“65 Â°C", "turbidity", "magnesium pyrophosphate", "no thermal cycler", "qualitative", "contamination", "DNA persists after cure", "internal amplification control", "uracil-N-glycosylase", "validated", "cold chain"],
+  keypoints: ["loop-mediated isothermal amplification", "four to six primers", "Bst polymerase", "60–65 °C", "turbidity", "magnesium pyrophosphate", "no thermal cycler", "qualitative", "contamination", "DNA persists after cure", "internal amplification control", "uracil-N-glycosylase", "validated", "cold chain"],
   answer: `
     <h4>Principle</h4>
-    <p><strong>Loop-mediated isothermal amplification</strong> uses <strong>four to six primers</strong> that recognise six to eight regions of the target, and a strand-displacing <strong>Bst polymerase</strong>. The reaction runs at about <strong>60â€“65 Â°C for 30â€“60 minutes</strong> and produces a large amount of <strong>magnesium pyrophosphate</strong>, visible as <strong>turbidity</strong>, or a fluorescent signal with intercalating dyes. Because the temperature is constant, <strong>no thermal cycler</strong> is needed.</p>
+    <p><strong>Loop-mediated isothermal amplification</strong> uses <strong>four to six primers</strong> that recognise six to eight regions of the target, and a strand-displacing <strong>Bst polymerase</strong>. The reaction runs at about <strong>60–65 °C for 30–60 minutes</strong> and produces a large amount of <strong>magnesium pyrophosphate</strong>, visible as <strong>turbidity</strong>, or a fluorescent signal with intercalating dyes. Because the temperature is constant, <strong>no thermal cycler</strong> is needed.</p>
     <h4>Advantages</h4>
     <ul>
       <li>Simple equipment: a heat block or water bath, and a battery in field settings.</li>
@@ -241,7 +241,7 @@ window.QBANK.push(
     <h4>Occupational health</h4>
     <p>Offer <strong>hepatitis B vaccination</strong>, train staff in <strong>post-exposure</strong> procedures, and report incidents. <strong>Pregnancy</strong> and immunosuppression require individual risk assessment for <em>Toxoplasma</em>, <em>Cryptosporidium</em> and malaria. Staff should never mouth-pipette and should know the location of the <strong>spill kit</strong>, eyewash and emergency contacts. A biosafety committee, written SOPs and annual refresher training turn these rules into practice; review vaccination status, spill drills and incident logs every year.</p>
   `,
-  tip: "Name the route for each hazard â€” faecal-oral for eggs, needlestick for blood â€” then the matching precaution.",
+  tip: "Name the route for each hazard — faecal-oral for eggs, needlestick for blood — then the matching precaution.",
   sources: ["P2", "P3", "P11", "P9"]
 }
 );

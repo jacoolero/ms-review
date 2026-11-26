@@ -80,7 +80,7 @@ window.QBANK.push(
     <h4>ADH and thirst</h4>
     <p><strong>Antidiuretic hormone</strong> is synthesised in the supraoptic and paraventricular nuclei, transported to the posterior pituitary and released in response to a rise in osmolality or a fall in volume. It acts on <strong>V2 receptors</strong> in the collecting duct, inserting <strong>aquaporin-2</strong> channels and permitting water reabsorption. <strong>Thirst</strong> is the second defence and is blunted in the elderly and in patients with impaired consciousness. Volume depletion also activates <strong>renin–angiotensin–aldosterone</strong> and sympathetic pathways, which defend volume at the expense of osmolality.</p>
     <h4>Concentrating mechanism</h4>
-    <p>The <strong>countercurrent multiplier</strong> of the loop of Henle and <strong>urea recycling</strong> build the medullary gradient. Maximum urine osmolality depends on loop function, ADH and medullary blood flow. <strong>Free water clearance</strong> is calculated as urine volume minus osmolar clearance, and a negative value indicates water conservation.</p>
+    <p>The <strong>countercurrent multiplier</strong> of the loop of Henle and <strong>urea recycling</strong> build the medullary gradient. Maximum urine osmolality depends on loop function, ADH and medullary blood flow. <strong>Free water clearance</strong> is calculated as urine volume minus osmolar clearance, and a negative value indicates water conservation. When ADH is absent, the collecting duct remains water-impermeable and dilute urine is produced; when ADH is present, water follows the osmotic gradient and the urine becomes concentrated.</p>
     <h4>Laboratory translation</h4>
     <ul>
       <li><strong>Urine osmolality</strong> is the practical bioassay of ADH action.</li>
@@ -115,7 +115,7 @@ window.QBANK.push(
       <li>Sodium gain: <strong>hypertonic saline</strong>, sodium bicarbonate, sea water, <strong>mineralocorticoid excess</strong>.</li>
     </ul>
     <h4>Water deficit and monitoring</h4>
-    <p>The <strong>water deficit</strong> can be estimated as 0.6 × weight × (sodium/140 − 1), adjusting the <strong>total body water</strong> fraction for age and sex. Correction of chronic hypernatraemia should be gradual, because rapid lowering causes <strong>cerebral oedema</strong>; sodium should be monitored frequently during rehydration, and the laboratory should flag critical values. <strong>Reset osmostat</strong> is rare and behaves differently from a true deficit.</p>
+    <p>The <strong>water deficit</strong> can be estimated as 0.6 × weight × (sodium/140 − 1), adjusting the <strong>total body water</strong> fraction for age and sex. Correction of chronic hypernatraemia should be gradual, because rapid lowering causes <strong>cerebral oedema</strong>; the brain adapts to chronic hypernatraemia by generating idiogenic osmoles, so the laboratory should report the trend as well as the current value. Sodium should be monitored frequently during rehydration, and critical values should be telephoned. <strong>Reset osmostat</strong> is rare and behaves differently from a true deficit.</p>
   `,
   tip: "Lead with 'water deficit, not salt excess' and give the urine osmolality branch point.",
   sources: ["C1", "C3", "C15"]
@@ -145,7 +145,7 @@ window.QBANK.push(
     </table></div>
     <p>Blood pressure, plasma renin and <strong>aldosterone</strong>, magnesium and acid–base status narrow the differential. The <strong>transtubular potassium gradient</strong> is sometimes quoted but is unreliable when potassium is low.</p>
     <h4>ECG and laboratory issues</h4>
-    <p>Changes include flattened T waves, ST depression, prominent <strong>U waves</strong> and ventricular arrhythmia, particularly with digoxin or ischaemia. A blood gas potassium is useful when a shift is suspected. A high serum potassium with a normal plasma potassium suggests the opposite problem, <strong>pseudohyperkalaemia</strong>. Management addresses the cause, magnesium and the route of replacement; monitoring continues until stable because correction shifts potassium back into cells slowly.</p>
+    <p>Changes include flattened T waves, ST depression, prominent <strong>U waves</strong> and ventricular arrhythmia, particularly with digoxin or ischaemia. A blood gas potassium is useful when a shift is suspected. Hypokalaemia also impairs insulin secretion and renal concentrating ability, and severe deficiency causes rhabdomyolysis and ileus. A 24-hour urine collection is preferable to a spot sample when the patient is stable. A high serum potassium with a normal plasma potassium suggests the opposite problem, <strong>pseudohyperkalaemia</strong>. Management addresses the cause, magnesium and the route of replacement; monitoring continues until stable because correction shifts potassium back into cells slowly.</p>
   `,
   tip: "Use urine potassium and acid–base status as the two axes; mention magnesium before treatment.",
   sources: ["C1", "C3"]
@@ -235,7 +235,7 @@ Measured 43 → additional metabolic alkalosis</div>
       <li>Furosemide and fludrocortisone tests assess distal acidification and <strong>aldosterone</strong> response in specialist centres.</li>
     </ul>
     <h4>Clinical significance</h4>
-    <p>Distal RTA causes hypercalciuria, hypocitraturia and calcium phosphate stones, and in children causes growth failure and rickets. Proximal RTA is usually part of Fanconi syndrome, with hypophosphataemia, glycosuria and aminoaciduria. Type 4 RTA is the commonest in adults with diabetes and is characterised by <strong>hyperkalaemia</strong>. The acidosis is corrected with alkali, and potassium and bone status are monitored; the underlying cause, including drugs, is treated.</p>
+    <p>Distal RTA causes hypercalciuria, hypocitraturia and calcium phosphate stones, and in children causes growth failure and rickets. Proximal RTA is usually part of Fanconi syndrome, with hypophosphataemia, glycosuria and aminoaciduria. Type 4 RTA is the commonest in adults with diabetes and is characterised by <strong>hyperkalaemia</strong>; potassium handling is the practical discriminator. The acidosis is corrected with alkali, and potassium and bone status are monitored; the underlying cause, including drugs, is treated.</p>
   `,
   tip: "Type 4 is the high-potassium RTA — that single fact answers many short questions.",
   sources: ["C1", "C3", "C15"]
@@ -256,7 +256,7 @@ Measured 43 → additional metabolic alkalosis</div>
       <li>Clinical euvolemia, with no oedema and no dehydration.</li>
       <li>Normal thyroid and adrenal function, and no recent diuretic.</li>
     </ul>
-    <p>Supportive findings include low <strong>uric acid</strong>, low urea and a high fractional excretion of urate. Hyponatraemia from <strong>hypothyroidism</strong> or glucocorticoid deficiency mimics the syndrome and must be excluded before the diagnosis is made.</p>
+    <p>Supportive findings include low <strong>uric acid</strong>, low urea and a high fractional excretion of urate; urea excretion falls, which is why a low BUN supports the diagnosis. Hyponatraemia from <strong>hypothyroidism</strong> or glucocorticoid deficiency mimics the syndrome and must be excluded before the diagnosis is made.</p>
     <h4>Causes</h4>
     <div class="table-wrap"><table>
       <tr><th>Group</th><th>Examples</th></tr>
@@ -267,7 +267,7 @@ Measured 43 → additional metabolic alkalosis</div>
       <tr><td>Others</td><td>Pain, nausea, surgery, HIV, porphyria</td></tr>
     </table></div>
     <h4>Mimics and monitoring</h4>
-    <p><strong>Cerebral salt wasting</strong> causes hypovolaemia and high urine sodium after brain injury, in contrast to the euvolemia of SIADH. <strong>Pseudohyponatraemia</strong> and hyperglycaemia are excluded by osmolality and glucose. During correction, sodium should be monitored frequently and the rise limited, because over-rapid correction risks <strong>osmotic demyelination</strong>; the rate should be reduced if the rise is excessive, and relowering may be required in specialist care.</p>
+    <p><strong>Cerebral salt wasting</strong> causes hypovolaemia and high urine sodium after brain injury, in contrast to the euvolemia of SIADH. <strong>Pseudohyponatraemia</strong> and hyperglycaemia are excluded by osmolality and glucose. The patient should be weighed and examined at each review, because clinical volume status is central to the diagnosis. During correction, sodium should be monitored frequently and the rise limited, because over-rapid correction risks <strong>osmotic demyelination</strong>; the rate should be reduced if the rise is excessive, and relowering may be required in specialist care.</p>
   `,
   tip: "State the five criteria and then the two mimics — volume status and thyroid/adrenal status.",
   sources: ["C1", "C3"]
@@ -302,6 +302,7 @@ Measured 43 → additional metabolic alkalosis</div>
       <li>Serum sodium may be normal if thirst is intact; <strong>hypernatraemia</strong> indicates inadequate access to water.</li>
       <li>Check glucose, calcium, potassium and creatinine before dynamic testing.</li>
     </ul>
+    <p>A structured test should be performed only when the cause is unclear and the patient is stable, because prolonged deprivation is hazardous. Thirst and access to water determine whether polyuria produces hypernatraemia.</p>
   `,
   tip: "The desmopressin response separates central from nephrogenic — draw the three-row table.",
   sources: ["C1", "C3"]
@@ -322,7 +323,7 @@ Measured 43 → additional metabolic alkalosis</div>
       <tr><td><strong>Isosthenuria</strong> (~300)</td><td>Chronic kidney disease, sickle cell nephropathy</td></tr>
       <tr><td>Specific gravity &gt;1.030</td><td>Concentrated urine, glycosuria, <strong>proteinuria</strong>, contrast</td></tr>
     </table></div>
-    <p>A specific gravity of 1.010 corresponds roughly to 300 mOsm/kg only when solute composition is normal; the relationship is not linear and should not be used to calculate osmolality.</p>
+    <p>A specific gravity of 1.010 corresponds roughly to 300 mOsm/kg only when solute composition is normal; the relationship is not linear and should not be used to calculate osmolality. Specific gravity is therefore a screening estimate, not a substitute for measured osmolality.</p>
     <h4>The urine osmolal gap</h4>
     <p>The measured urine osmolality minus the calculated osmolality (2 × Na + K + urea + glucose) is used as a surrogate for <strong>ammonium</strong> excretion when the <strong>urine anion gap</strong> is misleading, for example with ketoacidosis or after diuretics. A large gap suggests adequate ammonium excretion and argues against distal renal tubular acidosis.</p>
     <h4>Pre-analytical care</h4>
@@ -445,7 +446,7 @@ Kt/V = ln(post/pre − 0.008 × t) + (4 − 3.5 × post/pre) × ultrafiltration/
       <li>Hereditary podocyte disorders in young patients with a family history.</li>
     </ul>
     <h4>Interpretation and monitoring</h4>
-    <p>Age, complement, autoantibodies and serology guide the decision to biopsy. Anti-PLA2R supports primary membranous nephropathy and can be monitored for response. Serum free light chains and immunofixation screen for amyloid or paraprotein-related disease. Monitoring includes urine protein, albumin, creatinine, lipids, glucose and blood pressure. The protein:creatinine ratio on a spot sample correlates well with 24-hour excretion and is easier to repeat. A sudden fall in proteinuria may reflect recovery or a fall in glomerular filtration, so it must be interpreted with creatinine.</p>
+    <p>Age, complement, autoantibodies and serology guide the decision to biopsy. Anti-PLA2R supports primary membranous nephropathy and can be monitored for response. Serum free light chains and immunofixation screen for amyloid or paraprotein-related disease. Monitoring includes urine protein, albumin, creatinine, lipids, glucose and blood pressure, recorded with every sample. The protein:creatinine ratio on a spot sample correlates well with 24-hour excretion and is easier to repeat. The distinction matters because treatment and prognosis differ, and some causes recur after transplantation. A sudden fall in proteinuria may reflect recovery or a fall in glomerular filtration, so it must be interpreted with creatinine.</p>
   `,
   tip: "Give the tetrad, then the secondary screen by age — that is the clinical half of the answer.",
   sources: ["C1", "C3", "C7"]
@@ -473,7 +474,7 @@ Kt/V = ln(post/pre − 0.008 × t) + (4 − 3.5 × post/pre) × ultrafiltration/
       <tr><td>Mycophenolate</td><td>AUC or limited sampling</td><td>Selected patients</td></tr>
     </table></div>
     <h4>Metabolic and haematological effects</h4>
-    <p>Calcineurin inhibitors cause <strong>hyperkalaemia</strong> with a <strong>type 4 renal tubular acidosis</strong>, hypomagnesaemia, hyperuricaemia and <strong>post-transplant diabetes</strong>. Corticosteroids raise glucose and bone turnover; sirolimus can cause proteinuria and dyslipidaemia; valganciclovir causes marrow suppression. <strong>Cystatin C</strong> may detect reduced filtration earlier than creatinine when muscle mass is low. <strong>Delayed graft function</strong> is indicated by the need for dialysis in the first week, and the laboratory should flag critical potassium and creatinine values promptly.</p>
+    <p>Calcineurin inhibitors cause <strong>hyperkalaemia</strong> with a <strong>type 4 renal tubular acidosis</strong>, hypomagnesaemia, hyperuricaemia and <strong>post-transplant diabetes</strong>. Corticosteroids raise glucose and bone turnover; sirolimus can cause proteinuria and dyslipidaemia; valganciclovir causes marrow suppression. <strong>Cystatin C</strong> may detect reduced filtration earlier than creatinine when muscle mass is low. <strong>Delayed graft function</strong> is indicated by the need for dialysis in the first week, and the laboratory should flag critical potassium and creatinine values promptly. The panel is repeated at protocol intervals and whenever graft function changes; results should be compared with the patient's previous value rather than a population range, and an unexplained rise warrants urgent review.</p>
   `,
   tip: "Separate the panel into graft, immune, infection and drug — four headings, no overlap.",
   sources: ["C7", "C12", "C1"]
@@ -485,7 +486,7 @@ Kt/V = ln(post/pre − 0.008 × t) + (4 − 3.5 × post/pre) × ultrafiltration/
   keypoints: ["ionised calcium", "adjusted calcium", "albumin", "hypoparathyroidism", "hypomagnesaemia", "pseudohypoparathyroidism", "Chvostek", "Trousseau", "QT prolongation", "hungry bone syndrome", "hyperphosphataemia", "citrate"],
   answer: `
     <h4>Forms of calcium</h4>
-    <p>About 45% of plasma calcium is <strong>ionised calcium</strong> and biologically active, 40% is <strong>albumin</strong>-bound and 15% is complexed. Total calcium changes with albumin, so the <strong>adjusted calcium</strong> or a direct ionised calcium is needed. Alkalosis lowers ionised calcium by increasing albumin binding, and <strong>citrate</strong> in massive transfusion chelates calcium.</p>
+    <p>About 45% of plasma calcium is <strong>ionised calcium</strong> and biologically active, 40% is <strong>albumin</strong>-bound and 15% is complexed. Total calcium changes with albumin, so the <strong>adjusted calcium</strong> or a direct ionised calcium is needed. Alkalosis lowers ionised calcium by increasing albumin binding, and <strong>citrate</strong> in massive transfusion chelates calcium. A low total calcium with a normal ionised value therefore indicates a binding or albumin problem rather than true deficiency, and ionised calcium is the safer guide in hypoalbuminaemia.</p>
     <h4>Causes</h4>
     <div class="table-wrap"><table>
       <tr><th>Mechanism</th><th>Examples</th></tr>
@@ -497,13 +498,13 @@ Kt/V = ln(post/pre − 0.008 × t) + (4 − 3.5 × post/pre) × ultrafiltration/
     </table></div>
     <h4>Clinical and laboratory assessment</h4>
     <ul>
-      <li>Symptoms: perioral tingling, cramps, tetany, seizures, laryngospasm.</li>
+      <li>Symptoms: perioral tingling, cramps, tetany, seizures, laryngospasm. Rapid falls produce symptoms at higher calcium concentrations than chronic falls, because adaptation takes time.</li>
       <li>Signs: <strong>Chvostek</strong> and <strong>Trousseau</strong> signs; ECG shows <strong>QT prolongation</strong>.</li>
       <li>Measure phosphate, magnesium, alkaline phosphatase, creatinine and PTH.</li>
       <li>A high PTH indicates vitamin D deficiency, renal disease or PTH resistance; a low or inappropriately normal PTH indicates hypoparathyroidism.</li>
     </ul>
     <h4>Interpretation</h4>
-    <p><strong>Hypomagnesaemia</strong> impairs PTH secretion and action, so magnesium must be corrected for calcium to rise. In chronic kidney disease, <strong>hyperphosphataemia</strong> and low calcitriol drive hypocalcaemia and secondary hyperparathyroidism. After parathyroidectomy, rapid falls in PTH cause <strong>hungry bone syndrome</strong> with hypocalcaemia, hypophosphataemia and hypomagnesaemia. Monitoring should continue during treatment because overcorrection causes hypercalciuria and renal injury.</p>
+    <p><strong>Hypomagnesaemia</strong> impairs PTH secretion and action, so magnesium must be corrected for calcium to rise. In chronic kidney disease, <strong>hyperphosphataemia</strong> and low calcitriol drive hypocalcaemia and secondary hyperparathyroidism. Ionised calcium should be measured when the total calcium and the clinical picture disagree, particularly in critical illness and after large-volume transfusion. A low 25-hydroxyvitamin D with a high PTH confirms vitamin D deficiency, while a low PTH with high phosphate suggests hypoparathyroidism. After parathyroidectomy, rapid falls in PTH cause <strong>hungry bone syndrome</strong> with hypocalcaemia, hypophosphataemia and hypomagnesaemia. Monitoring should continue during treatment because overcorrection causes hypercalciuria and renal injury.</p>
   `,
   tip: "PTH is the branch point again; add magnesium because it explains refractory hypocalcaemia.",
   sources: ["C14", "C1", "C3"]

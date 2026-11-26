@@ -90,7 +90,7 @@ window.QBANK.push(
       <li>Monitor for hepatotoxicity, drug interactions and IRIS in HIV.</li>
     </ul>
     <h4>Why it matters</h4>
-    <p>TB pericarditis is a treatable cause of heart failure and tamponade. Delayed diagnosis leads to constriction, which is a surgical disease. In TB-endemic settings, any unexplained lymphocyte-rich pericardial effusion should prompt TB investigation and early empirical treatment when the suspicion is high. A high index of suspicion is essential because the presentation overlaps with heart failure and other pericardial diseases. Early treatment prevents constriction.</p>
+    <p>TB pericarditis is a treatable cause of heart failure and tamponade. Delayed diagnosis leads to constriction, which is a surgical disease. In TB-endemic settings, any unexplained lymphocyte-rich pericardial effusion should prompt TB investigation and early empirical treatment when the suspicion is high. A high index of suspicion is essential because the presentation overlaps with heart failure and other pericardial diseases. Early treatment prevents constriction. Pericardial constriction may present months after the initial illness.</p>
   `,
   tip: "Distinguish the effusive stage from the constrictive stage — they have different urgent interventions.",
   sources: ["S4", "S6", "S9"]
@@ -165,7 +165,7 @@ window.QBANK.push(
     <h4>Management</h4>
     <p>If symptoms or jaundice develop, or liver tests rise substantially, <strong>stop the hepatotoxic drugs</strong> and <strong>exclude viral hepatitis</strong>, biliary disease and other causes. For severe TB, use a <strong>non-hepatotoxic regimen</strong> with a fluoroquinolone, ethambutol and second-line agents, with specialist input. Once liver tests recover, drugs can be reintroduced sequentially, usually starting with rifampicin and isoniazid, with close monitoring; <strong>pyrazinamide is often omitted</strong>. Do not simply abandon treatment, because untreated TB is more dangerous than the drug injury.</p>
     <h4>Prevention</h4>
-    <p>Correct malnutrition, treat alcohol misuse, vaccinate against hepatitis B, review concomitant drugs, and use fixed-dose combinations with clear counselling. Document the baseline and the plan so that another clinician can interpret a later abnormality. Liver tests should be repeated after recovery to establish a new baseline before reintroduction. Patients with pre-existing cirrhosis need specialist co-management.</p>
+    <p>Correct malnutrition, treat alcohol misuse, vaccinate against hepatitis B, review concomitant drugs, and use fixed-dose combinations with clear counselling. Document the baseline and the plan so that another clinician can interpret a later abnormality. Liver tests should be repeated after recovery to establish a new baseline before reintroduction. Patients with pre-existing cirrhosis need specialist co-management. Alcohol cessation reduces the risk of recurrence.</p>
   `,
   tip: "Separate asymptomatic enzyme elevation from symptomatic hepatitis — the management threshold is the key discriminator.",
   sources: ["S6", "S9", "S4"]
@@ -241,7 +241,7 @@ window.QBANK.push(
     <h4>Second-line and newer drugs</h4>
     <p>Fluoroquinolone resistance arises in <strong>gyrA</strong> and gyrB; aminoglycoside and capreomycin resistance in <strong>rrs</strong>, <strong>eis</strong> and tlyA. Bedaquiline and clofazimine resistance involve <strong>rv0678</strong> and efflux; pretomanid and delamanid resistance involve ddn, fbiA/B/C and fgd1; linezolid resistance involves rrl and rplC; ethionamide resistance involves ethA. Resistance is usually <strong>chromosomal, not plasmid-borne</strong>, so it arises by selection under inadequate therapy.</p>
     <h4>Clinical implications</h4>
-    <p>Molecular tests target only the common mutations, so a negative result does not exclude resistance. <strong>Heteroresistance</strong> and mixed populations can be missed. <strong>Phenotypic DST</strong> remains important, and WGS is increasingly used for a comprehensive view. The central principle is that resistance is a man-made problem: adherence, adequate dosing, combination therapy and rapid susceptibility testing prevent it. Rapid molecular tests are useful only when their target mutations are present in the local strain population.</p>
+    <p>Molecular tests target only the common mutations, so a negative result does not exclude resistance. <strong>Heteroresistance</strong> and mixed populations can be missed. <strong>Phenotypic DST</strong> remains important, and WGS is increasingly used for a comprehensive view. The central principle is that resistance is a man-made problem: adherence, adequate dosing, combination therapy and rapid susceptibility testing prevent it. Rapid molecular tests are useful only when their target mutations are present in the local strain population. This is why susceptibility testing must accompany treatment failure.</p>
   `,
   tip: "Organise by first-line, second-line and intrinsic resistance, and end with the limits of genotypic tests.",
   sources: ["S1", "S4", "S12"]
@@ -288,7 +288,7 @@ window.QBANK.push(
       <li>Fundoscopy and imaging; exclude other causes of miliary shadowing.</li>
     </ul>
     <h4>Treatment</h4>
-    <p>Start standard <strong>2HRZE/4HR</strong> promptly; extend to <strong>9–12 months if CNS</strong> or bone disease. <strong>Corticosteroids for meningitis</strong> and pericarditis, not routinely for pulmonary miliary TB. In HIV, start ART within 2–8 weeks and watch for <strong>IRIS</strong>, which may worsen fever, nodes and infiltrates. Supportive care, nutrition and treatment of co-morbidities matter. Because tests are often negative, <strong>empirical treatment</strong> is justified in a compatible host with characteristic imaging. Clinical improvement may be slow, and radiological resolution lags behind microbiological cure. Nutritional support improves tolerance and recovery.</p>
+    <p>Start standard <strong>2HRZE/4HR</strong> promptly; extend to <strong>9–12 months if CNS</strong> disease, and follow local guidance for bone disease. <strong>Corticosteroids for meningitis</strong> and pericarditis, not routinely for pulmonary miliary TB. In HIV, start ART within 2–8 weeks and watch for <strong>IRIS</strong>, which may worsen fever, nodes and infiltrates. Supportive care, nutrition and treatment of co-morbidities matter. Because tests are often negative, <strong>empirical treatment</strong> is justified in a compatible host with characteristic imaging. Clinical improvement may be slow, and radiological resolution lags behind microbiological cure. Nutritional support improves tolerance and recovery.</p>
   `,
   tip: "Fundoscopy is the classic bedside clue, and negative sputum does not exclude miliary TB.",
   sources: ["S4", "S6", "S10"]
@@ -399,7 +399,14 @@ window.QBANK.push(
     <h4>Anti-IFN-γ autoantibodies</h4>
     <p>Adults, particularly in Southeast Asia, may develop <strong>neutralising anti-IFN-γ autoantibodies</strong>, causing disseminated NTM, <em>Talaromyces</em>, <em>Cryptococcus</em> and other intracellular infections. This is an acquired immunodeficiency that can be mistaken for TB or lymphoma. Diagnosis requires measuring anti-IFN-γ antibodies; management includes treating the infection and sometimes immunomodulation.</p>
     <h4>Clinical implications</h4>
-    <p>Suspect a genetic defect in disseminated BCGosis, recurrent NTM disease, or unusual mycobacterial infections. <strong>Avoid live vaccines</strong>, investigate the immune pathway, and involve immunology. Genetic diagnosis informs family counselling and, in severe cases, <strong>haematopoietic stem cell transplantation</strong>. Genetic testing is most informative when guided by the clinical phenotype. For most patients, however, the practical message is that host immunity — not the organism alone — determines whether infection is contained or disseminated.</p>
+    <p>Suspect a genetic defect in the following situations:</p>
+    <ul>
+      <li>Disseminated BCGosis or recurrent NTM disease.</li>
+      <li>Unusual mycobacterial infection with a family history.</li>
+      <li>Need to <strong>avoid live vaccines</strong> and investigate the immune pathway.</li>
+      <li>Family counselling and consideration of <strong>haematopoietic stem cell transplantation</strong> in severe defects.</li>
+    </ul>
+    <p>Genetic testing is most informative when guided by the clinical phenotype. For most patients, however, the practical message is that host immunity — not the organism alone — determines whether infection is contained or disseminated.</p>
   `,
   tip: "Separate rare monogenic MSMD from common polygenic susceptibility, and add anti-IFN-γ autoantibodies as the acquired mimic.",
   sources: ["S1", "S4", "S13"]
@@ -420,9 +427,9 @@ window.QBANK.push(
       <li>Test for HIV, diabetes and hepatitis, and assess nutrition.</li>
     </ul>
     <h4>Treatment</h4>
-    <p>Use standard <strong>2HRZE/4HR</strong> for drug-susceptible TB. <strong>Isoniazid and rifampicin are hepatically cleared</strong> and usually need no renal adjustment; give <strong>pyridoxine</strong>. <strong>Ethambutol and pyrazinamide accumulate</strong> in renal failure, so doses are adjusted or the drugs are avoided according to local guidance, with monitoring for optic neuritis and hepatotoxicity. <strong>Avoid streptomycin</strong> because of nephrotoxicity and ototoxicity. Coordinate dosing with the dialysis schedule, and review <strong>drug interactions with immunosuppressants</strong> — rifampicin lowers calcineurin-inhibitor levels.</p>
+    <p>Use standard <strong>2HRZE/4HR</strong> for drug-susceptible TB. <strong>Isoniazid and rifampicin usually need no renal adjustment</strong>; give <strong>pyridoxine</strong> to prevent isoniazid neuropathy. <strong>Ethambutol and pyrazinamide accumulate</strong> in renal failure, so doses are adjusted or the drugs are avoided according to local guidance, with monitoring for optic neuritis and hepatotoxicity. <strong>Avoid streptomycin</strong> because of nephrotoxicity and ototoxicity. Coordinate dosing with the dialysis schedule, and review <strong>drug interactions with immunosuppressants</strong> — rifampicin lowers calcineurin-inhibitor levels.</p>
     <h4>Prevention and transplant</h4>
-    <p><strong>Screen and treat latent TB before transplant</strong>, and exclude active disease in donors and recipients. Post-transplant immunosuppression increases reactivation risk, so surveillance and prompt investigation are essential. <strong>Dialysis unit infection control</strong> — triage, separation of suspected cases, ventilation and N95 respirators — protects other patients and staff. A high index of suspicion is the most important diagnostic tool.</p>
+    <p><strong>Screen and treat latent TB before transplant</strong>, and exclude active disease in donors and recipients. Post-transplant immunosuppression increases reactivation risk, so surveillance and prompt investigation are essential. <strong>Dialysis unit infection control</strong> — triage, separation of suspected cases, ventilation and N95 respirators — protects other patients and staff. A high index of suspicion is the most important diagnostic tool. Vaccination and nutrition support are part of prevention.</p>
   `,
   tip: "The two renal-specific points are ethambutol/pyrazinamide accumulation and pre-transplant latent TB screening.",
   sources: ["S6", "S9", "S11"]

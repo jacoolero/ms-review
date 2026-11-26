@@ -30,7 +30,7 @@ window.QBANK.push(
   keypoints: ["HBsAg", "anti-HBc", "anti-HBs", "occult hepatitis B", "HBV DNA", "escape mutants", "window period", "multiplex NAT", "low viral load", "permanent deferral", "hepatitis B immunoglobulin", "vaccination", "lookback", "HBsAg neutralisation"],
   answer: `
     <h4>Why hepatitis B is difficult to exclude</h4>
-    <p>HBV is highly prevalent in Asia, and a donor may carry the virus at a very <strong>low viral load</strong> that is below the detection limit of pooled assays. Transmission is efficient because a small inoculum can infect, and the virus survives in refrigerated components. Donor selection and laboratory testing must therefore work together.</p>
+    <p>HBV is highly prevalent in Asia, and a donor may carry the virus at a very <strong>low viral load</strong> that is below the detection limit of pooled assays. Transmission is efficient because a small inoculum can infect, and the virus survives in refrigerated components. The serological <strong>window period</strong>, before HBsAg becomes detectable, is one reason. Donor selection and laboratory testing must therefore work together.</p>
     <h4>Markers and their meaning</h4>
     <div class="table-wrap"><table>
       <tr><th>Marker</th><th>Interpretation in a donor</th></tr>
@@ -64,7 +64,7 @@ window.QBANK.push(
       <tr><th>Virus</th><th>Serological window</th><th>NAT window</th></tr>
       <tr><td><strong>HIV</strong></td><td>About 2–3 weeks with a <strong>combined antigen and antibody assay</strong>, which detects <strong>p24 antigen</strong> as well as antibody; longer with antibody-only assays</td><td>About 10–12 days (<strong>HIV RNA</strong>)</td></tr>
       <tr><td><strong>HCV</strong></td><td>Roughly 6–10 weeks for anti-HCV</td><td>About 3–7 days (<strong>HCV RNA</strong>)</td></tr>
-      <tr><td>HBV</td><td>About 4–8 weeks for HBsAg</td><td>About 3–4 weeks, less in pooled testing</td></tr>
+      <tr><td>HBV</td><td>About 4–8 weeks for HBsAg</td><td>About 3–4 weeks, longer with pooled testing</td></tr>
     </table></div>
     <h4>How NAT is applied</h4>
     <ul>
@@ -102,7 +102,7 @@ window.QBANK.push(
       <li>Neither test distinguishes recent from remote infection, so the donor must be assessed clinically.</li>
     </ul>
     <h4>Donor management</h4>
-    <p>The unit is discarded. The donor is <strong>deferral</strong>-ed for a defined period, commonly twelve months after <strong>documented treatment</strong>, and re-entry requires evidence of adequate therapy and stable serology according to the local standard. <strong>Donor notification</strong> must be confidential, non-judgemental and linked to clinical care and partner services. The laboratory reports the serological pattern, not a clinical diagnosis, and documents the algorithm used so that the result can be audited.</p>
+    <p>The unit is discarded and the donor is deferred; the <strong>deferral</strong> period is commonly twelve months after <strong>documented treatment</strong>, and re-entry requires evidence of adequate therapy and stable serology according to the local standard. <strong>Donor notification</strong> must be confidential, non-judgemental and linked to clinical care and partner services. The laboratory reports the serological pattern, not a clinical diagnosis, and documents the algorithm used so that the result can be audited.</p>
   `,
   tip: "Explain that syphilis screening is largely a surrogate for risk behaviour — that justifies keeping it despite poor transfusion transmission.",
   sources: ["B1", "B8"]
@@ -140,7 +140,7 @@ window.QBANK.push(
     <p><strong>HTLV-I</strong> and <strong>HTLV-II</strong> are deltaretroviruses that infect <strong>T lymphocyte</strong>s and are transmitted by sexual contact, from mother to child and by transfusion of cell-containing components. HTLV-I causes adult T-cell leukaemia/lymphoma (<strong>ATL</strong>) and HTLV-associated myelopathy/tropical spastic paraparesis (<strong>HAM/TSP</strong>), both after a long latency. Because the virus is cell-associated, acellular plasma and cryoprecipitate carry little risk, while whole blood, red cells and platelets do.</p>
     <ul>
       <li>Screening is routine in Japan, the United States and several European countries, but not universal worldwide.</li>
-      <li>A confirmed reactive donor is <strong>permanent deferral</strong>-ed and counselled; lookback is performed.</li>
+      <li>A confirmed reactive donor receives a <strong>permanent deferral</strong> and is counselled; lookback is performed.</li>
       <li>Leucoreduction lowers the viral load but is not a substitute for serological screening where the virus is prevalent.</li>
     </ul>
     <h4>CMV</h4>
@@ -169,7 +169,7 @@ window.QBANK.push(
   keypoints: ["forward grouping", "reverse grouping", "anti-A", "anti-B", "anti-D", "weak D", "DVI", "donor labelled D-positive", "unexpected antibody", "high-titre anti-A", "haemolysis", "haemoglobin screening", "sickle cell trait", "discrepancy"],
   answer: `
     <h4>ABO and D grouping of the donation</h4>
-    <p>The donor unit is grouped by <strong>forward grouping</strong> with <strong>anti-A</strong> and <strong>anti-B</strong> reagents, and the result is confirmed against the donor's recorded group and, where required, a second sample. <strong>Reverse grouping</strong> with A1 and B cells is used to resolve <strong>discrepancy</strong>-ies, which in donors most often reflect a subgroup, an acquired B phenomenon or a weak reagent reaction rather than an error in the patient. The group printed on the label must be unambiguous before release.</p>
+    <p>The donor unit is grouped by <strong>forward grouping</strong> with <strong>anti-A</strong> and <strong>anti-B</strong> reagents, and the result is confirmed against the donor's recorded group and, where required, a second sample. <strong>Reverse grouping</strong> with A1 and B cells is used to resolve <strong>discrepancy</strong> results, which in donors most often reflect a subgroup, an acquired B phenomenon or a weak reagent reaction rather than an error in the patient. The group printed on the label must be unambiguous before release.</p>
     <p>D typing uses a potent anti-D reagent. Donor reagents are deliberately chosen to detect <strong>weak D</strong> and partial phenotypes such as <strong>DVI</strong>, because a unit that carries any D epitope could immunise a D-negative recipient. For that reason a donor with weak D expression is <strong>donor labelled D-positive</strong>, in contrast to some patient-typing algorithms in which weak D types 1, 2 and 3 are managed as D-positive and others as D-negative.</p>
     <h4>Antibody screening of donor plasma</h4>
     <ul>
@@ -201,7 +201,7 @@ window.QBANK.push(
     <h4>The diversion pouch</h4>
     <p>The first 20–40 mL of blood flows into a <strong>diversion pouch</strong> before the main bag fills. This discards the <strong>skin plug</strong> and the organisms it carries, and is one of the most effective single measures against bacterial contamination of platelets and red cells. The pouch is sealed and used for the donation samples, never returned to the bag.</p>
     <h4>Volume, anticoagulant and labelling</h4>
-    <p>A standard collection is <strong>450 mL</strong> plus samples into a bag containing about 63 mL of CPD or CP2D, a ratio of roughly one part <strong>anticoagulant</strong> to seven parts blood. The bag is weighed or measured, because both <strong>over-collection</strong> (too little anticoagulant, risking clots) and <strong>under-collection</strong> (excess anticoagulant, risking red cell damage) reduce component quality; units outside the allowed range are rejected or restricted. Tubes are filled and <strong>label at the donor</strong>-side with the donation number and two identifiers, never in advance. The donor then rests, is observed, and receives post-donation advice.</p>
+    <p>A standard collection is <strong>450 mL</strong> plus samples into a bag containing about 63 mL of CPD or CP2D, a ratio of roughly one part <strong>anticoagulant</strong> to seven parts blood. The bag is weighed or measured, because both <strong>over-collection</strong> (too little anticoagulant, risking clots) and <strong>under-collection</strong> (excess anticoagulant, risking red cell damage) reduce component quality; units outside the allowed range are rejected or restricted. Tubes are filled, and the <strong>label at the donor</strong> side — never written in advance — carries the donation number and two identifiers. The donor then rests, is observed, and receives post-donation advice.</p>
   `,
   tip: "The diversion pouch and 'label at the donor, never in advance' are the two details examiners remember.",
   sources: ["B1", "B5"]
@@ -222,7 +222,7 @@ window.QBANK.push(
     <h4>Volume reduction</h4>
     <p><strong>Volume reduction</strong> removes supernatant plasma or additive solution to give a smaller volume at a higher haematocrit, for fluid-restricted neonates and small infants, or for intrauterine transfusion where a packed product is needed. It is usually performed by centrifugation and expression of supernatant, and carries the same 24-hour expiry once the system is opened.</p>
     <h4>Aliquoting</h4>
-    <p><strong>Aliquot</strong>-ing splits a unit into smaller portions for <strong>paediatric transfusion</strong>, so that a single donation serves several small patients and wastage falls. A <strong>sterile connection</strong> device keeps the system closed and allows the original expiry date to be retained; a manually opened system limits the product to 24 hours. Each aliquot must carry the original donation number, the new volume, the expiry and the modification performed.</p>
+    <p><strong>Aliquoting</strong> splits a unit into smaller portions for <strong>paediatric transfusion</strong>, so that a single donation serves several small patients and wastage falls. A <strong>sterile connection</strong> device keeps the system closed and allows the original expiry date to be retained; a manually opened system limits the product to 24 hours. Each aliquot must carry the original donation number, the new volume, the expiry and the modification performed.</p>
     <h4>Cryopreservation</h4>
     <p>Red cells are frozen with <strong>glycerol</strong> as a cryoprotectant, at −65 °C or below for high-glycerol methods or about −120 °C for low-glycerol methods, and stored for up to ten years. <strong>Deglycerolisation</strong> removes the glycerol by osmotic washing before transfusion, after which the unit expires within 24 hours. The technique is reserved for <strong>rare phenotype</strong>s, autologous deposits and military or national reserves; it requires a validated protocol, careful labelling and a reliable freezer alarm system.</p>
   `,
@@ -233,7 +233,7 @@ window.QBANK.push(
   id: "ih154", domain: "ih-donor", star: true,
   q: "Discuss leucocyte reduction of blood components: methods, benefits, limitations and quality control.",
   tags: ["leucoreduction", "FNHTR", "HLA alloimmunisation", "residual WBC"],
-  keypoints: ["pre-storage filtration", "post-storage filtration", "apheresis", "5 x 10^6", "febrile non-haemolytic reaction", "cytokines", "HLA alloimmunisation", "platelet refractoriness", "CMV", "TA-GVHD", "red cell loss", "hypotension", "ACE inhibitor", "Nageotte", "quality control"],
+  keypoints: ["pre-storage filtration", "post-storage filtration", "apheresis", "5 × 10⁶", "febrile non-haemolytic reaction", "cytokines", "HLA alloimmunisation", "platelet refractoriness", "CMV", "TA-GVHD", "red cell loss", "hypotension", "ACE inhibitor", "Nageotte", "quality control"],
   answer: `
     <h4>Why leucocytes are removed</h4>
     <p>Residual donor leucocytes cause several problems: they release cytokines during storage, present HLA antigens, carry latent CMV and EBV, and can engraft in an immunosuppressed recipient. Leucocyte reduction lowers the dose of these cells and is the basis of several component claims.</p>
@@ -254,7 +254,7 @@ window.QBANK.push(
     <h4>Limitations</h4>
     <p>Leucoreduction does <strong>not</strong> prevent <strong>TA-GVHD</strong> — irradiation or pathogen reduction is still required. It costs money, causes <strong>red cell loss</strong> of about 5–10%, and bedside filtration has been associated with <strong>hypotension</strong> in patients taking an <strong>ACE inhibitor</strong>. Universal leucoreduction consumes filters and staff time, so many services apply it selectively where resources are limited.</p>
     <h4>Quality control</h4>
-    <p>The standard is a residual white cell content below <strong>5 x 10^6</strong> per unit in the United States, with a stricter European limit. Counting is performed by <strong>Nageotte</strong> chamber or flow cytometry on a sample from the unit, and the process is validated for each filter type and flow rate. Filters are checked for leaks and for correct orientation, and the results are trended as a quality indicator rather than accepted from the manufacturer's claim alone.</p>
+    <p>The standard is a residual white cell content below <strong>&lt;5 × 10⁶</strong> per unit in the United States, with a stricter European limit. Counting is performed by <strong>Nageotte</strong> chamber or flow cytometry on a sample from the unit, and the process is validated for each filter type and flow rate. Filters are checked for leaks and for correct orientation, and the results are trended as a quality indicator rather than accepted from the manufacturer's claim alone.</p>
   `,
   tip: "State clearly that leucoreduction is not irradiation — that confusion is the classic error.",
   sources: ["B1", "B2", "B5"]
@@ -293,14 +293,14 @@ window.QBANK.push(
   id: "ih156", domain: "ih-donor", star: true,
   q: "Discuss the storage, transport and issue of blood components, including temperature control and the fate of units returned to the blood bank.",
   tags: ["cold chain", "transport", "30-minute rule", "temperature excursion"],
-  keypoints: ["1-6 degrees", "20-24 degrees", "agitation", "minus 18", "validated container", "data logger", "cold chain", "30-minute rule", "four hours", "returned unit", "inspection", "backup power", "issue", "blood warmer"],
+  keypoints: ["1–6 °C", "20–24 °C", "agitation", "−18 °C", "validated container", "data logger", "cold chain", "30-minute rule", "four hours", "returned unit", "inspection", "backup power", "issue", "blood warmer"],
   answer: `
     <h4>Storage conditions</h4>
     <div class="table-wrap"><table>
       <tr><th>Component</th><th>Storage</th></tr>
-      <tr><td>Red cells and whole blood</td><td><strong>1-6 degrees</strong> Celsius in a monitored refrigerator</td></tr>
-      <tr><td>Platelets</td><td><strong>20-24 degrees</strong> Celsius with continuous <strong>agitation</strong> — never refrigerated</td></tr>
-      <tr><td>Fresh frozen plasma and cryoprecipitate</td><td><strong>minus 18</strong> degrees Celsius or colder, preferably −25 °C or below</td></tr>
+      <tr><td>Red cells and whole blood</td><td><strong>1–6 °C</strong> in a monitored refrigerator</td></tr>
+      <tr><td>Platelets</td><td><strong>20–24 °C</strong> with continuous <strong>agitation</strong> — never refrigerated</td></tr>
+      <tr><td>Fresh frozen plasma and cryoprecipitate</td><td><strong>−18 °C</strong> or colder, preferably −25 °C or below</td></tr>
       <tr><td>Thawed plasma</td><td>1–6 °C, used within 24 hours (up to 5 days if relabelled as thawed plasma)</td></tr>
     </table></div>
     <p>Refrigerators and freezers are qualified, mapped, alarmed and connected to <strong>backup power</strong>; platelet incubators have agitators and their own alarms. Temperature is recorded continuously and reviewed, because a silent failure overnight is the commonest cause of a large loss of stock.</p>
@@ -309,12 +309,12 @@ window.QBANK.push(
       <li>Components travel in a <strong>validated container</strong> with sufficient coolant, packed so that the temperature is maintained for the expected journey.</li>
       <li>A <strong>data logger</strong> or temperature indicator travels with the box; the receiving laboratory checks and records it before accepting the units.</li>
       <li>The <strong>cold chain</strong> is a shared responsibility between the blood centre, the porter and the ward, and is audited as a quality indicator.</li>
-      <li>In an archipelago, road, sea and air legs must each be covered by the validation, including delays at ports and in traffic.</li>
+      <li>In an archipelago, road, sea and air legs must all be covered by the validation, including port delays and traffic.</li>
     </ul>
     <h4>Issue and the ward</h4>
-    <p>Before issue the unit is <strong>inspection</strong>-ed for leaks, clots, unusual colour and correct labelling; the patient's identity and the compatibility label are checked independently. Red cells are not warmed except in a <strong>blood warmer</strong> for rapid or massive transfusion, and no drug is added to the line. Once a unit leaves controlled storage, the <strong>30-minute rule</strong> applies: if it is not started within 30 minutes it must be returned, and a unit that has been out for longer than 30 minutes cannot be returned to stock. Transfusion must be completed within <strong>four hours</strong> of issue.</p>
+    <p>Before issue the unit is inspected (<strong>inspection</strong>) for leaks, clots, unusual colour and correct labelling; the patient's identity and the compatibility label are checked independently. Red cells are not warmed except in a <strong>blood warmer</strong> for rapid or massive transfusion, and no drug is added to the line. Once a unit leaves controlled storage, the <strong>30-minute rule</strong> applies: if it is not started within 30 minutes it must be returned, and a unit that has been out for longer than 30 minutes cannot be returned to stock. Transfusion must be completed within <strong>four hours</strong> of issue.</p>
     <h4>Returned units</h4>
-    <p>A <strong>returned unit</strong> is accepted back only if it has been out of the refrigerator for less than 30 minutes, the bag is intact and the temperature is within limits. Otherwise it is discarded, with the reason documented. The rule exists because warm red cells support bacterial growth, and the cost of discarding a unit is far less than the cost of a septic reaction.</p>
+    <p>A <strong>returned unit</strong> is accepted back only if it has been out of the refrigerator for less than 30 minutes, the bag is intact and the temperature is within limits. Otherwise it is discarded, with the reason documented. The rule exists because warm red cells support bacterial growth, and discarding a unit costs far less than a septic reaction.</p>
   `,
   tip: "The 30-minute out-of-storage rule and the four-hour infusion limit are the two numbers to quote.",
   sources: ["B1", "B5"]
@@ -339,7 +339,7 @@ window.QBANK.push(
     <h4>Safety of the pooled product</h4>
     <p>Because a pool may contain thousands of donations, one infected unit can contaminate a large batch. Safety therefore rests on donor selection, NAT, quarantine release and robust viral inactivation: <strong>solvent-detergent</strong> treatment for enveloped viruses, pasteurisation, low-pH incubation and <strong>nanofiltration</strong>. Non-enveloped viruses such as parvovirus B19 and hepatitis A are the residual concern, and <strong>prion</strong> removal is a design requirement for modern plants.</p>
     <h4>Self-sufficiency</h4>
-    <p>The World Health Organization encourages countries to meet their needs for plasma-derived products from their own voluntary donors, supported by <strong>contract fractionation</strong> where no domestic plant exists. This avoids dependence on imported products and allows donor <strong>donor vigilance</strong> to be linked to the finished product. Most of Southeast Asia, including the Philippines, relies heavily on imported, virus-inactivated concentrates, so a national plasma programme must balance donor recruitment, freezer capacity, testing and affordability.</p>
+    <p>The World Health Organization encourages countries to meet their needs for plasma-derived products from their own voluntary donors, supported by <strong>contract fractionation</strong> where no domestic plant exists. This avoids dependence on imported products and allows <strong>donor vigilance</strong> to be linked to the finished product. Most of Southeast Asia, including the Philippines, relies on imported, virus-inactivated concentrates, so a national plasma programme must balance donor recruitment, freezer capacity, testing and affordability.</p>
   `,
   tip: "Explain why one infected donation matters more for pooled products, and name the inactivation steps.",
   sources: ["B8", "B7", "B5"]
@@ -415,7 +415,7 @@ window.QBANK.push(
     <ul>
       <li><strong>Adverse reaction</strong>s in recipients: acute and delayed haemolysis, febrile and allergic reactions, TRALI, TACO, bacterial sepsis, TA-GVHD and transfusion-transmitted infection.</li>
       <li><strong>Adverse event</strong>s and errors: <strong>wrong blood in tube</strong>, mislabelled samples, wrong unit transfused, storage failure, delays and component wastage.</li>
-      <li><strong>Near miss</strong>-es: errors intercepted before harm, which are the richest source of learning.</li>
+      <li><strong>Near misses</strong>: errors intercepted before harm, which are the richest source of learning.</li>
       <li>Donor events: vasovagal reactions, arterial puncture, nerve injury, citrate effects and serious outcomes.</li>
     </ul>
     <h4>Analysis</h4>
@@ -466,7 +466,7 @@ window.QBANK.push(
       <li>An <strong>emergency stock</strong> of group O red cells and AB or low-titre A plasma, with a defined minimum level and a rule for replenishment.</li>
       <li><strong>Mutual aid</strong> agreements with neighbouring hospitals and the regional blood centre, tested in advance.</li>
       <li><strong>Backup power</strong> for refrigerators, freezers, agitators and alarms, and <strong>cold chain</strong> boxes ready for transport.</li>
-      <li>Regular <strong>drill</strong>-s with the emergency department, laboratory and porters, including a simulated failure of the refrigerator alarm.</li>
+      <li>Regular <strong>drills</strong> with the emergency department, laboratory and porters, including a simulated failure of the refrigerator alarm.</li>
       <li>A pre-agreed triage policy so that the most salvageable patients are prioritised, and a massive haemorrhage protocol with <strong>emergency release</strong> of <strong>group O red cells</strong>.</li>
     </ul>
     <h4>During the event</h4>

@@ -128,7 +128,7 @@ window.QBANK.push(
     <h4>Monitoring</h4>
     <ul>
       <li>Quantify the M-protein by densitometry or capillary integration and use the same method serially.</li>
-      <li>Measure free light chains when disease is non-secretory or light-chain only; about a fifth of cases are <strong>non-secretory</strong> on electrophoresis.</li>
+      <li>Measure free light chains when disease is non-secretory or light-chain only; a proportion of cases are <strong>non-secretory</strong> on electrophoresis.</li>
       <li>Assess end-organ markers: calcium, creatinine, haemoglobin and skeletal imaging.</li>
       <li>Recognise that intravenous immunoglobulin, daratumumab and autoimmune disease can create a false band.</li>
     </ul>

@@ -75,7 +75,7 @@ window.QBANK.push(
   keypoints: ["anti-HCV","HCV RNA","reflex HCV RNA","HCV core antigen","sustained virological response","direct-acting antivirals","genotyping","cryoglobulinaemia","HCC surveillance","immunocompromised","SVR12","false-positive serology"],
   answer: `
     <h4>Virology and markers</h4>
-    <p>Hepatitis C virus is a flavivirus with a single-stranded RNA genome and marked genetic diversity (genotypes 1–6). <strong>Anti-HCV</strong> is the screening test; <strong>HCV RNA</strong> by real-time PCR confirms viraemia. RNA appears before antibody, so anti-HCV may be negative in early acute infection and in <strong>immunocompromised</strong> patients.</p>
+    <p>Hepatitis C virus is a positive-sense RNA virus of the Flaviviridae family with marked genetic diversity (genotypes 1–6). <strong>Anti-HCV</strong> is the screening test; <strong>HCV RNA</strong> by real-time PCR confirms viraemia. RNA appears before antibody, so anti-HCV may be negative in early acute infection and in <strong>immunocompromised</strong> patients.</p>
     <h4>Serology and reflex testing</h4>
     <ul>
       <li>Screen with a third-generation anti-HCV immunoassay. A reactive result should be confirmed by <strong>HCV RNA</strong>, not by a second antibody test alone.</li>
@@ -84,7 +84,7 @@ window.QBANK.push(
       <li>Antibody does not distinguish current from resolved infection; only RNA does.</li>
     </ul>
     <h4>Molecular monitoring</h4>
-    <p>Quantitative HCV RNA (IU/mL) establishes baseline viraemia and monitors response. With pan-genotypic <strong>direct-acting antivirals</strong>, the goal is a <strong>sustained virological response</strong> — undetectable RNA at 12 weeks after treatment (<strong>SVR12</strong>). <strong>Genotyping</strong> is now needed mainly for retreatment or complex cases. Resistance-associated substitutions matter after failure of NS5A inhibitors.</p>
+    <p>Quantitative HCV RNA (IU/mL) establishes baseline viraemia and monitors response. With pan-genotypic <strong>direct-acting antivirals</strong>, the goal is a <strong>sustained virological response</strong> — undetectable RNA at 12 weeks after treatment (<strong>SVR12</strong>). <strong>Genotyping</strong> is now needed mainly for retreatment or complex cases. Resistance-associated substitutions matter after failure of NS5A inhibitors. Baseline resistance testing is not routine for first-line pan-genotypic regimens, but it is considered after treatment failure.</p>
     <h4>Special situations</h4>
     <p>Patients with HIV, dialysis or transplantation may seroconvert late; use RNA. Chronic infection is associated with mixed <strong>cryoglobulinaemia</strong>, membranoproliferative glomerulonephritis and porphyria cutanea tarda. Cirrhosis persists after cure, so <strong>HCC surveillance</strong> continues. In the Philippines, HCV is less common than HBV but is concentrated in people who inject drugs; linkage to care and harm reduction are essential.</p>
   `,
@@ -121,7 +121,7 @@ window.QBANK.push(
   keypoints: ["albumin","polyclonal hypergammaglobulinaemia","beta–gamma bridging","alpha-1 antitrypsin","alpha-fetoprotein","haptoglobin","ceruloplasmin","monoclonal band","immunofixation","serum free light chains","nephrotic syndrome"],
   answer: `
     <h4>The normal pattern</h4>
-    <p>Serum protein electrophoresis separates proteins by charge into <strong>albumin</strong>, alpha-1, alpha-2, beta and gamma bands. The gamma band contains immunoglobulins, so its shape and width are the most useful part of the trace in liver disease. <strong>Immunofixation</strong> and quantitative immunoglobulins are used to characterise abnormal bands.</p>
+    <p>Serum protein electrophoresis separates proteins by charge into <strong>albumin</strong>, alpha-1, alpha-2, beta and gamma bands. The gamma band contains immunoglobulins, so its shape and width are the most useful part of the trace in liver disease. The trace is semi-quantitative; densitometry gives the relative percentage of each fraction, not absolute concentrations. <strong>Immunofixation</strong> and quantitative immunoglobulins are used to characterise abnormal bands.</p>
     <h4>Chronic liver disease</h4>
     <ul>
       <li>Albumin falls with reduced synthesis and inflammation.</li>
@@ -130,7 +130,7 @@ window.QBANK.push(
       <li><strong>Alpha-1 antitrypsin</strong> deficiency produces a low alpha-1 band; confirm with serum concentration and phenotype.</li>
     </ul>
     <h4>Specific proteins worth recognising</h4>
-    <p>A dense band between albumin and alpha-1 may be <strong>alpha-fetoprotein</strong>, suggesting hepatocellular carcinoma. Low <strong>haptoglobin</strong> and a raised alpha-2 region occur in haemolysis, while <strong>ceruloplasmin</strong> (alpha-2) is low in Wilson disease. In <strong>nephrotic syndrome</strong>, alpha-2-macroglobulin produces a tall alpha-2 band with low albumin and gamma.</p>
+    <p>A dense band between albumin and alpha-1 may be <strong>alpha-fetoprotein</strong>, suggesting hepatocellular carcinoma. Low <strong>haptoglobin</strong> reduces the alpha-2 band in haemolysis, while <strong>ceruloplasmin</strong> (alpha-2) is low in Wilson disease. In <strong>nephrotic syndrome</strong>, alpha-2-macroglobulin produces a tall alpha-2 band with low albumin and gamma.</p>
     <h4>Pitfalls and monoclonal bands</h4>
     <p>A <strong>monoclonal band</strong> is not caused by liver disease itself, but may accompany myeloma, AL amyloidosis or lymphoma; it requires immunofixation and <strong>serum free light chains</strong>. Low-level monoclonal gammopathy is common in older people and may be incidental. Dehydration and prolonged storage alter the trace. SPEP is not a screening test for liver disease: it is most useful when quantitative immunoglobulins, the alpha-1 band or a suspected paraprotein needs clarification.</p>
   `,
@@ -153,7 +153,7 @@ window.QBANK.push(
       <li>Record the number of valid shots and the operator's experience.</li>
     </ul>
     <h4>Confounders</h4>
-    <p>Stiffness is not specific for fibrosis. <strong>Acute hepatitis</strong> with high ALT, <strong>cholestasis</strong>, <strong>right heart failure</strong> and hepatic congestion, ascites, obesity and a narrow intercostal space all raise readings. Inflammation can produce a false "cirrhosis" result during a flare, so repeat after transaminases settle. Conversely, macronodular cirrhosis and steatosis may give lower readings. Cut-offs are aetiology-specific and probe-specific, so a single universal threshold should not be applied.</p>
+    <p>Stiffness is not specific for fibrosis. <strong>Acute hepatitis</strong> with high ALT, <strong>cholestasis</strong>, <strong>right heart failure</strong> and hepatic congestion, ascites, obesity and a narrow intercostal space all raise readings. Inflammation can produce a false "cirrhosis" result during a flare, so repeat after transaminases settle. Conversely, macronodular cirrhosis may give lower readings than the true fibrosis stage suggests. Cut-offs are aetiology-specific and probe-specific, so a single universal threshold should not be applied.</p>
     <h4>Role in the pathway</h4>
     <p>Elastography is a second-line test after <strong>FIB-4</strong> or the <strong>ELF test</strong> in chronic liver disease. It helps rule out advanced fibrosis, supports referral, and can monitor response to weight loss or antiviral treatment. <strong>Magnetic resonance elastography</strong> is more precise but less available. Elastography reduces but does not eliminate the need for <strong>liver biopsy</strong>, which remains the reference standard when results are discordant or the cause is unclear.</p>
   `,
@@ -169,14 +169,14 @@ window.QBANK.push(
     <h4>Cholestasis is not physiological</h4>
     <p>Neonatal jaundice is usually unconjugated, but a raised <strong>conjugated bilirubin</strong> indicates <strong>cholestasis</strong> and is a medical emergency. The infant may have pale <strong>acholic stools</strong>, dark urine, hepatomegaly and failure to thrive. The first step is fractionation of bilirubin, then a structured search for treatable causes.</p>
     <h4>Biliary atresia</h4>
-    <p><strong>Biliary atresia</strong> is an inflammatory obliteration of the extrahepatic bile ducts. Early <strong>hepatoportoenterostomy</strong> (Kasai operation) improves bile drainage and native liver survival, so delay costs lives. Ultrasound after fasting, hepatobiliary scintigraphy, liver biopsy and intraoperative <strong>cholangiogram</strong> establish the diagnosis. GGT is typically high, but a normal GGT does not exclude the disease.</p>
+    <p><strong>Biliary atresia</strong> is an inflammatory obliteration of the extrahepatic bile ducts and the commonest surgically correctable cause of neonatal cholestasis. Age at surgery is the strongest predictor of outcome, so early <strong>hepatoportoenterostomy</strong> (Kasai operation) improves bile drainage and native liver survival; delay costs lives. Ultrasound after fasting, hepatobiliary scintigraphy, liver biopsy and intraoperative <strong>cholangiogram</strong> establish the diagnosis. GGT is typically high, but a normal GGT does not exclude the disease.</p>
     <h4>Inherited and metabolic causes</h4>
     <ul>
       <li><strong>Alpha-1 antitrypsin deficiency</strong> — low alpha-1 band, phenotype on serum.</li>
       <li><strong>Tyrosinaemia type 1</strong> — raised succinylacetone and tyrosine; treatable with nitisinone.</li>
       <li><strong>Galactosaemia</strong> — reducing substances, galactose-1-phosphate uridyltransferase; screened in the expanded Philippine newborn panel.</li>
       <li><strong>Cystic fibrosis</strong> — sweat chloride and CFTR testing; meconium ileus in the newborn.</li>
-      <li><strong>PFIC</strong> and <strong>Alagille syndrome</strong> — low or high GGT patterns respectively, bile acids and genetic testing.</li>
+      <li><strong>PFIC</strong> (low GGT in types 1 and 2, high in type 3) and <strong>Alagille syndrome</strong> (high GGT) — bile acids and genetic testing.</li>
       <li>Hypothyroidism, sepsis, parenteral nutrition and CMV — screen and treat.</li>
     </ul>
     <h4>Laboratory approach</h4>
@@ -192,7 +192,7 @@ window.QBANK.push(
   keypoints: ["steatosis","alcoholic hepatitis","AUDIT","AST:ALT ratio greater than 2","GGT","macrocytosis","thrombocytopenia","ferritin","carbohydrate-deficient transferrin","phosphatidylethanol","ethyl glucuronide","Maddrey discriminant function","Mallory–Denk bodies"],
   answer: `
     <h4>Spectrum and clinical clues</h4>
-    <p>Alcohol-related liver disease ranges from <strong>steatosis</strong> to <strong>alcoholic hepatitis</strong>, fibrosis and cirrhosis. A patient may present with an incidental high GGT, decompensated cirrhosis, or jaundice and fever. The history is often unreliable, so laboratory markers and a structured questionnaire (<strong>AUDIT</strong>) support the diagnosis.</p>
+    <p>Alcohol-related liver disease ranges from <strong>steatosis</strong> to <strong>alcoholic hepatitis</strong>, fibrosis and cirrhosis. A patient may present with an incidental high GGT, decompensated cirrhosis, or jaundice and fever. The history is often unreliable, so laboratory markers and a structured questionnaire (<strong>AUDIT</strong>) support the diagnosis. The threshold for harm is debated, but the pattern of drinking and the total lifetime dose both matter.</p>
     <h4>The classical pattern</h4>
     <ul>
       <li><strong>AST:ALT ratio greater than 2</strong>, with transaminases usually below 300 U/L. Mitochondrial AST release and pyridoxine deficiency reduce ALT.</li>
@@ -216,7 +216,7 @@ window.QBANK.push(
   keypoints: ["intrinsic","idiosyncratic","R ratio","hepatocellular","cholestatic","mixed","Hy's law","eosinophilia","anti-tuberculosis drugs","RUCAM","rechallenge is contraindicated","checkpoint inhibitors"],
   answer: `
     <h4>Mechanisms and phenotypes</h4>
-    <p><strong>Drug-induced liver injury</strong> is either <strong>intrinsic</strong> (predictable, dose-related, as with paracetamol) or <strong>idiosyncratic</strong> (unpredictable, immune or metabolic). The biochemical pattern is classified by the <strong>R ratio</strong> as <strong>hepatocellular</strong>, <strong>cholestatic</strong> or <strong>mixed</strong>. Immune-mediated reactions may bring fever, rash and <strong>eosinophilia</strong>.</p>
+    <p><strong>Drug-induced liver injury</strong> is either <strong>intrinsic</strong> (predictable, dose-related, as with paracetamol) or <strong>idiosyncratic</strong> (unpredictable, immune or metabolic). The biochemical pattern is classified by the <strong>R ratio</strong> as <strong>hepatocellular</strong>, <strong>cholestatic</strong> or <strong>mixed</strong>. Hepatotoxicity may be direct, through reactive metabolites, or immune-mediated; the pattern often reflects the site of injury, with canalicular transporters giving cholestasis and hepatocytes giving hepatocellular injury. Immune-mediated reactions may bring fever, rash and <strong>eosinophilia</strong>.</p>
     <h4>Hy's law and severity</h4>
     <p><strong>Hy's law</strong> describes hepatocellular injury with jaundice — a marked ALT rise plus a raised bilirubin in the absence of biliary obstruction — which predicts a substantial risk of severe injury, transplantation or death. It is a warning sign, not a diagnosis. Rising INR, encephalopathy, hypoglycaemia and acidosis indicate acute liver failure.</p>
     <h4>Common agents in the Philippines</h4>
@@ -227,7 +227,7 @@ window.QBANK.push(
       <li>Anticonvulsants, methotrexate, amiodarone, NSAIDs and <strong>checkpoint inhibitors</strong> (immune-mediated hepatitis).</li>
     </ul>
     <h4>Assessment and causality</h4>
-    <p>Establish the temporal relationship, stop all non-essential drugs, and exclude viral hepatitis (A–E), alcohol, autoimmune hepatitis, Wilson disease, haemochromatosis and biliary obstruction by imaging. The <strong>RUCAM</strong> score structures causality but is imperfect. <strong>Rechallenge is contraindicated</strong> after a severe reaction. Management is withdrawal of the culprit, supportive care, and targeted therapy for paracetamol or immune-mediated disease; transplant assessment for acute liver failure.</p>
+    <p>Establish the temporal relationship, stop all non-essential drugs, and exclude viral hepatitis (A–E), alcohol, autoimmune hepatitis, Wilson disease, haemochromatosis and biliary obstruction by imaging. Document every prescription drug, over-the-counter product and supplement, with start dates and duration. The <strong>RUCAM</strong> score structures causality but is imperfect. <strong>Rechallenge is contraindicated</strong> after a severe reaction. Management is withdrawal of the culprit, supportive care, and targeted therapy for paracetamol or immune-mediated disease; transplant assessment for acute liver failure.</p>
   `,
   tip: "Use Hy's law as the severity warning and RUCAM as the causality framework, then name the local anti-TB drugs.",
   sources: ["C1", "C3", "C2"]
@@ -239,7 +239,7 @@ window.QBANK.push(
   keypoints: ["albumin","alkaline phosphatase","ALT and AST","intrahepatic cholestasis of pregnancy","serum bile acids","HELLP","haemolysis","LDH","haptoglobin","acute fatty liver of pregnancy","pre-eclampsia","hepatitis E"],
   answer: `
     <h4>Normal physiological changes</h4>
-    <p>Pregnancy dilutes <strong>albumin</strong>, raises <strong>alkaline phosphatase</strong> through the placental isoenzyme, and increases fibrinogen and most clotting factors. <strong>ALT and AST</strong> remain within the non-pregnant range. Interpreting liver tests without pregnancy-specific reference intervals causes false reassurance or false alarm.</p>
+    <p>Pregnancy dilutes <strong>albumin</strong>, raises <strong>alkaline phosphatase</strong> through the placental isoenzyme, and increases fibrinogen and most clotting factors. <strong>ALT and AST</strong> remain within the non-pregnant range. Interpreting liver tests without pregnancy-specific reference intervals causes false reassurance or false alarm. These changes are adaptations to increased plasma volume and placental production.</p>
     <h4>Intrahepatic cholestasis of pregnancy</h4>
     <p><strong>Intrahepatic cholestasis of pregnancy</strong> presents in the second half of pregnancy with pruritus, especially of the palms and soles, and raised fasting <strong>serum bile acids</strong>; ALT may rise and bilirubin is usually only mildly elevated. It is a diagnosis of exclusion. The main fetal risks are preterm labour, meconium staining and stillbirth, which increase with bile acid severity. Ursodeoxycholic acid relieves symptoms; timing of delivery is decided by the obstetric team.</p>
     <h4>HELLP and acute fatty liver</h4>
@@ -262,7 +262,7 @@ window.QBANK.push(
   keypoints: ["gastrin","cholecystokinin","secretin","glucagon-like peptide-1","neuroendocrine tumours","gastrinoma","carcinoid","5-HIAA","VIPoma","insulinoma","chromogranin A","proton pump inhibitor","MEN1","gallium-DOTATATE PET"],
   answer: `
     <h4>The gut hormones</h4>
-    <p>Gut hormones coordinate secretion, motility and appetite: <strong>gastrin</strong> from G cells, <strong>cholecystokinin</strong>, <strong>secretin</strong>, glucose-dependent insulinotropic peptide, <strong>glucagon-like peptide-1</strong>, motilin and ghrelin. <strong>Neuroendocrine tumours</strong> may secrete one or more of these and produce characteristic syndromes.</p>
+    <p>Gut hormones coordinate secretion, motility and appetite: <strong>gastrin</strong> from G cells, <strong>cholecystokinin</strong>, <strong>secretin</strong>, glucose-dependent insulinotropic peptide, <strong>glucagon-like peptide-1</strong>, motilin and ghrelin. Motilin drives the migrating motor complex, while ghrelin stimulates appetite. <strong>Neuroendocrine tumours</strong> may secrete one or more of these and produce characteristic syndromes.</p>
     <h4>Functional syndromes</h4>
     <ul>
       <li><strong>Gastrinoma</strong> (Zollinger–Ellison) — refractory ulcers, diarrhoea, high fasting gastrin; secretin stimulation supports the diagnosis.</li>
@@ -272,7 +272,7 @@ window.QBANK.push(
       <li><strong>Insulinoma</strong> — Whipple triad with inappropriate insulin and C-peptide during hypoglycaemia.</li>
     </ul>
     <h4>Laboratory measurement</h4>
-    <p><strong>Chromogranin A</strong> is a general NET marker but rises with <strong>proton pump inhibitor</strong> use, renal failure and inflammation. 5-HIAA is affected by serotonin-rich foods (bananas, pineapple, walnuts) and by drugs. Gastrin is raised by PPI therapy, Helicobacter pylori, atrophic gastritis and renal failure, so samples should be taken fasting and, where safe, after stopping acid suppression. Peptides are labile: collect on ice, use protease inhibitors where specified, and separate promptly. LC-MS/MS improves specificity for several analytes.</p>
+    <p><strong>Chromogranin A</strong> is a general NET marker but rises with <strong>proton pump inhibitor</strong> use, renal failure and inflammation. 5-HIAA is affected by serotonin-rich foods (bananas, pineapple, walnuts) and by drugs. Gastrin is raised by PPI therapy, Helicobacter pylori, atrophic gastritis and renal failure, so samples should be taken fasting and, where safe, after stopping acid suppression. Peptides are labile: collect on ice, use protease inhibitors where specified, and separate promptly. LC-MS/MS improves specificity for several analytes. Symptoms may be episodic, so a single normal peptide level does not exclude a functional tumour, and provocative tests are reserved for specialist centres.</p>
     <h4>Localisation and genetics</h4>
     <p>Biochemical confirmation is followed by cross-sectional imaging and functional imaging such as <strong>gallium-DOTATATE PET</strong>. About a quarter of pancreatic NETs occur in <strong>MEN1</strong>, so assess parathyroid and pituitary disease and offer genetic testing. CA 19-9 is not a NET marker.</p>
   `,
@@ -286,7 +286,7 @@ window.QBANK.push(
   keypoints: ["faecal calprotectin","inflammatory bowel disease","irritable bowel syndrome","faecal lactoferrin","faecal immunochemical test","faecal elastase-1","M2-pyruvate kinase","infection","coeliac disease","colorectal cancer"],
   answer: `
     <h4>Faecal calprotectin</h4>
-    <p><strong>Faecal calprotectin</strong> is a calcium-binding protein (S100A8/A9) released by neutrophils. It is stable in stool, resists bacterial degradation and correlates with the number of neutrophils migrating into the gut. It is the best non-invasive test for separating <strong>inflammatory bowel disease</strong> from <strong>irritable bowel syndrome</strong>: a low result makes IBD unlikely, while a high result supports inflammation and warrants endoscopy.</p>
+    <p><strong>Faecal calprotectin</strong> is a calcium-binding protein (S100A8/A9) released by neutrophils. It is stable in stool, resists bacterial degradation and correlates with the number of neutrophils migrating into the gut. It is the best non-invasive test for separating <strong>inflammatory bowel disease</strong> from <strong>irritable bowel syndrome</strong>: a low result makes IBD unlikely, while a high result supports inflammation and warrants endoscopy. It is also used to triage patients before colonoscopy and to monitor disease activity over time.</p>
     <h4>Other faecal tests</h4>
     <ul>
       <li><strong>Faecal lactoferrin</strong> — another neutrophil protein; similar performance to calprotectin.</li>
@@ -320,7 +320,7 @@ window.QBANK.push(
     <h4>Other markers</h4>
     <p><strong>CA 125</strong> is used in ovarian cancer but rises in ascites, cirrhosis, endometriosis and menstruation. <strong>Chromogranin A</strong> supports neuroendocrine tumours but is confounded by proton pump inhibitors and renal failure. <strong>Calcitonin</strong> and CEA are markers of medullary thyroid carcinoma. <strong>Thyroglobulin</strong> monitors differentiated thyroid cancer only when anti-thyroglobulin antibodies are measured in parallel.</p>
     <h4>Principles of use</h4>
-    <p>Tumour markers have low sensitivity in early disease and poor specificity, so they are not diagnostic on their own. Their value lies in monitoring response, detecting recurrence and, for AFP, supporting surveillance in high-risk groups. Interpretation requires the pre-test probability, the assay method and the trend over time. In the Philippines, where HBV-related HCC is common, AFP plus ultrasound is the practical surveillance pair.</p>
+    <p>Tumour markers have low sensitivity in early disease and poor specificity, so they are not diagnostic on their own. Their value lies in monitoring response, detecting recurrence and, for AFP, supporting surveillance in high-risk groups. Interpretation requires the pre-test probability, the assay method and the trend over time. Serial measurements are more useful than a single value, and assays are not interchangeable between laboratories. In the Philippines, where HBV-related HCC is common, AFP plus ultrasound is the practical surveillance pair.</p>
   `,
   tip: "Stress that markers monitor rather than diagnose, and give the Lewis-negative and PPI pitfalls.",
   sources: ["C1", "C3", "C2"]
@@ -334,7 +334,7 @@ window.QBANK.push(
     <h4>Serum–ascites albumin gradient</h4>
     <p>Ascitic fluid is analysed together with a same-day serum sample. The <strong>serum–ascites albumin gradient</strong> (SAAG = serum albumin minus ascitic albumin) reflects portal pressure. A gradient of 1.1 g/dL or more indicates <strong>portal hypertension</strong> — cirrhosis, cardiac failure, Budd–Chiari; a lower gradient suggests a non-portal cause such as peritoneal tuberculosis, carcinomatosis, pancreatic ascites or nephrotic syndrome. Total protein helps: it is high in cardiac ascites and low in cirrhosis.</p>
     <h4>Spontaneous bacterial peritonitis</h4>
-    <p><strong>Spontaneous bacterial peritonitis</strong> is diagnosed by an ascitic <strong>polymorphonuclear cell count</strong> of 250/µL or more, even when culture is negative (<strong>culture-negative neutrocytic ascites</strong>). Inoculate ascitic fluid into <strong>blood culture bottles</strong> at the bedside to improve yield. Secondary peritonitis suggests a surgical source when multiple organisms grow, protein is high, glucose is low and LDH is high. Always send a paired serum sample for albumin, glucose and LDH.</p>
+    <p><strong>Spontaneous bacterial peritonitis</strong> is diagnosed by an ascitic <strong>polymorphonuclear cell count</strong> of 250/µL or more, even when culture is negative (<strong>culture-negative neutrocytic ascites</strong>). Inoculate ascitic fluid into <strong>blood culture bottles</strong> at the bedside to improve yield. Secondary peritonitis suggests a surgical source when multiple organisms grow, protein is high, glucose is low and LDH is high. Always send a paired serum sample for albumin, glucose and LDH. Send the fluid in plain sterile containers, analyse it promptly, and remember that cell counts degrade with delay.</p>
     <h4>Other tests</h4>
     <ul>
       <li>Cytology for malignant cells; <strong>ADA</strong>, AFB and TB PCR for tuberculous peritonitis.</li>
@@ -357,7 +357,7 @@ window.QBANK.push(
     <p><strong>Wilson disease</strong> is autosomal recessive, caused by variants in <strong>ATP7B</strong>, a copper-transporting ATPase. Impaired biliary copper excretion and failure to load copper onto <strong>ceruloplasmin</strong> cause copper accumulation in the liver, basal ganglia, cornea and kidney. Presentation ranges from paediatric hepatitis to cirrhosis, neuropsychiatric disease and acute haemolysis.</p>
     <h4>Biochemical tests</h4>
     <ul>
-      <li><strong>Ceruloplasmin</strong> is usually low but may be normal in active liver disease and is raised as an acute-phase protein.</li>
+      <li><strong>Ceruloplasmin</strong> is usually low but may be normal in active liver disease and is raised as an acute-phase protein; interpret it with the copper studies rather than alone.</li>
       <li>Serum copper is low; calculated <strong>free copper</strong> is raised.</li>
       <li><strong>24-hour urinary copper</strong> is increased; a penicillamine challenge is used in children but is not validated in adults.</li>
       <li><strong>Hepatic copper</strong> on biopsy is the strongest single test when the diagnosis is uncertain.</li>
@@ -365,7 +365,7 @@ window.QBANK.push(
       <li><strong>Coombs-negative haemolytic anaemia</strong> with a low <strong>ALP:bilirubin ratio</strong> is a classic acute presentation.</li>
     </ul>
     <h4>Diagnostic pitfalls</h4>
-    <p>Low ceruloplasmin also occurs in protein-losing states and severe liver disease; urinary copper collection is prone to contamination. The <strong>Leipzig score</strong> combines clinical, biochemical, histological and genetic findings. ATP7B sequencing confirms the diagnosis and enables family screening. A normal ceruloplasmin does not exclude Wilson disease, and every young patient with unexplained liver disease should be tested.</p>
+    <p>Low ceruloplasmin also occurs in protein-losing states and severe liver disease; urinary copper collection is prone to contamination. The <strong>Leipzig score</strong> combines clinical, biochemical, histological and genetic findings. ATP7B sequencing confirms the diagnosis and enables family screening. A normal ceruloplasmin does not exclude Wilson disease, and every young patient with unexplained liver disease should be tested. Interpretation is especially difficult in children.</p>
     <h4>Monitoring</h4>
     <p>Treatment aims to remove copper and prevent reaccumulation. <strong>Penicillamine</strong> or <strong>trientine</strong> chelate copper; <strong>zinc</strong> blocks intestinal absorption. Monitor urinary copper, liver tests, blood counts and adherence. Liver transplantation is curative for fulminant failure. Family screening is essential because presymptomatic relatives benefit from early treatment.</p>
   `,
@@ -383,7 +383,7 @@ window.QBANK.push(
     <h4>Sweat chloride</h4>
     <p>The <strong>sweat chloride</strong> test remains the cornerstone. <strong>Pilocarpine iontophoresis</strong> stimulates sweating, and a validated laboratory measures chloride in an adequate sweat sample. A value of 60 mmol/L or more is diagnostic in the right clinical context; 30–59 mmol/L is intermediate and requires further testing; below 30 makes CF unlikely. False results occur with poor collection, evaporation, malnutrition, oedema and skin disease. The test should be repeated or followed by genetic testing when results are discordant.</p>
     <h4>CFTR genotyping</h4>
-    <p>Genetic testing identifies two CF-causing variants, confirms the diagnosis and informs eligibility for <strong>CFTR modulators</strong>. Panels cover common variants, but rare variants require sequencing or deletion/duplication analysis. Genotype does not always predict pancreatic or pulmonary severity.</p>
+    <p>Genetic testing identifies two CF-causing variants, confirms the diagnosis and informs eligibility for <strong>CFTR modulators</strong>. Panels cover common variants, but rare variants require sequencing or deletion/duplication analysis. Genotype does not always predict pancreatic or pulmonary severity. Carrier screening and genetic counselling are offered to affected families.</p>
     <h4>Newborn screening and other tests</h4>
     <ul>
       <li><strong>Immunoreactive trypsinogen</strong> on a dried blood spot, followed by DNA or a second IRT.</li>
@@ -414,7 +414,7 @@ window.QBANK.push(
     <h4>Invasive tests</h4>
     <p>At endoscopy, the <strong>rapid urease test</strong>, histology and culture are available. Histology with special stains confirms infection and assesses gastritis and malignancy. <strong>Culture</strong> allows susceptibility testing, particularly for <strong>clarithromycin resistance</strong>, but is slow and technically demanding. PCR on biopsy can detect resistance mutations more rapidly.</p>
     <h4>Clinical use in the Philippines</h4>
-    <p>Prevalence is high, so a test-and-treat strategy is often used for dyspepsia in younger patients without alarm features. Eradication should be confirmed with a urea breath test or stool antigen at least four weeks after therapy and off PPI. Causes of false-negative results include PPI use, recent antibiotics, atrophic gastritis and gastric cancer. <strong>Bismuth</strong>-containing quadruple therapy is used where resistance is common.</p>
+    <p>Prevalence is high, so a test-and-treat strategy is often used for dyspepsia in younger patients without alarm features. Eradication should be confirmed with a urea breath test or stool antigen at least four weeks after therapy and off PPI. Causes of false-negative results include PPI use, recent antibiotics, atrophic gastritis and gastric cancer. Avoid testing during or shortly after empirical eradication therapy, and document the method used because assays differ in performance. <strong>Bismuth</strong>-containing quadruple therapy is used where resistance is common.</p>
   `,
   tip: "Separate active-infection tests (breath, stool) from exposure (serology), and always mention PPI withdrawal.",
   sources: ["C1", "C3", "C2"]

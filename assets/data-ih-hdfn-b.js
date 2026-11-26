@@ -32,7 +32,7 @@ window.QBANK.push(
   id: "ih110", domain: "ih-hdfn", star: true,
   q: "Discuss fetomaternal haemorrhage: mechanisms, recognition, quantification and clinical consequences for mother and fetus.",
   tags: ["fetomaternal haemorrhage", "Kleihauer-Betke", "flow cytometry", "fetal anaemia"],
-  keypoints: ["fetomaternal haemorrhage", "fetal anaemia", "stillbirth", "RhD alloimmunisation", "Kleihauer-Betke", "flow cytometry", "rosette test", "sinusoidal heart rate", "abruption", "external cephalic version", "intrauterine transfusion", "quantify"],
+  keypoints: ["fetomaternal haemorrhage", "fetal anaemia", "stillbirth", "RhD alloimmunisation", "Kleihauer-Betke", "flow cytometry", "rosette test", "sinusoidal heart rate", "abruption", "external cephalic version", "intrauterine transfusion", "quantified"],
   answer: `
     <h4>Definition and magnitude</h4>
     <p><strong>Fetomaternal haemorrhage</strong> is the transfer of fetal blood into the maternal circulation. Small bleeds occur in most pregnancies and are harmless; large bleeds cause <strong>fetal anaemia</strong>, <strong>stillbirth</strong> and <strong>RhD alloimmunisation</strong>. The volume needed to sensitise a D-negative woman may be minute, whereas the volume needed to exsanguinate a fetus is large, so the same event has two very different thresholds.</p>
@@ -52,7 +52,7 @@ window.QBANK.push(
       <li>Kleihauer-Betke is falsely raised in hereditary persistence of fetal haemoglobin and thalassaemia trait; flow cytometry is preferred when the volume guides treatment.</li>
     </ul>
     <h4>Clinical consequences</h4>
-    <p>A large bleed with a compromised fetus needs urgent obstetric review, consideration of <strong>intrauterine transfusion</strong>, and delivery planning at a centre with neonatal intensive care. In a D-negative unsensitised woman the bleed must be <strong>quantify</strong>ied so that prophylaxis is adequate, and the event documented so that a later antibody screen can be interpreted. In a D-positive woman the finding still matters because fetal anaemia can recur without any maternal antibody.</p>
+    <p>A large bleed with a compromised fetus needs urgent obstetric review, consideration of <strong>intrauterine transfusion</strong>, and delivery planning at a centre with neonatal intensive care. In a D-negative unsensitised woman the bleed must be <strong>quantified</strong> so that prophylaxis is adequate, and the event documented so that a later antibody screen can be interpreted. In a D-positive woman the finding still matters because fetal anaemia can recur without any maternal antibody.</p>
   `,
   tip: "Separate the two thresholds: tiny volumes sensitise the mother, large volumes exsanguinate the fetus.",
   sources: ["B1", "B2", "B10"]
@@ -77,7 +77,7 @@ window.QBANK.push(
     </table></div>
     <h4>Monitoring and management</h4>
     <ul>
-      <li>Treat any anti-K in pregnancy as potentially significant; <strong>titre</strong>s are poorly predictive.</li>
+      <li>Treat any anti-K in pregnancy as potentially significant; <strong>titres</strong> are poorly predictive.</li>
       <li>Determine fetal <strong>KEL</strong> status by paternal genotyping or <strong>cell-free fetal DNA</strong>; a K-negative fetus needs no invasive monitoring.</li>
       <li>Start <strong>MCA-PSV</strong> Doppler earlier and at a lower threshold than for anti-D.</li>
       <li>Refer for <strong>intrauterine transfusion</strong> if anaemia develops, and deliver where neonatal exchange transfusion is available.</li>
@@ -237,7 +237,7 @@ window.QBANK.push(
   keypoints: ["hydrops fetalis", "ascites", "pleural effusion", "pericardial effusion", "skin oedema", "hepatosplenomegaly", "hypoalbuminaemia", "parvovirus B19", "alpha-thalassaemia", "MCA-PSV", "intrauterine transfusion", "antibody screen"],
   answer: `
     <h4>Definition</h4>
-    <p><strong>Hydrops fetalis</strong> is the accumulation of fluid in at least two fetal compartments — <strong>ascites</strong>, <strong>pleural effusion</strong>, <strong>pericardial effusion</strong> or <strong>skin oedema</strong> — often with placentomegaly and polyhydramnios. It is a sign, not a diagnosis, and carries a high mortality without treatment.</p>
+    <p><strong>Hydrops fetalis</strong> is the accumulation of fluid in at least two fetal compartments — <strong>ascites</strong>, <strong>pleural effusion</strong>, <strong>pericardial effusion</strong> or <strong>skin oedema</strong> — often with placentomegaly and polyhydramnios. It is a sign, not a diagnosis, and carries a high mortality without treatment. Hydrops is called immune when a maternal red cell antibody is responsible, and non-immune when no antibody is found.</p>
     <h4>Immune hydrops</h4>
     <p>Severe HDFN causes anaemia, extramedullary haematopoiesis, <strong>hepatosplenomegaly</strong>, <strong>hypoalbuminaemia</strong> and high-output cardiac failure. Capillary leak and reduced lymphatic drainage produce the effusions. The fetus may be hydropic at presentation, and the anaemia can be profound even when the maternal titre is not extreme.</p>
     <h4>Non-immune causes</h4>
@@ -248,6 +248,7 @@ window.QBANK.push(
       <li>Measure MCA-PSV; perform fetal echocardiography and karyotype or infection studies if immune causes are excluded.</li>
       <li>For immune anaemia, <strong>intrauterine transfusion</strong> is the definitive treatment and can reverse hydrops.</li>
       <li>Deliver at a tertiary centre with neonatal intensive care and exchange transfusion capability; give antenatal steroids if preterm delivery is likely.</li>
+      <li>Plan delivery with a multidisciplinary team — fetal medicine, neonatology, anaesthesia and the blood bank — because the hydropic infant is difficult to resuscitate and may need immediate exchange transfusion.</li>
       <li>Counsel about survival and neurodevelopmental outcome, which depend on the cause and on any cerebral injury.</li>
     </ul>
     <p>Hydrops is the endpoint the laboratory is trying to prevent: a falling haemoglobin and a rising MCA-PSV should trigger referral before fluid accumulates.</p>
@@ -264,7 +265,7 @@ window.QBANK.push(
     <h4>Why the differential matters</h4>
     <p>A hydropic or anaemic fetus is not always alloimmunised. A negative maternal <strong>antibody screen</strong> should prompt a search for non-immune causes, because management and counselling differ.</p>
     <h4>Parvovirus B19</h4>
-    <p>Parvovirus B19 infects <strong>erythroid progenitor</strong> cells through the <strong>P antigen</strong> (globoside), causing transient arrest of erythropoiesis. In a fetus with a short red cell lifespan this produces severe <strong>reticulocytopenia</strong>, anaemia and <strong>hydrops</strong>. Maternal infection may be asymptomatic or cause a mild rash or arthralgia. Diagnosis is by maternal <strong>IgM</strong> and IgG, and by <strong>PCR</strong> of maternal blood or amniotic fluid; fetal blood may show a low reticulocyte count. Treatment is supportive or by <strong>intrauterine transfusion</strong>, and most fetuses recover.</p>
+    <p>Parvovirus B19 infects <strong>erythroid progenitor</strong> cells through the <strong>P antigen</strong> (globoside), causing transient arrest of erythropoiesis. In a fetus with a short red cell lifespan this produces severe <strong>reticulocytopenia</strong>, anaemia and <strong>hydrops</strong>. Maternal infection may be asymptomatic or cause a mild rash or arthralgia, and a history of fifth disease is often absent, so serology is needed when hydrops is unexplained. Diagnosis is by maternal <strong>IgM</strong> and IgG, and by <strong>PCR</strong> of maternal blood or amniotic fluid; fetal blood may show a low reticulocyte count. Treatment is supportive or by <strong>intrauterine transfusion</strong>, and most fetuses recover. The low reticulocyte count also helps distinguish this from alloimmune haemolysis, where reticulocytes are usually raised.</p>
     <h4>Other causes</h4>
     <div class="table-wrap"><table>
       <tr><th>Cause</th><th>Laboratory or clinical clue</th></tr>
@@ -293,7 +294,7 @@ window.QBANK.push(
   keypoints: ["460-490 nm", "configurational isomers", "lumirubin", "irradiance", "intensive phototherapy", "thermoregulation", "rebound", "bronze baby syndrome", "conjugated hyperbilirubinaemia", "exchange transfusion", "hour-specific nomograms"],
   answer: `
     <h4>How light lowers bilirubin</h4>
-    <p>Phototherapy uses blue-green light, with peak effectiveness around <strong>460-490 nm</strong>, to convert unconjugated bilirubin in the skin into water-soluble products. <strong>Configurational isomers</strong> and <strong>lumirubin</strong> can be excreted in bile and urine without conjugation, bypassing the immature glucuronyl transferase system.</p>
+    <p>Phototherapy uses blue-green light, with peak effectiveness around <strong>460-490 nm</strong>, to convert unconjugated bilirubin in the skin into water-soluble products. <strong>Configurational isomers</strong> and <strong>lumirubin</strong> can be excreted in bile and urine without conjugation, bypassing the immature glucuronyl transferase system. Because the products leave the body without hepatic conjugation, the bilirubin load falls even when the liver is immature.</p>
     <h4>Delivery</h4>
     <ul>
       <li><strong>Intensive phototherapy</strong> uses higher <strong>irradiance</strong>, a larger illuminated surface area and closer lamps; it is used when bilirubin is rising rapidly or is near the exchange threshold.</li>
@@ -318,9 +319,9 @@ window.QBANK.push(
     <h4>Rationale</h4>
     <p>IVIG is pooled human IgG. In HDFN it is thought to work by blocking <strong>Fcγ receptors</strong> on neonatal macrophages, by <strong>anti-idiotypic</strong> neutralisation of maternal antibody, and by accelerating antibody clearance. In pregnancy it may reduce transplacental antibody transfer and fetal haemolysis.</p>
     <h4>Neonatal use</h4>
-    <p>IVIG is used as an adjunct to intensive phototherapy when bilirubin is rising despite light treatment, with the aim of avoiding <strong>exchange transfusion</strong>. The evidence is modest and conflicting, and some infants still need exchange. It should not delay exchange when bilirubin is at threshold or encephalopathy is present.</p>
+    <p>IVIG is used as an adjunct to intensive phototherapy when bilirubin is rising despite light treatment, with the aim of avoiding <strong>exchange transfusion</strong>. The benefit is greatest in infants with a positive DAT and a rapidly rising bilirubin, and smallest in those with established severe haemolysis. The evidence is modest and conflicting, and some infants still need exchange. It should not delay exchange when bilirubin is at threshold or encephalopathy is present.</p>
     <h4>Use in pregnancy</h4>
-    <p>For severe early-onset HDFN, or in <strong>FNAIT</strong>, maternal IVIG may be given to reduce fetal haemolysis or platelet destruction, often with prednisone. Response is variable, and <strong>intrauterine transfusion</strong> remains the definitive treatment for fetal anaemia.</p>
+    <p>For severe early-onset HDFN, or in <strong>FNAIT</strong>, maternal IVIG may be given to reduce fetal haemolysis or platelet destruction, often with prednisone. Treatment is usually started before the gestation at which the previous pregnancy was affected, and response is judged by fetal Doppler and platelet counts rather than by maternal antibody titres. Response is variable, and <strong>intrauterine transfusion</strong> remains the definitive treatment for fetal anaemia.</p>
     <h4>Cautions</h4>
     <ul>
       <li><strong>Haemolysis</strong> from blood-group antibodies in the product; monitor haemoglobin.</li>
@@ -349,8 +350,9 @@ window.QBANK.push(
       <li><strong>Erythropoietin</strong> production is low relative to the degree of anaemia.</li>
       <li>Repeated <strong>top-up</strong> transfusions can suppress the marrow further.</li>
     </ul>
+    <p>The nadir is often lower and later in infants transfused in utero than in those who were not, so the history of fetal therapy should raise the index of suspicion.</p>
     <h4>Monitoring and treatment</h4>
-    <p>Follow <strong>haemoglobin</strong> and reticulocytes weekly to fortnightly after discharge, with a clear written plan. Transfuse for symptomatic anaemia or a falling haemoglobin below the local threshold, using a small-volume top-up from a dedicated donor to limit exposure. <strong>Erythropoietin</strong> and <strong>iron</strong> may be considered, but iron alone does not correct the hyporegenerative phase and should not be given without evidence of deficiency.</p>
+    <p>Follow <strong>haemoglobin</strong> and reticulocytes weekly to fortnightly after discharge, with a clear written plan. Transfuse for symptomatic anaemia or a falling haemoglobin below the local threshold, using a small-volume top-up from a dedicated donor to limit exposure. <strong>Erythropoietin</strong> and <strong>iron</strong> may be considered, but iron alone does not correct the hyporegenerative phase and should not be given without evidence of deficiency. Parents should be taught the warning signs — poor feeding, pallor, drowsiness — and given a direct contact for the neonatal unit.</p>
     <h4>Why it matters</h4>
     <p>Late anaemia is easy to miss after an apparently successful pregnancy and delivery. It can present with poor feeding, tachycardia, failure to thrive or a dramatic fall in haemoglobin, and it can be severe enough to cause <strong>heart failure</strong>. A <strong>discharge summary</strong> that states the antibody, the intrauterine transfusion history and the follow-up plan prevents gaps in care. The anaemia is usually self-limiting, but it must be anticipated rather than discovered.</p>
   `,
@@ -449,7 +451,7 @@ window.QBANK.push(
   keypoints: ["zygosity", "50% chance", "severity", "antibody titres", "MCA-PSV", "amniocentesis", "cordocentesis", "intrauterine transfusion", "exchange transfusion", "antibody card", "preconception counseling"],
   answer: `
     <h4>Start with the facts</h4>
-    <p>Counselling begins with the antibody, its titre, the father's phenotype and <strong>zygosity</strong>, and the fetal antigen status. If the father is heterozygous, each pregnancy has a <strong>50% chance</strong> of an antigen-positive fetus; if the fetus is antigen-negative, the pregnancy is not at risk. The couple should understand that <strong>severity</strong> usually increases in subsequent pregnancies, and that a previous mild course does not guarantee a mild one.</p>
+    <p>Counselling begins with the antibody, its titre, the father's phenotype and <strong>zygosity</strong>, and the fetal antigen status. If the father is heterozygous, each pregnancy has a <strong>50% chance</strong> of an antigen-positive fetus; if the fetus is antigen-negative, the pregnancy is not at risk. The couple should understand that <strong>severity</strong> usually increases in subsequent pregnancies, and that a previous mild course does not guarantee a mild one. The antibody also matters for future transfusion, not only for pregnancy.</p>
     <h4>What monitoring involves</h4>
     <ul>
       <li>Serial <strong>antibody titres</strong> and <strong>MCA-PSV</strong> Doppler, with a schedule and the reason for each test.</li>
@@ -458,7 +460,7 @@ window.QBANK.push(
       <li>Delivery at a centre with neonatal intensive care and <strong>exchange transfusion</strong> capability.</li>
     </ul>
     <h4>Decisions and uncertainty</h4>
-    <p>Discuss the range of outcomes rather than a single prediction. Ask about future pregnancy plans, because the timing of referral and the intensity of monitoring depend on them. Address the emotional burden of a potentially life-threatening fetal disease, and offer written information and a contact point.</p>
+    <p>Discuss the range of outcomes rather than a single prediction. Ask about future pregnancy plans, because the timing of referral and the intensity of monitoring depend on them. Address the emotional burden of a potentially life-threatening fetal disease, and offer written information and a contact point. Document what was discussed and invite the couple back for a second conversation, since much of the information is not retained at the first visit.</p>
     <h4>Practical follow-up</h4>
     <p>Give an <strong>antibody card</strong>, document the antibody permanently, and explain that antigen-negative blood will be needed if she is ever transfused. Arrange <strong>preconception counseling</strong> for the next pregnancy and ensure the neonatal team receives the maternal antibody history. Clear handover prevents the common failure of a new pregnancy being managed as if the antibody were insignificant.</p>
   `,
@@ -472,7 +474,7 @@ window.QBANK.push(
   keypoints: ["wrong baby", "Wharton's jelly", "two identifiers", "QC", "monospecific", "titration", "genotyping", "critical values", "external quality assessment", "AABB Standards", "ISO 15189", "wrong-blood-in-tube"],
   answer: `
     <h4>Pre-analytical failures</h4>
-    <p>Most perinatal errors begin before the analyser. <strong>Wrong baby</strong>, wrong mother, unlabelled or mislabelled cord samples, and dilution with <strong>Wharton's jelly</strong> or maternal blood are recurring events. Use <strong>two identifiers</strong>, label at the bedside, state the specimen type and time, and reject haemolysed or clotted samples when they would invalidate the result.</p>
+    <p>Most perinatal errors begin before the analyser. <strong>Wrong baby</strong>, wrong mother, unlabelled or mislabelled cord samples, and dilution with <strong>Wharton's jelly</strong> or maternal blood are recurring events. Use <strong>two identifiers</strong>, label at the bedside, state the specimen type and time, and reject haemolysed or clotted samples when they would invalidate the result. Near-miss reporting should be non-punitive so that staff disclose errors.</p>
     <h4>Analytical controls</h4>
     <ul>
       <li>Daily <strong>QC</strong> of antisera and reagent cells with positive and negative controls.</li>

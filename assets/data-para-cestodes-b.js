@@ -61,7 +61,7 @@ window.QBANK.push(
       <li>EEG may show a focal epileptogenic zone corresponding to the lesion.</li>
     </ul>
     <h4>Management</h4>
-    <p><strong>Antiepileptic drugs</strong> are the mainstay; most patients become <strong>seizure-free</strong> on monotherapy. <strong>Cysticidal drugs are not indicated</strong> for purely calcified lesions, because there is no viable parasite. A short course of <strong>corticosteroids</strong> is reserved for symptomatic perilesional oedema. Selected patients with drug-resistant focal epilepsy may benefit from <strong>lesionectomy</strong> after video-EEG evaluation. Antiepileptic withdrawal is considered only after a sustained seizure-free period with stable imaging.</p>
+    <p><strong>Antiepileptic drugs</strong> are the mainstay; most patients become <strong>seizure-free</strong> on monotherapy. <strong>Cysticidal drugs are not indicated</strong> for purely calcified lesions, because there is no viable parasite. A short course of <strong>corticosteroids</strong> is reserved for symptomatic perilesional oedema. Selected patients with drug-resistant focal epilepsy may benefit from <strong>lesionectomy</strong> after video-EEG evaluation. Antiepileptic withdrawal is considered only after a sustained seizure-free period with stable imaging. Adherence support matters because missed doses are the commonest cause of breakthrough seizures. Patients should be advised about driving, swimming and occupational safety according to local rules, and women of childbearing age need preconception counselling about antiepileptic choice and folate.</p>
     <h4>Differential diagnosis</h4>
     <p><strong>Tuberculomas</strong>, metastatic deposits, cavernous malformations and calcified granulomas from other infections can mimic the appearance. A history of taeniasis, household exposure, typical imaging and positive <strong>EITB</strong> support the diagnosis; biopsy is rarely needed.</p>
   `,
@@ -86,7 +86,7 @@ window.QBANK.push(
     <h4>Diagnosis</h4>
     <p>MRI is the investigation of choice; heavily T<sub>2</sub>-weighted sequences such as <strong>FIESTA</strong> or CISS outline cysts and membranes within the cisterns. CT shows hydrocephalus and calcification but misses small cysts. CSF may show pleocytosis, raised protein and low glucose, and <strong>EITB</strong> is usually positive. The main differential is tuberculous or fungal meningitis and a cystic neoplasm.</p>
     <h4>Management</h4>
-    <p><strong>CSF diversion</strong> — an external drain or ventriculoperitoneal shunt — is the priority when hydrocephalus is symptomatic. Ventricular cysts can be removed <strong>endoscopically</strong>. <strong>Albendazole</strong> with <strong>corticosteroids</strong> is used for subarachnoid disease, often for prolonged courses, and surgery may be needed for bulky racemose cysts. <strong>Shunt malfunction</strong> and recurrence are common, so long-term follow-up is essential.</p>
+    <p><strong>CSF diversion</strong> — an external drain or ventriculoperitoneal shunt — is the priority when hydrocephalus is symptomatic. Ventricular cysts can be removed <strong>endoscopically</strong>. <strong>Albendazole</strong> with <strong>corticosteroids</strong> is used for subarachnoid disease, often for prolonged courses, and surgery may be needed for bulky racemose cysts. <strong>Shunt malfunction</strong> and recurrence are common, so long-term follow-up is essential. Albendazole courses are prolonged and require monitoring of liver enzymes and the white cell count; corticosteroids are tapered slowly to avoid rebound inflammation. Cysticidal treatment can worsen vasculitis, so it is started cautiously and only after intracranial pressure is controlled.</p>
   `,
   tip: "Hydrocephalus is the emergency: shunt or drain first, then treat the parasite.",
   sources: ["P1", "P3", "P2"]
@@ -109,6 +109,8 @@ window.QBANK.push(
     </ul>
     <h4>Safety principles</h4>
     <p>Benzimidazoles are generally avoided in the <strong>first trimester</strong>; praziquantel is considered safer but is not routinely used for pregnancy-associated neurocysticercosis. <strong>Corticosteroids</strong> are used when oedema is symptomatic, with glucose monitoring. Delivery planning should involve obstetrics, neurology and infectious diseases. <strong>Household contacts</strong> must be screened and treated for <strong>taeniasis</strong> to prevent reinfection of the mother and infant.</p>
+    <h4>Prevention and counselling</h4>
+    <p>Because the source is a tapeworm carrier, the child's household should be screened with stool microscopy or coproantigen, and anyone with taeniasis treated. Families need clear advice that cysticercosis is not caught by eating pork but by swallowing eggs from human faeces, which reduces stigma and improves hygiene. Follow-up imaging is arranged according to symptoms rather than routinely.</p>
   `,
   tip: "In pregnancy, treat the seizure and the hydrocephalus, not the stable cyst.",
   sources: ["P3", "P1", "P2"]
@@ -157,6 +159,8 @@ window.QBANK.push(
     <p>Stage alone does not decide treatment. Large cysts, <strong>biliary communication</strong>, rupture, secondary infection, pregnancy and extrahepatic disease all favour surgery or a tailored approach. <strong>PAIR</strong> is avoided when the cyst communicates with the biliary tree or is inaccessible. <strong>Albendazole</strong> is given before and after interventions to reduce spillage and recurrence.</p>
     <h4>Follow-up</h4>
     <p>Patients are monitored with ultrasound and serology. Inactive cysts need periodic review because reactivation can occur. A rising antibody titre or new symptoms prompts re-imaging. A multidisciplinary team — surgery, radiology, infectious diseases and parasitology — gives the best outcomes.</p>
+    <h4>Practical pitfalls</h4>
+    <p>Ultrasound staging is operator-dependent, and a cyst can change stage over time, so images should be reviewed by an experienced clinician. Serology does not substitute for staging, and a calcified lesion with a positive titre is not necessarily active. Pregnancy, anticoagulation and cyst location modify the choice between PAIR, surgery and observation. Repeat imaging after an intervention is compared with the baseline study, not interpreted in isolation.</p>
   `,
   tip: "Memorise the stage-to-treatment map: CE1 and CE3a → PAIR; CE2 and CE3b → surgery; CE4 and CE5 → observe.",
   sources: ["P1", "P3", "P2"]
@@ -179,7 +183,7 @@ window.QBANK.push(
     <h4>Polycystic echinococcosis</h4>
     <p><em>Echinococcus vogeli</em> and <em>E. oligarthra</em> cause <strong>polycystic echinococcosis</strong> in Central and South America. The liver lesion contains multiple cysts and behaves aggressively; surgery and benzimidazoles are used, but recurrence is frequent.</p>
     <h4>Principles</h4>
-    <p>Imaging and serology establish the diagnosis; <strong>avoid diagnostic aspiration</strong> outside a PAIR protocol. Treatment is individualised by site, size and complications, and long-term follow-up is essential because recurrence can appear years later.</p>
+    <p>Imaging and serology establish the diagnosis; <strong>avoid diagnostic aspiration</strong> outside a PAIR protocol. Treatment is individualised by site, size and complications, and long-term follow-up is essential because recurrence can appear years later. Serology is often negative in bone disease, and diagnosis may require biopsy or surgical exploration. Cardiac cysts can be asymptomatic until rupture, so any patient with a hydatid cyst elsewhere should have echocardiography. Postoperative albendazole is prolonged in bone disease because residual parasite is common.</p>
   `,
   tip: "Bone hydatid has no pericyst and no easy cure — that single fact explains the surgical difficulty.",
   sources: ["P1", "P3", "P2"]
@@ -192,6 +196,8 @@ window.QBANK.push(
   answer: `
     <h4>Life cycle</h4>
     <p><em>Hymenolepis diminuta</em>, the rat tapeworm, is a cosmopolitan cestode that occasionally infects humans. The adult is 20–60 cm long with an <strong>unarmed scolex</strong> and no rostellar hooks. Rats are the principal definitive host; <strong>flour beetles</strong> and grain beetles are intermediate hosts. Humans, usually children, are infected by accidentally swallowing an infected beetle in cereal, flour or dried fruit. There is no direct person-to-person transmission and <strong>no internal autoinfection</strong>.</p>
+    <h4>Epidemiology</h4>
+    <p>Human infection is uncommon and usually sporadic, reported from both industrialised and tropical countries. It is more likely where grain is stored in open conditions and where children have close contact with beetles. Because the infection is not notifiable in most settings, its true burden is unknown; stool surveys in schoolchildren probably underestimate it.</p>
     <h4>Clinical features and diagnosis</h4>
     <ul>
       <li>Most infections are asymptomatic; heavy infection may cause abdominal pain, diarrhoea, anorexia and irritability.</li>
@@ -213,7 +219,7 @@ window.QBANK.push(
   keypoints: ["vitamin B12–intrinsic factor complex", "malabsorption", "Macrocytic anaemia", "hypersegmented neutrophils", "methylmalonic acid", "homocysteine", "operculated eggs", "praziquantel", "vitamin B12 replacement", "subacute combined degeneration", "pernicious anaemia"],
   answer: `
     <h4>Mechanism of B12 deficiency</h4>
-    <p><em>Diphyllobothrium latum</em> lives in the small intestine and competes with the host for the <strong>vitamin B12–intrinsic factor complex</strong>. The worm absorbs B12 before it reaches the terminal ileum, producing a true <strong>malabsorption</strong>. Deficiency develops slowly, often after months or years of infection, and is most often described in Finland, where the classic "fish tapeworm anaemia" was recognised. Not every carrier becomes anaemic; the balance depends on worm burden, diet and body stores.</p>
+    <p><em>Diphyllobothrium latum</em> lives in the small intestine and competes with the host for the <strong>vitamin B12–intrinsic factor complex</strong>. The worm absorbs B12 before it reaches the terminal ileum, producing a true <strong>malabsorption</strong>. Deficiency develops slowly, often after months or years of infection, and is most often described in Finland, where the classic "fish tapeworm anaemia" was recognised. Not every carrier becomes anaemic; the balance depends on worm burden, diet and body stores. The anaemia is often less severe than in pernicious anaemia because many carriers have adequate dietary B12 and the worm burden is limited. Neurological involvement can occur without marked anaemia, so a normal haemoglobin does not exclude deficiency. B12 stores in the liver are large, which explains the latent period before symptoms appear.</p>
     <h4>Clinical and laboratory features</h4>
     <ul>
       <li>Fatigue, pallor, glossitis and mild jaundice from ineffective erythropoiesis.</li>
@@ -246,7 +252,7 @@ window.QBANK.push(
     <h4>Species and public health</h4>
     <p>Species identification traditionally relies on the scolex and proglottid morphology, but <strong>PCR</strong> and sequencing are increasingly used. The <strong>salmon cycle</strong> explains cases in Japan and the Pacific coast of Russia, where raw salmon dishes are traditional. <strong>Freezing</strong> and thorough cooking kill plerocercoids; cold smoking and marinating do not reliably do so. Cases in non-endemic countries are usually linked to imported fish or travel.</p>
     <h4>Management</h4>
-    <p><strong>Praziquantel</strong> is effective, and B12 is replaced when deficient. Prevention requires attention to fish-handling practices, consumer education and surveillance of imported fish products.</p>
+    <p><strong>Praziquantel</strong> is effective, and B12 is replaced when deficient. Prevention requires attention to fish-handling practices, consumer education and surveillance of imported fish products. Travel advice should include avoiding raw or incompletely cooked salmon and freshwater fish, and freezing fish adequately before preparation. Pregnant women and immunocompromised patients deserve particular emphasis because invasive bacterial infection is a separate risk of raw fish.</p>
   `,
   tip: "Name the fish: freshwater pike and perch for D. latum, Pacific salmon for D. nihonkaiense.",
   sources: ["P1", "P3", "P2"]
@@ -269,6 +275,8 @@ window.QBANK.push(
     <p>Proglottids are wider than long, have <strong>two genital pores</strong> and resemble cucumber seeds. Eggs are passed in <strong>egg packets</strong> containing 8–15 eggs, which are diagnostic. Stool microscopy may miss them, so examine fresh proglottids and perianal material.</p>
     <h4>Treatment and prevention</h4>
     <p><strong>Praziquantel</strong> or <strong>niclosamide</strong> is effective. The key to prevention is <strong>flea control</strong> on pets and in the household, regular <strong>deworming</strong> of dogs and cats, and hand hygiene. Treating the child without treating the pet leads to reinfection.</p>
+    <h4>Epidemiology and counselling</h4>
+    <p><em>Dipylidium</em> is cosmopolitan and follows the distribution of fleas; it is more common in children who sleep with pets or live in crowded conditions. The infection is not transmitted person to person, so reassurance and pet treatment are as important as treating the child. Veterinary advice should include flea control for all in-contact animals, not only the symptomatic pet. Recurrent proglottids after treatment usually mean reinfection from an untreated pet or environment.</p>
   `,
   tip: "The flea is the intermediate host, so the pet is the source and flea control is the prevention.",
   sources: ["P1", "P2", "P3"]
@@ -296,6 +304,8 @@ window.QBANK.push(
       <li><strong>Diphyllobothrium</strong>: <strong>rosette uterus</strong> and two <strong>bothria</strong>.</li>
       <li><strong>Hymenolepis</strong>: scolex armed in <em>H. nana</em>, unarmed in <em>H. diminuta</em>.</li>
     </ul>
+    <h4>Collection and concentration</h4>
+    <p>Collect a fresh stool and examine it promptly, or preserve it in formalin or SAF. <strong>Formalin–ethyl acetate</strong> sedimentation is preferred because it recovers heavy and operculated eggs; zinc sulfate flotation is cleaner but may distort them. Examine at low power for eggs and higher power for proglottids, and use a calibrated micrometer for size. For proglottids, wash in saline, inject India ink through the genital pore and count branches under a dissecting microscope. Duplicate slides and repeat specimens increase sensitivity when egg output is low. Report the species only when the identifying structure is seen. A stool concentration should not replace direct examination of a fresh specimen when proglottids are visible.</p>
     <h4>Practical pitfalls</h4>
     <p><em>Taenia</em> eggs cannot be separated by microscopy, so species identification needs a proglottid, scolex or PCR. Operculated eggs may collapse in zinc sulfate flotation, and <em>Dipylidium</em> packets can be mistaken for artifact. Concentration by <strong>formalin–ethyl acetate</strong> recovers all these eggs. Report the stage seen and the method used.</p>
   `,
@@ -309,7 +319,7 @@ window.QBANK.push(
   keypoints: ["viable parasite", "EITB", "single lesion", "antigen ELISA", "antigen B", "arc 5", "cross-reactions", "cox1", "coproantigen ELISA", "surgical removal", "imaging"],
   answer: `
     <h4>Antibody versus antigen</h4>
-    <p>Antibody tests indicate exposure and may remain positive for years after cure; antigen tests indicate a <strong>viable parasite</strong>. This distinction governs interpretation in cysticercosis and hydatid disease, where imaging and clinical context are essential.</p>
+    <p>Antibody tests indicate exposure and may remain positive for years after cure; antigen tests indicate a <strong>viable parasite</strong>. This distinction governs interpretation in cysticercosis and hydatid disease, where imaging and clinical context are essential. In practice, serology is most useful when imaging is compatible but tissue cannot be sampled, and it is least useful as a screening test in asymptomatic people.</p>
     <h4>Cysticercosis</h4>
     <ul>
       <li><strong>EITB</strong> with lentil-lectin purified glycoprotein antigens is the reference serological test; specificity is high, but sensitivity falls with a <strong>single lesion</strong> or calcified disease.</li>
@@ -319,7 +329,7 @@ window.QBANK.push(
     <h4>Echinococcosis and sparganosis</h4>
     <p>Hydatid serology uses ELISA or indirect haemagglutination, confirmed by immunoblot for <strong>antigen B</strong> or <strong>arc 5</strong>. Sensitivity is lower for lung and calcified cysts, and <strong>cross-reactions</strong> occur with cysticercosis and other cestodes. Sparganosis is supported by ELISA against a 24-kDa antigen, but <strong>surgical removal</strong> remains the definitive diagnosis.</p>
     <h4>Molecular methods</h4>
-    <p>PCR and sequencing of mitochondrial <em>cox1</em> separate <em>Taenia solium</em>, <em>T. saginata</em> and <em>T. asiatica</em>, and identify degraded tissue. <strong>Coproantigen ELISA</strong> is more sensitive than microscopy for taeniasis, while PCR of stool or tissue confirms species. Molecular tests are particularly useful when morphology is lost after treatment or biopsy.</p>
+    <p>PCR and sequencing of mitochondrial <em>cox1</em> separate <em>Taenia solium</em>, <em>T. saginata</em> and <em>T. asiatica</em>, and identify degraded tissue. <strong>Coproantigen ELISA</strong> is more sensitive than microscopy for taeniasis, while PCR of stool or tissue confirms species. Molecular tests are particularly useful when morphology is lost after treatment or biopsy. Coproantigen detection is also valuable in control programmes because egg shedding is intermittent, while PCR can identify species from eggs or degraded proglottids.</p>
     <h4>Interpretation</h4>
     <p>Use serology to support <strong>imaging</strong>, not to replace it. Do not use a falling antibody titre alone to declare cure, and remember that cross-reactivity is common among cestode antigens.</p>
   `,
@@ -347,6 +357,8 @@ window.QBANK.push(
       <li><strong>Muscle cysticercosis</strong>: ultrasound shows <strong>rice-grain</strong> calcifications; radiographs may be normal early.</li>
       <li><strong>Ocular cysticercosis</strong>: fundoscopy and ultrasound identify the cyst and scolex.</li>
     </ul>
+    <h4>Choosing the modality</h4>
+    <p>Ultrasound is first-line for abdominal hydatid disease because it is cheap, portable and validates the WHO stage. CT is preferred for bone, lung and preoperative planning, while MRI is best for brain, spine and biliary relations. Plain radiographs remain useful for calcified muscle cysts and for chest cysts. Sedation and contrast exposure are weighed carefully in children and pregnancy. Imaging findings are interpreted with serology and history, and a single study is rarely sufficient; follow-up intervals depend on stage and treatment.</p>
     <h4>Safety and follow-up</h4>
     <p>Do not aspirate a suspected hydatid cyst outside a <strong>PAIR</strong> protocol. Imaging is repeated after treatment to assess response, and serology is interpreted alongside it. The choice of imaging modality should be guided by the organ, the suspected stage and the need for surgical planning.</p>
   `,
@@ -372,6 +384,8 @@ window.QBANK.push(
       <li>Do not use praziquantel alone for hydatid disease.</li>
       <li>Monitor for hepatotoxicity and neutropenia on prolonged albendazole.</li>
     </ul>
+    <h4>Follow-up and resistance</h4>
+    <p>Cure is assessed clinically and, for taeniasis, by stool examination or coproantigen after treatment. Repeated exposure and incomplete dosing are more common causes of failure than true resistance. There is no routine resistance testing for cestodes, so unexplained failure should prompt review of adherence, reinfection and the original diagnosis. Corticosteroids can lower praziquantel concentrations, and anticonvulsants can alter albendazole metabolism, so co-prescribing deserves attention.</p>
   `,
   tip: "Praziquantel for adult worms, albendazole for tissue larvae, niclosamide for luminal taeniasis.",
   sources: ["P2", "P1", "P6"]
@@ -394,7 +408,9 @@ window.QBANK.push(
     <h4>Sparganosis and ocular disease</h4>
     <p>Sparganosis is treated by <strong>surgical excision</strong> of the larva, which is both diagnostic and curative. Ocular cysticercosis may require <strong>vitrectomy</strong> or laser; cysticidal drugs are not a substitute for surgery in the eye.</p>
     <h4>Postoperative care</h4>
-    <p>Patients need imaging and serological follow-up, and prolonged albendazole after spillage or incomplete resection. Corticosteroids cover the inflammatory response in neurocysticercosis. A multidisciplinary team improves outcomes.</p>
+    <p>Patients need imaging and serological follow-up, and prolonged albendazole after spillage or incomplete resection. Corticosteroids cover the inflammatory response in neurocysticercosis. A multidisciplinary team improves outcomes. Postoperative wound care and thromboprophylaxis complete the plan.</p>
+    <h4>Complications and prevention</h4>
+    <p>Bile leak, cavity infection, recurrence and adhesion obstruction are the main complications after hydatid surgery. Shunt infection and malfunction are the main long-term risks after neurocysticercosis surgery. Preoperative albendazole, careful haemostasis and a planned follow-up imaging schedule reduce these problems. In endemic settings, patients should also be screened for taeniasis and household contacts treated, because surgery does not prevent reinfection. Surgery is never a substitute for prevention at the community level.</p>
   `,
   tip: "State the surgical principle first — remove the parasite without spilling it — then list the operations.",
   sources: ["P1", "P3", "P2"]
@@ -425,6 +441,8 @@ window.QBANK.push(
     <p><strong>Hand hygiene</strong>, safe water, thorough cooking and avoidance of raw freshwater fish, frog and snake are central. <strong>Health education</strong> should respect food culture and offer practical alternatives. Treat carriers and screen <strong>household contacts</strong>, especially for <em>T. solium</em>.</p>
     <h4>Policy</h4>
     <p>Meat inspection, food-safety regulation, surveillance and a <strong>One Health</strong> approach link human, veterinary and environmental services. In the Philippines, integration with existing deworming, <strong>WASH</strong> and local government veterinary programmes is the practical route.</p>
+    <h4>Surveillance and outbreak response</h4>
+    <p>Surveillance should link human cases with veterinary and food-safety data. A cluster of taeniasis or cysticercosis prompts investigation of pork sources, household contacts and slaughter practices. Outbreak response includes removing suspect food, tracing exposed people, and reinforcing cooking and hygiene messages. In the Philippines, barangay health workers and local veterinarians are well placed to deliver these messages. Monitoring drug coverage and meat inspection compliance gives early warning of programme failure, and evaluation should include both human cases and animal infection.</p>
   `,
   tip: "Place one intervention at each link of the cycle — food, animal, environment, human — then invoke One Health.",
   sources: ["P4", "P6", "P1"]

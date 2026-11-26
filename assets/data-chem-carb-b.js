@@ -56,11 +56,11 @@ window.QBANK.push(
   keypoints: ["β-hydroxybutyrate", "GAD65", "IA-2", "ZnT8", "C-peptide", "islet autoantibodies", "ketosis", "glucose toxicity", "latent autoimmune diabetes", "heterophile antibodies", "glucagon", "MODY"],
   answer: `
     <h4>At presentation</h4>
-    <p>Measure plasma glucose, venous pH and bicarbonate, electrolytes with the anion gap, <strong>β-hydroxybutyrate</strong>, HbA1c and a full blood count. <strong>Ketosis</strong> with acidosis indicates a catabolic state and makes type 1 likely, but ketosis-prone type 2 diabetes also occurs, particularly in some Asian and African populations. The HbA1c shows how long hyperglycaemia has been present.</p>
+    <p>Measure plasma glucose, venous pH and bicarbonate, electrolytes with the anion gap, <strong>β-hydroxybutyrate</strong>, HbA1c and a full blood count. <strong>Ketosis</strong> with acidosis indicates a catabolic state and makes type 1 likely, but ketosis-prone type 2 diabetes also occurs, particularly in some Asian and African populations. The HbA1c shows how long hyperglycaemia has been present. Ketoacidosis at presentation is itself evidence of severe insulin deficiency.</p>
     <h4>Islet autoantibodies</h4>
     <p><strong>GAD65</strong> antibodies are the most sensitive single marker; <strong>IA-2</strong> and <strong>ZnT8</strong> antibodies add specificity. Insulin autoantibodies are useful only before insulin treatment. Positivity confirms autoimmune type 1 diabetes, including <strong>latent autoimmune diabetes</strong> in adults, and predicts progression to insulin dependence.</p>
     <h4>C-peptide</h4>
-    <p><strong>C-peptide</strong> is co-secreted with insulin and reflects endogenous β-cell reserve. A low fasting or post-meal C-peptide supports type 1; a normal or high value supports type 2 or monogenic diabetes. Interpret it with the simultaneous glucose, because hyperglycaemia itself suppresses secretion (<strong>glucose toxicity</strong>) and renal impairment raises C-peptide.</p>
+    <p><strong>C-peptide</strong> is co-secreted with insulin and reflects endogenous β-cell reserve. A low fasting or post-meal C-peptide supports type 1; a normal or high value supports type 2 or monogenic diabetes. Interpret it with the simultaneous glucose, because hyperglycaemia itself suppresses secretion (<strong>glucose toxicity</strong>) and renal impairment raises C-peptide. When the fasting value is borderline, a <strong>glucagon</strong> stimulation test can assess β-cell reserve.</p>
     <div class="table-wrap"><table>
       <tr><th>Feature</th><th>Type 1</th><th>Type 2</th><th>MODY</th></tr>
       <tr><td>Age at onset</td><td>Usually young</td><td>Usually older</td><td>Under 25–30</td></tr>
@@ -82,7 +82,7 @@ window.QBANK.push(
   keypoints: ["HbE", "red cell lifespan", "haemolysis", "recent transfusion", "boronate affinity", "chromatogram", "fructosamine", "glycated albumin", "continuous glucose monitoring", "fasting plasma glucose", "OGTT", "haemoglobin analysis"],
   answer: `
     <h4>Why the results disagree</h4>
-    <p>HbA1c depends on both average glucose and <strong>red cell lifespan</strong>. <strong>HbE</strong> is a β-chain variant common in Southeast Asia, including the Philippines. Depending on the method, glycated HbE may co-elute with HbA1c, be suppressed, or appear as an extra peak, so the result can be falsely low or high. Other causes of a low HbA1c despite hyperglycaemia are <strong>haemolysis</strong>, <strong>recent transfusion</strong>, blood loss, erythropoietin therapy, pregnancy and advanced chronic kidney disease.</p>
+    <p>HbA1c depends on both average glucose and <strong>red cell lifespan</strong>. <strong>HbE</strong> is a β-chain variant common in Southeast Asia, including the Philippines. Depending on the method, glycated HbE may co-elute with HbA1c, be suppressed, or appear as an extra peak, so the result can be falsely low or high. Other causes of a low HbA1c despite hyperglycaemia are <strong>haemolysis</strong>, <strong>recent transfusion</strong>, blood loss, erythropoietin therapy, pregnancy and advanced chronic kidney disease. Iron deficiency has the opposite effect and raises HbA1c, so the direction of bias must be established for the method in use.</p>
     <h4>Check the method and the chromatogram</h4>
     <p>Request a full blood count and film, <strong>haemoglobin analysis</strong>, and the <strong>chromatogram</strong> or variant flag. <strong>Boronate affinity</strong> chromatography measures total glycated haemoglobin and is generally less affected by variants than charge-based methods, but no method is immune. Immunoturbidimetric assays may under-read HbE. The laboratory should state the method and its known limitations on the report.</p>
     <h4>How to assess glycaemia</h4>
@@ -105,7 +105,7 @@ window.QBANK.push(
   keypoints: ["glycated serum proteins", "ketoamine", "nitroblue tetrazolium", "2–3 weeks", "haemoglobin variants", "recent transfusion", "pregnancy", "dialysis", "albumin turnover", "nephrotic syndrome", "cirrhosis", "not standardised", "CGM"],
   answer: `
     <h4>Chemistry</h4>
-    <p><strong>Fructosamine</strong> is the collective name for glycated serum proteins, of which glycated albumin is the major component. Glucose attaches non-enzymatically to lysine residues, forming a stable <strong>ketoamine</strong>. Colorimetric methods reduce <strong>nitroblue tetrazolium</strong> in alkaline conditions; enzymatic and affinity methods are also used. <strong>Glycated albumin</strong> can be measured specifically by immunoassay or HPLC and expressed as a percentage of total albumin.</p>
+    <p><strong>Fructosamine</strong> is the collective name for glycated serum proteins, of which glycated albumin is the major component. Glucose attaches non-enzymatically to lysine residues, forming a stable <strong>ketoamine</strong>. Colorimetric methods reduce <strong>nitroblue tetrazolium</strong> in alkaline conditions; enzymatic and affinity methods are also used. <strong>Glycated albumin</strong> can be measured specifically by immunoassay or HPLC and expressed as a percentage of total albumin. Results are usually reported in micromoles per litre or as a percentage of total protein, and the assay is calibrated against a synthetic standard rather than a reference method.</p>
     <h4>Interpretation</h4>
     <p>Because albumin has a half-life of about 20 days, fructosamine reflects glycaemia over the previous <strong>2–3 weeks</strong>. It is independent of red cell lifespan and <strong>haemoglobin variants</strong>, which makes it useful when HbA1c is invalid. Results are method-specific, so each laboratory must establish its own reference interval and audit performance.</p>
     <h4>Clinical indications</h4>
@@ -117,7 +117,7 @@ window.QBANK.push(
       <li>Monitoring after a treatment change, when a shorter interval is wanted.</li>
     </ul>
     <h4>Limitations</h4>
-    <p>Any condition that alters albumin concentration or <strong>albumin turnover</strong> changes the result: <strong>nephrotic syndrome</strong>, <strong>cirrhosis</strong>, protein-losing enteropathy, severe illness and thyroid disease. Fructosamine is <strong>not standardised</strong> across manufacturers, is not used to diagnose diabetes, and should not be compared between laboratories. It also misses postprandial excursions and hypoglycaemia. Interpret it with glucose, HbA1c and the clinical picture, and prefer <strong>CGM</strong> when a detailed profile is needed.</p>
+    <p>Any condition that alters albumin concentration or <strong>albumin turnover</strong> changes the result: <strong>nephrotic syndrome</strong>, <strong>cirrhosis</strong>, protein-losing enteropathy, severe illness and thyroid disease. Fructosamine is <strong>not standardised</strong> across manufacturers, is not used to diagnose diabetes, and should not be compared between laboratories. It also misses postprandial excursions and hypoglycaemia. Because it reflects all glycated proteins, a change in protein concentration shifts the result even when glucose is stable. Serial measurements on the same platform are more useful than a single value. Interpret it with glucose, HbA1c and the clinical picture, and prefer <strong>CGM</strong> when a detailed profile is needed.</p>
   `,
   tip: "The two key ideas are the 2–3 week window and dependence on albumin turnover; end with why it cannot diagnose diabetes.",
   sources: ["C1", "C3", "C6"]
@@ -129,7 +129,7 @@ window.QBANK.push(
   keypoints: ["proinsulin", "equimolar", "half-life", "hepatic extraction", "immunoassay", "standardised", "insulinoma", "sulfonylurea", "exogenous insulin", "molar ratio", "renal impairment", "hyperglycaemia"],
   answer: `
     <h4>Physiology</h4>
-    <p><strong>Proinsulin</strong> is cleaved in the β cell into <strong>equimolar</strong> amounts of <strong>insulin</strong> and <strong>C-peptide</strong>. Insulin has a short <strong>half-life</strong> of a few minutes and is partly removed by <strong>hepatic extraction</strong>, so peripheral insulin concentrations underestimate portal delivery. C-peptide is cleared more slowly by the kidney and is not extracted by the liver, so it is a better marker of endogenous secretion.</p>
+    <p><strong>Proinsulin</strong> is cleaved in the β cell into <strong>equimolar</strong> amounts of <strong>insulin</strong> and <strong>C-peptide</strong>. Insulin has a short <strong>half-life</strong> of a few minutes and is partly removed by <strong>hepatic extraction</strong>, so peripheral insulin concentrations underestimate portal delivery. C-peptide is cleared more slowly by the kidney and is not extracted by the liver, so it is a better marker of endogenous secretion. Proinsulin itself is secreted in small amounts and is disproportionately raised in insulinoma and in β-cell dysfunction.</p>
     <h4>Measurement</h4>
     <p>Both are measured by <strong>immunoassay</strong>, and neither is fully <strong>standardised</strong>. Insulin assays cross-react variably with proinsulin and with insulin analogues; C-peptide assays are more robust. Measure a fasting sample, or use a mixed-meal or glucagon stimulation test when β-cell reserve is in question. Always interpret with the simultaneous glucose.</p>
     <h4>Patterns</h4>
@@ -142,7 +142,7 @@ window.QBANK.push(
       <tr><td>Type 2 diabetes</td><td>Variable</td><td>Normal or high</td><td>Insulin resistance</td></tr>
       <tr><td><strong>Renal impairment</strong></td><td>Normal</td><td>High</td><td>Reduced clearance</td></tr>
     </table></div>
-    <p>An insulin-to-C-peptide <strong>molar ratio</strong> above 1 suggests exogenous insulin, although analogue cross-reactivity can mislead. Very high insulin with high C-peptide in a hypoglycaemic patient points to insulinoma or sulfonylurea; a positive sulfonylurea screen separates them.</p>
+    <p>An insulin-to-C-peptide <strong>molar ratio</strong> above 1 suggests exogenous insulin, although analogue cross-reactivity can mislead. Very high insulin with high C-peptide in a hypoglycaemic patient points to insulinoma or sulfonylurea; a positive sulfonylurea screen separates them. A low C-peptide in a patient with long-standing type 2 diabetes suggests that insulin treatment will soon be required.</p>
     <h4>Caveats</h4>
     <p>C-peptide is raised in <strong>renal impairment</strong> and after recent hypoglycaemia, and suppressed by <strong>hyperglycaemia</strong>. Insulin antibodies in autoimmune insulin syndrome produce spuriously high insulin with variable C-peptide. Heterophile antibodies and high-dose hook effects can distort results, so an implausible value should be repeated on a different platform.</p>
   `,
@@ -167,9 +167,9 @@ window.QBANK.push(
       <li>Gastroparesis causing unpredictable absorption.</li>
     </ul>
     <h4>Laboratory confirmation</h4>
-    <p>Draw a <strong>critical sample</strong> during the episode: plasma glucose, insulin, <strong>C-peptide</strong>, <strong>cortisol</strong>, renal and liver function, and a <strong>sulfonylurea screen</strong>. A high insulin with low C-peptide suggests exogenous insulin; high insulin with high C-peptide suggests sulfonylurea or endogenous hyperinsulinism. Cortisol is needed when adrenal failure is suspected.</p>
+    <p>Draw a <strong>critical sample</strong> during the episode: plasma glucose, insulin, <strong>C-peptide</strong>, <strong>cortisol</strong>, renal and liver function, and a <strong>sulfonylurea screen</strong>. A high insulin with low C-peptide suggests exogenous insulin; high insulin with high C-peptide suggests sulfonylurea or endogenous hyperinsulinism. Cortisol is needed when adrenal failure is suspected. If the episode cannot be captured, a supervised fast or a mixed-meal test may be needed, but this is rarely necessary in treated diabetes.</p>
     <h4>Pitfalls</h4>
-    <p>Glucose meters are inaccurate at low values and are affected by <strong>haematocrit</strong>, <strong>ascorbate</strong>, maltose and poor perfusion; confirm with a laboratory or blood-gas glucose. CGM reads interstitial fluid and lags behind plasma, and <strong>compression lows</strong> can mimic hypoglycaemia. <strong>Pseudohypoglycaemia</strong> occurs with delayed separation or very high white cell counts. Treat the patient, but verify the number before changing long-term therapy.</p>
+    <p>Glucose meters are inaccurate at low values and are affected by <strong>haematocrit</strong>, <strong>ascorbate</strong>, maltose and poor perfusion; confirm with a laboratory or blood-gas glucose. CGM reads interstitial fluid and lags behind plasma, and <strong>compression lows</strong> can mimic hypoglycaemia. <strong>Pseudohypoglycaemia</strong> occurs with delayed separation or very high white cell counts. Treat the patient, but verify the number before changing long-term therapy. Sulfonylurea-induced hypoglycaemia can recur for 24–72 hours because of the long drug effect, so observation and repeated glucose are needed.</p>
   `,
   tip: "Separate the clinical definition from the biochemical confirmation, and always mention meter and CGM artefacts.",
   sources: ["C6", "C1", "C2"]
@@ -183,7 +183,13 @@ window.QBANK.push(
     <h4>Ketone body metabolism</h4>
     <p>When insulin is low and glucagon high, <strong>lipolysis</strong> releases free fatty acids. In the liver, low malonyl-CoA disinhibits <strong>CPT-1</strong>, allowing fatty acid entry into mitochondria. β-oxidation produces <strong>acetyl-CoA</strong>, which is converted to <strong>acetoacetate</strong> and then reduced to <strong>β-hydroxybutyrate</strong>; acetone is a minor volatile product. β-hydroxybutyrate is the dominant ketone in diabetic ketoacidosis.</p>
     <h4>Measuring ketones</h4>
-    <p>Urine <strong>nitroprusside</strong> strips detect acetoacetate and acetone but not β-hydroxybutyrate. They therefore underestimate ketoacidosis and may become more positive during recovery as β-hydroxybutyrate is oxidised back to acetoacetate. Capillary or plasma <strong>β-hydroxybutyrate</strong> is the preferred test; a value around 3 mmol/L or more supports the diagnosis. Blood gas, bicarbonate and the <strong>anion gap</strong> complete the assessment.</p>
+    <p>Urine <strong>nitroprusside</strong> strips detect acetoacetate and acetone but not β-hydroxybutyrate. They therefore underestimate ketoacidosis and may become more positive during recovery as β-hydroxybutyrate is oxidised back to acetoacetate. Capillary or plasma <strong>β-hydroxybutyrate</strong> is the preferred test; a value around 3 mmol/L or more supports the diagnosis. Blood gas, bicarbonate and the <strong>anion gap</strong> complete the assessment. Capillary testing is practical at the bedside and correlates well with laboratory β-hydroxybutyrate.</p>
+    <div class="table-wrap"><table>
+      <tr><th>Test</th><th>Detects</th><th>Limitation</th></tr>
+      <tr><td>Urine nitroprusside</td><td>Acetoacetate, acetone</td><td>Misses β-hydroxybutyrate; lags recovery</td></tr>
+      <tr><td>Blood β-hydroxybutyrate</td><td>Dominant ketone</td><td>Assay availability and cost</td></tr>
+      <tr><td>Blood gas</td><td>pH, bicarbonate</td><td>Indirect; does not identify the ketone</td></tr>
+    </table></div>
     <h4>Euglycaemic DKA with SGLT2 inhibitors</h4>
     <p><strong>SGLT2 inhibitors</strong> lower glucose by causing <strong>glycosuria</strong> while stimulating <strong>glucagon</strong> and ketogenesis. Ketoacidosis can therefore occur with glucose below 13.9 mmol/L, and sometimes near normal — so-called <strong>euglycaemic</strong> DKA. Triggers include surgery, acute illness, fasting, low-carbohydrate diet, alcohol and insulin omission. The diagnosis rests on acidosis, a raised anion gap and ketonaemia, not on the glucose value. Stop the drug before planned surgery and check ketones whenever such a patient is unwell.</p>
     <h4>Monitoring</h4>
@@ -199,7 +205,7 @@ window.QBANK.push(
   keypoints: ["pyruvate", "lactate dehydrogenase", "Cori cycle", "2 mmol/L", "type A", "type B", "metformin", "thiamine", "D-lactate", "fluoride–oxalate", "tourniquet", "clearance"],
   answer: `
     <h4>Production and clearance</h4>
-    <p><strong>Lactate</strong> is formed from <strong>pyruvate</strong> by <strong>lactate dehydrogenase</strong> when pyruvate cannot enter mitochondria, and is cleared mainly by the liver through the <strong>Cori cycle</strong>, with a smaller renal contribution. Normal blood lactate is below about <strong>2 mmol/L</strong>; hyperlactataemia is a value above 2 mmol/L, and lactic acidosis is usually considered when lactate is at least 4–5 mmol/L with a low pH and bicarbonate.</p>
+    <p><strong>Lactate</strong> is formed from <strong>pyruvate</strong> by <strong>lactate dehydrogenase</strong> when pyruvate cannot enter mitochondria, and is cleared mainly by the liver through the <strong>Cori cycle</strong>, with a smaller renal contribution. Pyruvate dehydrogenase deficiency and mitochondrial toxins impair pyruvate oxidation and also raise lactate. Normal blood lactate is below about <strong>2 mmol/L</strong>; hyperlactataemia is a value above 2 mmol/L, and lactic acidosis is usually considered when lactate is at least 4–5 mmol/L with a low pH and bicarbonate.</p>
     <h4>Type A and type B</h4>
     <div class="table-wrap"><table>
       <tr><th>Type</th><th>Mechanism</th><th>Examples</th></tr>
@@ -210,7 +216,7 @@ window.QBANK.push(
     <h4>Specimen handling</h4>
     <p>Lactate rises rapidly in a <strong>tourniquet</strong>ed or exercised limb and in any sample left at room temperature, because red cells continue glycolysis. Use a <strong>fluoride–oxalate</strong> tube, place it on ice, separate promptly and analyse within the validated stability window. A difficult draw with a prolonged tourniquet commonly produces a falsely high result.</p>
     <h4>Clinical use</h4>
-    <p>Lactate is a marker of illness severity and a guide to resuscitation; the trend and <strong>clearance</strong> matter more than one value. Interpret it with the acid–base picture, anion gap and perfusion, and always ask whether the sample itself explains the result.</p>
+    <p>Lactate is a marker of illness severity and a guide to resuscitation; the trend and <strong>clearance</strong> matter more than one value. Interpret it with the acid–base picture, anion gap and perfusion, and always ask whether the sample itself explains the result. A normal lactate does not exclude hypoperfusion, and renal replacement does not reliably clear lactate, so the underlying cause must be treated.</p>
   `,
   tip: "Classify by hypoxia versus no hypoxia, then spend equal time on the pre-analytical trap of a tourniqueted sample.",
   sources: ["C1", "C15", "C2"]
@@ -223,6 +229,11 @@ window.QBANK.push(
   answer: `
     <h4>Preconception</h4>
     <p>Optimal preparation reduces congenital malformations and miscarriage. Aim for an HbA1c below about <strong>6.5%</strong> before conception where achievable without hypoglycaemia, review <strong>retinal status</strong>, urine <strong>albumin-to-creatinine ratio</strong>, <strong>eGFR</strong> and <strong>thyroid function</strong>, and stop potentially teratogenic drugs. Folic acid supplementation and effective contraception until control is optimised are standard. HbA1c is still useful here because red cell turnover is normal before pregnancy.</p>
+    <ul>
+      <li>Review all medicines and replace teratogenic agents.</li>
+      <li>Arrange retinal screening and renal assessment before conception.</li>
+      <li>Check thyroid function and coeliac serology in type 1 diabetes.</li>
+    </ul>
     <h4>Antenatal monitoring</h4>
     <p>In pregnancy, plasma volume expansion and increased red cell turnover cause <strong>haemodilution</strong>, so HbA1c underestimates recent glycaemia and is not used alone. <strong>CGM</strong> is preferred for detailed assessment. ADA targets are <strong>preprandial</strong> 3.9–5.3 mmol/L, 1-hour <strong>postprandial</strong> below 7.8 mmol/L and 2-hour below 6.7 mmol/L, individualised to avoid hypoglycaemia. Ketones should be checked during illness or when glucose is high.</p>
     <h4>Interpreting tests</h4>
@@ -240,7 +251,7 @@ window.QBANK.push(
   keypoints: ["autosomal dominant", "C-peptide", "GAD65", "HNF1A", "GCK", "HNF4A", "HNF1B", "sulfonylurea", "cascade testing", "fasting hyperglycaemia", "renal cysts", "next-generation sequencing"],
   answer: `
     <h4>When to suspect MODY</h4>
-    <p>Consider monogenic diabetes in a young person (often under 25–30 years) who is non-obese, has a strong <strong>autosomal dominant</strong> family history, lacks islet autoantibodies, has preserved <strong>C-peptide</strong> and no ketosis. A stable, mild <strong>fasting hyperglycaemia</strong> from childhood is particularly suggestive.</p>
+    <p>Consider monogenic diabetes in a young person (often under 25–30 years) who is non-obese, has a strong <strong>autosomal dominant</strong> family history, lacks islet autoantibodies, has preserved <strong>C-peptide</strong> and no ketosis. A stable, mild <strong>fasting hyperglycaemia</strong> from childhood is particularly suggestive. GCK mutations are the commonest cause of mild familial fasting hyperglycaemia, while HNF1A is the commonest cause of progressive MODY. A family history spanning three generations, with roughly half of relatives affected, is the strongest clue.</p>
     <h4>Main subtypes</h4>
     <div class="table-wrap"><table>
       <tr><th>Gene</th><th>Features</th><th>Treatment</th></tr>
@@ -249,10 +260,11 @@ window.QBANK.push(
       <tr><td><strong>HNF4A</strong></td><td>Macrosomia, neonatal hypoglycaemia, progressive diabetes</td><td>Sulfonylurea</td></tr>
       <tr><td><strong>HNF1B</strong></td><td><strong>Renal cysts</strong>, pancreatic atrophy, hypomagnesaemia</td><td>Insulin or oral agents</td></tr>
     </table></div>
+    <p>Mechanistically, HNF1A and HNF4A mutations impair β-cell development and insulin secretion, while GCK mutations reset the glucose sensor to a higher set point. HNF1B disease reflects combined pancreatic and renal developmental defects.</p>
     <h4>Laboratory testing</h4>
-    <p>Exclude type 1 with <strong>GAD65</strong>, IA-2 and ZnT8 antibodies, and assess C-peptide with a simultaneous glucose. A <strong>next-generation sequencing</strong> panel covering <em>HNF1A</em>, <em>GCK</em>, <em>HNF4A</em>, <em>HNF1B</em> and other genes confirms the diagnosis. Genetic testing should be preceded by counselling and followed by <strong>cascade testing</strong> of relatives.</p>
+    <p>Exclude type 1 with <strong>GAD65</strong>, IA-2 and ZnT8 antibodies, and assess C-peptide with a simultaneous glucose. A <strong>next-generation sequencing</strong> panel covering <em>HNF1A</em>, <em>GCK</em>, <em>HNF4A</em>, <em>HNF1B</em> and other genes confirms the diagnosis. Genetic testing should be preceded by counselling and followed by <strong>cascade testing</strong> of relatives. Antibody-negative diabetes in a young adult should prompt testing rather than a default diagnosis of type 2.</p>
     <h4>Why it matters</h4>
-    <p>GCK-MODY does not need treatment and should not be treated with insulin during pregnancy unless fetal growth is excessive. HNF1A and HNF4A diabetes often responds well to a sulfonylurea, allowing insulin to be stopped. Missing the diagnosis exposes patients to unnecessary injections, hypoglycaemia and cost. MODY remains under-recognised in Asia, including the Philippines.</p>
+    <p>GCK-MODY does not need treatment and should not be treated with insulin during pregnancy unless fetal growth is excessive. HNF1A and HNF4A diabetes often responds well to a sulfonylurea, allowing insulin to be stopped. Missing the diagnosis exposes patients to unnecessary injections, hypoglycaemia and cost. Genetic diagnosis also informs pregnancy management and avoids unnecessary treatment in relatives. MODY remains under-recognised in Asia, including the Philippines.</p>
   `,
   tip: "Use the triad of young onset, dominant family history and preserved C-peptide, then contrast GCK with HNF1A management.",
   sources: ["C6", "C1", "C3"]
@@ -267,8 +279,15 @@ window.QBANK.push(
     <p><strong>Neonatal diabetes</strong> presents in the first <strong>6 months</strong> of life, and occasionally up to 12 months. It is rare, with an incidence of roughly 1 in 100,000 to 1 in 400,000 live births. <strong>Transient</strong> neonatal diabetes remits, often within weeks to months, but may relapse later; <strong>permanent</strong> neonatal diabetes requires lifelong treatment.</p>
     <h4>Genetics</h4>
     <p>Transient disease is commonly caused by abnormalities of the imprinted region at chromosome <strong>6q24</strong>. Permanent disease is most often due to activating mutations in the <strong>KATP channel</strong> genes <em>KCNJ11</em> or <em>ABCC8</em>. Other causes include <em>INS</em>, <em>GCK</em>, <em>FOXP3</em> (IPEX) and <em>EIF2AK3</em> (Wolcott–Rallison syndrome).</p>
+    <div class="table-wrap"><table>
+      <tr><th>Feature</th><th>Transient</th><th>Permanent</th></tr>
+      <tr><td>Usual gene</td><td>6q24 imprinting</td><td>KCNJ11, ABCC8, INS</td></tr>
+      <tr><td>Course</td><td>Remits, may relapse</td><td>Lifelong</td></tr>
+      <tr><td>C-peptide</td><td>Low during disease</td><td>Low</td></tr>
+      <tr><td>Treatment</td><td>Insulin, then observation</td><td>Insulin or sulfonylurea</td></tr>
+    </table></div>
     <h4>Laboratory features</h4>
-    <p>There is marked hyperglycaemia, often with ketones and acidosis, low or undetectable <strong>C-peptide</strong>, and usually negative islet <strong>autoantibodies</strong>. HbA1c may be raised but is less useful at this age. Exclude stress hyperglycaemia of sepsis, intravenous glucose and transient illness before diagnosing. <strong>Genetic testing</strong> is the definitive test and should be arranged urgently.</p>
+    <p>There is marked hyperglycaemia, often with ketones and acidosis, low or undetectable <strong>C-peptide</strong>, and usually negative islet <strong>autoantibodies</strong>. HbA1c may be raised but is less useful at this age. Exclude stress hyperglycaemia of sepsis, intravenous glucose and transient illness before diagnosing. <strong>Genetic testing</strong> is the definitive test and should be arranged urgently. Neonatal diabetes must also be distinguished from transient hyperglycaemia in the first days of life, which is common in preterm and growth-restricted infants.</p>
     <h4>Why early recognition matters</h4>
     <p>Children with <strong>KATP channel</strong> mutations often respond to oral <strong>sulfonylureas</strong>, which can replace insulin and improve neurological features in <strong>DEND</strong> syndrome. Identifying 6q24 disease avoids unnecessary long-term insulin. Neonatal diabetes is distinct from type 1 diabetes and from the transient hypoglycaemia seen in infants of diabetic mothers.</p>
   `,
@@ -282,7 +301,7 @@ window.QBANK.push(
   keypoints: ["ISO 15197", "95%", "haematocrit", "ascorbate", "maltose", "GDH-PQQ", "icodextrin", "internal QC", "EQA", "operator training", "verification", "connectivity"],
   answer: `
     <h4>Accuracy standards</h4>
-    <p>Handheld meters are judged against <strong>ISO 15197</strong>: at least <strong>95%</strong> of results must fall within 0.83 mmol/L of the reference at glucose below 5.6 mmol/L, and within 15% at or above 5.6 mmol/L. Many meters now exceed this. Accuracy is worse at the low end, in the critically ill and in neonates, where a laboratory or blood-gas analyser should be used.</p>
+    <p>Handheld meters are judged against <strong>ISO 15197</strong>: at least <strong>95%</strong> of results must fall within 0.83 mmol/L of the reference at glucose below 5.6 mmol/L, and within 15% at or above 5.6 mmol/L. Many meters now exceed this. The standard also requires that 99% of results fall within its wider combined error limits, and the manufacturer's claims must be verified locally. Accuracy is worse at the low end, in the critically ill and in neonates, where a laboratory or blood-gas analyser should be used.</p>
     <h4>Interferences</h4>
     <div class="table-wrap"><table>
       <tr><th>Factor</th><th>Effect</th></tr>
@@ -295,9 +314,9 @@ window.QBANK.push(
     </table></div>
     <p>Older GDH-PQQ strips are the classic cause of fatal false hyperglycaemia in peritoneal dialysis with <strong>icodextrin</strong>. G6PD deficiency and high uric acid can also bias some strips.</p>
     <h4>Verification and quality management</h4>
-    <p>Before use, <strong>verify</strong> each meter model against the main analyser across the clinical range, including low values. Run <strong>internal QC</strong> daily, enrol in <strong>EQA</strong>, lock out untrained operators, and connect meters to the laboratory information system so results are traceable. <strong>Operator training</strong> and a multidisciplinary POCT committee should own the programme.</p>
+    <p>Before use, <strong>verify</strong> each meter model against the main analyser across the clinical range, including low values. Run <strong>internal QC</strong> daily, enrol in <strong>EQA</strong>, lock out untrained operators, and use bidirectional <strong>connectivity</strong> to the laboratory information system so results are traceable. <strong>Operator training</strong> and a multidisciplinary POCT committee should own the programme. Strips must be stored and handled as the manufacturer specifies, and expired strips discarded.</p>
     <h4>Clinical use</h4>
-    <p>Meters are screening and monitoring tools, not diagnostic instruments. Confirm any result that will change treatment, especially hypoglycaemia, with a laboratory glucose.</p>
+    <p>Meters are screening and monitoring tools, not diagnostic instruments. Confirm any result that will change treatment, especially hypoglycaemia, with a laboratory glucose. Neonatal and critical-care glucose should be measured by a blood-gas analyser with a validated method.</p>
   `,
   tip: "Quote ISO 15197 with its two accuracy bands, then pair each interference with the direction of error.",
   sources: ["C1", "C5", "C11"]
@@ -309,7 +328,7 @@ window.QBANK.push(
   keypoints: ["interstitial fluid", "lag", "time in range", "time below range", "coefficient of variation", "glucose management indicator", "ambulatory glucose profile", "MARD", "compression lows", "paracetamol", "14 days", "70%"],
   answer: `
     <h4>How CGM works</h4>
-    <p>A <strong>continuous glucose monitor</strong> uses a glucose oxidase electrode in the subcutaneous <strong>interstitial fluid</strong>, read every few minutes by a transmitter. Real-time CGM displays values continuously; intermittently scanned CGM stores data for retrospective download. Interstitial glucose <strong>lags</strong> plasma glucose by roughly 5–15 minutes, so rapid changes are damped.</p>
+    <p>A <strong>continuous glucose monitor</strong> uses a glucose oxidase electrode in the subcutaneous <strong>interstitial fluid</strong>, read every few minutes by a transmitter. Real-time CGM displays values continuously; intermittently scanned CGM stores data for retrospective download. Interstitial glucose <strong>lags</strong> plasma glucose by roughly 5–15 minutes, so rapid changes are damped. Most sensors need periodic calibration, although factory-calibrated models are increasingly used; accuracy is summarised by MARD, with values around 10% or less considered good.</p>
     <h4>Metrics</h4>
     <div class="table-wrap"><table>
       <tr><th>Metric</th><th>Meaning</th><th>Target</th></tr>
@@ -337,6 +356,13 @@ window.QBANK.push(
   answer: `
     <h4>How variability is measured</h4>
     <p><strong>Glycaemic variability</strong> describes the spread of glucose values around the mean. The <strong>standard deviation</strong> is simple but depends on the mean; the <strong>coefficient of variation</strong> (SD divided by mean) is preferred, with a target below <strong>36%</strong>. Other metrics include <strong>MAGE</strong> (mean amplitude of glycaemic excursions), <strong>MODD</strong> (mean of daily differences) and <strong>CONGA</strong>. CGM-derived <strong>time in range</strong> and time below range are practical summaries.</p>
+    <ul>
+      <li>SD and CV describe overall dispersion.</li>
+      <li>MAGE captures the size of major swings.</li>
+      <li>MODD reflects day-to-day reproducibility.</li>
+      <li>Time in range summarises the clinical consequence.</li>
+    </ul>
+    <p>No single metric captures every aspect, so they are read together.</p>
     <h4>Why it matters beyond HbA1c</h4>
     <p>Two patients with the same HbA1c can have very different profiles: one stable, the other alternating hyperglycaemia and severe <strong>hypoglycaemia</strong>. HbA1c is an average and hides both. High variability is associated with more hypoglycaemia, greater treatment burden and impaired quality of life. In some studies it correlates with <strong>oxidative stress</strong>, <strong>endothelial dysfunction</strong> and inflammation, although the link to complications is less consistent than the link to hypoglycaemia.</p>
     <h4>Clinical relevance</h4>
@@ -358,11 +384,11 @@ window.QBANK.push(
     <h4>KDIGO categories</h4>
     <div class="table-wrap"><table>
       <tr><th>Category</th><th>ACR (mg/g)</th><th>ACR (mg/mmol)</th><th>Meaning</th></tr>
-      <tr><td>A1</td><td>Below <strong>30</strong></td><td>Below 3</td><td>Normal to mildly increased</td></tr>
-      <tr><td>A2</td><td><strong>30–300</strong></td><td>3–30</td><td>Moderately increased</td></tr>
-      <tr><td>A3</td><td>Above <strong>300</strong></td><td>Above 30</td><td>Severely increased</td></tr>
+      <tr><td>A1</td><td>Below <strong>30 mg/g</strong></td><td>Below 3</td><td>Normal to mildly increased</td></tr>
+      <tr><td>A2</td><td><strong>30–300 mg/g</strong></td><td>3–30</td><td>Moderately increased</td></tr>
+      <tr><td>A3</td><td>Above <strong>300 mg/g</strong></td><td>Above 30</td><td>Severely increased</td></tr>
     </table></div>
-    <p>The ACR is combined with <strong>eGFR</strong> in the KDIGO heat map to stage risk. Albuminuria should be confirmed in at least <strong>2 of 3</strong> specimens over <strong>3–6 months</strong> before labelling chronic kidney disease, because transient rises are common.</p>
+    <p>The ACR is combined with <strong>eGFR</strong> in the KDIGO heat map to stage risk. Albuminuria should be confirmed in at least <strong>2 of 3</strong> specimens over <strong>3–6 months</strong> before labelling chronic kidney disease, because transient rises are common. The same categories apply to both units; a value near a boundary should be repeated rather than reclassified on one sample.</p>
     <h4>Causes of a false result</h4>
     <ul>
       <li><strong>Urinary tract infection</strong>, menstruation or vaginal contamination.</li>
@@ -372,7 +398,7 @@ window.QBANK.push(
     </ul>
     <p>Dipsticks also miss non-albumin proteins such as light chains, so a negative dipstick does not exclude renal disease.</p>
     <h4>Monitoring</h4>
-    <p>Measure ACR at least <strong>annual</strong>ly in all people with diabetes, and more often once albuminuria is present. A fall in ACR with ACE inhibitors, angiotensin receptor blockers or SGLT2 inhibitors indicates response. Report the specimen type, the assay and the eGFR together so the trend can be interpreted.</p>
+    <p>Measure ACR at least <strong>annual</strong>ly in all people with diabetes, and more often once albuminuria is present. A fall in ACR with ACE inhibitors, angiotensin receptor blockers or SGLT2 inhibitors indicates response. Report the specimen type, the assay and the eGFR together so the trend can be interpreted. Albuminuria can regress with treatment, so a falling ACR is a favourable sign even if it remains abnormal.</p>
   `,
   tip: "Give the three KDIGO categories and the 2-of-3 confirmation rule; then list the transient causes that mimic albuminuria.",
   sources: ["C7", "C6", "C1"]
@@ -384,7 +410,7 @@ window.QBANK.push(
   keypoints: ["chronic pancreatitis", "pancreatic cancer", "cystic fibrosis", "C-peptide", "faecal elastase", "glucocorticoids", "atypical antipsychotics", "tacrolimus", "checkpoint inhibitors", "postprandial", "DKA", "HbA1c"],
   answer: `
     <h4>Diabetes secondary to pancreatic disease (type 3c)</h4>
-    <p><strong>Type 3c diabetes</strong> follows <strong>chronic pancreatitis</strong>, <strong>pancreatic cancer</strong>, <strong>cystic fibrosis</strong>, haemochromatosis, trauma or pancreatectomy. Both islet and exocrine tissue are lost, so patients have insulin deficiency, low <strong>C-peptide</strong>, malabsorption and a brittle course with both hyperglycaemia and hypoglycaemia. <strong>Faecal elastase</strong>, imaging and clinical history support the diagnosis; <strong>HbA1c</strong> may underestimate glycaemia when nutrition is poor.</p>
+    <p><strong>Type 3c diabetes</strong> follows <strong>chronic pancreatitis</strong>, <strong>pancreatic cancer</strong>, <strong>cystic fibrosis</strong>, haemochromatosis, trauma or pancreatectomy. Both islet and exocrine tissue are lost, so patients have insulin deficiency, low <strong>C-peptide</strong>, malabsorption and a brittle course with both hyperglycaemia and hypoglycaemia. <strong>Faecal elastase</strong>, imaging and clinical history support the diagnosis; <strong>HbA1c</strong> may underestimate glycaemia when nutrition is poor. Because glucagon counter-regulation is also impaired, severe hypoglycaemia is a particular risk, especially after alcohol or missed meals.</p>
     <h4>Drug-induced hyperglycaemia</h4>
     <div class="table-wrap"><table>
       <tr><th>Drug</th><th>Mechanism</th></tr>
@@ -394,11 +420,11 @@ window.QBANK.push(
       <tr><td><strong>Checkpoint inhibitors</strong></td><td>Autoimmune β-cell destruction</td></tr>
       <tr><td>Thiazides, protease inhibitors</td><td>Insulin resistance</td></tr>
     </table></div>
-    <p>Glucocorticoid hyperglycaemia characteristically worsens after lunch and dinner while fasting glucose may be normal, so postprandial monitoring or an OGTT is more sensitive than fasting glucose or HbA1c.</p>
+    <p>Glucocorticoid hyperglycaemia characteristically worsens after lunch and dinner while fasting glucose may be normal, so postprandial monitoring or an OGTT is more sensitive than fasting glucose or HbA1c. Drug-induced cases are often reversible, but checkpoint-inhibitor diabetes is permanent and requires insulin.</p>
     <h4>Laboratory recognition</h4>
-    <p>Take a careful drug and pancreatic history, measure C-peptide and islet autoantibodies when the type is unclear, and screen for exocrine insufficiency. In checkpoint-inhibitor diabetes, presentation may be fulminant <strong>DKA</strong> with a normal HbA1c because the onset is rapid.</p>
+    <p>Take a careful drug and pancreatic history, measure C-peptide and islet autoantibodies when the type is unclear, and screen for exocrine insufficiency. In checkpoint-inhibitor diabetes, presentation may be fulminant <strong>DKA</strong> with a normal HbA1c because the onset is rapid. Fasting glucose may also be normal in steroid-treated patients, so a postprandial or random glucose is needed.</p>
     <h4>Practical points</h4>
-    <p>Do not assume type 2 diabetes in a patient with pancreatic disease or a new drug. Document the likely cause and monitor with the test that matches the mechanism.</p>
+    <p>Do not assume type 2 diabetes in a patient with pancreatic disease or a new drug. Document the likely cause and monitor with the test that matches the mechanism. Repeat HbA1c only after nutrition and glycaemia have stabilised, and use CGM when the profile is brittle.</p>
   `,
   tip: "Separate structural pancreatic loss from pharmacological mechanisms, and highlight postprandial steroid hyperglycaemia.",
   sources: ["C1", "C6", "C14"]
@@ -410,7 +436,7 @@ window.QBANK.push(
   keypoints: ["glycolysis", "fluoride–citrate", "haematocrit", "GDH-PQQ", "icodextrin", "glucose oxidase", "haemoglobin variants", "iron deficiency", "biotin", "heterophile antibodies", "delta check", "serum indices"],
   answer: `
     <h4>Pre-analytical and matrix effects</h4>
-    <p>Glucose falls by roughly 5–7% per hour in unseparated blood through <strong>glycolysis</strong>, so a delayed sample can falsely exclude diabetes. Use <strong>fluoride–citrate</strong> tubes and separate promptly. <strong>Haematocrit</strong> extremes distort glucose meters, and severe lipaemia or hyperproteinaemia can affect indirect methods.</p>
+    <p>Glucose falls by roughly 5–7% per hour in unseparated blood through <strong>glycolysis</strong>, so a delayed sample can falsely exclude diabetes. Use <strong>fluoride–citrate</strong> tubes and separate promptly. <strong>Haematocrit</strong> extremes distort glucose meters, and severe lipaemia or hyperproteinaemia can affect indirect methods. Haemolysis releases glucose from red cells and dilutes the plasma, so the net effect depends on the method and should be reported.</p>
     <h4>Glucose methods</h4>
     <div class="table-wrap"><table>
       <tr><th>Interferent</th><th>Assay</th><th>Effect</th></tr>
@@ -419,9 +445,9 @@ window.QBANK.push(
       <tr><td>High uric acid or bilirubin</td><td>Peroxidase step</td><td>Falsely low</td></tr>
       <tr><td>Haemolysis</td><td>Hexokinase</td><td>Variable</td></tr>
     </table></div>
-    <p>GDH-PQQ strips are the most dangerous example, because a patient on icodextrin dialysis can be given insulin for a glucose that is actually normal or low.</p>
+    <p>GDH-PQQ strips are the most dangerous example, because a patient on icodextrin dialysis can be given insulin for a glucose that is actually normal or low. When interference is suspected, confirm the result by a method based on a different analytical principle.</p>
     <h4>HbA1c and immunoassay</h4>
-    <p><strong>Haemoglobin variants</strong> (HbE, HbS, HbC, HbD, HbF), <strong>iron deficiency</strong>, haemolysis, recent transfusion, pregnancy and CKD all change HbA1c independently of glycaemia. Some immunoassays are affected by <strong>biotin</strong>, and paraproteins or <strong>heterophile antibodies</strong> can distort insulin, C-peptide and HbA1c results. Insulin analogues may not cross-react equally with insulin assays.</p>
+    <p><strong>Haemoglobin variants</strong> (HbE, HbS, HbC, HbD, HbF), <strong>iron deficiency</strong>, haemolysis, recent transfusion, pregnancy and CKD all change HbA1c independently of glycaemia. Carbamylated haemoglobin in renal failure and labile HbA1c also bias results. Some immunoassays are affected by <strong>biotin</strong>, and paraproteins or <strong>heterophile antibodies</strong> can distort insulin, C-peptide and HbA1c results. Insulin analogues may not cross-react equally with insulin assays. With biotin, sandwich immunoassays read falsely low while competitive assays read falsely high, so the direction of error depends on the assay format.</p>
     <h4>Laboratory defences</h4>
     <ul>
       <li>Choose methods with documented specificity and verify interference claims.</li>
@@ -429,6 +455,7 @@ window.QBANK.push(
       <li>Use <strong>delta check</strong>s, plausibility rules and autoverification.</li>
       <li>Repeat implausible results by an alternative method or platform.</li>
       <li>Comment on the report and educate clinicians about sample timing.</li>
+      <li>Participate in EQA schemes that include interference challenges.</li>
     </ul>
   `,
   tip: "Give the direction of error for each interferent, then end with detection, alternative methods and reporting.",

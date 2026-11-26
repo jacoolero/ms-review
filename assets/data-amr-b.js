@@ -428,7 +428,7 @@ window.QBANK.push(
   keypoints: ["weight and age based dosing", "immature glomerular filtration", "postmenstrual and postnatal age", "higher clearance per kilogram in young children", "higher total body water", "ceftriaxone and bilirubin", "ceftriaxone and calcium precipitation", "tetracycline dental staining", "sulfonamide kernicterus", "chloramphenicol grey baby", "lack of paediatric formulations", "avoid antibiotics for viral illness"],
   answer: `
     <h4>Why children are not small adults</h4>
-    <p>Paediatric dosing depends on <strong>weight, age and maturation</strong>. Neonates have immature glomerular filtration and hepatic enzymes, so half-lives are prolonged and intervals must be extended; infants and young children often clear β-lactams faster than adults per kilogram, so larger mg/kg doses may be needed. Body composition — higher total body water — increases the volume of distribution for hydrophilic drugs.</p>
+    <p>Paediatric dosing depends on <strong>weight, age and maturation</strong>. Neonates have immature glomerular filtration and hepatic enzymes, so half-lives are prolonged and dosing intervals must be extended according to <strong>postmenstrual and postnatal age</strong>; infants and young children often clear β-lactams faster than adults per kilogram, so larger mg/kg doses may be needed. Body composition — higher total body water — increases the volume of distribution for hydrophilic drugs.</p>
     <h4>Practical cautions</h4>
     <div class="table-wrap"><table>
       <tr><th>Drug or class</th><th>Paediatric issue</th></tr>

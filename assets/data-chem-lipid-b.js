@@ -45,7 +45,7 @@ window.QBANK.push(
       <tr><td>EDTA, citrate</td><td>Dilution artefact; citrate also lowers calcium but dilutes lipids</td></tr>
     </table></div>
     <h4>Practical points</h4>
-    <p>Serum or heparin plasma is preferred; avoid citrate. Cholesterol and HDL-C are stable for days at 4 degrees Celsius, but triglyceride rises with storage and repeated <strong>freeze-thaw</strong> cycles. Report the sample type, and interpret a low cholesterol with a high triglyceride cautiously, because the two assays have different interferences.</p>
+    <p>Serum or heparin plasma is preferred; avoid citrate. Cholesterol and HDL-C are stable for days at 4 degrees Celsius, but triglyceride rises with storage and repeated <strong>freeze-thaw</strong> cycles. Report the sample type, and interpret a low cholesterol with a high triglyceride cautiously, because the two assays have different interferences. In a tropical setting, heat and transport delay accelerate triglyceride rise, so separate and refrigerate samples promptly.</p>
   `,
   tip: "Draw the two enzyme cascades and name glycerol blanking before listing interferences.",
   sources: ["C1", "C2"]
@@ -68,7 +68,7 @@ window.QBANK.push(
       <li>Results may disagree with <strong>Martin-Hopkins</strong> or <strong>Sampson</strong> equations, which are cheap and often adequate.</li>
     </ul>
     <h4>When direct measurement helps</h4>
-    <p>Direct assays are useful when triglyceride exceeds about 4.5 mmol/L, when LDL-C is very low on intensive therapy, in suspected type III, and when an equation is invalid. Even then, <strong>non-HDL cholesterol</strong> and <strong>apo B</strong> often give a better estimate of atherogenic burden. Report the method and avoid mixing calculated and direct results in one patient trend.</p>
+    <p>Direct assays are useful when triglyceride exceeds about 4.5 mmol/L, when LDL-C is very low on intensive therapy, in suspected type III, and when an equation is invalid. Even then, <strong>non-HDL cholesterol</strong> and <strong>apo B</strong> often give a better estimate of atherogenic burden. Report the method and avoid mixing calculated and direct results in one patient trend. When in doubt, report non-HDL cholesterol, which requires no special assay and captures all atherogenic particles.</p>
   `,
   tip: "State the masking principle, then give two situations where the direct result is still misleading.",
   sources: ["C1", "C2", "C5"]
@@ -95,7 +95,7 @@ window.QBANK.push(
     <h4>Apo E and disease</h4>
     <p><strong>Apo E2/E2</strong> homozygosity predisposes to dysbetalipoproteinaemia when a second factor is present. <strong>Apo E4</strong> is associated with higher LDL-C and Alzheimer disease risk. Apo E genotyping is useful in selected severe mixed hyperlipidaemia.</p>
     <h4>Laboratory measurement</h4>
-    <p><strong>Immunoturbidimetry</strong> and nephelometry measure apo A-I and apo B; both are standardised against <strong>WHO-IFCC</strong> reference materials. Because there is one apo B per atherogenic particle, apo B reflects <strong>particle number</strong> and is not affected by fasting. Apo C-III and apo E are mainly research or specialist tests. Interpret apolipoproteins alongside the lipid profile, not in isolation.</p>
+    <p><strong>Immunoturbidimetry</strong> and nephelometry measure apo A-I and apo B; both are standardised against <strong>WHO-IFCC</strong> reference materials. Because there is one apo B per atherogenic particle, apo B reflects <strong>particle number</strong> and is not affected by fasting. Apo C-III and apo E are mainly research or specialist tests. Interpret apolipoproteins alongside the lipid profile, not in isolation. Apo B is particularly useful when triglyceride is high and LDL-C is calculated, because it is unaffected by the Friedewald assumptions. Apo A-I is measured mainly in research on reverse cholesterol transport.</p>
   `,
   tip: "A table of apolipoprotein, lipoprotein and function is faster and safer than prose here.",
   sources: ["C1", "C8"]
@@ -107,7 +107,7 @@ window.QBANK.push(
   keypoints: ["LDL-C", "non-HDL cholesterol", "apo B", "atherogenic particle number", "discordance", "insulin resistance", "metabolic syndrome", "small dense LDL", "CETP", "Lp(a)", "abetalipoproteinaemia", "fasting", "secondary target", "familial hypercholesterolaemia"],
   answer: `
     <h4>Three ways to express atherogenic burden</h4>
-    <p><strong>LDL-C</strong> measures cholesterol mass inside LDL particles. <strong>Non-HDL cholesterol</strong> is total cholesterol minus HDL-C and therefore includes LDL, VLDL, IDL, remnants and Lp(a). <strong>Apo B</strong> counts atherogenic particles, because each VLDL, IDL, LDL and Lp(a) particle carries exactly one apo B molecule.</p>
+    <p><strong>LDL-C</strong> measures cholesterol mass inside LDL particles. <strong>Non-HDL cholesterol</strong> is total cholesterol minus HDL-C and therefore includes LDL, VLDL, IDL, remnants and Lp(a). <strong>Apo B</strong> counts <strong>atherogenic particle number</strong>, because each VLDL, IDL, LDL and Lp(a) particle carries exactly one apo B molecule.</p>
     <h4>Why they disagree</h4>
     <p><strong>Discordance</strong> is common in insulin resistance, type 2 diabetes, metabolic syndrome, obesity, CKD and hypertriglyceridaemia. Triglyceride enrichment and <strong>CETP</strong> activity produce <strong>small dense LDL</strong> particles that contain less cholesterol but are more atherogenic. LDL-C may therefore look acceptable while non-HDL-C and apo B remain high. The reverse pattern occurs in some patients with large buoyant LDL.</p>
     <div class="table-wrap"><table>
@@ -142,7 +142,7 @@ window.QBANK.push(
       <li>High remnant cholesterol clusters with low HDL-C, high triglyceride and small dense LDL.</li>
     </ul>
     <h4>Clinical use</h4>
-    <p><strong>Non-fasting triglyceride</strong> is a practical marker of remnant burden and predicts cardiovascular events at least as well as fasting values. Large cohort studies show risk rising across the distribution of remnant cholesterol, without a sharp threshold. Remnant cholesterol is a <strong>risk-enhancing factor</strong> in European guidance. Management targets the cause: weight loss, glycaemic control, alcohol reduction, fibrates or omega-3 for hypertriglyceridaemia, and statins for overall atherogenic risk. Report non-HDL-C when triglyceride is high, because LDL-C then underestimates remnant cholesterol.</p>
+    <p><strong>Non-fasting triglyceride</strong> is a practical marker of remnant burden and predicts cardiovascular events at least as well as fasting values. Large cohort studies show risk rising across the distribution of remnant cholesterol, without a sharp threshold. Remnant cholesterol is a <strong>risk-enhancing factor</strong> in European guidance. Management targets the cause: weight loss, glycaemic control, alcohol reduction, fibrates or omega-3 for hypertriglyceridaemia, and statins for overall atherogenic risk. Report non-HDL-C when triglyceride is high, because LDL-C then underestimates remnant cholesterol. A standard lipid profile taken after an overnight fast can therefore miss a substantial remnant burden.</p>
   `,
   tip: "Link the remnant particle to foam-cell formation, then to the non-fasting triglyceride.",
   sources: ["C8", "C1"]
@@ -176,7 +176,7 @@ window.QBANK.push(
   keypoints: ["cholesterol efflux", "dysfunctional HDL", "apoB-depleted serum", "ABCA1", "ABCG1", "SR-B1", "HDL inflammatory index", "myeloperoxidase", "paraoxonase-1", "LCAT", "niacin", "CETP inhibitors", "non-HDL-C", "apo B"],
   answer: `
     <h4>HDL-C is not HDL function</h4>
-    <p>HDL-C measures the cholesterol mass carried in HDL particles, not what those particles do. HDL has several potentially protective actions: <strong>cholesterol efflux</strong> from macrophages, antioxidant and anti-inflammatory activity, endothelial protection, antithrombotic effects and immune modulation. In inflammation, diabetes and CKD, HDL can become <strong>dysfunctional</strong> and even pro-inflammatory.</p>
+    <p>HDL-C measures the cholesterol mass carried in HDL particles, not what those particles do. HDL has several potentially protective actions: <strong>cholesterol efflux</strong> from macrophages, antioxidant and anti-inflammatory activity, endothelial protection, antithrombotic effects and immune modulation. In inflammation, diabetes and CKD, HDL can become <strong>dysfunctional HDL</strong> and even pro-inflammatory.</p>
     <h4>Cholesterol efflux capacity</h4>
     <p>The best-studied functional assay uses macrophages loaded with labelled cholesterol, exposed to <strong>apoB-depleted serum</strong> as the acceptor. Efflux is measured as the percentage of cholesterol removed. It reflects several pathways: <strong>ABCA1</strong> (to lipid-poor apo A-I), <strong>ABCG1</strong> (to mature HDL) and <strong>SR-B1</strong>. Efflux capacity is inversely associated with cardiovascular events independently of HDL-C.</p>
     <h4>Other functional and compositional assays</h4>
@@ -186,6 +186,7 @@ window.QBANK.push(
       <li><strong>Paraoxonase-1</strong> activity — antioxidant enzyme carried on HDL.</li>
       <li><strong>LCAT</strong> activity, sphingosine-1-phosphate and HDL microRNA content — research tools.</li>
     </ul>
+    <p>Each assay captures a different aspect of HDL biology, which is why results correlate poorly between laboratories. Efflux capacity has predicted events better than HDL-C in several cohorts.</p>
     <h4>Clinical status</h4>
     <p>None of these assays is standardised or recommended for routine practice. They explain why simply raising HDL-C with <strong>niacin</strong> or <strong>CETP inhibitors</strong> failed, and they are being studied as risk markers and as endpoints for new therapies. For now, measure HDL-C for risk scores and focus treatment on <strong>LDL-C</strong>, <strong>non-HDL-C</strong> and <strong>apo B</strong>. A low HDL-C should prompt a search for insulin resistance, smoking, inflammation and other secondary causes rather than a drug aimed at HDL.</p>
   `,
@@ -199,7 +200,7 @@ window.QBANK.push(
   keypoints: ["nuclear magnetic resonance", "methyl signal", "deconvolution", "VLDL", "LDL particle number", "HDL particle number", "ion mobility", "discordance", "apo B", "proprietary", "outcome trial", "non-HDL-C", "familial combined hyperlipidaemia"],
   answer: `
     <h4>Principle</h4>
-    <p><strong>Nuclear magnetic resonance</strong> lipoprotein testing applies a magnetic field and radiofrequency pulses to serum. The amplitude of the lipid <strong>methyl signal</strong> is <strong>deconvoluted</strong> into contributions from lipoprotein subclasses of different size. The output includes <strong>VLDL</strong>, LDL and HDL subclasses and, most importantly, <strong>LDL particle number</strong> and <strong>HDL particle number</strong>.</p>
+    <p><strong>Nuclear magnetic resonance</strong> lipoprotein testing applies a magnetic field and radiofrequency pulses to serum. The amplitude of the lipid <strong>methyl signal</strong> undergoes <strong>deconvolution</strong> into contributions from lipoprotein subclasses of different size. The output includes <strong>VLDL</strong>, LDL and HDL subclasses and, most importantly, <strong>LDL particle number</strong> and <strong>HDL particle number</strong>.</p>
     <h4>Ion mobility</h4>
     <p><strong>Ion mobility</strong> is a different proprietary approach: particles are ionised, separated in a gas phase by size and charge, and counted directly. It also reports particle numbers and subclass distribution.</p>
     <h4>What the evidence shows</h4>
@@ -213,7 +214,7 @@ window.QBANK.push(
       <li>LDL-C remains the measure used in the major statin trials.</li>
     </ul>
     <h4>Appropriate use</h4>
-    <p>NMR or ion mobility profiling may be reasonable in selected patients with premature atherosclerosis and a discordantly low LDL-C, in <strong>familial combined hyperlipidaemia</strong>, or in research. It should not replace a careful history, apo B or <strong>non-HDL-C</strong>. Report the method and avoid comparing results from different platforms in one patient.</p>
+    <p>NMR or ion mobility profiling may be reasonable in selected patients with premature atherosclerosis and a discordantly low LDL-C, in <strong>familial combined hyperlipidaemia</strong>, or in research. It should not replace a careful history, apo B or <strong>non-HDL-C</strong>. Report the method and avoid comparing results from different platforms in one patient. Results should be interpreted with the overall clinical picture, not as a standalone treatment target.</p>
   `,
   tip: "Say clearly that particle number adds information but has no outcome-trial evidence.",
   sources: ["C8", "C1"]
@@ -245,7 +246,7 @@ window.QBANK.push(
       <li>Use the same method and, where possible, the same laboratory for monitoring.</li>
     </ul>
     <h4>Why it matters</h4>
-    <p>Misinterpreted biological variation causes unnecessary treatment, unnecessary repeat visits and false reassurance. In a rural Philippine setting, transport delay and heat add preanalytical error. Documenting sample handling and fasting status protects both the patient and the laboratory.</p>
+    <p>Misinterpreted biological variation causes unnecessary treatment, unnecessary repeat visits and false reassurance. In a rural Philippine setting, transport delay and heat add preanalytical error. Documenting sample handling and fasting status protects both the patient and the laboratory. A fasting sample is still needed when the result will guide treatment of severe hypertriglyceridaemia.</p>
   `,
   tip: "Give an RCV argument for repeating a borderline triglyceride before starting a drug.",
   sources: ["C1", "C2", "C5"]
@@ -271,7 +272,7 @@ window.QBANK.push(
     <h4>Laboratory assessment</h4>
     <p>Measure a full lipid profile with non-HDL-C, fasting glucose or HbA1c, blood pressure, waist circumference, ALT, uric acid and urine albumin-to-creatinine ratio. Exclude secondary causes such as hypothyroidism and overt diabetes. Metabolic syndrome is not a diagnosis of exclusion and does not require a genetic test.</p>
     <h4>Management</h4>
-    <p>Weight loss, physical activity and dietary change are foundational. Statins treat the atherogenic lipid burden; blood pressure and glycaemic control are managed in parallel. Fibrates or omega-3 may be added for severe hypertriglyceridaemia. The laboratory's role is to identify the pattern early, report non-HDL-C, and flag features that change cardiovascular risk category.</p>
+    <p>Weight loss, physical activity and dietary change are foundational. Statins treat the atherogenic lipid burden; blood pressure and glycaemic control are managed in parallel. Fibrates or omega-3 may be added for severe hypertriglyceridaemia. The laboratory's role is to identify the pattern early, report non-HDL-C, and flag features that change cardiovascular risk category. Central obesity is common in Filipino adults, so opportunistic screening in primary care is worthwhile.</p>
   `,
   tip: "Memorise the five components with Asian waist cut-offs, then explain the VLDL-CETP link.",
   sources: ["C8", "C1", "C2"]
@@ -314,17 +315,17 @@ window.QBANK.push(
     <h4>Pathogenesis</h4>
     <p><strong>Dysbetalipoproteinaemia</strong>, formerly type III hyperlipoproteinaemia, results from defective clearance of <strong>remnant</strong> lipoproteins. The usual cause is homozygosity for <strong>apo E2/E2</strong>, which binds the LDL receptor and LRP poorly. Because most E2/E2 homozygotes are normolipidaemic, clinical disease requires a <strong>second hit</strong> such as obesity, type 2 diabetes, hypothyroidism, alcohol excess, oestrogen therapy or CKD.</p>
     <h4>Clinical picture</h4>
-    <p>Patients may have <strong>palmar xanthomas</strong> (yellow creases of the palms), <strong>tuberoeruptive xanthomas</strong> and premature atherosclerosis affecting coronary and peripheral arteries. Cholesterol and triglyceride are both elevated, often to a similar degree, because remnants carry both.</p>
+    <p>Patients may have <strong>palmar xanthomas</strong> (yellow creases of the palms), <strong>tuberoeruptive xanthomas</strong> and premature atherosclerosis affecting coronary and peripheral arteries. Cholesterol and triglyceride are both elevated, often to a similar degree, because remnants carry both. Some patients present only with premature peripheral arterial disease or with xanthomas discovered incidentally.</p>
     <h4>Laboratory diagnosis</h4>
     <ul>
       <li>Lipid profile shows combined hyperlipidaemia; LDL-C is unreliable because the Friedewald equation assumes normal VLDL.</li>
       <li>Lipoprotein electrophoresis may show a <strong>broad beta band</strong>.</li>
-      <li>A <strong>VLDL-C to triglyceride ratio above 0.3</strong> in mg/dL after ultracentrifugation supports the diagnosis.</li>
+      <li>A <strong>VLDL-C to triglyceride ratio above 0.3</strong> in mg/dL after ultracentrifugation supports the diagnosis. Because remnants are cholesterol-rich, this ratio is more informative than either lipid alone.</li>
       <li><strong>Apo E genotyping</strong> confirms E2/E2; exclude hypothyroidism and other secondary causes.</li>
       <li><strong>Non-HDL cholesterol</strong> and apo B better reflect the atherogenic burden.</li>
     </ul>
     <h4>Management</h4>
-    <p>Treat the second hit and start a <strong>fibrate</strong> or a <strong>statin</strong>; many patients respond well to either. Diet, weight loss and alcohol reduction are important. Family members may be screened with lipids and apo E genotyping when the index case is confirmed. Avoid reporting a calculated LDL-C as if it were valid in this disorder.</p>
+    <p>Treat the second hit and start a <strong>fibrate</strong> or a <strong>statin</strong>; many patients respond well to either. Diet, weight loss and alcohol reduction are important. Family members may be screened with lipids and apo E genotyping when the index case is confirmed. Avoid reporting a calculated LDL-C as if it were valid in this disorder. Repeat lipids after the second hit is treated to confirm the diagnosis. The lipid profile alone cannot confirm the diagnosis, so genetic testing is often needed.</p>
   `,
   tip: "Palmar xanthomas plus equally high cholesterol and triglyceride should trigger apo E genotyping.",
   sources: ["C8", "C1", "C3"]
@@ -336,16 +337,16 @@ window.QBANK.push(
   keypoints: ["abetalipoproteinaemia", "microsomal triglyceride transfer protein", "acanthocytes", "fat-soluble vitamins", "hypobetalipoproteinaemia", "Tangier disease", "ABCA1", "LCAT deficiency", "sitosterolaemia", "ABCG5", "ABCG8", "ezetimibe", "lysosomal acid lipase deficiency", "next-generation sequencing"],
   answer: `
     <h4>Disorders of absent or low apo B</h4>
-    <p><strong>Abetalipoproteinaemia</strong> is caused by loss of the <strong>microsomal triglyceride transfer protein</strong>, so the intestine and liver cannot assemble apo B-containing lipoproteins. Cholesterol and triglyceride are extremely low, <strong>acanthocytes</strong> are present, and fat malabsorption causes deficiency of <strong>fat-soluble vitamins</strong>, leading to neuropathy and retinopathy. <strong>Hypobetalipoproteinaemia</strong> usually reflects a truncated apo B from an APOB mutation; heterozygotes have low LDL-C and are often healthy.</p>
+    <p><strong>Abetalipoproteinaemia</strong> is caused by loss of the <strong>microsomal triglyceride transfer protein</strong>, so the intestine and liver cannot assemble apo B-containing lipoproteins. Cholesterol and triglyceride are extremely low, <strong>acanthocytes</strong> are present, and fat malabsorption causes deficiency of <strong>fat-soluble vitamins</strong>, leading to neuropathy and retinopathy. Treatment is dietary fat restriction with high-dose fat-soluble vitamins and essential fatty acid supplementation. <strong>Hypobetalipoproteinaemia</strong> usually reflects a truncated apo B from an APOB mutation; heterozygotes have low LDL-C and are often healthy.</p>
     <h4>Disorders of HDL</h4>
-    <p><strong>Tangier disease</strong> results from <strong>ABCA1</strong> deficiency: HDL-C is near absent, tonsils are orange, and neuropathy and hepatosplenomegaly occur. <strong>LCAT deficiency</strong> causes corneal opacities, anaemia and proteinuria; the partial form is fish-eye disease. These disorders are not treated by raising HDL-C.</p>
+    <p><strong>Tangier disease</strong> results from <strong>ABCA1</strong> deficiency: HDL-C is near absent, tonsils are orange, and neuropathy and hepatosplenomegaly occur. <strong>LCAT deficiency</strong> causes corneal opacities, anaemia and proteinuria; the partial form is fish-eye disease. These disorders are not treated by raising HDL-C, and a low HDL-C alone is not an indication for drug therapy.</p>
     <h4>Plant sterol and lysosomal disorders</h4>
-    <p><strong>Sitosterolaemia</strong> is caused by <strong>ABCG5</strong> or <strong>ABCG8</strong> mutations, with high plant sterols, xanthomas and premature atherosclerosis; <strong>ezetimibe</strong> reduces absorption. <strong>Lysosomal acid lipase deficiency</strong> causes hepatosplenomegaly, adrenal calcification and dyslipidaemia, and is treated with enzyme replacement.</p>
+    <p><strong>Sitosterolaemia</strong> is caused by <strong>ABCG5</strong> or <strong>ABCG8</strong> mutations, with high plant sterols, xanthomas and premature atherosclerosis; <strong>ezetimibe</strong> reduces absorption; plant sterol measurement is available only in specialist laboratories. <strong>Lysosomal acid lipase deficiency</strong> causes hepatosplenomegaly, adrenal calcification and dyslipidaemia, and is treated with enzyme replacement.</p>
     <h4>Laboratory approach</h4>
     <ul>
       <li>Recognise extreme lipid values or a striking family history and consanguinity.</li>
       <li>Measure a full profile, apo B, fat-soluble vitamins and plant sterols when indicated.</li>
-      <li>Use <strong>next-generation sequencing</strong> panels for monogenic dyslipidaemias.</li>
+      <li>Use <strong>next-generation sequencing</strong> panels for monogenic dyslipidaemias, with genetic counselling for the family.</li>
       <li>Do not apply routine risk equations to untreated extreme phenotypes.</li>
     </ul>
     <p>These conditions are rare but important because specific treatments exist and because they teach the physiology of lipoprotein assembly and clearance.</p>
@@ -363,7 +364,7 @@ window.QBANK.push(
     <p>Fatty streaks and fibrous plaques begin in childhood, and <strong>familial hypercholesterolaemia</strong> affects about 1 in 250 children. A child with FH may have no symptoms until premature coronary disease, so screening is the only way to find them early. Obesity and type 2 diabetes in adolescents add a second, growing burden.</p>
     <h4>Who and when</h4>
     <ul>
-      <li><strong>Universal screening</strong> at ages 9 to 11 and again at 17 to 21, as recommended by the NHLBI expert panel.</li>
+      <li><strong>Universal screening</strong> at ages 9 to 11 and again at ages 17 to 21, as recommended by the NHLBI expert panel.</li>
       <li><strong>Selective screening</strong> from age 2 if there is a family history of premature CVD, high cholesterol, or a parent with a known mutation.</li>
       <li>A non-fasting <strong>non-HDL cholesterol</strong> is a practical first test; a fasting lipid profile confirms the pattern.</li>
       <li>Diagnosis of FH uses <strong>LDL-C</strong>, family history and, where available, genetic testing; the <strong>Dutch Lipid Clinic criteria</strong> can be adapted.</li>
@@ -371,7 +372,7 @@ window.QBANK.push(
     <h4>Management</h4>
     <p>Lifestyle change is universal: reduce saturated fat and sugar-sweetened drinks, increase activity and manage weight. For children with FH, <strong>statins</strong> are recommended from about age 8, with specialist supervision; <strong>ezetimibe</strong> and <strong>bile acid sequestrants</strong> are alternatives or add-ons. <strong>PCSK9 inhibitors</strong> are used in severe cases. Monitor growth, liver enzymes and lipids, and counsel about pregnancy later in life.</p>
     <h4>Philippine context</h4>
-    <p>Paediatric lipid guidelines and access to specialist care are limited. Opportunistic screening of children with obesity, a family history of early heart attack or a parent with very high cholesterol is realistic. Every identified child should trigger <strong>cascade screening</strong> of parents and siblings, because finding the parent may be as important as treating the child.</p>
+    <p>Paediatric lipid guidelines and access to specialist care are limited. Opportunistic screening of children with obesity, a family history of early heart attack or a parent with very high cholesterol is realistic. Every identified child should trigger <strong>cascade screening</strong> of parents and siblings, because finding the parent may be as important as treating the child. A lipid profile in a child should be interpreted against age- and sex-specific values.</p>
   `,
   tip: "Quote the two universal screening ages and the age 8 threshold for statins in FH.",
   sources: ["C8", "C1"]
@@ -394,7 +395,7 @@ window.QBANK.push(
     <h4>Laboratory assessment</h4>
     <p>Measure a fasting lipid profile when hypertriglyceridaemia is suspected, together with glucose, HbA1c, TSH, liver tests, bile acids, urine protein and, if pancreatitis is suspected, lipase. Amylase may be unreliable in lipaemic samples. Exclude secondary causes before attributing the pattern to pregnancy alone.</p>
     <h4>Management</h4>
-    <p>Dietary fat restriction and medium-chain triglycerides help severe hypertriglyceridaemia. Fibrates and omega-3 are used in specialist care; <strong>plasmapheresis</strong> is reserved for severe cases with pancreatitis. <strong>Statins</strong> were traditionally avoided in pregnancy, but guidance now allows them in selected very-high-risk women, such as those with homozygous FH, after counselling. <strong>Bile acid sequestrants</strong> are an option for hypercholesterolaemia. Recheck lipids 6 to 12 weeks postpartum before making a lifelong diagnosis.</p>
+    <p>Dietary fat restriction and medium-chain triglycerides help severe hypertriglyceridaemia. Fibrates and omega-3 are used in specialist care; <strong>plasmapheresis</strong> is reserved for severe cases with pancreatitis. <strong>Statins</strong> were traditionally avoided in pregnancy, but specialist guidance may consider them in selected very-high-risk women, such as those with homozygous FH, after counselling. <strong>Bile acid sequestrants</strong> are an option for hypercholesterolaemia. Recheck lipids 6 to 12 weeks postpartum before making a lifelong diagnosis. Women with a history of hypertriglyceridaemic pancreatitis need preconception counselling and close monitoring. Lipid testing during lactation is safe and does not require interrupting breastfeeding.</p>
   `,
   tip: "Separate physiological gestational hyperlipidaemia from the triglyceride level that threatens the pancreas.",
   sources: ["C8", "C1", "C2"]
@@ -418,7 +419,7 @@ window.QBANK.push(
     <h4>Management</h4>
     <p>Stop the statin, allow symptoms to settle, then <strong>rechallenge</strong> with a lower dose, an alternate-day regimen or a different statin such as rosuvastatin or pravastatin, which rely less on CYP3A4. If symptoms recur, use <strong>ezetimibe</strong>, <strong>bempedoic acid</strong>, a <strong>PCSK9 inhibitor</strong> or <strong>inclisiran</strong> to reach the LDL-C target. Bempedoic acid raises urate and should be avoided in pregnancy. Do not accept a persistently high LDL-C simply because the patient cannot take a statin.</p>
     <h4>Laboratory role</h4>
-    <p>Baseline ALT and CK are reasonable; routine CK monitoring is not. The best measure of adherence and response is the change in <strong>LDL-C</strong>. Document the agent, dose, symptom pattern and rechallenge outcome so that the diagnosis is objective rather than assumed.</p>
+    <p>Baseline ALT and CK are reasonable; routine CK monitoring is not. The best measure of adherence and response is the change in <strong>LDL-C</strong>. Document the agent, dose, symptom pattern and rechallenge outcome so that the diagnosis is objective rather than assumed. A documented rechallenge is often more informative than a statin allergy label.</p>
   `,
   tip: "Distinguish nocebo from true intolerance, and always offer a non-statin route to target.",
   sources: ["C8", "C1"]
@@ -444,7 +445,7 @@ window.QBANK.push(
       <tr><td><strong>Coronary artery calcium</strong></td><td>Imaging, not a blood test; reclassifies intermediate risk</td></tr>
     </table></div>
     <h4>Clinical translation</h4>
-    <p>Lowering apo B-containing particles with statins, ezetimibe and PCSK9 inhibitors reduces events. Anti-inflammatory therapy with colchicine is now used in selected patients with <strong>residual risk</strong>. The laboratory's contribution is accurate lipid measurement, <strong>apo B</strong> and Lp(a) when indicated, and recognition that residual risk persists after LDL-C is controlled.</p>
+    <p>Lowering apo B-containing particles with statins, ezetimibe and PCSK9 inhibitors reduces events. Anti-inflammatory therapy with colchicine is now used in selected patients with <strong>residual risk</strong>. The laboratory's contribution is accurate lipid measurement, <strong>apo B</strong> and Lp(a) when indicated, and recognition that residual risk persists after LDL-C is controlled. Plaque imaging with CT or ultrasound can identify high-risk morphology and guide prevention.</p>
   `,
   tip: "Tell the plaque story from endothelial injury to rupture, then be honest about which biomarkers are routine.",
   sources: ["C8", "C1", "C3"]

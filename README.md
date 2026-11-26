@@ -4,13 +4,13 @@ A static study website for a Master's (MSMT) written comprehensive exam, coverin
 
 | Subject | Essay Q&As | Flashcards |
 |---|---|---|
-| Advanced Medical Microbiology | 111 | 173 |
-| Advanced Clinical Chemistry | 96 | 268 |
-| Advanced Immunohematology | 72 | 188 |
-| Advanced Parasitology | 72 | 188 |
-| **Total** | **351** | **817** |
+| Advanced Medical Microbiology | 270 | 332 |
+| Advanced Clinical Chemistry | 240 | 412 |
+| Advanced Immunohematology | 180 | 296 |
+| Advanced Parasitology | 180 | 296 |
+| **Total** | **870** | **1,336** |
 
-Every topic has at least 12 essay questions.
+Every topic has **30 essay questions** and a matching flashcard deck (28–58 cards per topic).
 
 Every essay answer and flashcard cites its source (textbooks, guidelines, Philippine laws and DOH orders). Open **References** in the sidebar to see the full list for each subject.
 

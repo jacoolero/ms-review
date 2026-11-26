@@ -4,7 +4,7 @@ window.QBANK.push(
   id: "cc223", domain: "chem-tox", star: true,
   q: "Discuss AUC-guided monitoring of vancomycin: the rationale, the practical estimation of exposure, and the confounders that affect interpretation.",
   tags: ["vancomycin", "AUC", "MRSA", "nephrotoxicity"],
-  keypoints: ["time-dependent killing", "AUC/MIC 400–600", "trough concentrations correlate only loosely with AUC", "Bayesian forecasting", "two concentrations at steady state", "exact dose times", "sampling times", "dominant determinant of clearance", "augmented renal clearance", "obesity, critical illness, burns", "hypoalbuminaemia", "serum or plasma", "MRSA bacteraemia", "less nephrotoxicity", "serum creatinine", "concurrent nephrotoxins"],
+  keypoints: ["time-dependent, concentration-independent", "AUC/MIC 400–600", "trough concentrations correlate only loosely with AUC", "Bayesian forecasting", "two concentrations at steady state", "exact dose times", "sampling times", "dominant determinant of clearance", "augmented renal clearance", "obesity, critical illness, burns", "hypoalbuminaemia", "serum or plasma", "MRSA bacteraemia", "less nephrotoxicity", "serum creatinine", "concurrent nephrotoxins"],
   answer: `
     <h4>Why AUC-guided dosing replaced trough-only monitoring</h4>
     <p>Vancomycin is a <strong>time-dependent, concentration-independent</strong> killer, so exposure is best described by the <strong>24-hour area under the curve (AUC<sub>0–24</sub>)</strong> relative to the <strong>MIC</strong>. <strong>Trough concentrations correlate only loosely with AUC</strong> and are a poor surrogate when the MIC is high or the volume of distribution is abnormal, so trough-only targets produce both under- and over-exposure. The 2020 consensus guideline favours <strong>AUC/MIC 400–600</strong> for serious MRSA infection, with troughs retained mainly as a safety check.</p>
@@ -90,7 +90,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc227", domain: "chem-tox",
+  id: "cc227", domain: "chem-tox", star: true,
   q: "Discuss therapeutic drug monitoring of biologic agents, using anti-TNF therapy as the model: rationale, analytes, interpretation and clinical application.",
   tags: ["biologics", "anti-TNF", "anti-drug antibodies", "personalised dosing"],
   keypoints: ["target-mediated drug disposition", "inflammatory burden", "trough concentration", "anti-drug antibodies", "immune complexes", "drug-sensitive versus drug-tolerant", "not interchangeable between assays", "secondary loss of response", "Mechanistic failure", "de-escalation", "Combination with an immunomodulator", "ustekinumab and vedolizumab"],
@@ -140,7 +140,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc229", domain: "chem-tox",
+  id: "cc229", domain: "chem-tox", star: true,
   q: "Discuss acute iron poisoning: mechanism, clinical phases, laboratory assessment and the role and hazards of chelation.",
   tags: ["iron", "deferoxamine", "metabolic acidosis", "paediatric poisoning"],
   keypoints: ["corrosive", "free iron", "hydroxyl radical", "latent period", "metabolic acidosis", "transferrin saturation", "peak is variable and correlates poorly", "Abdominal radiograph", "Deferoxamine", "hypotension", "acute respiratory distress syndrome", "vin rosé"],
@@ -150,7 +150,7 @@ window.QBANK.push(
     <h4>Laboratory assessment</h4>
     <ul>
       <li><strong>Serum iron</strong> and total iron-binding capacity with <strong>transferrin saturation</strong>: a raised iron with high saturation supports significant ingestion, but the <strong>peak is variable and correlates poorly</strong> with severity.</li>
-      <li>Blood gas for acidosis, glucose, electrolytes, creatinine, liver enzymes and coagulation.</li>
+      <li>Blood gas, glucose, electrolytes, creatinine, liver enzymes and coagulation.</li>
       <li><strong>Abdominal radiograph</strong> for radio-opaque tablets, which also guides decontamination.</li>
       <li>Full blood count and blood group in case transfusion is needed.</li>
     </ul>
@@ -163,7 +163,7 @@ window.QBANK.push(
   sources: ["C1", "C2"]
 },
 {
-  id: "cc230", domain: "chem-tox",
+  id: "cc230", domain: "chem-tox", star: true,
   q: "Compare mercury and arsenic poisoning: toxic forms, clinical effects, specimen choice and the importance of speciation.",
   tags: ["mercury", "arsenic", "speciation", "heavy metals"],
   keypoints: ["Elemental mercury", "Methylmercury", "skin-lightening creams", "fetal neurodevelopmental damage", "pyruvate dehydrogenase", "Arsine gas", "Arsenobetaine", "speciation", "trace-element-free tubes", "DMPS, DMSA or dimercaprol", "symptomatic inorganic poisoning"],
@@ -182,7 +182,7 @@ window.QBANK.push(
       <tr><td>Arsenic</td><td>Hair, nails</td><td>Chronic exposure; external contamination limits value</td></tr>
     </table></div>
     <h4>Interpretation and treatment</h4>
-    <p>Use <strong>trace-element-free tubes</strong>, avoid seafood before urine testing and interpret against the local reference population, because background exposure varies. Chelation with <strong>DMPS, DMSA or dimercaprol</strong> is reserved for <strong>symptomatic inorganic poisoning</strong>; it is not indicated for low-level fish-derived methylmercury, where removal from exposure is the main measure. Monitor renal and hepatic function during treatment, and remember that hair analysis alone cannot establish poisoning.</p>
+    <p>Use <strong>trace-element-free tubes</strong>, avoid seafood before urine testing and interpret against the local reference population, because background exposure varies. Chelation with <strong>DMPS, DMSA or dimercaprol</strong> is reserved for <strong>symptomatic inorganic poisoning</strong>; it is not indicated for low-level fish-derived methylmercury, where removal from exposure is the main measure. Monitor renal and hepatic function during treatment, and remember that hair analysis alone cannot establish poisoning. Acute arsine exposure is a transfusion emergency: massive haemolysis causes haemoglobinuria and acute kidney injury, so support urine output and consider exchange transfusion.</p>
   `,
   tip: "Speciation and the benign seafood arsenical are the modern, high-yield points — not just list of symptoms.",
   sources: ["C1", "C2", "C3"]
@@ -211,7 +211,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C15"]
 },
 {
-  id: "cc232", domain: "chem-tox",
+  id: "cc232", domain: "chem-tox", star: true,
   q: "Discuss chelation therapy: principles, the main agents and their metal targets, monitoring, and the hazards of inappropriate use.",
   tags: ["chelation", "dimercaprol", "EDTA", "deferoxamine"],
   keypoints: ["stable, water-soluble complexes", "symptomatic poisoning", "Dimercaprol", "G6PD deficiency", "Succimer", "CaNa", "fatal hypocalcaemia", "Penicillamine", "Deferoxamine", "Prussian blue", "essential metals", "rebound"],
@@ -238,7 +238,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc233", domain: "chem-tox",
+  id: "cc233", domain: "chem-tox", star: true,
   q: "Discuss chain of custody and specimen integrity in forensic and workplace drug testing, with reference to Philippine requirements.",
   tags: ["chain of custody", "RA 9165", "forensic toxicology", "specimen integrity"],
   keypoints: ["RA 9165", "accredited by the DOH", "unique specimen number", "witnessed collection", "tamper-evident seal", "split specimen", "name of the releasing and receiving person", "contemporaneous", "confirmed by GC-MS or LC-MS/MS", "broken seals"],
@@ -262,7 +262,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C13"]
 },
 {
-  id: "cc234", domain: "chem-tox",
+  id: "cc234", domain: "chem-tox", star: true,
   q: "Discuss mass spectrometry in the toxicology laboratory: principles, instrument configurations, screening versus targeted analysis, and validation pitfalls.",
   tags: ["mass spectrometry", "LC-MS/MS", "high-resolution", "confirmation"],
   keypoints: ["mass-to-charge ratio", "tandem MS", "retention time", "confirmatory standard", "ESI", "Triple quadrupole", "high-resolution accurate mass", "stable-isotope-labelled internal standard", "Matrix effects and ion suppression", "Isobaric compounds and isomers", "glucuronides"],
@@ -292,7 +292,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C10"]
 },
 {
-  id: "cc235", domain: "chem-tox",
+  id: "cc235", domain: "chem-tox", star: true,
   q: "Discuss specimen validity testing and the use of alternative matrices in drugs-of-abuse testing, including their interpretation and limitations.",
   tags: ["specimen validity", "oral fluid", "hair testing", "adulteration"],
   keypoints: ["dilute", "specific gravity", "oxidants", "not interpretable", "Oral fluid", "Hair", "passive external contamination", "Meconium", "Vitreous humour", "THC-COOH", "exposure, not impairment"],
@@ -341,7 +341,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc237", domain: "chem-tox",
+  id: "cc237", domain: "chem-tox", star: true,
   q: "Discuss laboratory monitoring of anticoagulant therapy: unfractionated and low-molecular-weight heparin, warfarin and the direct oral anticoagulants.",
   tags: ["anticoagulants", "anti-Xa", "DOAC", "INR"],
   keypoints: ["APTT", "anti-Xa assay", "Protamine", "heparin-induced thrombocytopenia", "anti-Xa activity 3–5 hours after a dose", "INR", "CYP2C9", "prothrombin complex concentrate", "Diluted thrombin time", "drug-specific calibration", "Idarucizumab", "andexanet alfa"],
@@ -367,7 +367,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc238", domain: "chem-tox",
+  id: "cc238", domain: "chem-tox", star: true,
   q: "Discuss trace-element monitoring in long-term parenteral nutrition and after bariatric surgery, including deficiency syndromes and analytical requirements.",
   tags: ["trace elements", "parenteral nutrition", "bariatric surgery", "manganese"],
   keypoints: ["essential cofactors", "cholestasis", "Zinc deficiency", "copper deficiency", "ceruloplasmin", "Selenium", "T1 hyperintensity in the basal ganglia", "Chromium", "trace-element-free tubes", "ICP-MS", "refeeding syndrome"],
@@ -389,13 +389,13 @@ window.QBANK.push(
       <tr><td>Iron</td><td>Deficiency after bariatric surgery; overload with transfusion</td><td>Ferritin with CRP, transferrin saturation</td></tr>
     </table></div>
     <h4>Analytical and clinical practice</h4>
-    <p>Use <strong>trace-element-free tubes</strong> and needles, avoid prolonged tourniquet time, and measure by <strong>ICP-MS</strong>; haemolysis and contamination invalidate results. Sample at defined intervals rather than daily, review the parenteral nutrition prescription when levels are abnormal, and remember that <strong>refeeding syndrome</strong> shifts phosphate, potassium and magnesium independently of trace elements.</p>
+    <p>Use <strong>trace-element-free tubes</strong> and needles, avoid prolonged tourniquet time, and measure by <strong>ICP-MS</strong>; haemolysis and contamination invalidate results. Sample at defined intervals rather than daily, review the parenteral nutrition prescription when levels are abnormal, and remember that <strong>refeeding syndrome</strong> shifts phosphate, potassium and magnesium independently of trace elements. Document the indication, the interval and the supplement history, because recent intake raises plasma zinc transiently and a single value can mislead.</p>
   `,
   tip: "Link manganese excess to cholestasis and copper deficiency to bariatric surgery — those two associations carry the marks.",
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc239", domain: "chem-tox",
+  id: "cc239", domain: "chem-tox", star: true,
   q: "Discuss biotin interference in immunoassays: mechanism, the assays affected, recognition and mitigation.",
   tags: ["biotin", "immunoassay interference", "streptavidin", "patient safety"],
   keypoints: ["streptavidin–biotin", "multiple sclerosis", "Competitive", "Falsely low", "Sandwich", "Falsely high", "low free T4 with a raised TSH", "false-positive hCG", "washout", "biotin-insensitive platform", "heterophile antibodies"],
@@ -416,6 +416,7 @@ window.QBANK.push(
       <li>Repeat on a <strong>biotin-insensitive platform</strong> or after streptavidin blockade, and confirm with an alternative method.</li>
       <li>Exclude <strong>heterophile antibodies</strong> and other immunoassay interference when results are discordant.</li>
     </ul>
+    <p>Because the effect is dose- and time-dependent, a sample taken soon after a supplement is the most likely to mislead; when in doubt, repeat the clinically important test after washout rather than acting on the first result.</p>
     <h4>Laboratory responsibility</h4>
     <p>Laboratories should publish which platforms are biotin-sensitive, add a comment to affected results and educate clinicians. A single implausible result should never drive treatment without clinical correlation and confirmatory testing.</p>
   `,
@@ -423,7 +424,7 @@ window.QBANK.push(
   sources: ["C1", "C2", "C3"]
 },
 {
-  id: "cc240", domain: "chem-tox",
+  id: "cc240", domain: "chem-tox", star: true,
   q: "Discuss therapeutic drug monitoring in special populations: neonates and children, pregnancy, obesity, critical illness and extracorporeal support.",
   tags: ["special populations", "paediatric TDM", "pregnancy", "ECMO"],
   keypoints: ["volume of distribution", "protein binding", "neonates", "Low albumin", "Immature glomerular filtration", "lamotrigine, levetiracetam and lithium", "loading doses follow actual body weight", "augmented renal clearance", "ECMO", "continuous renal replacement therapy", "population-specific"],

@@ -26,7 +26,7 @@ window.QBANK.push(
   id: "mc14", domain: "mycology", star: true,
   q: "Explain antifungal immunity, from innate recognition to adaptive responses, and discuss inherited defects that predispose to specific fungal infections.",
   tags: ["antifungal immunity", "Dectin-1", "CARD9", "Th17"],
-  keypoints: ["Dectin-1 beta-glucan", "Dectin-2 and Mincle mannan", "Syk-CARD9", "inflammasome IL-1beta", "neutrophil oxidative burst", "NETs", "Th17 IL-17 IL-22", "Th1 IFN-gamma", "CARD9 deficiency", "STAT1 gain-of-function", "AIRE APECED", "chronic granulomatous disease", "anti-IFN-gamma autoantibodies", "immune evasion capsule", "IRIS"],
+  keypoints: ["Dectin-1 beta-glucan", "Dectin-2 and Mincle mannan", "Syk-CARD9", "inflammasome IL-1beta", "neutrophil oxidative burst", "neutrophil extracellular traps", "Th17 IL-17 IL-22", "Th1 IFN-gamma", "CARD9 deficiency", "STAT1 gain-of-function", "AIRE APECED", "chronic granulomatous disease", "anti-IFN-gamma autoantibodies", "immune evasion capsule", "IRIS"],
   answer: `
     <h4>Barriers and innate recognition</h4>
     <p>Intact skin and mucosa, the resident microbiota, and surfactant proteins A and D limit invasion. Tissue macrophages and neutrophils are the main effectors. Fungi are recognised by <strong>pattern-recognition receptors</strong>: <strong>Dectin-1</strong> binds β-1,3-glucan, <strong>Dectin-2 and Mincle</strong> bind α-mannans and glycolipids, and mannose receptor and <strong>TLR2, TLR4 and TLR9</strong> contribute. Signals converge on <strong>Syk–CARD9–NF-κB</strong> and on the inflammasome, which releases IL-1β. Neutrophils kill by oxidative burst, granule proteases and <strong>neutrophil extracellular traps</strong>, while dendritic cells migrate to lymph nodes and shape the T-cell response. The outcome therefore depends on how quickly innate effectors contain the inoculum.</p>
@@ -121,7 +121,7 @@ window.QBANK.push(
   id: "mc18", domain: "mycology", star: true,
   q: "Outline a management bundle for candidaemia and invasive candidiasis in the intensive care unit, including diagnosis, source control and duration of therapy.",
   tags: ["candidaemia", "ICU", "echinocandin", "source control"],
-  keypoints: ["central venous catheter", "colonisation burden", "beta-D-glucan", "repeat blood cultures", "dilated retinal examination", "echinocandin first-line", "step-down fluconazole", "remove catheter", "14 days after first negative culture", "echocardiography", "empirical therapy high risk only", "do not treat colonisation", "Candida auris screening"],
+  keypoints: ["central venous catheter", "colonisation burden", "beta-D-glucan", "repeat blood cultures", "dilated retinal examination", "echinocandin first-line", "step-down fluconazole", "remove catheter", "14 days after first negative culture", "echocardiography", "empirical therapy high risk only", "do not treat colonisation", "C. auris screening"],
   answer: `
     <h4>Who is at risk</h4>
     <p>Invasive candidiasis arises when colonisation, mucosal barrier failure and impaired immunity coincide: critical illness, prolonged broad-spectrum antibiotics, <strong>central venous catheters</strong>, total parenteral nutrition, abdominal surgery, renal replacement therapy, neutropenia and diabetes. <strong>Colonisation burden</strong> predicts invasion. <em>C. albicans</em> remains commonest, while <em>C. glabrata</em>, <em>C. parapsilosis</em>, <em>C. tropicalis</em> and <em>C. auris</em> vary by centre and prior azole exposure.</p>
@@ -215,7 +215,7 @@ window.QBANK.push(
   id: "mc22", domain: "mycology",
   q: "Discuss invasive fungal infection in haematopoietic stem cell transplant and CAR-T recipients: risk periods, prophylaxis, breakthrough infection and management.",
   tags: ["transplant", "CAR-T", "mould prophylaxis", "breakthrough"],
-  keypoints: ["pre-engraftment neutropenia", "mucosal barrier injury", "graft-versus-host disease", "Pneumocystis late", "posaconazole or voriconazole prophylaxis", "TMP-SMX", "HEPA filtration", "construction dust", "breakthrough mould", "therapeutic drug monitoring", "azole calcineurin inhibitor interaction", "galactomannan and beta-D-glucan", "reduce immunosuppression"],
+  keypoints: ["pre-engraftment neutropenia", "mucosal barrier injury", "graft-versus-host disease", "Pneumocystis late", "posaconazole or voriconazole prophylaxis", "trimethoprim-sulfamethoxazole", "HEPA-filtered rooms", "construction dust", "breakthrough mould", "therapeutic drug monitoring", "azole calcineurin inhibitor interaction", "galactomannan and beta-D-glucan", "reduce immunosuppression"],
   answer: `
     <h4>Changing epidemiology</h4>
     <p>Invasive fungal disease after haematopoietic stem cell transplant follows the shape of immune recovery. During <strong>pre-engraftment neutropenia</strong> and mucosal barrier injury, <em>Candida</em> and <em>Aspergillus</em> dominate. After engraftment, <strong>graft-versus-host disease</strong> and corticosteroids shift risk toward moulds, especially <em>Aspergillus</em>, and <em>Pneumocystis</em>. Late after transplant, community exposure and impaired cell-mediated immunity favour <em>Cryptococcus</em>, endemic fungi and <em>Pneumocystis</em>. CAR-T recipients have prolonged cytopenias, B-cell aplasia and frequent steroid or tocilizumab exposure, so mould infection and PCP occur beyond the classical neutropenic window.</p>
@@ -262,7 +262,7 @@ window.QBANK.push(
   id: "mc24", domain: "mycology", star: true,
   q: "Discuss fungal keratitis and fungal endophthalmitis: risk factors, clinical recognition, laboratory diagnosis and treatment.",
   tags: ["fungal keratitis", "endophthalmitis", "Fusarium", "natamycin"],
-  keypoints: ["contact lens wear", "vegetative trauma", "feathery infiltrate", "satellite lesions", "hypopyon", "corneal scraping", "KOH and calcofluor", "natamycin first-line", "topical voriconazole", "avoid steroids", "therapeutic keratoplasty", "vitreous tap", "intravitreal amphotericin", "remove infected line"],
+  keypoints: ["contact lens wear", "vegetative trauma", "feathery infiltrate", "satellite lesions", "hypopyon", "corneal scraping", "KOH and calcofluor", "natamycin first-line", "topical voriconazole", "corticosteroids avoided", "therapeutic keratoplasty", "vitreous tap", "intravitreal amphotericin", "remove infected line"],
   answer: `
     <h4>Fungal keratitis</h4>
     <p>Corneal infection follows epithelial breach — contact lens wear, trauma with vegetative matter, ocular surface disease or topical corticosteroid use. Filamentous moulds such as <em>Fusarium</em>, <em>Aspergillus</em> and dematiaceous fungi predominate in tropical climates, while <em>Candida</em> follows chronic epithelial disease. Patients report pain, photophobia, tearing and reduced vision; signs include a <strong>feathery infiltrate with satellite lesions, ring infiltrate, endothelial plaque and hypopyon</strong>. Bacterial and fungal keratitis overlap clinically, so a scraping is mandatory before treatment.</p>
@@ -306,7 +306,7 @@ window.QBANK.push(
   id: "mc26", domain: "mycology",
   q: "Explain the pharmacokinetic and pharmacodynamic principles that guide antifungal dosing, and apply them to special populations and sites of infection.",
   tags: ["pharmacokinetics", "pharmacodynamics", "TDM", "special populations"],
-  keypoints: ["concentration-dependent killing", "time-dependent killing", "AUC to MIC ratio", "trough to MIC", "post-antifungal effect", "amphotericin B poor CNS penetration", "fluconazole CSF penetration", "voriconazole CYP2C19", "echinocandins no CSF or vitreous", "renal replacement therapy", "pregnancy amphotericin B", "obesity and critical illness"],
+  keypoints: ["concentration-dependent killing", "time-dependent killing", "area under the curve to MIC", "trough to MIC", "post-antifungal effect", "amphotericin B poor CNS penetration", "fluconazole CSF penetration", "voriconazole CYP2C19", "echinocandins no CSF or vitreous", "renal replacement therapy", "pregnancy amphotericin B", "obesity and critical illness"],
   answer: `
     <h4>Basic principles</h4>
     <p>Antifungal outcome depends on the relationship between drug exposure and the MIC. <strong>Concentration-dependent</strong> killing by polyenes and echinocandins is best predicted by the peak or area under the curve relative to MIC; <strong>time-dependent</strong> killing by flucytosine and azoles depends on the time above MIC or, for triazoles, the trough-to-MIC ratio. A <strong>post-antifungal effect</strong> allows intermittent echinocandin dosing. Loading doses are used when rapid exposure matters, especially in septic shock, and in obesity dosing should be based on adjusted rather than total body weight. These principles explain why dose, formulation and monitoring matter as much as the choice of drug.</p>
@@ -336,7 +336,7 @@ window.QBANK.push(
   id: "mc27", domain: "mycology", star: true,
   q: "Outline an antifungal stewardship programme: core interventions, diagnostic stewardship, metrics and the Philippine context.",
   tags: ["antifungal stewardship", "de-escalation", "TDM", "metrics"],
-  keypoints: ["formulary restriction", "prospective audit and feedback", "de-escalation", "IV to oral switch", "therapeutic drug monitoring", "biomarker-guided stopping", "do not treat colonisation", "diagnostic stewardship", "days of therapy", "resistance trends", "DOH AO 2016-0003", "access and affordability"],
+  keypoints: ["formulary restriction", "prospective audit and feedback", "de-escalation", "IV to oral switch", "therapeutic drug monitoring", "biomarker-guided stopping", "do not treat colonisation", "diagnostic stewardship", "days of therapy", "resistance trends", "DOH Administrative Order 2016-0003", "access and affordability"],
   answer: `
     <h4>Why antifungal stewardship</h4>
     <p>Antifungals are few, expensive, toxic and increasingly resisted. Unlike antibacterials, the diagnosis is often presumptive, culture is insensitive and biomarkers are imperfect, so both under- and over-treatment are common. Stewardship aims to give the right drug to the right patient at the right dose and duration, and to stop therapy when infection is excluded.</p>
@@ -360,7 +360,7 @@ window.QBANK.push(
   id: "mc28", domain: "mycology",
   q: "Using examples, discuss fungal outbreaks linked to contaminated medical products, devices and the hospital environment, and the principles of investigation and prevention.",
   tags: ["fungal outbreak", "Exserohilum", "iatrogenic", "infection control"],
-  keypoints: ["common-source outbreak", "contaminated methylprednisolone", "Exserohilum rostratum", "prolonged incubation", "active case finding", "Fusarium keratitis lens solution", "Aspergillus construction dust", "water reservoirs", "whole-genome sequencing", "recall and quarantine", "sterile compounding", "HEPA and water management"],
+  keypoints: ["common-source outbreak", "contaminated methylprednisolone", "Exserohilum rostratum", "prolonged incubation", "active case finding", "Fusarium keratitis lens solution", "Aspergillus construction dust", "water reservoirs", "whole-genome analysis", "recall and quarantine", "sterile compounding", "HEPA and water management"],
   answer: `
     <h4>Lessons from contaminated products</h4>
     <p>Fungal outbreaks are often <strong>common-source and iatrogenic</strong>, not person-to-person. In 2012, contaminated preservative-free methylprednisolone from a single compounding pharmacy caused a multistate outbreak of <strong><em>Exserohilum rostratum</em></strong> meningitis and paraspinal infection in the United States; the mould is a dematiaceous fungus, incubation was prolonged, and case finding required active outreach to every exposed patient. <em>Fusarium</em> keratitis was linked to a contaminated contact lens solution, and <em>Aspergillus</em> has caused surgical-site and endophthalmitis clusters from contaminated solutions, instruments and air during construction.</p>
@@ -384,7 +384,7 @@ window.QBANK.push(
   id: "mc29", domain: "mycology",
   q: "Discuss the medically important mycotoxins, their mechanisms and the food-safety measures that prevent human disease.",
   tags: ["mycotoxins", "aflatoxin", "food safety", "One Health"],
-  keypoints: ["secondary metabolites", "heat-stable", "aflatoxin B1", "hepatocellular carcinoma", "hepatitis B synergy", "ochratoxin A", "fumonisins", "trichothecenes", "ergot alkaloids", "post-harvest drying", "regulatory limits", "Philippine maize and peanuts"],
+  keypoints: ["secondary metabolites", "heat-stable", "aflatoxin B1", "hepatocellular carcinoma", "hepatitis B synergy", "ochratoxin A", "fumonisins", "trichothecenes", "ergot alkaloids", "dry grain rapidly", "regulatory limits", "Philippine maize and peanuts"],
   answer: `
     <h4>What mycotoxins are</h4>
     <p>Mycotoxins are low-molecular-weight secondary metabolites of moulds that cause disease through <strong>ingestion, inhalation or skin contact</strong>, not through tissue invasion. They are heat-stable, so cooking does not reliably destroy them, and they enter the food chain in cereals, nuts, spices, coffee and animal feed. Because they are not infectious, human disease is investigated epidemiologically rather than by culturing the patient, and the effects are often chronic and dose-related.</p>
@@ -409,7 +409,7 @@ window.QBANK.push(
   id: "mc30", domain: "mycology",
   q: "Evaluate the prospects for fungal vaccines and immunotherapy, and explain why prevention still depends mainly on prophylaxis and immune restoration.",
   tags: ["fungal vaccines", "immunotherapy", "NDV-3", "prophylaxis"],
-  keypoints: ["eukaryotic antigens", "weak immunogenicity", "immunocompromised recipients", "correlates of protection", "Als3 NDV-3", "Hyr1", "cryptococcal glucuronoxylomannan conjugate", "monoclonal antibodies", "adoptive T-cell transfer", "IFN-gamma in CGD", "G-CSF", "environmental control"],
+  keypoints: ["eukaryotic antigens", "weak immunogenicity", "immunocompromised recipients", "correlates of protection", "Als3 NDV-3", "Hyr1", "cryptococcal glucuronoxylomannan conjugate", "monoclonal antibodies", "adoptive T-cell transfer", "IFN-gamma in chronic granulomatous disease", "granulocyte colony-stimulating factor", "environmental control"],
   answer: `
     <h4>Why fungal vaccines are difficult</h4>
     <p>Fungi are eukaryotes, so candidate antigens are often weakly immunogenic and may be shared with host molecules. The population that most needs protection — neutropenic, transplanted and critically ill patients — responds poorly to vaccination. Correlates of protection are incompletely defined, and trials would need large, well-characterised high-risk cohorts.</p>

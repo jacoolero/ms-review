@@ -7,7 +7,7 @@
     ["Intrinsic resistance is best defined as…", "A <b>species-wide, chromosomally encoded</b> resistance present before exposure — predictable, but not transferable between species."],
     ["Main efflux family causing multidrug resistance in Gram-negatives", "<b>RND</b> tripartite pumps such as <b>AcrAB–TolC</b> and <b>MexAB–OprM</b>, driven by the proton motive force."],
     ["Porin whose loss causes carbapenem resistance in <i>Pseudomonas</i>", "<b>OprD</b> — reduced imipenem and meropenem uptake, especially when AmpC is also present."],
-    ["Mobile genetic element carrying <i>mecA</i> in MRSA", "<b>SCC<i>mec</i></b>; it encodes <b>PBP2a</b>, a transpeptidase with low β-lactam affinity."],
+    ["Mobile genetic element carrying <i>mecA</i> in MRSA", "<b>SCC<i>mec</i></b>; its <b><i>mecA</i></b> gene encodes <b>PBP2a</b>, a transpeptidase with low β-lactam affinity."],
     ["Augmented renal clearance means…", "Renal drug clearance above normal, as in young septic or burned patients — it can make standard <b>β-lactam</b> doses subtherapeutic."],
     ["Vancomycin exposure target for serious MRSA infection", "<b>AUC/MIC 400–600</b>; sample at steady state, with the trough taken immediately before the next dose."],
     ["Low-risk penicillin allergy history suitable for direct oral challenge", "A benign <b>maculopapular rash</b> without mucosal or systemic features; severe cutaneous reactions are never challenged."],

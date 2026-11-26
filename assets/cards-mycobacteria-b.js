@@ -21,6 +21,6 @@
     ["Why is M. abscessus resistant to macrolides?", "Inducible <b>erm(41)</b> methylase and low cell-wall permeability; also check for <b>rrl</b> mutations after exposure."],
     ["Name the three forms of TB stigma.", "<b>Enacted</b> (discrimination), <b>anticipated</b> (fear of disclosure) and <b>internalised</b> (shame)."],
     ["Which immune pathway is defective in MSMD?", "The <b>IL-12/IFN-γ axis</b>; suspect it in disseminated BCG or recurrent NTM disease."],
-    ["Which anti-TB drugs accumulate in renal failure?", "<b>Ethambutol and pyrazinamide</b>; isoniazid and rifampicin are hepatically cleared."]
+    ["Which anti-TB drugs accumulate in renal failure?", "<b>Ethambutol and pyrazinamide</b>; isoniazid and rifampicin usually need no renal adjustment."]
   ]);
 })();

@@ -22,7 +22,7 @@ window.QBANK.push(
     <p>Control follows from the biology: find the index case, treat every contact on the same day, and decontaminate linen.</p>
   `,
   tip: "Link each structural detail to a clinical or control consequence, and state the household attack-rate argument explicitly.",
-  sources: ["P1", "P2", "P3", "P2"]
+  sources: ["P1", "P2", "P3"]
 },
 {
   id: "p9h2", domain: "p9", star: true,
@@ -52,7 +52,7 @@ window.QBANK.push(
     <p>Any widespread scaly eruption in an immunosuppressed inpatient should trigger scraping, isolation and empirical treatment while results are pending. Missing the crusted end of the spectrum converts a treatable dermatosis into a ward outbreak; over-diagnosing the nodular end produces repeated, unnecessary courses of scabicide.</p>
   `,
   tip: "Use three patterns in a table, then name the masked hosts — that is what separates a spectrum answer from a simple comparison.",
-  sources: ["P1", "P2", "P2", "P4"]
+  sources: ["P1", "P2", "P4"]
 },
 {
   id: "p9h3", domain: "p9",
@@ -81,7 +81,7 @@ window.QBANK.push(
     <p>A <strong>negative scraping</strong> never excludes scabies. The laboratory's job is to make the negative result interpretable, not to pretend it is decisive.</p>
   `,
   tip: "An SOP needs pre-analytical, analytical and post-analytical steps plus a QA table — do not stop at 'scrape and look'.",
-  sources: ["P2", "P3", "P8", "P2"]
+  sources: ["P2", "P3", "P8", "P16"]
 },
 {
   id: "p9h4", domain: "p9", star: true,
@@ -118,7 +118,7 @@ window.QBANK.push(
   id: "p9h5", domain: "p9",
   q: "A tertiary hospital reports scabies in three patients and two nurses on the same ward. Set out the outbreak investigation, control measures and ethical problems.",
   tags: ["scabies", "hospital outbreak", "infection control", "occupational health", "ethics"],
-  keypoints: ["three to six weeks", "crusted index case", "case definition", "line list", "attack rate", "cohort", "contact precautions", "mass treatment", "same day", "health-care workers", "occupational health", "60 °C", "72 hours", "two incubation periods", "consent", "confidentiality"],
+  keypoints: ["three to six weeks", "crusted index case", "case definition", "line list", "attack rate", "cohort", "contact precautions", "mass treatment", "same day", "nurses", "occupational health", "60 °C", "72 hours", "two incubation periods", "consent", "confidentiality"],
   answer: `
     <h4>Why a ward outbreak is predictable</h4>
     <p>Three patients and two nurses on one ward is not a random cluster. Shared bathrooms, commodes, linen trolleys and frequent bed-to-bed contact link them, and the incubation period of <strong>three to six weeks</strong> means the exposure occurred before the first diagnosis. The usual source is an <strong>unrecognised crusted index case</strong> — an elderly or immunosuppressed patient with a scaly eruption and little itch.</p>
@@ -143,13 +143,13 @@ window.QBANK.push(
     <p>Mass treatment overrides individual choice, so <strong>consent</strong>, capacity and <strong>confidentiality</strong> must be handled explicitly. Treating cognitively impaired patients requires a surrogate decision-maker; staff diagnosis must not become ward gossip. The ethical justification is proportionality: the untreated exposed person is both a victim and a source. Continue surveillance for <strong>two incubation periods</strong> after the last case, and audit whether new admissions are screened for crusted disease.</p>
   `,
   tip: "Distinguish investigation from control, then add the ethics — the third part is where most answers lose marks.",
-  sources: ["P2", "P3", "P2", "P6"]
+  sources: ["P2", "P3", "P6", "P16"]
 },
 {
   id: "p9h6", domain: "p9",
   q: "Why is scabies described as more than an itch? Discuss its medical complications and measurable burden.",
   tags: ["scabies", "complications", "impetigo", "APSGN", "burden of disease"],
-  keypoints: ["sleep loss", "school absence", "stigma", "Staphylococcus aureus", "Streptococcus pyogenes", "impetigo", "cellulitis", "bacteraemia", "sepsis", "post-streptococcal glomerulonephritis", "haematuria", "rheumatic fever", "DALY", "not notifiable", "household cost", "barrier failure"],
+  keypoints: ["sleep loss", "school absence", "stigma", "Staphylococcus aureus", "Streptococcus pyogenes", "impetigo", "cellulitis", "bacteraemia", "sepsis", "post-streptococcal glomerulonephritis", "haematuria", "rheumatic fever", "burden", "not notifiable", "household cost", "barrier failure"],
   answer: `
     <h4>The itch is the least of it</h4>
     <p>Scabies causes sleep loss, poor concentration, school absence, lost work and considerable stigma. These are not soft outcomes: they drive repeated clinic visits, inappropriate steroid use and household expenditure in communities with little cash reserves. Because scabies is <strong>not notifiable</strong> in the Philippines, most of this burden never enters official statistics.</p>

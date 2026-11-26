@@ -74,5 +74,9 @@ Object.assign(window.SOURCES, {
   B17: { text: "Philippine statutes governing transfusion and perinatal testing: RA 7719 (National Blood Services Act), RA 9288 (Newborn Screening), RA 11166 (HIV/AIDS Policy Act).", url: "https://www.officialgazette.gov.ph/" },
 
   P13: { text: "DOH Philippines national programmes: Malaria Control and Elimination, Schistosomiasis Control and Elimination, Filariasis Elimination, Soil-Transmitted Helminthiasis, and Integrated Helminth Control.", url: "https://doh.gov.ph/" },
-  P14: { text: "WHO Western Pacific Region and DOH Philippines neglected tropical disease reports, elimination verification and surveillance updates.", url: "https://www.who.int/westernpacific" }
+  P14: { text: "WHO Western Pacific Region and DOH Philippines neglected tropical disease reports, elimination verification and surveillance updates.", url: "https://www.who.int/westernpacific" },
+  P15: { text: "White AC Jr, et al. Diagnosis and treatment of neurocysticercosis: 2017 clinical practice guidelines by the IDSA and ASTMH. Clin Infect Dis. 2018;66(8):e49–e75.", url: "https://doi.org/10.1093/cid/cix1084" },
+  P16: { text: "Engelman D, et al. The 2020 International Alliance for the Control of Scabies (IACS) consensus criteria for the diagnosis of scabies. Br J Dermatol. 2020;183(5):808–820.", url: "https://doi.org/10.1111/bjd.18943" },
+  P17: { text: "Brunetti E, Kern P, Vuitton DA; WHO-IWGE. Expert consensus for the diagnosis and treatment of cystic and alveolar echinococcosis in humans. Acta Trop. 2010;114(1):1–16.", url: "https://doi.org/10.1016/j.actatropica.2009.11.001" },
+  P18: { text: "Nutman TB. Human infection with Strongyloides stercoralis and other related Strongyloides species. Parasitology. 2017;144(3):263–273.", url: "https://doi.org/10.1017/S0031182016000834" }
 });

@@ -29,7 +29,7 @@ window.QBANK.push(
     <p>The safe rule is that imaging defines the lesion, serology supports it, and neither replaces follow-up.</p>
   `,
   tip: "Separate the three questions serology is asked — is it hydatid, is it active, is it cured — and show that it answers only the first well.",
-  sources: ["P1", "P2", "P3", "P4"]
+  sources: ["P1", "P2", "P3", "P4", "P17"]
 },
 {
   id: "p2h2", domain: "p2", star: true,
@@ -61,7 +61,7 @@ window.QBANK.push(
     <p>Do not aspirate a superficial, inaccessible or multivesicular cyst outside a specialist setting. Have resuscitation drugs and anaesthetic support ready, and arrange imaging follow-up before starting. Success is roughly <strong>80–90%</strong>, with <strong>recurrence</strong> in about 10–30%, so PAIR is a controlled procedure rather than a simple needle drainage.</p>
   `,
   tip: "Walk through the acronym, then attach one safeguard and one complication to each step — that structure covers both halves of the question.",
-  sources: ["P1", "P2", "P3", "P4"]
+  sources: ["P1", "P2", "P3", "P4", "P17"]
 },
 {
   id: "p2h3", domain: "p2", star: true,
@@ -90,7 +90,7 @@ window.QBANK.push(
     <p>Albendazole alone cures only about <strong>30%</strong> of cystic echinococcosis and shrinks or stabilises many others; it does not reliably sterilise a large or thick-walled cyst. <strong>Adherence</strong>, food timing and toxicity monitoring decide whether the course is completed. In <strong>alveolar echinococcosis</strong> it is suppressive rather than curative, so treatment is long and monitoring continues indefinitely.</p>
   `,
   tip: "Balance the pharmacology with a concrete monitoring schedule; examiners reward the two-week early check and the stopping rule.",
-  sources: ["P1", "P2", "P4"]
+  sources: ["P1", "P2", "P4", "P17"]
 },
 {
   id: "p2h4", domain: "p2", star: true,
@@ -145,6 +145,6 @@ window.QBANK.push(
     <p>Repeat PAIR or surgery plus a further albendazole course is usually effective for a true recurrence. <strong>Alveolar</strong> echinococcosis needs lifelong imaging and drug monitoring because it behaves like a slow malignancy. In practice, the greatest threat is <strong>loss to follow-up</strong>: register the patient, give a written schedule, and link recall to the rural health unit or the referring hospital.</p>
   `,
   tip: "Define response before recurrence, then convert the risk list into a recall plan — follow-up is a system, not a scan.",
-  sources: ["P1", "P2", "P4", "P4"]
+  sources: ["P1", "P2", "P4", "P17"]
 }
 );

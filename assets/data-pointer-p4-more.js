@@ -157,7 +157,7 @@ window.QBANK.push(
   id: "p4h7", domain: "p4",
   q: "Design a prevention programme for sarcocystosis covering meat, water, livestock, the abattoir and community education.",
   tags: ["prevention", "food safety", "biosecurity", "health education"],
-  keypoints: ["71 °C", "−20 °C for 24–48 hours", "curing", "vinegar marination", "boiling", "absolute filter", "chlorination", "irrigation water", "meat inspection", "biosecurity", "HACCP", "health education", "notifiable", "One Health", "snake reservoir"],
+  keypoints: ["71 °C", "−20 °C for 24–48 hours", "curing", "vinegar marination", "absolute filter", "chlorination", "irrigation water", "meat inspection", "biosecurity", "HACCP", "health education", "notifiable", "One Health", "snake reservoir"],
   answer: `
     <h4>Meat</h4>
     <ul>

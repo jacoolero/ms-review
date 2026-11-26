@@ -81,7 +81,7 @@ window.QBANK.push(
   id: "p3h4", domain: "p3",
   q: "Discuss the epidemiology of echinostomiasis in the Philippines, tracing the food practices that turn snail collection into infection.",
   tags: ["echinostomiasis", "Philippines", "food practices", "kinilaw", "surveillance"],
-  keypoints: ["3%", "11%", "44%", "Ilocos Norte", "Ilocos Sur", "Ilocano", "kuhol", "kiambu-ay", "kinilaw", "kilawin", "sinugba", "ginataang kuhol", "foraging", "children", "underdiagnosis", "not notifiable"],
+  keypoints: ["3%", "11%", "44%", "Ilocos Norte", "Ilocos Sur", "Ilocano", "kuhol", "kiambu-ay", "kinilaw", "kilawin", "sinugba", "ginataang kuhol", "foraging", "children", "not notifiable"],
   answer: `
     <h4>What the surveys show</h4>
     <p>In a large Philippine stool survey, about <strong>3% of more than 30,000 specimens</strong> contained echinostome eggs. Prevalence rose to <strong>11%</strong> among <strong>Ilocano</strong> populations of northern Luzon and reached <strong>44%</strong> in some communities, with foci in <strong>Ilocos Norte</strong> and <strong>Ilocos Sur</strong>. Cases are reported wherever raw freshwater snails are eaten, and <em>E. malayanum</em> contributes to the same burden. School-age children who forage and swim in canals are often the most heavily infected.</p>
@@ -110,7 +110,7 @@ window.QBANK.push(
   id: "p3h5", domain: "p3",
   q: "Explain the pathogenesis of echinostomiasis and relate the immune response to the symptoms and laboratory findings.",
   tags: ["echinostomiasis", "pathogenesis", "eosinophilia", "protein-losing enteropathy"],
-  keypoints: ["duodenum and jejunum", "collar spines", "mechanical abrasion", "excretory–secretory antigens", "Th2", "IgE", "mast cells", "eosinophils", "villous atrophy", "increased permeability", "protein-losing enteropathy", "iron-deficiency anaemia", "hypoalbuminaemia", "growth stunting", "worm burden", "asymptomatic"],
+  keypoints: ["duodenum and jejunum", "collar spines", "abrade the mucosa", "excretory–secretory antigens", "Th2", "IgE", "mast cells", "eosinophils", "villous atrophy", "increased permeability", "protein-losing enteropathy", "iron-deficiency anaemia", "hypoalbuminaemia", "growth stunting", "worm burden", "asymptomatic"],
   answer: `
     <h4>Attachment and mucosal injury</h4>
     <p>Adults attach to the <strong>duodenum and jejunum</strong> with the ventral sucker while the <strong>collar spines</strong> abrade the mucosa. <strong>Excretory–secretory antigens</strong> and feeding damage produce oedema, capillary congestion, epithelial desquamation and small erosions. Heavy burdens cause villous blunting, ulceration and <strong>catarrhal enteritis</strong>, so the absorptive surface is reduced and the mucosal barrier leaks.</p>

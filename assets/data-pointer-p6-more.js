@@ -21,7 +21,7 @@ window.QBANK.push(
     <p>A person who farmed barefoot in a Philippine province twenty years earlier remains at risk, and a normal eosinophil count does not exclude infection. Testing with <strong>NIE ELISA</strong> plus agar plate culture should be triggered by the exposure history, not by current residence. The practical consequence is that "no recent travel" is never a reason to omit screening before corticosteroids.</p>
   `,
   tip: "Answer persistence with the autoinfective loop, then convert it into a testing rule: exposure history outlives residence.",
-  sources: ["P1", "P2", "P3", "P4"]
+  sources: ["P1", "P2", "P3", "P4", "P18"]
 },
 {
   id: "p6h2", domain: "p6", star: true,
@@ -47,7 +47,7 @@ window.QBANK.push(
     <p><strong>Eosinophilia is often absent</strong>, particularly on steroids, and serology may be negative, so direct microscopy of stool, sputum and urine is essential. Mortality in disseminated disease remains high, and survival depends on starting ivermectin and broad-spectrum antibiotics early while reducing immunosuppression. Serial samples and a low threshold for empirical treatment are safer than a single negative result.</p>
   `,
   tip: "Separate the route (hyperinfection) from the ectopic organ spread (dissemination), then explain sepsis as bacterial translocation.",
-  sources: ["P1", "P2", "P3", "P4"]
+  sources: ["P1", "P2", "P3", "P4", "P18"]
 },
 {
   id: "p6h3", domain: "p6", star: true,
@@ -72,7 +72,7 @@ window.QBANK.push(
     <p>Antibody may be undetectable in a substantial proportion of disseminated cases, and steroids lower it further. The safe rule is that a negative test in a high-risk patient changes the wording of the note, not the decision to treat.</p>
   `,
   tip: "Organise the answer by clinical question, not by test — then state what a negative result does and does not exclude.",
-  sources: ["P1", "P2", "P3", "P11"]
+  sources: ["P1", "P2", "P3", "P11", "P18"]
 },
 {
   id: "p6h4", domain: "p6", star: true,
@@ -95,7 +95,7 @@ window.QBANK.push(
     <p><strong>Albendazole 400 mg twice daily for seven days</strong> is the main alternative and is less effective than ivermectin. Mebendazole and thiabendazole are historical options with poorer tolerability. <strong>Moxidectin</strong> is not established for strongyloidiasis. In <strong>pregnancy</strong>, albendazole is preferred, and breastfeeding is not a contraindication to ivermectin. Avoid ivermectin in patients with heavy <em>Loa loa</em> microfilaraemia because of encephalopathy risk, and never use <strong>veterinary formulations</strong> in humans. When ivermectin is unavailable, do not substitute a single albendazole dose; the seven-day course is required. <strong>Reduce immunosuppression</strong> whenever possible, because drug alone may not control hyperinfection.</p>
   `,
   tip: "Explain failure mechanistically — absorption, interactions, adherence, burden — then give a named alternative with a dose.",
-  sources: ["P1", "P2", "P3", "P4"]
+  sources: ["P1", "P2", "P3", "P4", "P18"]
 },
 {
   id: "p6h5", domain: "p6", star: true,
@@ -125,7 +125,7 @@ window.QBANK.push(
   id: "p6h6", domain: "p6", star: true,
   q: "Explain the interaction between HTLV-1 and Strongyloides stercoralis and its consequences for diagnosis, treatment and prognosis.",
   tags: ["Strongyloides", "HTLV-1", "immunosuppression", "disseminated", "relapse"],
-  keypoints: ["HTLV-1", "adult T-cell leukaemia", "HAM/TSP", "Th2", "IL-5", "IgE", "eosinopenia", "disseminated strongyloidiasis", "low larval output", "seronegative", "ivermectin", "treatment failure", "relapse", "Japan", "Caribbean", "screening"],
+  keypoints: ["HTLV-1", "adult T-cell leukaemia", "HAM/TSP", "Th2", "IL-5", "IgE", "eosinopenia", "disseminated strongyloidiasis", "low larval output", "serology may be negative", "ivermectin", "treatment failure", "relapse", "Japan", "Caribbean", "screening"],
   answer: `
     <h4>The immunological lesion</h4>
     <p>Protective immunity to <em>Strongyloides</em> depends on a <strong>Th2</strong> response with IL-4, IL-5, IL-13, IgE and eosinophils. <strong>HTLV-1</strong> drives a strong Th1 and regulatory profile and blunts this Th2 axis, so co-infected patients have <strong>low IgE</strong>, <strong>eosinopenia</strong> and poor larval containment. The virus also favours <em>Strongyloides</em> proliferation, and corticosteroid treatment adds further suppression. HTLV-1 is endemic in southern Japan, the Caribbean, parts of South America, West and Central Africa, and Melanesia; it is uncommon in the Philippines but should be considered in severe or recurrent disease.</p>
@@ -142,13 +142,13 @@ window.QBANK.push(
     <p>Co-infection carries a worse prognosis, driven by dissemination and by the HTLV-1 disease itself. Patients with HTLV-1 who live in or travel from endemic areas should be <strong>screened</strong> for <em>Strongyloides</em> before immunosuppression, and household contacts may warrant testing. In co-infected patients, the anthelmintic response is a marker of how much the Th2 arm can be restored.</p>
   `,
   tip: "Name the immune axis first, then show how it distorts eosinophils, IgE, serology and response to treatment.",
-  sources: ["P1", "P2", "P3", "P14"]
+  sources: ["P1", "P2", "P3", "P14", "P18"]
 },
 {
   id: "p6h7", domain: "p6", star: true,
   q: "Discuss prevention, post-treatment follow-up and the detection of relapse in strongyloidiasis.",
   tags: ["Strongyloides", "prevention", "follow-up", "test of cure", "relapse"],
-  keypoints: ["sanitation", "sewage disposal", "footwear", "health education", "screening", "ivermectin", "two days", "stool examination", "two to four weeks", "three to six months", "test of cure", "serology", "relapse", "retreatment", "hyperinfection survivors", "no vaccine"],
+  keypoints: ["sanitation", "sewage disposal", "footwear", "health education", "screening", "ivermectin", "two days", "stool examination", "two to four weeks", "three to six months", "test of cure", "serology", "relapse", "hyperinfection survivors", "no vaccine"],
   answer: `
     <h4>Breaking transmission</h4>
     <p>Prevention targets the infective filariform larvae in contaminated soil. <strong>Sanitation</strong> and safe <strong>sewage disposal</strong> are the foundation, because open defecation seeds the soil. <strong>Footwear</strong> and avoiding bare skin contact with moist soil reduce exposure, although they are imperfect in farming communities. <strong>Health education</strong> should be concrete: latrine use, handwashing, and not using fresh human faeces as fertiliser. There is <strong>no vaccine</strong>, and community mass drug administration with albendazole, used for other soil-transmitted helminths, has limited effect on <em>Strongyloides</em>, so targeted <strong>screening</strong> matters more than blanket deworming.</p>

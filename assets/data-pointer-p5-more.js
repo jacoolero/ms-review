@@ -4,7 +4,7 @@ window.QBANK.push(
   id: "p5h1", domain: "p5", star: true,
   q: "Compare the biology of Toxocara canis and T. cati, and trace the fate of an embryonated egg from soil to human tissue.",
   tags: ["Toxocara", "biology", "transmission", "egg", "paratenic host"],
-  keypoints: ["Toxocara canis", "Toxocara cati", "ascarid", "unembryonated eggs", "thick pitted shell", "embryonation", "third-stage larva", "transplacental", "transmammary", "paratenic host", "pica", "geophagia", "dead-end host", "no human-to-human transmission"],
+  keypoints: ["Toxocara canis", "Toxocara cati", "ascarid", "unembryonated eggs", "thick pitted shell", "embryonation", "third-stage larva", "transplacental", "transmammary", "paratenic host", "pica", "no human-to-human transmission"],
   answer: `
     <h4>Two ascarids of carnivores</h4>
     <p><em>Toxocara canis</em> and <em>T. cati</em> are large intestinal roundworms of the dog and cat. Adult females pass <strong>unembryonated eggs</strong> — about 80–90 µm for <em>T. canis</em> and 65–75 µm for <em>T. cati</em> — with a thick, pitted, lipid-rich shell. Embryonation to the infective <strong>third-stage larva</strong> takes two to four weeks in warm, moist, shaded soil, after which the egg survives for months to years. The shell resists alcohol, bleach and most disinfectants, so heat, desiccation and prolonged sunlight are the reliable destroyers.</p>
@@ -27,7 +27,7 @@ window.QBANK.push(
   id: "p5h2", domain: "p5", star: true,
   q: "A three-year-old with pica presents with fever, wheeze and hepatomegaly. How do you confirm visceral larva migrans and grade its severity?",
   tags: ["visceral larva migrans", "Toxocara", "case", "hepatomegaly", "eosinophilia"],
-  keypoints: ["visceral larva migrans", "pica", "hepatomegaly", "wheeze", "eosinophilia", "IgE", "isohemagglutinins", "TES-ELISA", "Western blot", "stool O&P", "ultrasound", "myocarditis", "encephalitis", "albendazole", "corticosteroids", "severity"],
+  keypoints: ["visceral larva migrans", "pica", "hepatomegaly", "wheeze", "eosinophilia", "IgE", "isohemagglutinins", "TES-ELISA", "Western blot", "stool O&P", "ultrasound", "myocarditis", "neurological involvement", "albendazole", "corticosteroids", "severity"],
   answer: `
     <h4>Reading the case</h4>
     <p>A three-year-old with pica, fever, wheeze and a liver edge 4 cm below the costal margin has the classic profile of <strong>visceral larva migrans</strong>. The differential at this stage is broad — bacterial sepsis, viral hepatitis, pneumonia, leukaemia and other helminthiases — so the first task is to confirm the syndrome rather than order a <em>Toxocara</em> titre in isolation.</p>
@@ -57,7 +57,7 @@ window.QBANK.push(
   id: "p5h3", domain: "p5", star: true,
   q: "Compare ocular larva migrans with retinoblastoma and other causes of leukocoria, and explain how the laboratory helps avoid enucleation.",
   tags: ["ocular larva migrans", "retinoblastoma", "leukocoria", "Goldmann-Witmer", "differential diagnosis"],
-  keypoints: ["ocular larva migrans", "retinoblastoma", "leukocoria", "unilateral", "calcification", "posterior pole granuloma", "vitreous band", "TES-ELISA", "aqueous humour", "Goldmann-Witmer coefficient", "ultrasound", "optical coherence tomography", "no biopsy", "corticosteroids", "vitrectomy"],
+  keypoints: ["ocular larva migrans", "retinoblastoma", "leukocoria", "unilateral", "calcification", "granuloma", "vitreous band", "TES-ELISA", "aqueous humour", "Goldmann-Witmer coefficient", "ultrasound", "optical coherence tomography", "no biopsy", "corticosteroids", "vitrectomy"],
   answer: `
     <h4>Why the distinction matters</h4>
     <p>Both ocular larva migrans and <strong>retinoblastoma</strong> present with <strong>leukocoria</strong> or a white retinal mass in a young child. Mistaking tumour for granuloma delays oncology treatment; mistaking granuloma for tumour leads to enucleation of a seeing eye. The laboratory and imaging pathway exists mainly to prevent that second error, and a normal fellow eye does not exclude retinoblastoma.</p>
@@ -107,7 +107,7 @@ window.QBANK.push(
   id: "p5h5", domain: "p5", star: true,
   q: "Construct a differential diagnosis for marked eosinophilia in a child from a rural Philippine barangay, and explain how toxocariasis is separated from its mimics.",
   tags: ["eosinophilia", "differential diagnosis", "Toxocara", "helminths", "Philippines"],
-  keypoints: ["absolute eosinophil count", "tissue helminth", "Ascaris", "Löffler syndrome", "Strongyloides", "schistosomiasis", "filariasis", "trichinellosis", "drug reaction", "atopy", "leukaemia", "hypereosinophilic syndrome", "adrenal insufficiency", "EGPA", "TES-ELISA", "exposure history"],
+  keypoints: ["absolute eosinophil count", "tissue helminth", "Ascaris", "Löffler syndrome", "Strongyloides", "schistosomiasis", "filariasis", "trichinellosis", "drug reaction", "leukaemia", "hypereosinophilic syndrome", "adrenal insufficiency", "EGPA", "TES-ELISA", "exposure history"],
   answer: `
     <h4>Start with the count and the setting</h4>
     <p>Marked eosinophilia (above 1,500/µL, and especially above 3,000/µL) in a rural Filipino child usually means a <strong>tissue helminth</strong>, but the differential is wide. Mild counts are often atopic or drug-related, whereas very high counts favour helminths, hypereosinophilic syndrome or eosinophilic leukaemia. The exposure history — soil, bare feet, fresh water, dogs, pigs, raw meat — narrows the list faster than any single test. Express the count in <strong>absolute numbers</strong>, because a percentage misleads when the total white cell count is low, and repeat it after two to four weeks before calling it persistent.</p>
@@ -138,7 +138,7 @@ window.QBANK.push(
   id: "p5h6", domain: "p5", star: true,
   q: "Discuss the drug treatment of visceral, ocular and neurological toxocariasis, including doses, steroid use and monitoring.",
   tags: ["Toxocara", "treatment", "albendazole", "mebendazole", "corticosteroids"],
-  keypoints: ["albendazole", "400 mg twice daily", "mebendazole", "prednisone", "ocular disease", "myocarditis", "encephalitis", "covert toxocariasis", "eosinophil count", "liver enzymes", "serology not test of cure", "asymptomatic seropositive", "pregnancy", "reinfection"],
+  keypoints: ["albendazole", "400 mg twice daily", "mebendazole", "prednisone", "ocular disease", "myocarditis", "encephalitis", "covert toxocariasis", "eosinophil count", "liver enzymes", "stays positive for years", "asymptomatic seropositive", "pregnancy", "reinfection"],
   answer: `
     <h4>Drugs and doses</h4>
     <div class="table-wrap"><table>
@@ -165,7 +165,7 @@ window.QBANK.push(
   id: "p5h7", domain: "p5",
   q: "Design a barangay-level programme to prevent human toxocariasis in the Philippines, naming the interventions, agencies and indicators.",
   tags: ["prevention", "public health", "Philippines", "dog deworming", "One Health"],
-  keypoints: ["soil contamination", "dog deworming", "puppies", "pyrantel", "faeces removal", "sandpit cover", "hand hygiene", "pica", "DOH Integrated Helminth Control Program", "local government unit", "Bureau of Animal Industry", "barangay health workers", "not notifiable", "serosurvey", "indicators", "One Health"],
+  keypoints: ["soil contamination", "dog deworming", "puppies", "pyrantel", "faeces removal", "sandpit cover", "handwashing", "pica", "DOH Integrated Helminth Control Program", "local government unit", "Bureau of Animal Industry", "barangay health workers", "not notifiable", "serosurvey", "indicators", "One Health"],
   answer: `
     <h4>Target the soil, not the patient</h4>
     <p>Human toxocariasis is acquired by ingesting embryonated eggs, so every case signals contaminated soil. Because eggs embryonate outside the host and survive for months, control must interrupt faecal contamination of the places where children play. In Philippine barangays, free-roaming dogs, puppies and uncovered sandpits are the practical targets.</p>

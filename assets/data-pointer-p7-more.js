@@ -58,7 +58,7 @@ window.QBANK.push(
     <p><strong>Fundoscopy</strong> must precede cysticidal therapy. Follow seizures and repeat imaging at three to six months; do not rely on serology alone. Antiepileptics are continued while the lesion is active, and withdrawal is considered only after a seizure-free interval in resolved parenchymal disease. Treat the tapeworm carrier to prevent reinfection.</p>
   `,
   tip: "Organise by lesion stage — viable, colloidal, calcified, ventricular, racemose, ocular — and put fundoscopy before any cysticide.",
-  sources: ["P2", "P1", "P2", "P3", "P4"]
+  sources: ["P2", "P1", "P3", "P4", "P15"]
 },
 {
   id: "p7h3", domain: "p7", star: true,

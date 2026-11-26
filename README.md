@@ -7,8 +7,8 @@ A static study website for a Master's (MSMT) written comprehensive exam, coverin
 | Advanced Medical Microbiology | 390 | 452 |
 | Advanced Clinical Chemistry | 341 | 513 |
 | Advanced Immunohematology | 200 | 299 |
-| Advanced Parasitology | 130 | 134 |
-| **Total** | **1,061** | **1,398** |
+| Advanced Parasitology | 180 | 184 |
+| **Total** | **1,111** | **1,448** |
 
 The bank now follows the **2026 Comprehensive Examination pointers** for all four subjects. Topic counts vary because content was re-mapped to the pointers and off-list material was removed from the site.
 

@@ -67,7 +67,7 @@ window.QBANK.push(
   id: "cc89", domain: "chem-endo",
   q: "Discuss the laboratory investigation of male hypogonadism and of thyroid nodules/thyroid cancer markers.",
   tags: ["testosterone", "hypogonadism", "thyroglobulin", "calcitonin"],
-  keypoints: ["morning fasting testosterone 7 to 11 am", "repeat low result", "SHBG and calculated free testosterone", "primary hypogonadism high LH FSH", "secondary hypogonadism low or normal LH FSH", "Klinefelter karyotype 47 XXY", "prolactin iron studies pituitary MRI", "obesity diabetes opioids lower testosterone", "semen analysis for fertility", "thyroglobulin as tumour marker after thyroidectomy", "anti-thyroglobulin antibodies interfere", "measure Tg antibodies with every Tg", "stimulated thyroglobulin", "calcitonin for medullary thyroid carcinoma", "CEA and RET mutation", "TSH and ultrasound first for nodules"],
+  keypoints: ["morning fasting testosterone 07:00–11:00", "repeat low result", "SHBG and calculated free testosterone", "primary hypogonadism high LH FSH", "secondary hypogonadism low or normal LH FSH", "Klinefelter karyotype 47 XXY", "prolactin iron studies pituitary MRI", "obesity diabetes opioids lower testosterone", "semen analysis for fertility", "thyroglobulin as tumour marker after thyroidectomy", "anti-thyroglobulin antibodies interfere", "measure Tg antibodies with every Tg", "stimulated thyroglobulin", "calcitonin for medullary thyroid carcinoma", "CEA and RET mutation", "TSH and ultrasound first for nodules"],
   answer: `
     <h4>Male hypogonadism</h4>
     <ol>

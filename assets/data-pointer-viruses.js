@@ -3,7 +3,7 @@ window.QBANK.push(
   id: "m9g1", domain: "m9", star: true,
   q: "Explain how the ICTV taxonomy and the Baltimore scheme classify viruses, and why a clinical virologist needs both.",
   tags: ["viral classification", "ICTV", "Baltimore", "taxonomy"],
-  keypoints: ["ICTV", "order", "family", "genus", "species", "Baltimore", "mRNA", "dsDNA", "positive-sense ssRNA", "negative-sense ssRNA", "reverse transcriptase", "segmentation", "serotype", "genotype", "nomenclature"],
+  keypoints: ["ICTV", "order", "family", "genus", "species", "Baltimore", "mRNA", "dsDNA", "positive-sense ssRNA", "negative-sense ssRNA", "reverse transcriptase", "serotype", "genotype", "nomenclature"],
   answer: `
     <h4>Two different questions</h4>
     <p>Viral classification answers two separate questions. The <strong>ICTV</strong> system asks what a virus is related to, and the <strong>Baltimore</strong> system asks how its genome becomes mRNA. The International Committee on Taxonomy of Viruses assigns a hierarchical taxonomy — realm, kingdom, phylum, class, order, family, subfamily, genus and species — using genome sequence, gene content and replication features. Names are italicised and capitalised by rank, and a species is a policed category rather than a strain. ICTV taxonomy is essential for reference laboratories, sequence databases and vaccine nomenclature, but it changes as genomes are compared.</p>
@@ -115,7 +115,7 @@ window.QBANK.push(
   keypoints: ["pattern recognition receptor", "TLR3", "RIG-I", "MDA5", "cGAS–STING", "type I interferon", "NK cell", "CD8", "neutralising antibody", "memory", "MHC class I", "antigenic variation", "T-cell exhaustion", "immune privilege"],
   answer: `
     <h4>Innate sensing</h4>
-    <p>The innate response detects molecular patterns rather than specific pathogens. <strong>Toll-like receptors</strong> 3, 7 and 8 sense dsRNA and ssRNA in endosomes; <strong>RIG-I</strong> and <strong>MDA5</strong> sense cytoplasmic RNA; <strong>cGAS–STING</strong> senses cytosolic DNA. Signalling through IRF3 and NF-κB induces <strong>type I interferon</strong>, which establishes an antiviral state through PKR, OAS–RNase L and Mx proteins, and recruits <strong>NK cells</strong> and macrophages. Complement and interferons also shape the early phase.</p>
+    <p>The innate response detects molecular patterns rather than specific pathogens. <strong>Toll-like receptors</strong> 3, 7 and 8  (TLR3, TLR7, TLR8) sense dsRNA and ssRNA in endosomes; <strong>RIG-I</strong> and <strong>MDA5</strong> sense cytoplasmic RNA; <strong>cGAS–STING</strong> senses cytosolic DNA. Signalling through IRF3 and NF-κB induces <strong>type I interferon</strong>, which establishes an antiviral state through PKR, OAS–RNase L and Mx proteins, and recruits <strong>NK cells</strong> and macrophages. Complement and interferons also shape the early phase.</p>
     <h4>Adaptive immunity</h4>
     <p>Dendritic cells present antigen and prime <strong>CD8 cytotoxic T cells</strong>, which kill infected cells, and <strong>CD4 helper cells</strong>, which support antibody and memory. Neutralising <strong>IgG and IgA</strong> block attachment and entry; IgM appears earlier. Memory B and T cells provide durable protection, which is the basis of vaccination. Mucosal IgA is important for respiratory and enteric viruses.</p>
     <h4>Evasion</h4>
@@ -142,7 +142,7 @@ window.QBANK.push(
     <h4>Three reservoirs, three problems</h4>
     <p>Herpesviruses, HIV and hepatitis B all persist for life, but they hide in different forms. The form of the reservoir determines whether a drug can reach it and whether cure is plausible.</p>
     <h4>Herpesviruses: silent episomes</h4>
-    <p>HSV-1 and HSV-2 establish latency in sensory ganglion neurons as a <strong>circular episome</strong>, expressing latency-associated transcripts and almost no protein. VZV does the same in dorsal root ganglia. EBV persists as an episome in memory B cells with a restricted latent gene programme, and CMV maintains a latent reservoir in myeloid progenitors. Reactivation is triggered by stress, fever and immunosuppression. Aciclovir blocks lytic replication but cannot eliminate the episome, so suppression is chronic rather than curative.</p>
+    <p>HSV-1 and HSV-2 establish latency in sensory ganglion neurons as a <strong>circular episome</strong>, expressing latency-associated transcripts (LAT) and almost no protein. VZV does the same in dorsal root ganglia. EBV persists as an episome in memory B cells with a restricted latent gene programme, and CMV maintains a latent reservoir in myeloid progenitors. Reactivation is triggered by stress, fever and immunosuppression. Aciclovir blocks lytic replication but cannot eliminate the episome, so suppression is chronic rather than curative.</p>
     <h4>HIV: integrated provirus</h4>
     <p>HIV reverse-transcribes its genome and integrates it into host DNA, mainly in resting memory CD4 T cells. Most proviruses are defective, but a small inducible reservoir re-seeds viraemia within weeks of stopping therapy. Latency is maintained by transcriptional silencing and by the scarcity of activating signals in resting cells. Strategies under study include <strong>shock and kill</strong>, <strong>block and lock</strong>, broadly neutralising antibodies and gene editing.</p>
     <h4>Hepatitis B: cccDNA</h4>
@@ -208,7 +208,7 @@ window.QBANK.push(
       <tr><td>mRNA</td><td>COVID-19 vaccines</td><td>Rapid design, scalable</td><td>Cold chain, reactogenicity</td></tr>
     </table></div>
     <h4>Viral vectors</h4>
-    <p>Vectors are engineered viruses that deliver a gene without causing disease. <strong>Adenoviral vectors</strong> transduce dividing and non-dividing cells and are used in COVID-19 vaccines and gene therapy, but pre-existing immunity to common serotypes limits efficacy. <strong>Modified vaccinia Ankara</strong> is a replication-deficient poxvirus vector with a large insert capacity. <strong>Lentiviral vectors</strong> integrate into the genome, giving stable expression for CAR-T cells and gene therapy, at the cost of insertional mutagenesis risk. <strong>Adeno-associated virus</strong> is non-pathogenic and gives long-term expression in non-dividing cells such as retina, liver and muscle, but its packaging capacity is about 4.7 kb and neutralising antibodies are common.</p>
+    <p>Vectors are engineered viruses that deliver a gene without causing disease. <strong>Adenoviral vectors</strong> transduce dividing and non-dividing cells and are used in COVID-19 vaccines and gene therapy, but pre-existing immunity to common serotypes limits efficacy. <strong>Modified vaccinia Ankara (MVA)</strong> is a replication-deficient poxvirus vector with a large insert capacity. <strong>Lentiviral vectors</strong> integrate into the genome, giving stable expression for CAR-T cells and gene therapy, at the cost of insertional mutagenesis risk. <strong>Adeno-associated virus (AAV)</strong> is non-pathogenic and gives long-term expression in non-dividing cells such as retina, liver and muscle, but its packaging capacity is about 4.7 kb and neutralising antibodies are common.</p>
     <h4>Safety and deployment</h4>
     <p>Live vaccines can revert or cause disease in immunocompromised hosts; inactivated and subunit vaccines are safer but need adjuvants and boosters. Cold chain, needle-free delivery and vaccine confidence determine whether a platform works in practice. Vectors used in gene therapy require long-term monitoring for off-target effects and malignancy. Platforms are also judged by durability: live vaccines often give decades of protection, whereas mRNA and vector vaccines may need boosters as antibody wanes.</p>
   `,
@@ -256,7 +256,7 @@ window.QBANK.push(
       <li><strong>Neutrophil extracellular traps</strong> and complement activation damage the alveolar barrier.</li>
       <li><strong>ARDS</strong> follows, with hyaline membranes, oedema and impaired gas exchange.</li>
     </ul>
-    <p>Severity is strongly age-dependent, and risk rises with obesity, diabetes, chronic lung disease, immunosuppression and pregnancy. Children usually have mild disease, but multisystem inflammatory syndrome can follow weeks later.</p>
+    <p>Severity is strongly age-dependent, and risk rises with obesity, diabetes, chronic lung disease, immunosuppression and pregnancy. Children usually have mild disease, but multisystem inflammatory syndrome (MIS-C) can follow weeks later.</p>
     <h4>Clinical implications</h4>
     <p>Because early disease is viral and late disease is inflammatory, antivirals work early and steroids work late. Hypoxaemia may be silent until decompensation, so pulse oximetry is essential. The same pathogenesis explains thromboembolism, myocardial injury and post-acute sequelae. Vaccination reduces severe disease most strongly, while mucosal immunity and ventilation reduce infection and onward spread.</p>
   `,
@@ -317,7 +317,7 @@ window.QBANK.push(
   id: "m11g5", domain: "m11", star: true,
   q: "Explain how SARS-CoV-2 variants emerge and are tracked, and how long COVID is defined and assessed.",
   tags: ["SARS-CoV-2 variants", "genomic surveillance", "long COVID"],
-  keypoints: ["variant of concern", "spike", "immune escape", "recombination", "genomic surveillance", "Philippine Genome Center", "GISAID", "RITM", "long COVID", "post-exertional malaise", "viral persistence", "autoimmunity", "EBV reactivation", "three months"],
+  keypoints: ["variant of concern", "spike", "immune escape", "recombination", "genomic surveillance", "Philippine Genome Center", "GISAID", "RITM", "long COVID", "post-exertional malaise", "viral persistence", "EBV reactivation", "three months"],
   answer: `
     <h4>How variants arise</h4>
     <p>SARS-CoV-2 evolves by point mutation and recombination, especially in the spike gene. Mutations that increase <strong>ACE2 binding</strong>, improve <strong>immune escape</strong> or alter <strong>furin cleavage</strong> can raise fitness. Variants are classified by WHO as under monitoring, of interest or of concern according to transmissibility, severity, immune escape and diagnostic or therapeutic impact. Alpha, Delta and Omicron each changed the epidemic; Omicron combined high transmissibility with extensive antibody escape, producing a wave despite widespread immunity.</p>
@@ -377,7 +377,7 @@ window.QBANK.push(
     <ul>
       <li><strong>CD4 below 200:</strong> Pneumocystis pneumonia, oesophageal candidiasis, Kaposi sarcoma.</li>
       <li><strong>CD4 below 100:</strong> toxoplasmosis, cryptococcal meningitis, progressive multifocal leukoencephalopathy.</li>
-      <li><strong>CD4 below 50:</strong> CMV retinitis, disseminated Mycobacterium avium complex.</li>
+      <li><strong>CD4 below 50:</strong> CMV retinitis, disseminated Mycobacterium avium complex (MAC).</li>
     </ul>
     <p>Without treatment, median survival is about ten years, though it varies widely. With effective ART, life expectancy approaches that of the general population.</p>
     <h4>Why the timeline matters</h4>
@@ -393,7 +393,7 @@ window.QBANK.push(
   keypoints: ["fourth-generation assay", "p24", "differentiation assay", "HIV RNA", "window period", "CD4 count", "viral load", "virological failure", "resistance testing", "HLA-B*5701", "RA 11166", "informed consent", "infant diagnosis"],
   answer: `
     <h4>Screening and confirmation</h4>
-    <p>Diagnosis follows a sequence designed to avoid false positives. A <strong>fourth-generation antigen/antibody assay</strong> detects p24 antigen and anti-HIV IgG/IgM and is the standard screen. A reactive result is confirmed by an antibody differentiation assay that distinguishes HIV-1 from HIV-2; indeterminate or negative results with ongoing risk require <strong>HIV RNA</strong> testing. Nucleic acid testing is essential for acute infection and for infants born to infected mothers, because maternal antibody persists for months.</p>
+    <p>Diagnosis follows a sequence designed to avoid false positives. A <strong>fourth-generation antigen/antibody assay</strong> detects p24 antigen and anti-HIV IgG/IgM and is the standard screen, which shortens the window period to about two to three weeks. A reactive result is confirmed by an antibody differentiation assay that distinguishes HIV-1 from HIV-2; indeterminate or negative results with ongoing risk require <strong>HIV RNA</strong> testing. Nucleic acid testing is essential for acute infection and for infants born to infected mothers, because maternal antibody persists for months.</p>
     <div class="table-wrap"><table>
       <tr><th>Test</th><th>Use</th><th>Interpretation</th></tr>
       <tr><td>4th-generation Ag/Ab</td><td>Initial screen</td><td>Reactive needs confirmation</td></tr>
@@ -437,7 +437,7 @@ window.QBANK.push(
   id: "m12g5", domain: "m12", star: true,
   q: "Describe HIV prevention with PrEP and PEP, and explain the prevention and management of tuberculosis and other opportunistic infections.",
   tags: ["HIV", "PrEP", "PEP", "TB", "opportunistic infections"],
-  keypoints: ["combination prevention", "PrEP", "PEP", "tenofovir/emtricitabine", "cabotegravir", "treatment as prevention", "U=U", "TB screening", "Xpert MTB/RIF", "LF-LAM", "TB-IRIS", "cotrimoxazole", "CD4 below 200", "RA 11166"],
+  keypoints: ["combination prevention", "PrEP", "PEP", "tenofovir/emtricitabine", "cabotegravir", "treatment as prevention", "TB screening", "Xpert MTB/RIF", "LF-LAM", "TB-IRIS", "cotrimoxazole", "CD4 below 200", "RA 11166"],
   answer: `
     <h4>Combination prevention</h4>
     <p>No single intervention controls HIV. Effective prevention combines condoms, HIV testing, treatment as prevention, voluntary medical male circumcision, harm reduction for people who inject drugs, and prevention of mother-to-child transmission. Structural factors — stigma, poverty and gender inequality — determine whether these tools are used. Legal protection and confidential services, as guaranteed by RA 11166, are part of prevention rather than an optional extra.</p>
@@ -494,7 +494,7 @@ window.QBANK.push(
     <p>Onset is insidious, with fatigue, insomnia, anxiety, memory loss or unsteadiness. Within weeks, <strong>rapidly progressive dementia</strong> appears, together with <strong>myoclonus</strong>, ataxia, visual disturbance, pyramidal and extrapyramidal signs. Startle myoclonus, cortical blindness and akinetic mutism occur late. Most patients die within four to six months; a minority survive beyond a year. The rapidity is a key clue that separates CJD from Alzheimer disease, which evolves over years.</p>
     <h4>Investigations</h4>
     <ul>
-      <li><strong>MRI</strong> with diffusion-weighted imaging shows cortical ribboning or basal ganglia hyperintensity.</li>
+      <li><strong>MRI</strong> with diffusion-weighted imaging (DWI) shows cortical ribboning or basal ganglia hyperintensity.</li>
       <li><strong>EEG</strong> may show periodic sharp wave complexes, especially in advanced disease.</li>
       <li><strong>CSF 14-3-3</strong> and total tau are supportive but not specific.</li>
       <li><strong>RT-QuIC</strong> detects prion seeding with high sensitivity and specificity.</li>
@@ -541,7 +541,7 @@ window.QBANK.push(
   keypoints: ["PRNP", "autosomal dominant", "E200K", "P102L", "GSS", "D178N", "fatal familial insomnia", "cadaveric growth hormone", "dura mater", "corneal transplant", "neurosurgical instruments", "incubation period", "genetic counselling", "single-use instruments"],
   answer: `
     <h4>Inherited prion disease</h4>
-    <p>About 10-15% of prion disease is familial, inherited as an autosomal dominant <strong>PRNP</strong> mutation. More than 30 pathogenic variants are described. <strong>E200K</strong> causes familial CJD with a phenotype resembling sporadic disease. <strong>P102L</strong> causes Gerstmann-Sträussler-Scheinker disease, with prominent ataxia and amyloid plaques. <strong>D178N</strong> with methionine at codon 129 causes fatal familial insomnia, dominated by intractable insomnia and dysautonomia; the same mutation with valine causes familial CJD.</p>
+    <p>About 10-15% of prion disease is familial, inherited as an autosomal dominant <strong>PRNP</strong> mutation. More than 30 pathogenic variants are described. <strong>E200K</strong> causes familial CJD with a phenotype resembling sporadic disease. <strong>P102L</strong> causes Gerstmann-Sträussler-Scheinker disease (GSS), with prominent ataxia and amyloid plaques. <strong>D178N</strong> with methionine at codon 129 causes fatal familial insomnia, dominated by intractable insomnia and dysautonomia; the same mutation with valine causes familial CJD.</p>
     <p>Penetrance is high but age of onset varies, and genetic counselling is essential because predictive testing affects family members who may be asymptomatic. Familial disease often begins earlier and runs a longer course than sporadic CJD. Testing should be offered only with pre-test and post-test counselling, and children should not be tested for an adult-onset disease.</p>
     <h4>Iatrogenic transmission</h4>
     <ul>

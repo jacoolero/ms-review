@@ -223,7 +223,7 @@ window.QBANK.push(
   id: "cc300", domain: "chem-liver",
   q: "Discuss the laboratory assessment of acute and chronic pancreatitis and the use of gastrointestinal tumour markers.",
   tags: ["pancreatitis", "lipase", "tumour markers", "CA 19-9"],
-  keypoints: ["lipase","three times the upper limit","revised Atlanta","CRP above 150","faecal elastase-1","CA 19-9","Lewis antigen","CEA","alpha-fetoprotein","chromogranin A","proton pump inhibitor","tumour markers monitor","triglyceride","gallstones"],
+  keypoints: ["lipase", "three times the upper limit", "severity classification", "CRP above 150", "faecal elastase-1", "CA 19-9", "Lewis antigen", "CEA", "alpha-fetoprotein", "chromogranin A", "proton pump inhibitor", "tumour markers monitor", "triglyceride", "gallstones"],
   answer: `
     <h4>Acute pancreatitis</h4>
     <p>Diagnosis needs two of three: typical epigastric pain, <strong>lipase or amylase at least three times the upper limit</strong>, and characteristic imaging. <strong>Lipase</strong> is preferred because it is more specific and stays raised for 8–14 days; the enzyme level does not predict severity, and repeat measurement adds little once the diagnosis is established. Severity is judged by systemic inflammation, rising urea, haematocrit and <strong>CRP above 150 mg/L at 48 hours</strong>.</p>

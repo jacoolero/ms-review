@@ -51,7 +51,7 @@ window.QBANK.push(
   id: "cc243", domain: "chem-qc", star: true,
   q: "Design one quality system that satisfies both ISO 15189:2022 and the DOH laboratory quality management requirements. Where do the two frameworks overlap and where do they diverge?",
   tags: ["ISO 15189", "LQMS", "integration"],
-  keypoints: ["ISO 15189:2022", "DOH LQMS", "DOH AO 2021-0037", "gap analysis", "quality manual", "process approach", "risk register", "quality indicators", "internal audit", "management review", "point-of-care testing", "measurement uncertainty", "Philippine Accreditation Bureau", "licensure", "evidence map"],
+  keypoints: ["ISO 15189:2022", "DOH LQMS", "DOH licence", "gap analysis", "quality manual", "process approach", "risk register", "quality indicators", "internal audit", "management review", "point-of-care testing", "measurement uncertainty", "Philippine Accreditation Bureau", "licensure", "evidence map"],
   answer: `
     <p>The DOH licence and ISO 15189 accreditation ask many of the same questions in different language. A small Philippine laboratory therefore gains nothing from maintaining two parallel systems; it should build one process-based system and map the evidence to both sets of requirements.</p>
     <h4>Where they overlap</h4>
@@ -87,7 +87,7 @@ window.QBANK.push(
   id: "cc244", domain: "chem-qc", star: true,
   q: "A Philippine laboratory has an unacceptable external quality assessment result. Describe the national EQA architecture and a structured investigation, from clerical check to corrective action.",
   tags: ["EQA", "proficiency testing", "corrective action"],
-  keypoints: ["external quality assessment", "PCQACL", "NEQAS", "national reference laboratory", "RITM", "z-score", "peer group", "commutability", "clerical error", "reconstitution", "calibration", "reagent lot", "random error", "systematic error", "root cause", "corrective action"],
+  keypoints: ["external quality assessment", "national reference laboratory", "RITM", "z-score", "peer group", "commutability", "clerical error", "reconstitution", "calibration", "reagent lot", "random error", "systematic error", "root cause", "corrective action"],
   answer: `
     <p><strong>External quality assessment</strong> compares the laboratory with peers or with an assigned value. In the Philippines, schemes are provided by the Philippine Council for Quality Assurance in Clinical Laboratories through the national EQA scheme, by DOH-designated <strong>national reference laboratories</strong> such as RITM for specific programmes, and by commercial or international providers. Surveys are scored as a <strong>z-score</strong>, standard deviation index or pass/fail against a target, and participation is expected for licensure and PhilHealth accreditation.</p>
     <h4>First, exclude the trivial</h4>
@@ -211,7 +211,7 @@ U = 2 × 3.2 = 6.4%</div>
   id: "cc248", domain: "chem-qc",
   q: "Outline a governance framework for point-of-care testing across a Philippine hospital and its satellite health facilities, covering device selection, operator competency, connectivity, QC and oversight.",
   tags: ["POCT", "governance", "connectivity"],
-  keypoints: ["point-of-care testing", "ISO 15189:2022", "POCT committee", "device selection", "operator competency", "authorisation", "internal QC", "external quality assessment", "connectivity", "middleware", "critical value", "infection control", "RA 9288", "Konsulta", "key performance indicators"],
+  keypoints: ["point-of-care testing", "ISO 15189:2022", "POCT committee", "device selection", "operator competency", "authorisation", "internal QC", "external quality assessment", "connectivity", "middleware", "critical value", "infection control", "RA 9288", "Konsulta"],
   answer: `
     <p><strong>Point-of-care testing</strong> moves the analytical phase to the ward, clinic or barangay health station, where the operator is usually a nurse or midwife rather than a medical technologist. ISO 15189:2022 brought POCT inside the laboratory quality system, so decentralisation does not transfer accountability away from the laboratory.</p>
     <h4>Framework</h4>

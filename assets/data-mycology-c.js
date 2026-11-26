@@ -4,7 +4,7 @@ window.QBANK.push(
   id: "mc31", domain: "mycology", star: true,
   q: "Discuss Candida auris as a Philippine hospital problem: identification, transmission, treatment and the infection-control response.",
   tags: ["Candida auris", "Philippines", "hospital outbreak", "infection control"],
-  keypoints: ["skin colonisation", "environmental persistence", "misidentification", "C. haemulonii", "MALDI-TOF and ITS sequencing", "antifungal susceptibility testing", "echinocandin first-line", "pan-resistant", "liposomal amphotericin B", "contact precautions", "single room", "composite swab screening", "environmental cleaning", "RA 11332 notification", "reference laboratory referral"],
+  keypoints: ["skin colonisation", "surface contamination", "misidentification", "C. haemulonii", "MALDI-TOF and ITS sequencing", "antifungal susceptibility testing", "echinocandin first-line", "pan-resistant", "liposomal amphotericin B", "contact precautions", "single room", "composite swab screening", "environmental cleaning", "RA 11332 notification", "reference laboratory referral"],
   answer: `
     <h4>A hospital problem before it is a treatment problem</h4>
     <p><em>Candida auris</em> is a clonal, multidrug-resistant yeast that behaves unlike other candidaemias. It colonises skin for months and survives on dry surfaces, spreading through hands, thermometers and inadequately cleaned rooms. In Philippine tertiary and referral hospitals the risk is concentrated in intensive care, neonatal and burn units and long-term care, where occupancy is high and screening cultures are not routine. Because the organism is not on most surveillance panels, the first signal is often an unexpected cluster of candidaemia or an isolate a biochemical panel cannot name.</p>
@@ -76,7 +76,7 @@ window.QBANK.push(
   id: "mc34", domain: "mycology", star: true,
   q: "Analyse antifungal access and stewardship in the Philippines. What interventions are feasible, and how should they be measured?",
   tags: ["antifungal stewardship", "access", "Philippines", "procurement"],
-  keypoints: ["out-of-pocket payment", "stock-outs", "named-patient importation", "formulary restriction", "pre-authorisation", "prospective audit and feedback", "de-escalation", "IV to oral switch", "therapeutic drug monitoring", "diagnostic stewardship", "pooled procurement", "DOH stewardship committees", "days of therapy", "resistance and mortality"],
+  keypoints: ["out-of-pocket payment", "stock-outs", "named-patient importation", "formulary restriction", "pre-authorisation", "audit and feedback", "de-escalation", "IV to oral switch", "therapeutic drug monitoring", "diagnostic stewardship", "pooled procurement", "DOH stewardship committees", "days of therapy", "resistance and mortality"],
   answer: `
     <h4>The access problem</h4>
     <p>Antifungal stewardship in the Philippines cannot be separated from access. A small number of agents is registered and stocked, procurement is hospital by hospital, and patients frequently pay out of pocket. Liposomal amphotericin B, flucytosine, voriconazole and posaconazole may be unavailable, unaffordable or obtainable only through named-patient importation, so clinicians ration by cost rather than by indication. When the right drug is absent, the alternative is often a prolonged course of a less effective agent, which is both a clinical and a resistance problem.</p>
@@ -202,7 +202,7 @@ window.QBANK.push(
   id: "mc39", domain: "mycology",
   q: "Design a tiered diagnostic pathway for invasive fungal disease in a resource-limited Philippine hospital. Justify each test by its performance and pitfalls.",
   tags: ["fungal diagnostics", "diagnostic stewardship", "galactomannan", "beta-D-glucan"],
-  keypoints: ["pre-test probability", "galactomannan", "beta-D-glucan", "cryptococcal antigen", "prozone effect", "pan-fungal PCR", "metagenomic sequencing", "culture and susceptibility", "turnaround time", "tiered laboratory network", "RITM referral", "specimen quality", "colonisation versus infection", "repeat testing"],
+  keypoints: ["galactomannan", "beta-D-glucan", "cryptococcal antigen", "prozone effect", "pan-fungal PCR", "metagenomic sequencing", "culture and susceptibility", "turnaround time", "tiered laboratory network", "RITM referral", "specimen quality", "colonisation versus infection", "repeat testing"],
   answer: `
     <h4>Why a pathway beats a test menu</h4>
     <p>No single fungal test is definitive, and the value of any test depends on the patient in front of you. Galactomannan sensitivity is high in prolonged neutropenia and much lower in non-neutropenic critical illness; &beta;-D-glucan is a good rule-out test but has many false positives; cryptococcal antigen is excellent but can be falsely negative at very high antigen loads. A pathway specifies who is tested, when, on what specimen, and what happens to the result.</p>

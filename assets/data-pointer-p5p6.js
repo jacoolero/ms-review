@@ -144,7 +144,7 @@ window.QBANK.push(
   id: "p6g2", domain: "p6", star: true,
   q: "Compare the laboratory methods for diagnosing strongyloidiasis, including Baermann concentration, agar plate culture and serology.",
   tags: ["Strongyloides", "Baermann", "agar plate culture", "NIE ELISA", "diagnosis"],
-  keypoints: ["Baermann", "agar plate culture", "Koga", "bacterial tracks", "Harada-Mori", "NIE ELISA", "cross-reaction filariae", "PCR", "duodenal aspirate", "sputum", "short buccal cavity", "genital primordium", "three specimens", "lab-acquired infection"],
+  keypoints: ["Baermann", "agar plate culture", "Koga", "bacterial tracks", "Harada-Mori", "NIE ELISA", "cross-reaction filariae", "PCR", "duodenal aspirate", "sputum", "short buccal cavity", "genital primordium", "three specimens", "infect laboratory staff"],
   answer: `
     <h4>Stool examination</h4>
     <p>Single direct microscopy detects only about 30–50% of infections because larval output is low and intermittent. Examine at least <strong>three fresh specimens</strong>; larvae are best seen in wet mounts, and sensitivity falls with delayed or refrigerated specimens. Larvae are fragile and die in urine or delayed samples. Concentration may recover larvae, but the dedicated methods below are superior.</p>

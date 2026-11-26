@@ -3,7 +3,7 @@ window.QBANK.push(
   id: "v31", domain: "virology", star: true,
   q: "Explain why measles and polio have re-emerged in the Philippines despite decades of immunisation, and how the national programme should respond.",
   tags: ["measles", "polio", "immunization programme", "Philippines"],
-  keypoints: ["measles", "R0", "herd immunity", "95%", "MMR", "birth dose", "bOPV", "IPV", "supplemental immunization", "vaccine hesitancy", "cold chain", "RITM", "case-based surveillance", "RA 11332", "Reaching Every Barangay"],
+  keypoints: ["measles", "R0", "herd immunity", "95%", "two-dose measles coverage", "birth dose", "bOPV", "IPV", "supplemental immunization", "vaccine hesitancy", "cold chain", "RITM", "case-based surveillance", "RA 11332", "Reaching Every Barangay"],
   answer: `
     <h4>Why resurgence happens</h4>
     <p>Measles and polio are vaccine-preventable, yet both reappear when coverage falls. Measles has an <strong>R0 of 12-18</strong>, so at least <strong>95% two-dose coverage</strong> is needed to interrupt transmission; small immunity gaps therefore produce large outbreaks. Polio is different: wild virus has been eliminated from the Western Pacific, but <strong>circulating vaccine-derived poliovirus (cVDPV)</strong> emerges when attenuated Sabin strains circulate in under-immunised communities and regain neurovirulence. In the Philippines, the 2019 polio outbreak and repeated measles clusters followed years of declining coverage, driven by vaccine hesitancy after the Dengvaxia controversy, supply and cold-chain problems, hard-to-reach barangays, and the COVID-19 disruption of routine immunisation.</p>
@@ -48,7 +48,7 @@ window.QBANK.push(
   keypoints: ["PIDSR", "RA 11332", "NS1", "warning signs", "critical phase", "plasma leakage", "haematocrit", "crystalloid", "4S", "Aedes aegypti", "avoid NSAIDs", "platelet", "triage", "RITM"],
   answer: `
     <h4>Surveillance</h4>
-    <p>Dengue is endemic in the Philippines, with all four serotypes and year-round transmission that peaks in the rainy season. Cases are reported through the Philippine Integrated Disease Surveillance and Response (PIDSR) system under RA 11332, using the national case definitions. Sentinel and regional laboratories confirm early cases with NS1 antigen or RT-PCR, and later cases with IgM; RITM provides reference testing and quality assurance. Surveillance should track severe cases, deaths, serotype and age distribution, not just total counts, because a shift toward younger children or a new serotype signals a coming epidemic. The DOH "4S" campaign — search and destroy breeding sites, self-protection, seek early consultation, and support fogging only in hotspots — links vector control to case detection.</p>
+    <p>Dengue is endemic in the Philippines, with all four serotypes and year-round transmission by <em>Aedes aegypti</em> that peaks in the rainy season. Cases are reported through the Philippine Integrated Disease Surveillance and Response (PIDSR) system under RA 11332, using the national case definitions. Sentinel and regional laboratories confirm early cases with NS1 antigen or RT-PCR, and later cases with IgM; RITM provides reference testing and quality assurance. Surveillance should track severe cases, deaths, serotype and age distribution, not just total counts, because a shift toward younger children or a new serotype signals a coming epidemic. The DOH "4S" campaign — search and destroy breeding sites, self-protection, seek early consultation, and support fogging only in hotspots — links vector control to case detection.</p>
     <h4>Clinical assessment</h4>
     <p>Classify every patient as dengue without warning signs, dengue with warning signs, or severe dengue. Warning signs include abdominal pain or tenderness, persistent vomiting, mucosal bleeding, lethargy or restlessness, liver enlargement, oliguria, fluid accumulation, and a rising haematocrit with falling platelets. The <strong>critical phase</strong> begins around defervescence and lasts 24-48 hours, when <strong>plasma leakage</strong> causes haemoconcentration, pleural effusion, ascites and shock.</p>
     <h4>Management</h4>
@@ -134,7 +134,7 @@ window.QBANK.push(
   id: "v37", domain: "virology", star: true,
   q: "Compare chronic hepatitis B and C in virology, diagnosis, treatment and prevention. What should a resource-limited national programme prioritise?",
   tags: ["HBV", "HCV", "elimination", "Philippines"],
-  keypoints: ["HBsAg", "anti-HBs", "anti-HBc", "cccDNA", "HBV DNA", "anti-HCV", "HCV RNA", "DAA", "SVR12", "birth dose", "tenofovir", "entecavir", "sofosbuvir", "reactivation", "elimination"],
+  keypoints: ["HBsAg", "anti-HBs", "anti-HBc", "cccDNA", "HBV DNA", "anti-HCV", "HCV RNA", "DAA", "SVR12", "birth dose", "tenofovir", "entecavir", "pan-genotypic DAA", "reactivation", "elimination"],
   answer: `
     <h4>Two viruses, one programme</h4>
     <p>Hepatitis B (HBV) is a partially double-stranded DNA hepadnavirus that reverse-transcribes a pregenomic RNA and persists as covalently closed circular DNA (<strong>cccDNA</strong>) in hepatocytes. Hepatitis C (HCV) is a positive-sense ssRNA flavivirus with an error-prone NS5B polymerase and no latent reservoir. Both cause chronic hepatitis, cirrhosis and hepatocellular carcinoma, but their diagnosis and treatment differ sharply. Both are silent for years, so opportunistic screening is essential. In the Philippines, HBV is mostly transmitted perinatally or in early childhood, whereas HCV is concentrated among people who inject drugs and those with past unsafe transfusions or medical procedures.</p>
@@ -212,7 +212,7 @@ window.QBANK.push(
   id: "v40", domain: "virology", star: true,
   q: "When is metagenomic next-generation sequencing appropriate for viral diagnosis, and how should its results be interpreted alongside PCR and serology?",
   tags: ["mNGS", "viral diagnostics", "sequencing", "CSF"],
-  keypoints: ["pre-analytical", "RT-PCR", "antigen", "serology", "window period", "IgM", "IgG avidity", "mNGS", "host depletion", "bioinformatics", "contamination", "turnaround time", "CSF", "stewardship"],
+  keypoints: ["pre-analytical", "RT-PCR", "antigen", "antibody detection", "window period", "IgM", "IgG avidity", "mNGS", "host depletion", "bioinformatics", "contamination", "turnaround time", "CSF", "stewardship"],
   answer: `
     <h4>Choose the test for the question</h4>
     <p>Viral diagnosis is a decision, not a reflex. If the question is whether the virus is present, use nucleic acid amplification (<strong>RT-PCR</strong> or TMA). If it is whether this is acute infection, combine PCR with <strong>IgM</strong> and, where available, <strong>IgG avidity</strong>. If it is whether the patient is immune, use IgG. If it is which variant or resistance mutation is present, sequence. <strong>Antigen</strong> tests are rapid but less sensitive, especially in adults; culture is slow and reserved for special purposes. The specimen must match the syndrome: nasopharyngeal swab for respiratory disease, <strong>CSF</strong> for encephalitis, lesion fluid for mpox, urine or saliva for congenital CMV.</p>

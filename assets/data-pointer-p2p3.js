@@ -33,7 +33,7 @@ window.QBANK.push(
   id: "p2g2", domain: "p2", star: true,
   q: "Compare PAIR, surgery and albendazole in cystic echinococcosis, and explain the pitfalls of hydatid serology.",
   tags: ["PAIR", "hydatid surgery", "albendazole", "hydatid serology"],
-  keypoints: ["PAIR", "95% ethanol", "hypertonic saline", "pericystectomy", "β-tubulin", "10–15 mg/kg/day", "30% cure", "antigen B", "arc 5", "cross-reaction", "CE4/CE5 seronegative", "viability", "anaphylaxis", "biliary fistula"],
+  keypoints: ["PAIR", "95% ethanol", "hypertonic saline", "pericystectomy", "β-tubulin", "10–15 mg/kg/day", "30% cure", "antigen B", "arc 5", "cross-reaction", "CE4/CE5 seronegative", "viability", "spillage risk", "biliary fistula"],
   answer: `
     <h4>Three options, different targets</h4>
     <p>All three aim to remove or sterilise the parasite, but they differ in invasiveness and in the cysts they can reach.</p>

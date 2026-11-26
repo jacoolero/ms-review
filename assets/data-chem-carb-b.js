@@ -325,7 +325,7 @@ window.QBANK.push(
   id: "cc128", domain: "chem-carb",
   q: "Explain how continuous glucose monitoring works and how its traces and metrics should be interpreted.",
   tags: ["CGM", "time in range", "AGP"],
-  keypoints: ["interstitial fluid", "lag", "time in range", "time below range", "coefficient of variation", "glucose management indicator", "ambulatory glucose profile", "MARD", "compression lows", "paracetamol", "14 days", "70%"],
+  keypoints: ["interstitial fluid", "interstitial glucose lags 5–15 minutes", "time in range", "time below range", "coefficient of variation", "glucose management indicator", "ambulatory glucose profile", "MARD", "compression lows", "paracetamol", "14 days", "70%"],
   answer: `
     <h4>How CGM works</h4>
     <p>A <strong>continuous glucose monitor</strong> uses a glucose oxidase electrode in the subcutaneous <strong>interstitial fluid</strong>, read every few minutes by a transmitter. Real-time CGM displays values continuously; intermittently scanned CGM stores data for retrospective download. Interstitial glucose <strong>lags</strong> plasma glucose by roughly 5–15 minutes, so rapid changes are damped. Most sensors need periodic calibration, although factory-calibrated models are increasingly used; accuracy is summarised by MARD, with values around 10% or less considered good.</p>

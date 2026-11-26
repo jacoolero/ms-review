@@ -214,7 +214,7 @@ window.QBANK.push(
   id: "cc232", domain: "chem-tox", star: true,
   q: "Discuss chelation therapy: principles, the main agents and their metal targets, monitoring, and the hazards of inappropriate use.",
   tags: ["chelation", "dimercaprol", "EDTA", "deferoxamine"],
-  keypoints: ["stable, water-soluble complexes", "symptomatic poisoning", "Dimercaprol", "G6PD deficiency", "Succimer", "CaNa", "fatal hypocalcaemia", "Penicillamine", "Deferoxamine", "Prussian blue", "essential metals", "rebound"],
+  keypoints: ["stable, water-soluble complexes", "symptomatic poisoning", "Dimercaprol", "G6PD deficiency", "Succimer", "CaNa2EDTA", "fatal hypocalcaemia", "Penicillamine", "Deferoxamine", "Prussian blue", "essential metals", "rebound"],
   answer: `
     <h4>Principles</h4>
     <p>Chelating agents form <strong>stable, water-soluble complexes</strong> with metal ions and increase urinary or biliary excretion. An effective agent must compete with endogenous ligands, remain extracellular enough to reach the metal store, and be excreted without releasing the metal into the brain. Chelation is indicated for <strong>symptomatic poisoning</strong> or a clearly hazardous body burden, not for vague complaints or low-level exposure, and must be combined with removal from exposure and supportive care.</p>

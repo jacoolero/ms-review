@@ -84,7 +84,7 @@ window.QBANK.push(
     <ul>
       <li>Wrong patient / mislabelling — the most dangerous error; two identifiers at bedside.</li>
       <li>Prolonged tourniquet → haemoconcentration; drip-arm contamination (glucose, K, Na).</li>
-      <li><strong>Order of draw</strong> (CLSI GP41): blood culture → citrate → serum → heparin → EDTA → fluoride/oxalate. EDTA carry-over gives spurious hyperkalaemia and hypocalcaemia.</li>
+      <li><strong>Order of draw</strong> (CLSI GP41): blood culture → citrate → serum → heparin → EDTA → fluoride/oxalate (glycolysis inhibitors). EDTA carry-over gives spurious hyperkalaemia and hypocalcaemia.</li>
       <li>Wrong tube or under-filled citrate tube.</li>
     </ul>
     <h4>Handling and transport</h4>
@@ -142,7 +142,7 @@ window.QBANK.push(
   q: "Discuss the advantages, risks and quality management of point-of-care testing (POCT) in a hospital.",
   tags: ["POCT", "glucometer", "governance"],
   answer: `
-    <p>POCT moves testing to the bedside, clinic or community. Its value is speed of decision, not cheaper tests.</p>
+    <p>point-of-care testing (POCT) moves testing to the bedside, clinic or community. Its value is speed of decision, not cheaper tests.</p>
     <h4>Advantages</h4>
     <ul><li>Short turnaround (glucose, blood gases, troponin, INR, HbA1c, creatinine).</li><li>Small sample volume — useful in neonates.</li><li>Access in rural health units and barangay health stations, where transport to a central laboratory is slow.</li></ul>
     <h4>Risks</h4>

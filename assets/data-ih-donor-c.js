@@ -92,7 +92,7 @@ window.QBANK.push(
   id: "ih225", domain: "ih-donor", star: true,
   q: "Design a platelet bacterial contamination programme for a hospital blood bank, covering sources, detection, investigation and prevention.",
   tags: ["bacterial contamination", "platelets", "culture", "septic reaction"],
-  keypoints: ["skin flora", "coagulase-negative staphylococci", "donor bacteraemia", "diversion pouch", "Yersinia enterocolitica", "room temperature storage", "culture", "aerobic and anaerobic bottles", "point-of-issue testing", "visual inspection", "septic reaction", "co-components", "lookback", "pathogen reduction", "false positive"],
+  keypoints: ["skin flora", "coagulase-negative staphylococci", "donor bacteraemia", "diversion pouch", "Yersinia enterocolitica", "stored at 20–24 °C", "culture", "aerobic and anaerobic bottles", "point-of-issue testing", "visual inspection", "septic reaction", "co-components", "lookback", "pathogen reduction", "false positive"],
   answer: '<h4>Why platelets are the problem</h4>' +
     '<p>Bacteria enter with the needle, from skin flora or from donor bacteraemia, and are not removed by leucoreduction. Platelets are stored at 20–24 °C with agitation, so a small inoculum multiplies during five to seven days. Coagulase-negative staphylococci and Cutibacterium are common; Staphylococcus aureus and gram-negative rods cause the most severe reactions. Red cells are cooler and usually involve Yersinia enterocolitica, which grows at 1–6 °C. Plasma is rarely implicated unless thawing or pooling is faulty.</p>' +
     '<h4>A detection programme</h4>' +
@@ -142,7 +142,7 @@ window.QBANK.push(
   id: "ih227", domain: "ih-donor", star: true,
   q: "Discuss the impact of dengue surges on the Philippine blood supply and the evidence-based management of platelet demand during an outbreak.",
   tags: ["dengue", "platelets", "blood supply", "Philippines"],
-  keypoints: ["dengue", "rainy season", "thrombocytopenia", "prophylactic platelet transfusion", "WHO", "significant bleeding", "platelet demand", "donor deferral", "regional sharing", "apheresis donors", "clinician education", "RA 11332", "Local Blood Councils", "Philippine Red Cross", "wastage"],
+  keypoints: ["dengue", "rainy season", "thrombocytopenia", "prophylactic platelet transfusion", "WHO", "significant bleeding", "platelet demand", "donor deferral", "regional sharing", "apheresis donors", "clinician education", "RA 11332", "Local Blood Councils", "Philippine Red Cross", "platelets expire in days"],
   answer: '<h4>Why dengue strains the blood supply</h4>' +
     '<p>Dengue is endemic in the Philippines and surges during the rainy season, with cyclical epidemics. Most patients recover with fluids, but clinicians often request platelets when the count falls, even without bleeding. Demand therefore rises exactly when supply falls: donors are ill or caring for relatives, mobile drives are cancelled, staff are redeployed, and recovered donors are temporarily deferred. Hospitals in outbreak areas may exhaust group O red cells and platelets within days.</p>' +
     '<h4>What the evidence says</h4>' +
@@ -186,7 +186,7 @@ window.QBANK.push(
   tags: ["irradiation", "TA-GVHD", "dose mapping", "quality assurance"],
   keypoints: ["TA-GVHD", "T lymphocyte", "25 Gy", "15 Gy", "50 Gy", "dose mapping", "dosimeter", "28 days", "24 hours", "potassium", "caesium-137", "pathogen reduction", "leucoreduction", "blood relatives", "indication"],
   answer: '<h4>Purpose and dose</h4>' +
-    '<p>Irradiation prevents transfusion-associated graft-versus-host disease by damaging donor T-cell DNA so that the cells cannot proliferate. The standard is 25 Gy to the centre of the container, with a minimum of 15 Gy anywhere and a maximum of 50 Gy. The dose is delivered by a caesium-137 source, an X-ray irradiator or, in some settings, a linear accelerator. The unit is not sterilised and leucocytes are not removed; they are simply inactivated.</p>' +
+    '<p>Irradiation prevents transfusion-associated graft-versus-host disease (TA-GVHD) by damaging donor T-cell DNA so that the cells cannot proliferate. The standard is 25 Gy to the centre of the container, with a minimum of 15 Gy anywhere and a maximum of 50 Gy. The dose is delivered by a caesium-137 source, an X-ray irradiator or, in some settings, a linear accelerator. The unit is not sterilised and leucocytes are not removed; they are simply inactivated.</p>' +
     '<h4>Validation and routine control</h4>' +
     '<ul>' +
     '<li>Perform dose mapping of the canister with the actual bag configuration, then set the timer from source activity and decay.</li>' +

@@ -4,7 +4,7 @@ window.QBANK.push(
   id: "cc251", domain: "chem-carb", star: true,
   q: "Discuss the PCEDM 2025-2026 clinical practice guideline for type 2 diabetes in Filipino adults: diagnosis, individualised targets and choice of glucose-lowering therapy.",
   tags: ["PCEDM", "type 2 diabetes", "Philippine guideline"],
-  keypoints: ["PCEDM", "two abnormal results", "fasting plasma glucose", "OGTT", "HbA1c", "individualised target", "metformin", "SGLT2 inhibitor", "GLP-1 receptor agonist", "ASCVD", "heart failure", "albuminuria", "hypoglycaemia", "cost", "lifestyle"],
+  keypoints: ["PCEDM", "two abnormal results", "fasting plasma glucose", "OGTT", "HbA1c", "individualised target", "metformin", "SGLT2 inhibitor", "GLP-1 receptor agonist", "heart failure", "albuminuria", "hypoglycaemia", "cost", "lifestyle"],
   answer: `
     <h4>Diagnosis</h4>
     <p>The PCEDM 2025-2026 guideline for Filipino adults retains the standard triad: <strong>fasting plasma glucose</strong> at least 7.0 mmol/L, a 2-hour 75 g <strong>OGTT</strong> at least 11.1 mmol/L, or <strong>HbA1c</strong> at least 6.5% by an NGSP-traceable method. Without classic symptoms, <strong>two abnormal results</strong> are needed. Because HbA1c access is uneven outside major cities and anaemia and haemoglobin variants are common, fasting glucose or an OGTT is accepted when HbA1c is unreliable. Screening starts at 35 years, or earlier with overweight, family history, previous gestational diabetes or hypertension.</p>
@@ -39,7 +39,7 @@ window.QBANK.push(
   keypoints: ["IFCC", "NGSP", "traceability", "boronate affinity", "cation-exchange HPLC", "immunoturbidimetric", "point-of-care", "EQA", "HbE", "iron deficiency", "haemolysis", "recent transfusion", "pregnancy", "carbamylated haemoglobin", "fructosamine", "OGTT"],
   answer: `
     <h4>Why standardisation comes first</h4>
-    <p>HbA1c must be traceable to the <strong>IFCC</strong> reference method and reported in <strong>NGSP</strong> units, using NGSP % = 0.0915 × IFCC mmol/mol + 2.15. A device without documented <strong>traceability</strong> cannot be used to diagnose diabetes. In the Philippines, the DOH-designated national reference laboratory for clinical chemistry runs the external quality assessment scheme, and participation is a condition of laboratory licensure. Verify every <strong>point-of-care</strong> device against the main analyser across the clinical range before use, and repeat verification whenever the device or reagent lot changes.</p>
+    <p>HbA1c must be traceable to the <strong>IFCC</strong> reference method and reported in <strong>NGSP</strong> units, using NGSP % = 0.0915 × IFCC mmol/mol + 2.15. A device without documented <strong>traceability</strong> cannot be used to diagnose diabetes. In the Philippines, the DOH-designated national reference laboratory for clinical chemistry runs the external quality assessment (EQA) scheme, and participation is a condition of laboratory licensure. Verify every <strong>point-of-care</strong> device against the main analyser across the clinical range before use, and repeat verification whenever the device or reagent lot changes.</p>
     <h4>Method choice</h4>
     <div class="table-wrap"><table>
       <tr><th>Method</th><th>Strength</th><th>Limitation</th></tr>
@@ -239,7 +239,7 @@ window.QBANK.push(
   id: "cc259", domain: "chem-carb",
   q: "Why is MODY under-recognised in the Philippines, who should be tested, and how does a genetic diagnosis change management?",
   tags: ["MODY", "monogenic diabetes", "genetic testing", "Philippines"],
-  keypoints: ["autosomal dominant", "young onset", "C-peptide", "islet autoantibodies", "HNF1A", "GCK", "HNF4A", "HNF1B", "sulfonylurea", "cascade testing", "genetic testing cost", "misclassification", "pregnancy", "MODY probability calculator"],
+  keypoints: ["autosomal dominant", "young onset", "C-peptide", "islet autoantibodies", "HNF1A", "GCK", "HNF4A", "HNF1B", "sulfonylurea", "cascade testing", "genetic testing cost", "labelled type 1 or type 2", "pregnancy", "MODY probability calculator"],
   answer: `
     <h4>Why it is missed</h4>
     <p>Most Filipino patients with monogenic diabetes are labelled type 1 or type 2. Young-onset type 2 diabetes is increasingly common in Asia, so age alone no longer discriminates. <strong>Islet autoantibodies</strong> and <strong>C-peptide</strong> are not routine, a three-generation family tree is rarely drawn, and a multigene panel is priced beyond most families. GCK disease is especially easy to miss because the fasting glucose is only mildly raised and the patient feels well. A negative panel does not exclude monogenic diabetes, and some families in the Philippines remain a clinical diagnosis.</p>

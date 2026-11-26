@@ -126,7 +126,7 @@ window.QBANK.push(
   id: "gp18", domain: "gpos",
   q: "Describe Erysipelothrix rhusiopathiae: its microbiology, occupational acquisition, clinical forms and treatment, including its intrinsic antibiotic resistance.",
   tags: ["Erysipelothrix", "erysipeloid", "zoonosis", "vancomycin resistance"],
-  keypoints: ["pleomorphic Gram-positive rod", "H2S positive TSI", "non-motile", "catalase negative", "swine erysipelas", "erysipeloid", "occupational exposure", "endocarditis", "intrinsically vancomycin resistant", "penicillin", "gloves"],
+  keypoints: ["pleomorphic Gram-positive rod", "hydrogen sulphide on triple sugar iron", "non-motile", "catalase negative", "swine erysipelas", "erysipeloid", "occupational exposure", "endocarditis", "intrinsically vancomycin resistant", "penicillin", "gloves"],
   answer: `
     <h4>The organism</h4>
     <p><em>Erysipelothrix rhusiopathiae</em> is a <strong>non-spore-forming, non-motile, pleomorphic Gram-positive rod</strong> that is catalase negative and microaerophilic. On triple sugar iron agar it produces <strong>hydrogen sulphide</strong>, a useful identifying feature. It is a zoonotic pathogen of pigs (swine erysipelas), fish, shellfish and poultry, and is acquired by occupational contact with animals, carcasses or contaminated water — butchers, farmers, fishermen and veterinarians are at risk.</p>
@@ -194,7 +194,7 @@ window.QBANK.push(
   id: "gp21", domain: "gpos", star: true,
   q: "Explain the pathogenesis, recognition and emergency management of streptococcal toxic shock syndrome.",
   tags: ["STSS", "superantigen", "group A streptococcus", "clindamycin"],
-  keypoints: ["invasive group A streptococcus", "superantigen", "SpeA SpeB SpeC", "MHC class II", "hypotension", "multi-organ failure", "pain out of proportion", "urgent debridement", "penicillin plus clindamycin", "IVIG", "Eagle effect"],
+  keypoints: ["invasive group A streptococcus", "superantigen", "superantigens", "MHC class II", "hypotension", "multi-organ failure", "pain out of proportion", "urgent debridement", "penicillin plus clindamycin", "IVIG", "Eagle effect"],
   answer: `
     <h4>Definition and mechanism</h4>
     <p><strong>Streptococcal toxic shock syndrome (STSS)</strong> is invasive group A streptococcal infection complicated by <strong>shock and multi-organ failure</strong>. It is driven by <strong>superantigens</strong> — streptococcal pyrogenic exotoxins A, B and C — that cross-link MHC class II and the T-cell receptor outside the antigen groove, producing massive polyclonal cytokine release. M protein and streptolysin O add tissue injury and immune evasion. A portal of entry is often found in skin, soft tissue, the female genital tract or a recent surgical wound.</p>
@@ -208,7 +208,7 @@ window.QBANK.push(
     </ul>
     <p>The case definition requires hypotension plus involvement of at least two organ systems in a patient with group A streptococcal infection.</p>
     <h4>Management</h4>
-    <p>This is a <strong>surgical and critical-care emergency</strong>. Secure the airway, resuscitate, and obtain urgent surgical exploration with debridement of all necrotic tissue; repeated debridement is often needed. Give <strong>penicillin plus clindamycin</strong>: penicillin kills dividing organisms, while clindamycin suppresses toxin synthesis, is unaffected by the Eagle effect and penetrates tissue well. <strong>Intravenous immunoglobulin</strong> is used adjunctively to neutralise superantigens, although trial evidence is not definitive. Supportive care includes vasopressors, organ support and source control. Household contacts should be advised to seek care for febrile illness, and chemoprophylaxis is considered in selected high-risk contacts.</p>
+    <p>This is a <strong>surgical and critical-care emergency</strong>. Secure the airway, resuscitate, and obtain urgent surgical exploration with debridement of all necrotic tissue; repeated debridement is often needed. Give <strong>penicillin plus clindamycin</strong>: penicillin kills dividing organisms, while clindamycin suppresses toxin synthesis, is unaffected by the Eagle effect and penetrates tissue well. <strong>Intravenous immunoglobulin (IVIG)</strong> is used adjunctively to neutralise superantigens, although trial evidence is not definitive. Supportive care includes vasopressors, organ support and source control. Household contacts should be advised to seek care for febrile illness, and chemoprophylaxis is considered in selected high-risk contacts.</p>
   `,
   tip: "The triad is superantigen, surgery and clindamycin; mention the Eagle effect to explain why penicillin alone fails.",
   sources: ["S1", "S4", "S20"]
@@ -217,7 +217,7 @@ window.QBANK.push(
   id: "gp22", domain: "gpos", star: true,
   q: "Discuss the classification, diagnosis and management of necrotising fasciitis, emphasising why it is a surgical emergency.",
   tags: ["necrotising fasciitis", "group A streptococcus", "debridement", "Fournier gangrene"],
-  keypoints: ["type I polymicrobial", "type II group A streptococcus", "pain out of proportion", "crepitus", "bullae", "surgical exploration", "LRINEC not definitive", "urgent debridement", "clindamycin", "IVIG", "delay increases mortality"],
+  keypoints: ["type I polymicrobial", "type II group A streptococcus", "pain out of proportion", "crepitus", "bullae", "surgical exploration", "LRINEC not definitive", "urgent debridement", "clindamycin", "IVIG", "must not delay surgery"],
   answer: `
     <h4>Definition and types</h4>
     <p>Necrotising fasciitis is a rapidly progressive <strong>necrosis of the fascia and subcutaneous tissue</strong> with sparing of skin early in the course. <strong>Type I</strong> is polymicrobial, mixing aerobes and anaerobes, and occurs in:</p>
@@ -233,7 +233,7 @@ window.QBANK.push(
     <h4>Diagnosis</h4>
     <p>Diagnosis is confirmed at <strong>surgical exploration</strong>, where fascia separates easily from muscle and is necrotic. Send tissue for Gram stain, culture and histology, and send blood cultures. Distinguish cellulitis, which responds to antibiotics, from necrotising infection: in cellulitis the fascia is healthy and the patient improves quickly.</p>
     <h4>Management</h4>
-    <p><strong>Immediate, wide surgical debridement</strong> is the single most important intervention, repeated daily until the wound is clean. Start broad-spectrum antibiotics covering Gram-positive cocci, Gram-negative bacilli and anaerobes — for example a carbapenem or piperacillin–tazobactam plus vancomycin or linezolid — and add <strong>clindamycin</strong> to suppress streptococcal toxin. Intravenous immunoglobulin is used in streptococcal disease. Provide fluids, vasopressors, nutrition, wound care and later reconstruction. Delay in surgery is the main determinant of death.</p>
+    <p><strong>Immediate, wide surgical debridement</strong> is the single most important intervention, repeated daily until the wound is clean. Start broad-spectrum antibiotics covering Gram-positive cocci, Gram-negative bacilli and anaerobes — for example a carbapenem or piperacillin–tazobactam plus vancomycin or linezolid — and add <strong>clindamycin</strong> to suppress streptococcal toxin. Intravenous immunoglobulin (IVIG) is used in streptococcal disease. Provide fluids, vasopressors, nutrition, wound care and later reconstruction. Delay in surgery is the main determinant of death.</p>
   `,
   tip: "Never let imaging delay the theatre: the diagnosis is made at surgical exploration, not on CT.",
   sources: ["S1", "S4", "S9"]
@@ -419,7 +419,7 @@ window.QBANK.push(
   id: "gp30", domain: "gpos", star: true,
   q: "Compare the major antibiotic classes used against Gram-positive bacteria, their targets, their roles and the resistance mechanisms that defeat them.",
   tags: ["antibiotic classes", "PBP2a", "vanA", "linezolid"],
-  keypoints: ["beta-lactams inhibit PBP", "glycopeptides bind D-Ala-D-Ala", "daptomycin membrane depolarisation", "linezolid 50S", "clindamycin 50S", "tetracyclines 30S", "rifampicin RNA polymerase", "PBP2a", "vanA D-Ala-D-Lac", "erm methylation", "mprF", "source control"],
+  keypoints: ["beta-lactams inhibit PBP", "glycopeptides bind D-Ala-D-Ala", "daptomycin membrane depolarisation", "linezolid 50S", "clindamycin 50S", "tetracyclines 30S", "rifampicin RNA polymerase", "PBP2a", "vanA D-Ala-D-Lac", "erm methylation", "mprF"],
   answer: `
     <h4>Cell-wall agents</h4>
     <p><strong>β-lactams</strong> — penicillins, cephalosporins and carbapenems — acylate penicillin-binding proteins and block peptidoglycan cross-linking. They are bactericidal and remain the backbone for susceptible Gram-positive infection: flucloxacillin or cefazolin for MSSA, penicillin for streptococci, ampicillin for enterococci and <em>Listeria</em>, and ceftaroline for MRSA because it binds PBP2a. <strong>Glycopeptides</strong> (vancomycin, teicoplanin) bind d-Ala-d-Ala and are reserved for MRSA, susceptible enterococcal infection and severe β-lactam allergy. <strong>Fosfomycin</strong> inhibits MurA early in cell-wall synthesis. <strong>Mupirocin</strong> inhibits isoleucyl-tRNA synthetase and is used topically for staphylococcal decolonisation.</p>

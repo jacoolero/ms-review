@@ -100,12 +100,12 @@ window.QBANK.push(
   id: "i35", domain: "immunology", star: true,
   q: "Discuss the Philippine HIV/AIDS Policy Act (RA 11166) and its implications for immune monitoring of people living with HIV.",
   tags: ["HIV", "RA 11166", "CD4", "viral load"],
-  keypoints: ["RA 11166", "confidentiality", "informed consent", "age of consent", "non-discrimination", "HIV testing services", "U=U", "CD4 count", "HIV viral load", "ART", "co-trimoxazole", "virological failure", "immune reconstitution inflammatory syndrome", "data privacy", "treatment hub"],
+  keypoints: ["RA 11166", "confidentiality", "informed consent", "age of consent", "non-discrimination", "HIV testing services", "U=U", "CD4 count", "HIV viral load", "ART", "co-trimoxazole", "virological failure", "immune reconstitution inflammatory syndrome (IRIS)", "data privacy", "treatment hub"],
   answer: `
     <h4>Rights-based legal frame</h4>
     <p><strong>Republic Act No. 11166</strong>, the Philippine HIV and AIDS Policy Act of 2018, replaced RA 8504. It guarantees <strong>confidentiality</strong>, <strong>informed consent</strong>, non-discrimination, access to treatment and <strong>HIV testing services</strong>. Testing must be voluntary; mandatory testing is prohibited except in narrow situations such as blood donation and certain occupational exposures. Adolescents aged 15 and above may consent to testing and treatment without parental consent. The law also protects privacy and requires age-appropriate education. It established the Philippine National AIDS Council and obliges employers, schools and health facilities to adopt non-discriminatory policies.</p>
     <h4>Immune monitoring</h4>
-    <p>Baseline <strong>CD4 count</strong> classifies immunological stage and triggers prophylaxis: co-trimoxazole when CD4 is &lt;200 cells/µL, and tuberculosis screening at every visit. <strong>HIV viral load</strong> is measured about six months after ART initiation and then annually; <strong>virological failure</strong> prompts adherence assessment and resistance testing. CD4 monitoring is most useful when counts are low or when opportunistic infection is suspected.</p>
+    <p>Baseline <strong>CD4 count</strong> classifies immunological stage and triggers prophylaxis: co-trimoxazole when CD4 is &lt;200 cells/µL, and tuberculosis screening at every visit. Starting antiretroviral therapy at a low CD4 count also risks <strong>immune reconstitution inflammatory syndrome (IRIS)</strong>, which can unmask or worsen tuberculosis and cryptococcal disease. <strong>HIV viral load</strong> is measured about six months after ART initiation and then annually; <strong>virological failure</strong> prompts adherence assessment and resistance testing. CD4 monitoring is most useful when counts are low or when opportunistic infection is suspected.</p>
     <h4>Monitoring as an ethical duty</h4>
     <p>Results are sensitive personal data. Disclosure to partners or employers requires consent, and <strong>U=U</strong> — undetectable viral load means no sexual transmission — is both a clinical endpoint and an anti-stigma message. Unauthorised disclosure is a legal offence and drives people away from care.</p>
     <h4>Philippine implementation</h4>
@@ -202,7 +202,7 @@ window.QBANK.push(
     <h4>Clinical uses</h4>
     <div class="table-wrap"><table>
       <tr><th>Drug class</th><th>Example</th><th>Main indication</th></tr>
-      <tr><td>Anti-C5</td><td><strong>Eculizumab</strong>, <strong>ravulizumab</strong></td><td>PNH, atypical HUS, myasthenia gravis, NMOSD</td></tr>
+      <tr><td>Anti-C5</td><td><strong>Eculizumab</strong>, <strong>ravulizumab</strong></td><td>paroxysmal nocturnal haemoglobinuria (PNH), atypical HUS, myasthenia gravis, NMOSD</td></tr>
       <tr><td>C3 inhibitor</td><td><strong>Pegcetacoplan</strong></td><td>PNH, geographic atrophy</td></tr>
       <tr><td>Factor B inhibitor</td><td><strong>Iptacopan</strong></td><td>PNH, IgA nephropathy</td></tr>
       <tr><td>C5a receptor</td><td><strong>Avacopan</strong></td><td>ANCA-associated vasculitis</td></tr>

@@ -75,7 +75,7 @@ window.QBANK.push({
   id: "pa205", domain: "para-trematodes", star: true,
   q: "Discuss the implementation of praziquantel mass drug administration for schistosomiasis in the Philippines: design, coverage barriers, safety and monitoring.",
   tags: ["praziquantel", "MDA", "coverage", "Philippines"],
-  keypoints: ["40 mg/kg", "dose pole", "school-based", "DepEd", "barangay health workers", "75%", "preschool children", "pregnant women", "bitter taste", "fear of side effects", "pharmacovigilance", "egg reduction rate", "coverage survey", "reinfection", "WASH"],
+  keypoints: ["40 mg/kg", "dose pole", "school-based", "Department of Education", "barangay health workers", "75%", "preschool children", "pregnant women", "bitter taste", "fear of side effects", "pharmacovigilance", "egg reduction rate", "coverage survey", "reinfection", "WASH"],
   answer: `
     <h4>Design and delivery</h4>
     <p>Philippine programmes give <strong>praziquantel</strong> as a single <strong>40 mg/kg</strong> dose, with height-based <strong>dose poles</strong> when scales are unavailable. Delivery is <strong>school-based</strong> through the Department of Education and community-based through <strong>barangay health workers</strong>, usually annually in moderate-prevalence areas and biannually where transmission is intense. The WHO target is at least <strong>75%</strong> coverage of the at-risk population. <strong>Preschool children</strong> need weight-based dosing, and <strong>pregnant</strong> and lactating women should be included because treatment reduces maternal anaemia.</p>
@@ -218,7 +218,7 @@ window.QBANK.push({
   id: "pa211", domain: "para-trematodes",
   q: "Discuss the intestinal flukes Fasciolopsis buski, Echinostoma ilocanum and the heterophyids, including their Philippine relevance, diagnosis and treatment.",
   tags: ["intestinal flukes", "Fasciolopsis", "Echinostoma", "heterophyids"],
-  keypoints: ["Fasciolopsis buski", "largest fluke", "water plants", "pigs", "Echinostoma ilocanum", "Pila snails", "Ilocos", "heterophyids", "Haplorchis", "Metagonimus", "raw fish", "eosinophilia", "operculated eggs", "praziquantel", "niclosamide"],
+  keypoints: ["Fasciolopsis buski", "largest fluke", "water plants", "pigs", "Echinostoma ilocanum", "Pila snails", "Ilocano prisoners", "heterophyids", "Haplorchis", "Metagonimus", "raw fish", "eosinophilia", "operculated eggs", "praziquantel", "niclosamide"],
   answer: `
     <h4>The main species</h4>
     <p><strong>Fasciolopsis buski</strong> is the largest human fluke and lives in the small intestine; pigs are the main reservoir, and metacercariae encyst on aquatic plants such as water caltrop and water chestnut. <strong>Echinostoma ilocanum</strong> is a small intestinal fluke with a collar of spines; snails such as <em>Pila</em> are the second intermediate host. The <strong>heterophyids</strong>, including <em>Haplorchis</em> and <em>Metagonimus</em>, are minute flukes acquired from raw freshwater fish.</p>

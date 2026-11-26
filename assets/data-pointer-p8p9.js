@@ -4,7 +4,7 @@ window.QBANK.push(
   id: "p8g1", domain: "p8",
   q: "Describe the biology of Blastocystis and explain what subtype classification adds to our understanding of this organism.",
   tags: ["Blastocystis", "biology", "subtypes", "taxonomy"],
-  keypoints: ["anaerobic protist", "central body form", "granular form", "amoeboid form", "cyst", "faecal–oral", "Jones medium", "17 subtypes", "ST1–ST9", "ST3", "zoonotic", "ST4 livestock", "whole-genome sequencing", "putative pathogen", "Blastocystis sp."],
+  keypoints: ["anaerobic protist", "central body form", "granular form", "amoeboid form", "cyst", "faecal–oral", "Jones medium", "17 subtypes", "ST1–ST9", "ST3", "zoonotic", "ST4 livestock", "whole-genome sequencing", "Blastocystis sp."],
   answer: `
     <h4>One genus, several forms</h4>
     <p><em>Blastocystis</em> is an anaerobic, non-motile protist of the intestinal lumen, formerly called <em>B. hominis</em>. It has no cell wall and no flagella; mitochondria-like organelles and a large central vacuole are characteristic. Four forms are described in human stool: the <strong>central body (vacuolar)</strong> form, the <strong>granular</strong> form, the <strong>amoeboid</strong> form and the <strong>cyst</strong>. The cyst is the infective stage and survives outside the host, while the central body form predominates in faeces and is the form most often reported.</p>
@@ -114,7 +114,7 @@ window.QBANK.push(
   id: "p8g5", domain: "p8",
   q: "Blastocystis in the Philippines: interpret the reported prevalence and outline a research agenda for a master's-level investigator.",
   tags: ["Blastocystis", "Philippines", "epidemiology", "research", "subtypes"],
-  keypoints: ["10% to over 50%", "community survey", "hospital patients", "single direct smear", "three specimens", "concentration", "trichrome", "PCR", "ST3", "local subtype data", "asymptomatic controls", "microbiome", "WASH", "reporting standard", "research agenda", "archived slides"],
+  keypoints: ["10% to over 50%", "community survey", "hospital patients", "single direct smear", "three specimens", "concentration", "trichrome", "PCR", "subtype distribution", "local subtype data", "asymptomatic controls", "microbiome", "WASH", "reporting standard", "research agenda", "archived slides"],
   answer: `
     <h4>What the Philippine figures show</h4>
     <p><em>Blastocystis</em> is among the most frequently reported intestinal protists in Filipino stool surveys, with figures from about <strong>10% to over 50%</strong>. The range is too wide to be explained by transmission alone. Community surveys, hospital patients, schoolchildren and blood donors are different populations, and each carries a different prior probability of infection. Published reports also cluster in a few regions, so the national map is built from convenience samples rather than a defined sampling frame.</p>
@@ -145,7 +145,7 @@ window.QBANK.push(
   id: "p9g1", domain: "p9",
   q: "Describe the biology, life cycle and transmission of Sarcoptes scabiei var. hominis.",
   tags: ["Sarcoptes scabiei", "biology", "life cycle", "transmission"],
-  keypoints: ["0.2–0.4 mm", "eight legs", "stratum corneum", "burrow", "two to three eggs daily", "three to four days", "10–14 days", "three to six weeks", "sensitivisation", "skin-to-skin contact", "fomites", "crusted scabies", "animal variants", "no vector", "obligate parasite"],
+  keypoints: ["0.2–0.4 mm", "eight legs", "stratum corneum", "burrow", "two to three eggs daily", "three to four days", "10–14 days", "three to six weeks", "hypersensitivity", "skin-to-skin contact", "fomites", "crusted scabies", "animal variants", "no vector", "obligate parasite"],
   answer: `
     <h4>The mite</h4>
     <p><em>Sarcoptes scabiei</em> var. <em>hominis</em> is a microscopic, eight-legged mite, roughly <strong>0.2–0.4 mm</strong> long, with a rounded body and short legs. It is an <strong>obligate parasite</strong> of human skin and cannot complete its cycle elsewhere. The female is larger than the male and is the stage usually recovered from a burrow.</p>
@@ -254,7 +254,7 @@ window.QBANK.push(
   id: "p9g5", domain: "p9",
   q: "An outbreak of scabies occurs in a long-term care facility. Outline the investigation and control measures.",
   tags: ["scabies", "outbreak", "long-term care", "infection control"],
-  keypoints: ["case definition", "line list", "attack rate", "crusted index case", "delayed diagnosis", "cohorted", "contact precautions", "mass treatment", "permethrin", "ivermectin", "staff", "fomites", "two incubation periods", "communication", "repeat treatment"],
+  keypoints: ["case definition", "line list", "attack rate", "crusted index case", "delayed diagnosis", "cohorted", "contact precautions", "mass treatment", "permethrin", "ivermectin", "staff", "bedding", "two incubation periods", "communication", "repeat treatment"],
   answer: `
     <h4>Why institutions amplify scabies</h4>
     <p>Long-term care facilities combine crowded living, frail skin, shared bedding and frequent staff contact. A single <strong>crusted index case</strong> can seed dozens of infections before the rash is recognised, and <strong>delayed diagnosis</strong> is the usual reason an outbreak is large. Staff movement between wards extends it further.</p>

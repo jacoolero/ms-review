@@ -42,9 +42,9 @@ window.QBANK.push(
       <li>Genomic sequencing, surveillance and applied research that inform national policy.</li>
     </ul>
     <h4>Referral pathway</h4>
-    <p>A specimen should move through a documented chain: the sending laboratory screens and packages it as a biological substance, records the clinical and epidemiological data, and tracks it to the reference laboratory. Results must return with an interpretation and, where relevant, a public health action. A reference result that arrives after the clinical decision has been made has little value, so courier schedules, electronic reporting and pre-agreed turn-around times matter as much as the assay itself.</p>
+    <p>A specimen should move through a documented chain: the sending laboratory screens and packages it as a biological substance, records the clinical and epidemiological data, and tracks it to the reference laboratory. Results must return with an interpretation and, where relevant, a public health action. A reference result that arrives after the clinical decision has been made has little value, so courier schedules, electronic reporting and pre-agreed turnaround times matter as much as the assay itself.</p>
     <h4>Strengths and gaps</h4>
-    <p>Centralisation creates depth but also bottlenecks. Island geography, transport costs, cold chain, biosafety and limited sequencing capacity can delay results, and a single national hub is vulnerable to disruption. The network is strengthened by tiered regional laboratories, shared protocols, regular proficiency testing and stable funding. RITM's authority depends less on hierarchy than on visible, timely support to the laboratories that refer to it.</p>
+    <p>Centralisation creates depth but also bottlenecks. Island geography, transport costs, cold chain, biosafety and limited sequencing capacity can delay results, and a single national hub is vulnerable to disruption. The network is strengthened by tiered regional laboratories, shared protocols, regular proficiency testing and stable funding. The authority of RITM depends less on hierarchy than on visible, timely support to the laboratories that refer to it.</p>
   `,
   tip: "Describe RITM as the top tier of a referral system — confirmatory testing, EQA, outbreak support and training — then name the bottlenecks.",
   sources: ["S31", "S33", "S25", "S12"]
@@ -53,7 +53,7 @@ window.QBANK.push(
   id: "d33", domain: "diagnostics", star: true,
   q: "Discuss PhilHealth's laboratory benefit and the barriers to equitable access to diagnostic testing in the Philippines. What can laboratories and policymakers do?",
   tags: ["PhilHealth", "laboratory benefit", "access", "universal health care"],
-  keypoints: ["PhilHealth", "case rates", "outpatient packages", "laboratory benefit schedule", "out-of-pocket payment", "catastrophic illness", "geographic access", "inter-island transport", "test menu", "equipment downtime", "eligibility and enrolment", "workforce distribution", "referral and result return", "costing", "universal health care"],
+  keypoints: ["PhilHealth", "case rates", "outpatient packages", "laboratory benefit schedule", "out-of-pocket payment", "geographic access", "inter-island transport", "test menu", "equipment downtime", "eligibility and enrolment", "workforce distribution", "referral and result return"],
   answer: `
     <h4>How the benefit is structured</h4>
     <p>PhilHealth does not usually pay laboratories fee-for-service for every test. Most inpatient diagnostics are bundled into case rates, and selected outpatient packages, such as primary-care consultations, tuberculosis treatment, HIV care and dialysis, include defined laboratory services. The laboratory therefore receives payment through the facility's claim rather than through a separate test tariff. This design contains cost, but it can also hide the true cost of testing and encourage under-provision when a package is priced below the resources actually used.</p>
@@ -67,7 +67,7 @@ window.QBANK.push(
       <li>Weak referral and result-return systems, producing repeat testing and delay.</li>
     </ul>
     <h4>What laboratories can do</h4>
-    <p>Cost the test menu honestly, document consumables, controls and staff time, and use that evidence in package negotiations. Publish turn-around times and prices, reduce duplicate testing through clinical order sets, and participate in external quality assessment so that access is not achieved at the expense of accuracy. Point-of-care testing and sample-transport networks can extend reach where a full laboratory is not feasible.</p>
+    <p>Cost the test menu honestly, document consumables, controls and staff time, and use that evidence in package negotiations. Publish turnaround times and prices, reduce duplicate testing through clinical order sets, and participate in external quality assessment so that access is not achieved at the expense of accuracy. Point-of-care testing and sample-transport networks can extend reach where a full laboratory is not feasible.</p>
     <h4>Policy direction</h4>
     <p>Equity requires more than a benefit schedule. It requires a licensed facility within reach, a test that is actually available, a result that returns in time and a patient who is not deterred by cost. PhilHealth data should be linked to facility and laboratory data to identify unmet need, and benefit reviews should include laboratory professionals who know what a test costs and what it changes.</p>
   `,
@@ -156,7 +156,7 @@ window.QBANK.push(
   id: "d37", domain: "diagnostics", star: true,
   q: "Design a blood culture optimization programme for a tertiary hospital. Which collection practices, metrics and rapid diagnostics reduce contamination and improve sepsis outcomes?",
   tags: ["blood culture", "contamination", "sepsis", "diagnostic stewardship"],
-  keypoints: ["blood culture", "two to three sets", "separate venepuncture sites", "20–30 mL per episode", "chlorhexidine–alcohol", "dedicated phlebotomy team", "contamination rate below 3%", "volume per bottle", "time to positivity", "direct MALDI-TOF", "multiplex blood-culture panel", "antimicrobial stewardship", "real-time notification", "de-escalation", "PDSA cycle", "cost-effectiveness"],
+  keypoints: ["blood culture", "two to three sets", "separate venepuncture sites", "20–30 mL per episode", "chlorhexidine–alcohol", "dedicated phlebotomy team", "contamination rate below 3%", "volume per bottle", "time to positivity", "direct MALDI-TOF", "multiplex blood-culture panel", "antimicrobial stewardship", "real-time notification", "de-escalation", "cost-effectiveness"],
   answer: `
     <h4>Programme goal</h4>
     <p>The aim is not more bottles but more informative episodes: the right patients cultured, adequate volume, enough sets, low contamination and rapid escalation of results to the antimicrobial stewardship team. A hospital-wide programme needs a named owner, a written bundle and a dashboard that is reviewed monthly.</p>
@@ -189,7 +189,7 @@ window.QBANK.push(
   id: "d38", domain: "diagnostics", star: true,
   q: "Evaluate molecular syndromic panels for respiratory, gastrointestinal and meningitis syndromes. When do they improve care, and how should a laboratory prevent overuse and misinterpretation?",
   tags: ["syndromic panel", "multiplex PCR", "diagnostic stewardship", "molecular diagnostics"],
-  keypoints: ["syndromic panel", "multiplex PCR", "respiratory panel", "gastrointestinal panel", "meningitis encephalitis panel", "sample-to-answer", "one to four hours", "carriage", "no susceptibility data", "loss of isolate", "indication-based order set", "clinical decision support", "pretest probability", "parallel culture", "tiered use", "cost-effectiveness"],
+  keypoints: ["syndromic panel", "syndromic panel", "respiratory panel", "gastrointestinal panel", "meningitis encephalitis panel", "sample-to-answer", "one to four hours", "carriage", "no susceptibility data", "loss of isolate", "indication-based order set", "clinical decision support", "pretest probability", "parallel culture", "tiered use", "high cost"],
   answer: `
     <h4>What the panels do</h4>
     <p>A syndromic panel amplifies a fixed set of targets from one specimen: respiratory viruses and atypical bacteria, gastrointestinal pathogens, or meningitis and encephalitis agents. Sample-to-answer systems deliver results in about one to four hours and detect organisms that culture may miss. They are most defensible when the differential is broad, the patient is severely ill or immunocompromised, or an outbreak needs rapid case definition.</p>

@@ -63,7 +63,7 @@ window.QBANK.push(
   id: "cc273", domain: "chem-protein", star: true,
   q: "Discuss the laboratory diagnosis of multiple myeloma in the Philippines: the role of serum protein electrophoresis and immunofixation, the availability and cost of testing, and the causes of diagnostic delay.",
   tags: ["myeloma", "SPEP", "immunofixation", "free light chains", "Philippines"],
-  keypoints: ["M-protein", "globulin gap", "serum protein electrophoresis", "immunofixation", "serum free light chains", "Bence Jones protein", "CRAB", "renal impairment", "hypercalcaemia", "bone pain", "send-out", "turnaround", "reflex testing", "daratumumab", "cost"],
+  keypoints: ["M-protein", "globulin gap", "serum protein electrophoresis", "immunofixation", "serum free light chains", "Bence Jones protein", "CRAB", "renal impairment", "hypercalcaemia", "bone pain", "send-out", "reflex testing", "daratumumab", "cost"],
   answer: `
     <h4>Why the pathway matters</h4>
     <p>Multiple myeloma usually presents with bone pain, anaemia, <strong>renal impairment</strong>, <strong>hypercalcaemia</strong> or recurrent infection. In the Philippines many patients reach a tertiary centre only after a fracture, a dialysis start or cord compression, because the initial tests are cheap but the confirmatory ones are not. <strong>Serum protein electrophoresis</strong>, <strong>immunofixation</strong> and <strong>serum free light chains</strong> are the laboratory core of the diagnosis.</p>

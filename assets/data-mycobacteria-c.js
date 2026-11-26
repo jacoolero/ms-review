@@ -28,7 +28,7 @@ window.QBANK.push(
   id: "my32", domain: "mycobacteria", star: true,
   q: "Explain the policy content and implementation challenges of Republic Act No. 10767, the Comprehensive Tuberculosis Elimination Plan Act.",
   tags: ["RA 10767", "health policy", "devolution", "TB elimination"],
-  keypoints: ["Comprehensive Tuberculosis Elimination Plan Act", "state policy", "national TB elimination plan", "DOH lead agency", "inter-agency coordination", "local government units", "PhilHealth benefits", "mandatory notification", "quality-assured diagnosis", "equity", "geographically isolated disadvantaged areas", "procurement delays", "private provider notification", "out-of-pocket costs", "disaggregated monitoring"],
+  keypoints: ["Comprehensive Tuberculosis Elimination Plan Act", "state policy", "national TB elimination plan", "DOH lead agency", "inter-agency coordination", "local government units", "PhilHealth benefits", "mandatory notification", "quality-assured diagnosis", "equity", "geographically isolated disadvantaged areas", "procurement delays", "private provider notification", "lost-income costs", "disaggregated monitoring"],
   answer: `
     <h4>What the law requires</h4>
     <p>Republic Act No. 10767, the <strong>Comprehensive Tuberculosis Elimination Plan Act</strong> of 2016, declares TB elimination a state policy. It mandates a <strong>national TB elimination plan</strong> with measurable targets, designates the <strong>DOH as lead agency</strong>, and requires inter-agency and local-government participation. TB is framed as a multi-sectoral problem involving health, education, housing, labour and social welfare, not merely a hospital diagnosis.</p>
@@ -53,7 +53,7 @@ window.QBANK.push(
   id: "my33", domain: "mycobacteria", star: true,
   q: "Describe the Philippine Programmatic Management of Drug-Resistant TB (PMDT): how cases are detected, treated and monitored, and what limits its effectiveness.",
   tags: ["PMDT", "MDR-TB", "Philippines", "BPaLM"],
-  keypoints: ["high-burden MDR/RR-TB country", "rifampicin resistance on Xpert", "fluoroquinolone testing", "line probe assay", "culture and phenotypic DST", "NTRL", "PMDT sites", "all-oral shorter regimens", "BPaLM where eligible", "treatment partners", "ECG monitoring", "pharmacovigilance", "geographic barriers", "laboratory turnaround", "stockouts", "contact investigation"],
+  keypoints: ["high-burden MDR/RR-TB country", "rifampicin resistance on Xpert", "fluoroquinolone testing", "line probe assay", "culture and phenotypic DST", "PMDT sites", "all-oral shorter regimens", "BPaLM where eligible", "treatment partners", "ECG monitoring", "pharmacovigilance", "geographic barriers", "laboratory turnaround", "stockouts", "contact investigation"],
   answer: `
     <h4>Scale and case-finding</h4>
     <p>The Philippines is on the WHO high-burden lists for TB, HIV-associated TB and MDR/RR-TB. Drug-resistant TB emerges through inadequate regimens, poor adherence, substandard drugs and transmission. Detection begins with <strong>Xpert MTB/RIF Ultra</strong>; every rifampicin-resistant result should trigger <strong>fluoroquinolone and second-line testing</strong> by line probe assay or culture at the National TB Reference Laboratory or its satellite laboratories. Only a fraction of estimated MDR/RR-TB cases are diagnosed and started on treatment.</p>
@@ -84,7 +84,7 @@ window.QBANK.push(
   id: "my34", domain: "mycobacteria", star: true,
   q: "Trace the rollout of Xpert MTB/RIF in the Philippines, the role of the National TB Reference Laboratory, and the operational problems that persist at point of care.",
   tags: ["Xpert MTB/RIF", "NTRL", "RITM", "point-of-care"],
-  keypoints: ["two-hour turnaround", "rpoB rifampicin resistance", "smear-negative disease", "WHO initial diagnostic", "2011 rollout", "GeneXpert sites", "Xpert Ultra", "Truenat", "specimen referral network", "NTRL at RITM", "external quality assessment", "cartridge stockouts", "module failure", "invalid rate", "result linkage", "same-day treatment"],
+  keypoints: ["rpoB rifampicin resistance", "smear-negative disease", "WHO initial diagnostic", "GeneXpert sites", "Xpert Ultra", "Truenat", "specimen referral network", "NTRL at RITM", "external quality assessment", "cartridge stockouts", "module failure", "invalid rate", "result linkage", "same-day treatment"],
   answer: `
     <h4>Why the platform mattered</h4>
     <p>Xpert MTB/RIF detects <em>M. tuberculosis</em> complex and the <strong>rpoB</strong> rifampicin-resistance mutations in about two hours, with better sensitivity than smear microscopy in smear-negative, paediatric and HIV-associated disease. WHO recommends a rapid molecular test as the initial diagnostic, so the platform moved TB diagnosis from a weeks-long culture pathway to a same-day decision.</p>
@@ -201,7 +201,7 @@ window.QBANK.push(
   id: "my38", domain: "mycobacteria", star: true,
   q: "Assess the current and pipeline tuberculosis vaccines and explain what a high-burden country like the Philippines needs from a future vaccine.",
   tags: ["BCG", "M72/AS01E", "vaccines", "prevention"],
-  keypoints: ["BCG live attenuated M. bovis", "severe childhood TB", "variable adult efficacy", "BCGosis in immunodeficiency", "no correlate of protection", "latency", "M72/AS01E", "VPM1002", "MTBVAC", "BCG revaccination", "phase 3 trials", "thermostable", "affordable", "cold chain", "complement not replacement", "TPT remains essential"],
+  keypoints: ["BCG live attenuated M. bovis", "severe childhood TB", "variable adult efficacy", "BCGosis in immunodeficiency", "no correlate of protection", "latency", "M72/AS01E", "VPM1002", "MTBVAC", "BCG revaccination", "phase 3 trials", "affordable", "cold chain", "complement not replacement", "TPT remains essential"],
   answer: `
     <h4>BCG: what it does and does not do</h4>
     <p>BCG is a live attenuated <em>M. bovis</em> vaccine given intradermally at birth under the National Immunization Program. It protects infants and young children against <strong>disseminated and meningeal TB</strong>, but efficacy against adult pulmonary disease is variable and generally poor. It is contraindicated in severe immunodeficiency, where it can cause BCGosis, and it complicates tuberculin skin testing.</p>

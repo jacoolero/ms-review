@@ -57,7 +57,7 @@ window.QBANK.push(
   id: "c3g3", domain: "c3", star: true,
   q: "Sepsis biomarkers beyond cultures: evaluate presepsin, sTREM-1 and neutrophil CD64, and explain how they should be used alongside procalcitonin and lactate.",
   tags: ["presepsin", "sTREM-1", "CD64", "sepsis"],
-  keypoints: ["presepsin", "CD14 subtype", "sTREM-1", "CD64", "flow cytometry", "procalcitonin", "C-reactive protein", "lactate", "serial measurement", "cut-off", "antibiotic stewardship", "blood culture", "heterogeneity", "prognosis", "immunoassay", "Sepsis-3"],
+  keypoints: ["presepsin", "CD14 subtype", "sTREM-1", "CD64", "flow cytometry", "procalcitonin", "C-reactive protein", "lactate", "serial measurement", "cut-off", "antibiotic stewardship", "blood culture", "heterogeneity", "immunoassay", "Sepsis-3"],
   answer: `
     <h4>Why another marker</h4>
     <p><strong>Sepsis-3</strong> defines sepsis as a dysregulated host response with organ dysfunction, but the diagnosis still rests on clinical assessment. <strong>Blood culture</strong> takes one to three days and is often negative. <strong>Lactate</strong> reflects hypoperfusion rather than infection, and <strong>C-reactive protein</strong> rises slowly. A rapid marker of the host response could shorten time to antibiotics and support <strong>antibiotic stewardship</strong>.</p>

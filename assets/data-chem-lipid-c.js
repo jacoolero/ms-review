@@ -38,7 +38,7 @@ window.QBANK.push(
   id: "cc262", domain: "chem-lipid",
   q: "Discuss statin access and generic availability in the Philippines, and explain how cost, bioequivalence and monitoring affect lipid management.",
   tags: ["generic statins", "access", "adherence"],
-  keypoints: ["generic atorvastatin", "rosuvastatin", "simvastatin", "bioequivalence", "Philippine FDA", "out-of-pocket cost", "PhilHealth", "statin intensity", "adherence", "muscle symptoms", "ALT", "creatine kinase", "ASCVD", "fixed-dose combination"],
+  keypoints: ["generic atorvastatin", "rosuvastatin", "simvastatin", "bioequivalence", "Philippine FDA", "out-of-pocket cost", "out-of-pocket cost", "statin intensity", "adherence", "muscle symptoms", "ALT", "creatine kinase", "ASCVD", "fixed-dose combination"],
   answer: `
     <h4>The access problem</h4>
     <p>Effective lipid lowering depends less on the molecule chosen than on whether the patient can obtain and keep taking it. In the Philippines, <strong>generic atorvastatin</strong>, <strong>rosuvastatin</strong> and <strong>simvastatin</strong> are widely registered, but retail prices vary several-fold between brands, pharmacies and regions. Many patients pay <strong>out-of-pocket cost</strong>, and statins are not universally reimbursed for outpatient use.</p>
@@ -109,7 +109,7 @@ window.QBANK.push(
   id: "cc265", domain: "chem-lipid",
   q: "Explain how PhilHealth coverage shapes lipid testing and statin treatment in the Philippines, and discuss the laboratory's role in rational, equitable use of these services.",
   tags: ["PhilHealth", "coverage", "laboratory access"],
-  keypoints: ["PhilHealth", "case rate", "primary care benefit", "outpatient laboratory", "out-of-pocket payment", "lipid profile", "statin coverage", "GABAY", "DOH licensing", "rational testing", "fasting status", "point-of-care testing", "equity", "catastrophic illness"],
+  keypoints: ["PhilHealth", "case rate", "primary care benefit", "outpatient laboratory", "out-of-pocket payment", "lipid profile", "statin coverage", "GABAY", "DOH licensing", "rational testing", "fasting status", "point-of-care testing", "equity"],
   answer: `
     <h4>How payment works</h4>
     <p><strong>PhilHealth</strong> pays for many admissions through <strong>case rates</strong> that bundle laboratory tests, and it supports selected outpatient packages such as primary care, tuberculosis and HIV care. A routine <strong>lipid profile</strong> ordered in an outpatient consultation is often not separately reimbursed, and <strong>statin coverage</strong> is partial and facility-dependent. Many patients therefore face <strong>out-of-pocket payment</strong> for both the test and the drug.</p>
@@ -132,7 +132,7 @@ window.QBANK.push(
   id: "cc266", domain: "chem-lipid", star: true,
   q: "Discuss remnant cholesterol and triglyceride-rich lipoproteins: their measurement, genetic evidence and emerging therapies.",
   tags: ["remnant cholesterol", "triglyceride-rich lipoproteins", "APOC3"],
-  keypoints: ["remnant cholesterol", "triglyceride-rich lipoproteins", "chylomicron remnants", "VLDL remnants", "IDL", "non-HDL cholesterol", "apo B", "APOC3", "ANGPTL3", "lipoprotein lipase", "olezarsen", "volanesorsen", "evinacumab", "residual risk", "non-fasting triglyceride"],
+  keypoints: ["remnant cholesterol", "remnant lipoproteins", "chylomicron remnants", "VLDL remnants", "IDL", "non-HDL cholesterol", "apo B", "APOC3", "ANGPTL3", "olezarsen", "volanesorsen", "evinacumab", "residual risk", "non-fasting triglyceride"],
   answer: `
     <h4>What remnants are</h4>
     <p><strong>Remnant cholesterol</strong> is the cholesterol carried in <strong>chylomicron remnants</strong>, <strong>VLDL remnants</strong> and <strong>IDL</strong>. It can be estimated as total cholesterol minus HDL-C minus LDL-C, or as triglyceride divided by 5 in mg/dL when the Friedewald assumptions hold. It is part of <strong>non-HDL cholesterol</strong> but invisible in a standard LDL-C result.</p>

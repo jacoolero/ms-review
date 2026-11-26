@@ -33,7 +33,7 @@ window.QBANK.push(
   id: "ih182", domain: "ih-groups", star: true,
   q: "Discuss weak D and partial D in Filipino donors and patients, including DEL, donor labelling and the role of RHD genotyping.",
   tags: ["weak D", "partial D", "DEL", "Filipino donors"],
-  keypoints: ["weak D", "partial D", "DEL", "RHD*1227A", "epitopes", "antigen density", "adsorption-elution", "two anti-D reagents", "indirect antiglobulin", "D-positive label", "RHD genotyping", "RhIG", "D-negative blood", "monoclonal anti-D", "referral centre", "donor policy"],
+  keypoints: ["weak D", "partial D", "DEL", "RHD*1227A", "epitopes", "antigen density", "adsorption-elution", "two anti-D reagents", "indirect antiglobulin", "D-positive label", "RHD genotyping", "mistyping weak D as D-negative", "D-negative blood", "monoclonal anti-D", "referral centre", "donor policy"],
   answer: `
     <h4>Weak D in the donor room</h4>
     <p>Weak D results from reduced D antigen density with all epitopes preserved. In donors, the practical risk is mistyping a weak D unit as D-negative and transfusing it into a D-negative recipient who may form anti-D. Donor red cells are therefore tested with two anti-D reagents and, when the result is weak or discrepant, by indirect antiglobulin technique or adsorption–elution. A confirmed weak D donor is labelled D-positive; the unit is not placed in the D-negative inventory.</p>
@@ -233,7 +233,7 @@ window.QBANK.push(
   id: "ih189", domain: "ih-groups",
   q: "Describe the principles and blood bank applications of chromatography, adsorption and elution, including their limitations in a resource-limited laboratory.",
   tags: ["chromatography", "adsorption", "elution", "antibody purification"],
-  keypoints: ["gel filtration", "size exclusion", "ion exchange", "affinity chromatography", "Protein A", "ligand", "adsorption", "autologous", "allogeneic", "ZZAP", "elution", "last wash", "reagent manufacture", "immunoadsorption", "validation", "cost"],
+  keypoints: ["gel filtration", "size exclusion", "ion exchange", "affinity chromatography", "Protein A", "ligand", "adsorption", "autologous", "allogeneic", "ZZAP", "elution", "last wash", "reagent manufacture", "adsorption", "validation", "cost"],
   answer: `
     <h4>Separation principles</h4>
     <p>Chromatography separates molecules by size, charge or specific binding. Gel filtration (size exclusion) separates large proteins from small solutes and is used for buffer exchange and for separating IgM from IgG. Ion-exchange chromatography binds proteins according to charge and is used to purify albumin and IgG fractions. Affinity chromatography uses an immobilised ligand, such as Protein A or Protein G for IgG, a lectin for glycoproteins, or a blood group antigen for specific antibody. Each method has a resolution and capacity that must be matched to the sample size and the purity required.</p>

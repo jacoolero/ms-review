@@ -4,7 +4,7 @@ window.QBANK.push(
   id: "d13", domain: "diagnostics", star: true,
   q: "How should sputum and bronchoalveolar lavage specimens be collected, processed and interpreted for lower respiratory tract infection?",
   tags: ["sputum", "BAL", "respiratory culture", "specimen quality"],
-  keypoints: ["Bartlett criteria", "more than 25 PMN", "fewer than 10 squamous cells", "reject saliva", "induced sputum hypertonic saline", "BAL quantitative culture", "protected specimen brush", "DTT or NALC homogenisation", "blood chocolate MacConkey agar", "Legionella BCYE", "Pneumocystis GMS", "prior antibiotics reduce yield", "colonisation versus infection"],
+  keypoints: ["Bartlett criteria", "more than 25 PMN", "fewer than 10 squamous cells", "reject saliva", "induced sputum hypertonic saline", "BAL quantitative culture", "protected specimen brush", "DTT or NALC homogenisation", "blood chocolate MacConkey agar", "Legionella BCYE", "Pneumocystis GMS", "prior antibiotics reduce yield", "colonisation"],
   answer: `
     <h4>Specimen quality</h4>
     <p>Lower respiratory specimens are easily contaminated by oral flora, so validity is judged before culture. Expectorated sputum is screened on Gram stain: an acceptable sample shows numerous polymorphonuclear cells and few squamous epithelial cells (Bartlett criteria, commonly &gt;25 PMN and &lt;10 squamous cells per low-power field). Saliva is rejected and a fresh sample requested. <strong>Induced sputum</strong> with nebulised hypertonic saline helps patients who cannot expectorate, especially for <em>Pneumocystis</em> and mycobacteria. <strong>Bronchoalveolar lavage (BAL)</strong> and protected specimen brush samples are reserved for ventilated, immunocompromised or non-productive patients, and are interpreted quantitatively because the bronchoscope passes through the upper airway.</p>
@@ -62,7 +62,7 @@ window.QBANK.push(
   id: "d15", domain: "diagnostics", star: true,
   q: "Discuss the indications for urine culture, collection methods, quantitative interpretation and the problem of asymptomatic bacteriuria.",
   tags: ["urine culture", "asymptomatic bacteriuria", "pyuria", "contamination"],
-  keypoints: ["culture only with symptoms", "midstream clean catch", "catheter specimen", "suprapubic aspirate", "boric acid or refrigeration", "colony count interpretation", "mixed flora contamination", "pyuria", "sterile pyuria", "pregnancy screening", "do not treat asymptomatic bacteriuria", "catheter-associated", "fastidious organisms"],
+  keypoints: ["culture only with symptoms", "midstream clean catch", "catheter specimen", "suprapubic aspirate", "boric acid or refrigeration", "colony counts CFU/mL", "mixed flora contamination", "pyuria", "sterile pyuria", "pregnancy screening", "do not treat asymptomatic bacteriuria", "catheter-associated", "fastidious organisms"],
   answer: `
     <h4>Indications</h4>
     <p>Urine culture is indicated for symptoms of urinary tract infection, pyelonephritis, pregnancy, before urological instrumentation and in selected systemic infections. It is not a screening test: reflex culture of every urinalysis, or of urine from an asymptomatic patient with a catheter, produces <strong>asymptomatic bacteriuria</strong> and drives unnecessary antibiotic use. The laboratory should apply rejection or reflex criteria agreed with clinicians.</p>
@@ -141,7 +141,7 @@ window.QBANK.push(
   id: "d18", domain: "diagnostics",
   q: "Explain the Gram stain: principle, technique, reporting and the common pitfalls that lead to misinterpretation.",
   tags: ["Gram stain", "direct examination", "reporting", "quality"],
-  keypoints: ["crystal violet", "iodine mordant", "alcohol decolouriser", "safranin counterstain", "peptidoglycan thickness", "Gram-positive purple", "Gram-negative pink", "direct specimen value", "semiquantitative reporting", "decolourisation timing", "Gram-variable", "artefacts", "culture correlation"],
+  keypoints: ["crystal violet", "iodine mordant", "alcohol decolouriser", "safranin counterstain", "peptidoglycan thickness", "Gram-positive purple", "Gram-negative pink", "direct specimen value", "semiquantitative reporting", "decolourisation timing", "Gram-variable", "stain precipitate", "culture correlation"],
   answer: `
     <h4>Principle</h4>
     <p>The Gram stain separates bacteria by cell wall structure. <strong>Crystal violet</strong> stains all cells; <strong>iodine</strong> forms a large crystal violet-iodine complex within the thick peptidoglycan of Gram-positive organisms; <strong>alcohol or acetone</strong> decolourises Gram-negatives, whose thin peptidoglycan and outer membrane retain little dye; <strong>safranin</strong> then counterstains them pink. Gram-positive organisms therefore appear purple and Gram-negative organisms pink to red.</p>
@@ -200,7 +200,7 @@ window.QBANK.push(
   id: "d20", domain: "diagnostics", star: true,
   q: "Describe the collection, transport, culture and identification of anaerobic bacteria. Why are anaerobes so often missed?",
   tags: ["anaerobic culture", "Bacteroides", "transport", "MALDI-TOF"],
-  keypoints: ["aspirate not swab", "anaerobic transport vial", "air expelled from syringe", "prompt delivery", "anaerobic blood agar", "BBE agar", "LKV agar", "egg yolk agar lecithinase", "chopped meat glucose broth", "MALDI-TOF identification", "oxygen exposure kills", "polymicrobial infection", "Bacteroides fragilis resistance"],
+  keypoints: ["aspirate not swab", "anaerobic transport vial", "air expelled from syringe", "send immediately", "anaerobic blood agar", "BBE agar", "LKV agar", "egg yolk agar lecithinase", "chopped meat glucose broth", "MALDI-TOF identification", "oxygen exposure kills", "polymicrobial infection", "Bacteroides fragilis resistance"],
   answer: `
     <h4>When to suspect anaerobes</h4>
     <p>Anaerobes dominate the normal flora of the mouth, bowel and female genital tract and cause <strong>polymicrobial, endogenous infections</strong>: aspiration pneumonia and lung abscess, periodontal and dental infection, intra-abdominal abscess, pelvic infection, diabetic foot and bite wounds. Gas in tissue, a foul odour, abscess formation and failure to grow organisms on aerobic culture should raise suspicion.</p>
@@ -293,7 +293,7 @@ window.QBANK.push(
   keypoints: ["Category A agents", "anthrax", "botulism", "plague", "smallpox", "tularaemia", "viral haemorrhagic fevers", "Laboratory Response Network", "sentinel laboratory", "rule-out testing", "do not culture on open bench", "notification", "chain of custody", "select agent regulations"],
   answer: `
     <h4>Threat agents</h4>
-    <p>The CDC categorises bioterrorism agents by ease of dissemination, mortality and preparedness needs. <strong>Category A</strong> includes <em>Bacillus anthracis</em>, <em>Clostridium botulinum</em> toxin, <em>Yersinia pestis</em>, variola virus, <em>Francisella tularensis</em> and viral haemorrhagic fever viruses. <strong>Category B</strong> includes <em>Brucella</em>, <em>Coxiella burnetii</em>, ricin and food- and water-borne threats, while Category C covers emerging agents that could be engineered for mass dissemination.</p>
+    <p>The CDC categorises bioterrorism agents by ease of dissemination, mortality and preparedness needs. <strong>Category A</strong> includes <em>Bacillus anthracis</em>, <em>Clostridium botulinum</em> toxin, <em>Yersinia pestis</em> (plague), variola virus (smallpox), <em>Francisella tularensis</em> and viral haemorrhagic fever viruses. <strong>Category B</strong> includes <em>Brucella</em>, <em>Coxiella burnetii</em>, ricin and food- and water-borne threats, while Category C covers emerging agents that could be engineered for mass dissemination.</p>
     <h4>Laboratory response network</h4>
     <p>Testing is tiered. <strong>Sentinel laboratories</strong> — most hospital laboratories — perform <strong>rule-out testing</strong>, refer suspicious isolates and notify public health authorities. Reference laboratories perform confirmatory assays, and national laboratories provide the definitive identification and characterisation. The sentinel laboratory's most important duty is recognition and safe referral, not attempting definitive identification.</p>
     <h4>Recognition and safe handling</h4>

@@ -66,7 +66,7 @@ window.QBANK.push(
   id: "pa57", domain: "para-trematodes",
   q: "Discuss female genital schistosomiasis and urinary schistosomiasis: pathology, diagnosis and public health significance.",
   tags: ["genital schistosomiasis", "S. haematobium", "bladder cancer", "HIV"],
-  keypoints: ["S. haematobium in vesical venous plexus", "terminal haematuria and dysuria", "urine filtration at midday", "haematuria dipstick as proxy in surveys", "bladder wall thickening and calcification", "obstructive uropathy and hydronephrosis", "squamous cell carcinoma of bladder", "IARC group 1 carcinogen", "female genital schistosomiasis sandy patches", "contact bleeding and infertility", "increases HIV acquisition risk", "misdiagnosed as sexually transmitted infection", "cervical biopsy and colposcopy", "male genital schistosomiasis haematospermia", "praziquantel treatment and prevention in school age girls", "S. japonicum rarely genitourinary"],
+  keypoints: ["S. haematobium in vesical venous plexus", "terminal haematuria and dysuria", "urine filtration at midday", "haematuria dipstick as proxy in surveys", "bladder wall thickening and calcification", "hydroureter and hydronephrosis", "squamous cell carcinoma of bladder", "IARC group 1 carcinogen", "female genital schistosomiasis sandy patches", "contact bleeding and infertility", "increases HIV acquisition risk", "misdiagnosed as sexually transmitted infection", "cervical biopsy and colposcopy", "male genital schistosomiasis haematospermia", "praziquantel treatment and prevention in school age girls", "S. japonicum rarely genitourinary"],
   answer: `
     <h4>Urinary schistosomiasis (<em>S. haematobium</em>)</h4>
     <p>Adults live in the <strong>vesical and pelvic venous plexus</strong>; eggs are deposited in the bladder wall and ureters, provoking granulomas and fibrosis.</p>
@@ -129,7 +129,7 @@ window.QBANK.push(
   id: "pa59", domain: "para-cestodes",
   q: "Compare cysticercosis, hydatid disease and sparganosis as larval cestode infections of humans, and outline a general approach to a suspected parasitic cyst.",
   tags: ["larval cestodes", "cyst", "imaging", "serology"],
-  keypoints: ["cysticercus single scolex invaginated", "hydatid cyst brood capsules and daughter cysts", "coenurus multiple scolices", "sparganum solid ribbon-like larva without scolex", "humans accidental intermediate host", "neuroimaging appearance", "eosinophilia often absent in cysticercosis and intact hydatid", "serology EITB for cysticercosis", "hydatid ELISA and immunoblot", "avoid aspiration of hydatid without cover", "PAIR with albendazole", "histology with calcareous corpuscles", "PCR on tissue", "treat with albendazole plus steroids as appropriate", "surgery for sparganosis", "prevention by cooking and hygiene and deworming dogs"],
+  keypoints: ["cysticercus single scolex invaginated", "hydatid cyst brood capsules and daughter cysts", "coenurus multiple scolices", "sparganum solid ribbon-like larva without scolex", "neuroimaging appearance", "eosinophilia often absent in cysticercosis and intact hydatid", "serology EITB for cysticercosis", "hydatid ELISA and immunoblot", "avoid aspiration of hydatid without cover", "PAIR with albendazole", "histology with calcareous corpuscles", "PCR on tissue", "treat with albendazole plus steroids as appropriate", "surgery for sparganosis", "prevention by cooking and hygiene and deworming dogs"],
   answer: `
     <div class="table-wrap"><table>
       <tr><th>Feature</th><th>Cysticercosis</th><th>Cystic echinococcosis</th><th>Sparganosis</th></tr>

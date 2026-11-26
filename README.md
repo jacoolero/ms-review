@@ -102,3 +102,7 @@ Signing in (Google or email/password) saves essay attempts, scores, reviewed mar
 - `assets/sync.js` merges browser data into the account on first sign-in, uploads later changes (queued offline), and clears the device on sign-out.
 - `firestore.rules` restricts each user to `users/{uid}`; paste it into Firebase console → Firestore → Rules after any change.
 - New domains must be added under Firebase → Authentication → Settings → Authorized domains.
+
+## My progress page
+
+The **Progress** tab (also opened from the account icon, `#progress`) shows the study streak with a 17-week activity grid, a per-subject overview (essays reviewed, average best score, flashcards learned and due), the five weakest topics with a *Study this* shortcut, the last ten essay answers, and controls to erase progress or delete the account. Daily activity is stored in `ms-activity-v1` (synced with the account) and is rebuilt from essay attempt dates for older data. Rendering lives in `assets/progress.js`.

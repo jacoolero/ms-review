@@ -4,7 +4,7 @@
    without a connection.
 
    Firestore layout
-     users/{uid}                 { progress: [qid], srs: {cardId: {box, due}}, answerMode, updatedAt }
+     users/{uid}                 { progress: [qid], srs: {cardId: {box, due}}, answerMode, activity: {day: n}, updatedAt }
      users/{uid}/attempts/{qid}  { draft, attempts: [{ text, date, percent, covered, total, self }] }
 */
 import config from "./firebase-config.js";
@@ -52,7 +52,7 @@ async function start() {
   const userDoc = (uid) => F.doc(db, "users", uid);
   const attCol = (uid) => F.collection(db, "users", uid, "attempts");
   const hasContent = (rec) => rec && ((rec.draft && rec.draft.trim()) || (rec.attempts && rec.attempts.length));
-  const mainOf = (d) => ({ progress: [...(d.progress || [])].sort(), srs: d.srs || {}, answerMode: d.answerMode !== false });
+  const mainOf = (d) => ({ progress: [...(d.progress || [])].sort(), srs: d.srs || {}, answerMode: d.answerMode !== false, activity: d.activity || {} });
 
   function attemptsOf(d) {
     const out = {};
@@ -76,6 +76,7 @@ async function start() {
       progress: main.progress || [],
       srs: main.srs || {},
       answerMode: main.answerMode,
+      activity: main.activity || {},
       attempts
     };
   }
@@ -100,6 +101,11 @@ async function start() {
     });
     return {
       progress: [...new Set([...(local.progress || []), ...remote.progress])],
+      activity: (() => {
+        const out = { ...remote.activity };
+        Object.entries(local.activity || {}).forEach(([day, n]) => { out[day] = Math.max(out[day] || 0, n); });
+        return out;
+      })(),
       srs,
       attempts,
       answerMode: remote.exists && remote.answerMode !== undefined ? remote.answerMode : local.answerMode
@@ -152,7 +158,53 @@ async function start() {
     timer = setTimeout(push, delay);
   }
 
+  // sign in again right before deleting: Firebase only deletes accounts with a recent sign-in
+  async function reauthenticate() {
+    const providers = user.providerData.map(p => p.providerId);
+    if (providers.includes("google.com")) {
+      await A.reauthenticateWithPopup(user, new A.GoogleAuthProvider());
+      return;
+    }
+    const password = prompt("Enter your password to confirm deleting your account.");
+    if (!password) throw { code: "cancelled" };
+    await A.reauthenticateWithCredential(user, A.EmailAuthProvider.credential(user.email, password));
+  }
+
+  async function deleteAccount() {
+    if (!user) return false;
+    try {
+      await reauthenticate();
+    } catch (err) {
+      if (err.code === "cancelled" || err.code === "auth/popup-closed-by-user" || err.code === "auth/cancelled-popup-request") return false;
+      if (err.code === "auth/invalid-credential" || err.code === "auth/wrong-password") throw new Error("Wrong password. Nothing was deleted.");
+      if (err.code === "auth/user-mismatch") throw new Error("Choose the same Google account you are signed in with. Nothing was deleted.");
+      throw new Error("Could not confirm your sign-in. Nothing was deleted.");
+    }
+    const uid = user.uid;
+    clearTimeout(timer);
+    baseline = null;                       // stop uploads while deleting
+    if (pushing) { try { await pushing; } catch { /* ignore */ } }
+    try {
+      const list = await F.getDocs(attCol(uid));
+      const refs = [];
+      list.forEach(d => refs.push(F.doc(attCol(uid), d.id)));
+      refs.push(userDoc(uid));
+      for (let i = 0; i < refs.length; i += 400) {
+        const batch = F.writeBatch(db);
+        refs.slice(i, i + 400).forEach(r => batch.delete(r));
+        await batch.commit();
+      }
+      ls.del(DIRTY_KEY);                   // the sign-out that follows then clears this device
+      await A.deleteUser(user);
+    } catch (err) {
+      console.warn("Delete failed:", err);
+      throw new Error("Could not delete everything. Check your connection and try again.");
+    }
+    return true;
+  }
+
   window.MSSync = {
+    deleteAccount,
     changed() {
       if (!ls.get(UID_KEY)) return;        // signed out: data stays in this browser only
       edits++;
@@ -270,7 +322,13 @@ function accountUI() {
     try { await handlers[name](data ? data() : undefined); } finally { dlg.classList.remove("busy"); }
   };
 
-  btn.addEventListener("click", () => { show(""); dlg.hidden = false; });
+  const openDialog = () => { show(""); dlg.hidden = false; };
+  btn.addEventListener("click", () => {
+    if (location.hash === "#progress") window.scrollTo({ top: 0 });
+    else location.hash = "#progress";
+  });
+  $("openSignIn").addEventListener("click", openDialog);
+  const refreshPage = () => { if (!$("progressView").hidden && window.MSProgress) window.MSProgress.render(); };
   $("closeAccount").addEventListener("click", () => { dlg.hidden = true; });
   dlg.addEventListener("click", (e) => { if (e.target === dlg) dlg.hidden = true; });
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") dlg.hidden = true; });
@@ -281,7 +339,7 @@ function accountUI() {
 
   return {
     on: (name, fn) => { handlers[name] = fn; },
-    enable() { btn.hidden = false; },
+    enable() { btn.hidden = false; $("openSignIn").hidden = false; },
     close() { dlg.hidden = true; },
     message: (text) => show(text, false),
     error: (err) => show(ERRORS[err.code] || "Something went wrong. Please try again.", true),
@@ -289,20 +347,32 @@ function accountUI() {
       const name = u.displayName || u.email || "Signed in";
       btn.classList.add("signed-in");
       btn.textContent = name.trim().charAt(0).toUpperCase();
-      btn.title = `Account: ${name}`;
-      $("accountName").textContent = u.displayName || "";
+      btn.title = `My progress · ${name}`;
       $("accountEmail").textContent = u.email || "";
-      $("authOut").hidden = true;
-      $("authIn").hidden = false;
+      $("acctOut").hidden = true;
+      $("acctIn").hidden = false;
+      $("deleteRow").hidden = false;
+      $("accountName").textContent = u.displayName || (u.email || "").split("@")[0];
+      const avatar = $("accountAvatar");
+      avatar.textContent = "";
+      if (u.photoURL) {
+        const img = document.createElement("img");
+        img.src = u.photoURL; img.alt = ""; img.referrerPolicy = "no-referrer";
+        img.onerror = () => { avatar.textContent = name.trim().charAt(0).toUpperCase(); };
+        avatar.appendChild(img);
+      } else avatar.textContent = name.trim().charAt(0).toUpperCase();
+      refreshPage();
       const note = $("saveNote");
       if (note) note.textContent = "Progress is saved to your account.";
     },
     signedOut() {
       btn.classList.remove("signed-in");
       btn.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path></svg>';
-      btn.title = "Sign in to save your progress";
-      $("authOut").hidden = false;
-      $("authIn").hidden = true;
+      btn.title = "My progress and sign-in";
+      $("acctOut").hidden = false;
+      $("acctIn").hidden = true;
+      $("deleteRow").hidden = true;
+      refreshPage();
       const note = $("saveNote");
       if (note) note.textContent = "Progress is saved in this browser. Sign in to keep it in your account.";
     },

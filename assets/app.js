@@ -9,6 +9,7 @@
   const SUBJECT_KEY = "ms-subject";
   const ANSWER_KEY = "ms-answer-mode";
   const ATT_KEY = "ms-attempts-v1";
+  const ACTIVITY_KEY = "ms-activity-v1";
   const SELF_GRADES = ["Weak", "Fair", "Good", "Excellent"];
 
   const store = {
@@ -21,7 +22,7 @@
     }
   };
   // keys that follow the signed-in account (theme and last subject stay per device)
-  const SYNC_KEYS = [PROGRESS_KEY, ATT_KEY, CARDS_KEY, ANSWER_KEY];
+  const SYNC_KEYS = [PROGRESS_KEY, ATT_KEY, CARDS_KEY, ANSWER_KEY, ACTIVITY_KEY];
 
   const subjects = window.SUBJECTS;
   const subjectMap = new Map(subjects.map(s => [s.id, s]));
@@ -39,6 +40,28 @@
   };
   const attempts = store.get(ATT_KEY, {});   // { qid: { draft, attempts: [{ text, date, percent, covered, total, self }] } }
   const saveAttempts = () => store.set(ATT_KEY, attempts);
+
+  /* ---------- daily activity (for the streak on the progress page) ---------- */
+  const dayKey = (ts) => {
+    const d = new Date(ts);
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  };
+  const activity = store.get(ACTIVITY_KEY, {});   // { "YYYY-MM-DD": number of answers, ratings and reviews }
+  function backfillActivity() {
+    // older data has no activity log: rebuild study days from the dates of saved essay attempts
+    if (Object.keys(activity).length) return false;
+    Object.values(attempts).forEach(rec => (rec.attempts || []).forEach(a => {
+      const k = dayKey(a.date);
+      activity[k] = (activity[k] || 0) + 1;
+    }));
+    return Object.keys(activity).length > 0;
+  }
+  if (backfillActivity()) { try { localStorage.setItem(ACTIVITY_KEY, JSON.stringify(activity)); } catch { /* private mode */ } }
+  function logActivity() {
+    const k = dayKey(Date.now());
+    activity[k] = (activity[k] || 0) + 1;
+    store.set(ACTIVITY_KEY, activity);
+  }
   const attOf = (id) => (attempts[id] = attempts[id] || { draft: "", attempts: [] });
   const bestOf = (id) => {
     const a = attempts[id];
@@ -262,6 +285,7 @@
     rec.attempts = rec.attempts.slice(-10);
     rec.draft = "";
     saveAttempts();
+    logActivity();
     q._result = r;
     state.progress.add(q.id);
     store.set(PROGRESS_KEY, [...state.progress]);
@@ -382,6 +406,7 @@
     const id = e.target.closest(".card").dataset.id;
     if (e.target.checked) state.progress.add(id); else state.progress.delete(id);
     store.set(PROGRESS_KEY, [...state.progress]);
+    if (e.target.checked) logActivity();
     updateProgressUI();
   });
 
@@ -497,6 +522,7 @@
     }
     srs[c.id] = rec;
     store.set(CARDS_KEY, srs);
+    logActivity();
     nextCard();
   }
 
@@ -572,13 +598,14 @@
   /* ---------- routing ---------- */
   function setHash() {
     const parts = [state.view === "cards" ? "cards" : null, state.subject, state.domain !== "all" ? state.domain : null].filter(Boolean);
-    const h = "#" + parts.join("/");
+    const h = state.view === "progress" ? "#progress" : "#" + parts.join("/");
     if (location.hash === h) return;
     try { history.replaceState(null, "", h); } catch { /* some file:// contexts block replaceState */ }
   }
 
   function readHash() {
     const parts = location.hash.replace("#", "").split("/").filter(Boolean);
+    if (parts[0] === "progress") { state.view = "progress"; return; }
     state.view = parts[0] === "cards" ? "cards" : "essays";
     if (parts[0] === "cards") parts.shift();
     if (parts[0] && subjectMap.has(parts[0])) state.subject = parts.shift();
@@ -593,12 +620,17 @@
     renderSubjects();
     renderNav();
     const cards = state.view === "cards";
-    $("#essayView").hidden = cards;
+    const progress = state.view === "progress";
+    document.body.dataset.view = state.view;
+    $("#essayView").hidden = state.view !== "essays";
     $("#cardView").hidden = !cards;
-    $("#sessionBanner").hidden = cards || !state.session;
+    $("#progressView").hidden = !progress;
+    $("#sessionBanner").hidden = state.view !== "essays" || !state.session;
     if (state.session) $("#sessionInfo").textContent = `${state.session.length} questions · answers hidden. Write your outline first.`;
     $("#footCount").textContent = `${subjects.length} subjects · ${allQuestions.length} essay questions · ${window.CARDS.length} flashcards`;
-    if (cards) {
+    if (progress) {
+      if (window.MSProgress) window.MSProgress.render();
+    } else if (cards) {
       $("#fcTitle").textContent = state.domain === "all" ? `${subjectMap.get(state.subject).short} flashcards` : domainMap.get(state.domain).name;
       buildQueue();
     } else {
@@ -619,7 +651,7 @@
       else if (fc.flipped && e.key === "1") rate("again");
       else if (fc.flipped && e.key === "2") rate("good");
       else if (fc.flipped && e.key === "3") rate("easy");
-    } else if (e.key.toLowerCase() === "r") {
+    } else if (state.view === "essays" && e.key.toLowerCase() === "r") {
       const first = $(".card");
       if (first) toggleCard(first);
     }
@@ -633,7 +665,7 @@
   window.MSApp = {
     keys: { progress: PROGRESS_KEY, attempts: ATT_KEY, srs: CARDS_KEY, answerMode: ANSWER_KEY },
     snapshot() {
-      return { progress: [...state.progress], attempts, srs, answerMode: state.answerMode };
+      return { progress: [...state.progress], attempts, srs, answerMode: state.answerMode, activity };
     },
     // replace this browser's study data (after sign-in, or with an empty set after sign-out)
     replace(data) {
@@ -641,19 +673,45 @@
       state.progress = new Set(data.progress || []);
       replaceObject(attempts, data.attempts);
       replaceObject(srs, data.srs);
+      replaceObject(activity, data.activity);
+      backfillActivity();
       state.answerMode = data.answerMode !== false;
       try {
         localStorage.setItem(PROGRESS_KEY, JSON.stringify([...state.progress]));
         localStorage.setItem(ATT_KEY, JSON.stringify(attempts));
         localStorage.setItem(CARDS_KEY, JSON.stringify(srs));
         localStorage.setItem(ANSWER_KEY, JSON.stringify(state.answerMode));
+        localStorage.setItem(ACTIVITY_KEY, JSON.stringify(activity));
       } catch { /* private mode */ }
       if (JSON.stringify(this.snapshot()) === before) return;
       allQuestions.forEach(q => { q._result = null; });
       // do not wipe an answer that is being typed right now
       if (document.activeElement && document.activeElement.classList.contains("att-text")) { updateProgressUI(); return; }
       route();
-    }
+    },
+    // jump to a view, subject and (optionally) topic
+    go({ view = "essays", subject, domain = "all" }) {
+      if (subject && subjectMap.has(subject)) setSubject(subject);
+      state.view = view;
+      state.domain = domain;
+      state.session = null;
+      route();
+      window.scrollTo({ top: 0 });
+    },
+    // open one essay question and scroll to it
+    openQuestion(qid) {
+      const q = byId.get(qid);
+      if (!q) return;
+      setSubject(subjectOf(q));
+      state.view = "essays";
+      state.domain = q.domain;
+      q._open = true;
+      route();
+      const card = $(`#cards .card[data-id="${qid}"]`);
+      if (card) card.scrollIntoView({ block: "start" });
+    },
+    bestOf,
+    subjectOf
   };
 
   /* ---------- boot ---------- */

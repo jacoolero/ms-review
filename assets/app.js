@@ -79,6 +79,9 @@
 
   /* ---------- helpers ---------- */
   const esc = (s) => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const sourceLink = (s) => (s.url && /^https?:\/\//i.test(s.url)
+    ? `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.text)}</a>`
+    : esc(s.text));
 
   const plainCache = new Map();
   function plain(html) {
@@ -174,8 +177,7 @@
     return `<div class="sources"><span>Sources</span><ul>${ids.map(id => {
       const s = window.SOURCES[id];
       if (!s) return "";
-      const label = s.url ? `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.text)}</a>` : esc(s.text);
-      return `<li>${label}</li>`;
+      return `<li>${sourceLink(s)}</li>`;
     }).join("")}</ul></div>`;
   }
 
@@ -202,7 +204,7 @@
     const draft = attOf(q.id).draft || "";
     return `<div class="attempt">
       <p class="att-label">Write your answer first. When you submit, it is checked against the key points of the model answer.</p>
-      <textarea class="att-text" rows="10" placeholder="Outline or write your essay answer here…">${esc(draft)}</textarea>
+      <textarea class="att-text" rows="10" maxlength="40000" placeholder="Outline or write your essay answer here…">${esc(draft)}</textarea>
       <div class="att-bar">
         <span class="att-words">${wordCount(draft)} words</span><span class="att-saved"></span>
         <span class="att-buttons">
@@ -588,7 +590,7 @@
     const prefix = { micro: /^S\d/, chem: /^C\d/, ih: /^B\d/, para: /^P\d/ }[state.subject];
     $("#drawerTitle").textContent = `References · ${subjectMap.get(state.subject).short}`;
     $("#sourceList").innerHTML = Object.entries(window.SOURCES).filter(([id]) => prefix.test(id)).map(([id, s]) =>
-      `<div class="src"><b>${id}.</b> ${s.url ? `<a href="${s.url}" target="_blank" rel="noopener">${esc(s.text)}</a>` : esc(s.text)}</div>`
+      `<div class="src"><b>${esc(id)}.</b> ${sourceLink(s)}</div>`
     ).join("");
   }
   $("#closeDrawer").addEventListener("click", () => { drawer.hidden = true; });
@@ -658,6 +660,33 @@
   });
 
   /* ---------- account sync hooks (used by sync.js) ---------- */
+  // Synced data is only ever the person's own, but keep it to the expected shape and types
+  // so a malformed record cannot break the page or inject markup.
+  const num = (v, min, max) => { const n = Number(v); return Number.isFinite(n) ? Math.min(max, Math.max(min, n)) : min; };
+  const isPlain = (o) => o && typeof o === "object" && !Array.isArray(o);
+  function cleanData(d) {
+    const out = { progress: [], attempts: {}, srs: {}, activity: {}, answerMode: d.answerMode !== false };
+    if (Array.isArray(d.progress)) out.progress = d.progress.filter(id => typeof id === "string");
+    if (isPlain(d.attempts)) Object.entries(d.attempts).forEach(([id, rec]) => {
+      if (!isPlain(rec)) return;
+      const list = Array.isArray(rec.attempts) ? rec.attempts.filter(isPlain).slice(-10).map(a => ({
+        text: String(a.text == null ? "" : a.text).slice(0, 40000),
+        date: num(a.date, 0, 8.64e15),
+        percent: Math.round(num(a.percent, 0, 100)),
+        covered: Math.round(num(a.covered, 0, 1000)),
+        total: Math.round(num(a.total, 0, 1000)),
+        self: a.self === null || a.self === undefined ? null : Math.round(num(a.self, 0, SELF_GRADES.length - 1))
+      })) : [];
+      out.attempts[id] = { draft: String(rec.draft == null ? "" : rec.draft).slice(0, 40000), attempts: list };
+    });
+    if (isPlain(d.srs)) Object.entries(d.srs).forEach(([id, r]) => {
+      if (isPlain(r)) out.srs[id] = { box: Math.round(num(r.box, 0, INTERVALS.length - 1)), due: num(r.due, 0, 8.64e15) };
+    });
+    if (isPlain(d.activity)) Object.entries(d.activity).forEach(([day, n]) => {
+      if (/^\d{4}-\d{2}-\d{2}$/.test(day)) out.activity[day] = Math.round(num(n, 0, 1e6));
+    });
+    return out;
+  }
   const replaceObject = (target, source) => {
     Object.keys(target).forEach(k => delete target[k]);
     Object.assign(target, source || {});
@@ -668,7 +697,8 @@
       return { progress: [...state.progress], attempts, srs, answerMode: state.answerMode, activity };
     },
     // replace this browser's study data (after sign-in, or with an empty set after sign-out)
-    replace(data) {
+    replace(raw) {
+      const data = cleanData(raw || {});
       const before = JSON.stringify(this.snapshot());
       state.progress = new Set(data.progress || []);
       replaceObject(attempts, data.attempts);

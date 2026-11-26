@@ -51,7 +51,8 @@ async function start() {
   /* ---------- data helpers ---------- */
   const userDoc = (uid) => F.doc(db, "users", uid);
   const attCol = (uid) => F.collection(db, "users", uid, "attempts");
-  const hasContent = (rec) => rec && ((rec.draft && rec.draft.trim()) || (rec.attempts && rec.attempts.length));
+  const hasContent = (rec) => rec && ((typeof rec.draft === "string" && rec.draft.trim()) || (Array.isArray(rec.attempts) && rec.attempts.length));
+  const isPlain = (o) => !!o && typeof o === "object" && !Array.isArray(o);
   const mainOf = (d) => ({ progress: [...(d.progress || [])].sort(), srs: d.srs || {}, answerMode: d.answerMode !== false, activity: d.activity || {} });
 
   function attemptsOf(d) {
@@ -68,15 +69,22 @@ async function start() {
 
   async function load(uid) {
     const [snap, list] = await Promise.all([F.getDoc(userDoc(uid)), F.getDocs(attCol(uid))]);
-    const main = snap.exists() ? snap.data() : {};
+    // cloud data is checked for shape here; app.js cleans the values before using them
+    const main = snap.exists() && isPlain(snap.data()) ? snap.data() : {};
     const attempts = {};
-    list.forEach(d => { attempts[d.id] = { draft: d.data().draft || "", attempts: d.data().attempts || [] }; });
+    list.forEach(d => {
+      const rec = isPlain(d.data()) ? d.data() : {};
+      attempts[d.id] = {
+        draft: typeof rec.draft === "string" ? rec.draft : "",
+        attempts: Array.isArray(rec.attempts) ? rec.attempts.filter(isPlain) : []
+      };
+    });
     return {
       exists: snap.exists() || !list.empty,
-      progress: main.progress || [],
-      srs: main.srs || {},
-      answerMode: main.answerMode,
-      activity: main.activity || {},
+      progress: Array.isArray(main.progress) ? main.progress.filter(id => typeof id === "string") : [],
+      srs: isPlain(main.srs) ? main.srs : {},
+      answerMode: typeof main.answerMode === "boolean" ? main.answerMode : undefined,
+      activity: isPlain(main.activity) ? main.activity : {},
       attempts
     };
   }

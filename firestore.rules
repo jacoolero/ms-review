@@ -1,11 +1,39 @@
 rules_version = '2';
-// Each signed-in person can read and write only their own study data.
+// Each signed-in person can read and write only their own study data, and only in the
+// shape the site writes (see assets/sync.js). Anything else is rejected.
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    // users/{uid}: { progress: [qid], srs: {cardId: {box, due}}, answerMode, activity: {day: n}, updatedAt }
+    function validMain(d) {
+      return d.keys().hasOnly(['progress', 'srs', 'answerMode', 'activity', 'updatedAt'])
+        && d.progress is list && d.progress.size() <= 5000
+        && d.srs is map && d.srs.size() <= 5000
+        && d.answerMode is bool
+        && (!('activity' in d) || (d.activity is map && d.activity.size() <= 4000))
+        && d.updatedAt == request.time;
+    }
+
+    // users/{uid}/attempts/{qid}: { draft, attempts: [{ text, date, percent, covered, total, self }] }
+    function validAttempt(d) {
+      return d.keys().hasOnly(['draft', 'attempts'])
+        && d.draft is string && d.draft.size() <= 50000
+        && d.attempts is list && d.attempts.size() <= 10;
+    }
+
     match /users/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid) && validMain(request.resource.data);
+
       match /attempts/{qid} {
-        allow read, write: if request.auth != null && request.auth.uid == uid;
+        allow read, delete: if isOwner(uid);
+        allow create, update: if isOwner(uid)
+          && qid.matches('^[A-Za-z0-9_-]{1,40}$')
+          && validAttempt(request.resource.data);
       }
     }
   }
